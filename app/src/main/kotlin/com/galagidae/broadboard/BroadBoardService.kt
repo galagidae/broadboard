@@ -2,23 +2,12 @@ package com.galagidae.broadboard
 
 import android.inputmethodservice.InputMethodService
 import android.view.View
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.navigationBars
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.platform.ComposeView
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.LifecycleRegistry
-import androidx.lifecycle.setViewTreeLifecycleOwner
-import androidx.savedstate.SavedStateRegistry
-import androidx.savedstate.SavedStateRegistryController
-import androidx.savedstate.SavedStateRegistryOwner
-import androidx.savedstate.setViewTreeSavedStateRegistryOwner
-import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.*
+import androidx.compose.ui.*
+import androidx.compose.ui.platform.*
+import androidx.compose.ui.unit.*
+import androidx.lifecycle.*
+import androidx.savedstate.*
 
 class BroadBoardService : InputMethodService(),
     LifecycleOwner,
@@ -58,13 +47,12 @@ class BroadBoardService : InputMethodService(),
                     navBarInsets.getBottom(this).toDp()
                 }
 
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(bottom = navBarBottom)
+                Box(modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = navBarBottom),
                 ) {
-                    placeholderKeyboard()
-                }                
+                    Shell()
+                }
             }
         }
     }
