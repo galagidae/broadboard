@@ -10,11 +10,18 @@ import androidx.compose.ui.unit.*
 fun Shell(
     modifier: Modifier = Modifier,
 ) {
-    PanBox(
-    modifier = Modifier
-        .fillMaxWidth()
-        .height(350.dp)
-    ) {
-        placeholderKeyboard()
+    val sizes = LocalSizeTheme.current
+
+    AppTheme() {
+        Column() {
+            PanBox(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(sizes.panBoxHeight)
+            ) {
+                placeholderKeyboard()
+            }
+            BottomRow()
+        }
     }
 }

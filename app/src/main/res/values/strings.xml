@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">BroadBoard</string>
     <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_delete">Delete</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_space">Space</string>
 </resources>
