@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.keys
+package com.galagidae.broadboard.boards.keys
 
 import androidx.compose.foundation.interaction.*
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,8 @@ import androidx.compose.ui.unit.*
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import com.galagidae.broadboard.*
-import com.galagidae.broadboard.icons.space_bar
+import com.galagidae.broadboard.boards.icons.space_bar
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun BottomRowKey(
@@ -21,25 +22,24 @@ fun BottomRowKey(
     icon: ImageVector,
     description: String
 ) {
-    val colors = LocalColorTheme.current
+    val sizes = LocalSizeTheme.current
     val interactionSource = remember { MutableInteractionSource() }
     val isPressed by interactionSource.collectIsPressedAsState()    
+    val vibrate = rememberHapticFeedback()    
 
     Button(
         modifier = modifier
             .fillMaxHeight(),
-        colors = ButtonDefaults.buttonColors(
-            containerColor = if (isPressed) colors.keyBackgroundPressed else colors.keyBackground,
-            contentColor = if (isPressed) colors.keyLabelPressed else colors.keyLabel        
-        ),
+        colors = getKeyColors(isPressed),
         interactionSource = interactionSource,
         shape = RoundedCornerShape(3.dp),
-        onClick = {}
+        contentPadding = PaddingValues(horizontal = 0.dp, vertical = 0.dp),
+        onClick = {vibrate()}
     ) {
         Icon(
             modifier = Modifier
-                .size(64.dp),
-                imageVector = icon,
+                .size(sizes.keyIconSize),
+            imageVector = icon,
             contentDescription = description,
         )
     }

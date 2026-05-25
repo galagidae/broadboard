@@ -1,4 +1,4 @@
-package com.galagidae.broadboard
+package com.galagidae.broadboard.boards
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -8,8 +8,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.*
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
-import com.galagidae.broadboard.icons.*
-import com.galagidae.broadboard.keys.BottomRowKey
+import com.galagidae.broadboard.*
+import com.galagidae.broadboard.R
+import com.galagidae.broadboard.boards.icons.*
+import com.galagidae.broadboard.boards.keys.BottomRowKey
 
 
 @Composable

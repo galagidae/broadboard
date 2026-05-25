@@ -8,6 +8,7 @@ import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.*
 import androidx.lifecycle.*
 import androidx.savedstate.*
+import com.galagidae.broadboard.layout.Shell
 
 class BroadBoardService : InputMethodService(),
     LifecycleOwner,
