@@ -10,6 +10,9 @@ import com.galagidae.broadboard.boards.*
 
 @Composable
 fun Shell(
+    onKey: (Char) -> Unit,
+    onBackspace: () -> Unit,
+    onEnter: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -23,9 +26,15 @@ fun Shell(
                 .background(colors.mainBackground)
                 .height(sizes.panBoxHeight)
             ) {
-                StandardBoard()
+                StandardBoard(
+                    onKey = onKey,
+                    onEnter = onEnter
+                )
             }
-            BottomRow()
+            BottomRow(
+                onSpace = { onKey(' ') },
+                onBackspace = onBackspace
+            )
         }
     }
 }

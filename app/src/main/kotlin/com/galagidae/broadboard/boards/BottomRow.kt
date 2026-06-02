@@ -16,6 +16,8 @@ import com.galagidae.broadboard.boards.keys.BottomRowKey
 
 @Composable
 fun BottomRow(
+    onSpace: () -> Unit,
+    onBackspace: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -30,16 +32,19 @@ fun BottomRow(
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         BottomRowKey(
+            onClick = {},
             modifier = Modifier.weight(1f),
             icon = shift,
             description = stringResource(R.string.key_shift)
         )        
         BottomRowKey(
+            onClick = onSpace,
             modifier = Modifier.weight(2f),
             icon = space_bar,
             description = stringResource(R.string.key_space)
         )
         BottomRowKey(
+            onClick = onBackspace,
             modifier = Modifier.weight(1f),
             icon = backspace,
             description = stringResource(R.string.key_delete)

@@ -11,6 +11,8 @@ import com.galagidae.broadboard.boards.locales.*
 
 @Composable
 fun StandardBoard(
+    onKey: (Char) -> Unit,    
+    onEnter: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -32,8 +34,11 @@ fun StandardBoard(
             ) {
                 row.forEach { key ->
                     when {
-                        key is Character -> CharacterKey(character = key)
-                        key is Enter -> EnterKey()
+                        key is Character -> CharacterKey(
+                            character = key,
+                            onKey = onKey
+                        )
+                        key is Enter -> EnterKey(onEnter = onEnter)
                     }
                 }
             }

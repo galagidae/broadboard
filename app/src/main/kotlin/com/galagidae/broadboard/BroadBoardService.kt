@@ -1,6 +1,7 @@
 package com.galagidae.broadboard
 
 import android.inputmethodservice.InputMethodService
+import android.view.inputmethod.EditorInfo
 import android.view.View
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.*
@@ -52,9 +53,40 @@ class BroadBoardService : InputMethodService(),
                     .fillMaxWidth()
                     .padding(bottom = navBarBottom),
                 ) {
-                    Shell()
+                    Shell(
+                        onKey = ::onKey,
+                        onBackspace= ::onBackspace,
+                        onEnter = ::onEnter
+                    )
                 }
             }
         }
+    }
+
+    private fun onKey(char: Char) {
+        val ic = getCurrentInputConnection() ?: return
+        
+        ic.commitText(char.toString(), 1)
+    }
+
+    private fun onBackspace() {
+        val ic = getCurrentInputConnection() ?: return
+        
+        ic.deleteSurroundingText(1, 0)
+    }
+
+    private fun onEnter() {
+        val ic = getCurrentInputConnection() ?: return
+        val ei = getCurrentInputEditorInfo() ?: return        
+
+        val imeOptions = ei.imeOptions        
+        val noEnterAction = (imeOptions and EditorInfo.IME_FLAG_NO_ENTER_ACTION) != 0
+
+        if (noEnterAction) {
+            ic.commitText("\n", 1)
+        } else {
+            val action = imeOptions and EditorInfo.IME_MASK_ACTION
+            ic.performEditorAction(action)
+        }        
     }
 }

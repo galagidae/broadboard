@@ -20,6 +20,7 @@ import com.galagidae.broadboard.utils.*
 
 @Composable
 fun EnterKey (
+    onEnter: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val sizes = LocalSizeTheme.current
@@ -35,7 +36,10 @@ fun EnterKey (
         colors = getKeyColors(isPressed),
         interactionSource = interactionSource,
         contentPadding = PaddingValues(horizontal = 0.dp, vertical = 0.dp),
-        onClick = {vibrate()}
+        onClick = {
+            onEnter()
+            vibrate()
+        }
     ) {
         Icon(
             modifier = Modifier

@@ -14,6 +14,7 @@ import com.galagidae.broadboard.utils.*
 
 @Composable
 fun CharacterKey (
+    onKey: (Char) -> Unit,    
     modifier: Modifier = Modifier,
     character: Character
 ) {
@@ -29,7 +30,10 @@ fun CharacterKey (
         shape = RoundedCornerShape(3.dp),
         colors = getKeyColors(isPressed),
         interactionSource = interactionSource,
-        onClick = {vibrate()}
+        onClick = {
+            onKey(character.primary)
+            vibrate()
+        }
     ) {
         Text(
             text = character.primary.toString(),

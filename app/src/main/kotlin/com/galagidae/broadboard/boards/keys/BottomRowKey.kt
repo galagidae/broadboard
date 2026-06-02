@@ -18,6 +18,7 @@ import com.galagidae.broadboard.utils.*
 
 @Composable
 fun BottomRowKey(
+    onClick: () -> Unit,
     modifier: Modifier = Modifier,
     icon: ImageVector,
     description: String
@@ -34,7 +35,10 @@ fun BottomRowKey(
         interactionSource = interactionSource,
         shape = RoundedCornerShape(3.dp),
         contentPadding = PaddingValues(horizontal = 0.dp, vertical = 0.dp),
-        onClick = {vibrate()}
+        onClick = {
+            onClick()
+            vibrate()
+        }
     ) {
         Icon(
             modifier = Modifier
