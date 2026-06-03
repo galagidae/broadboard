@@ -4,8 +4,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.galagidae.broadboard.*
+import com.galagidae.broadboard.R
+import com.galagidae.broadboard.boards.icons.enter
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
 
@@ -13,6 +16,7 @@ import com.galagidae.broadboard.boards.locales.*
 fun StandardBoard(
     onKey: (Char) -> Unit,    
     onEnter: () -> Unit,
+    shiftMode: ShiftMode,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -21,7 +25,6 @@ fun StandardBoard(
     Column(
         modifier = modifier
             .background(colors.mainBackground)
-            //.fillMaxHeight()
             .fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(6.dp),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -36,9 +39,16 @@ fun StandardBoard(
                     when {
                         key is Character -> CharacterKey(
                             character = key,
-                            onKey = onKey
+                            onKey = onKey,
+                            shiftMode = shiftMode
                         )
-                        key is Enter -> EnterKey(onEnter = onEnter)
+                        key is Enter -> IconKey(
+                            onClick = onEnter,
+                            modifier = Modifier
+                                .width(sizes.enterKeyWidth),
+                            icon = enter,
+                            description = stringResource(R.string.key_enter)
+                        )
                     }
                 }
             }

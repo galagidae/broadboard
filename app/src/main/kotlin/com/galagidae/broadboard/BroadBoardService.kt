@@ -1,9 +1,10 @@
 package com.galagidae.broadboard
 
 import android.inputmethodservice.InputMethodService
-import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.*
 import android.view.View
 import androidx.compose.foundation.layout.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.*
@@ -17,6 +18,7 @@ class BroadBoardService : InputMethodService(),
 
     private val lifecycleRegistry = LifecycleRegistry(this)
     private val savedStateRegistryController = SavedStateRegistryController.create(this)
+    private val autoShift = mutableStateOf(false)
 
     override val lifecycle: Lifecycle get() = lifecycleRegistry
     override val savedStateRegistry: SavedStateRegistry
@@ -56,12 +58,37 @@ class BroadBoardService : InputMethodService(),
                     Shell(
                         onKey = ::onKey,
                         onBackspace= ::onBackspace,
-                        onEnter = ::onEnter
+                        onEnter = ::onEnter,
+                        autoShift = autoShift
                     )
                 }
             }
         }
     }
+
+    override fun onStartInputView(info: EditorInfo, restarting: Boolean) {
+        super.onStartInputView(info, restarting)
+
+        val ic = getCurrentInputConnection() ?: return
+
+        updateAutoCasing(ic, info)
+    }
+
+    override fun onUpdateSelection(
+        oldSelStart: Int,
+        oldSelEnd: Int,
+        newSelStart: Int,
+        newSelEnd: Int,
+        candidatesStart: Int,
+        candidatesEnd: Int
+    ) {
+        super.onUpdateSelection(oldSelStart, oldSelEnd, newSelStart, newSelEnd, candidatesStart, candidatesEnd)
+        
+        val ic = getCurrentInputConnection() ?: return
+        val ei = getCurrentInputEditorInfo() ?: return                
+
+        updateAutoCasing(ic, ei)
+    }    
 
     private fun onKey(char: Char) {
         val ic = getCurrentInputConnection() ?: return
@@ -88,5 +115,10 @@ class BroadBoardService : InputMethodService(),
             val action = imeOptions and EditorInfo.IME_MASK_ACTION
             ic.performEditorAction(action)
         }        
+    }
+
+    private fun updateAutoCasing(ic: InputConnection, ei: EditorInfo) {
+        val mode = ic.getCursorCapsMode(ei.inputType)
+        autoShift.value = mode != 0
     }
 }

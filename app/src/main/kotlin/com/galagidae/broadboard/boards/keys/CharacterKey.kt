@@ -1,42 +1,38 @@
 package com.galagidae.broadboard.boards.keys
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.interaction.*
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.*
 import androidx.compose.material3.*
 import androidx.compose.ui.*
 import androidx.compose.ui.unit.*
 import androidx.compose.ui.platform.*
 import com.galagidae.broadboard.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun CharacterKey (
     onKey: (Char) -> Unit,    
+    shiftMode: ShiftMode,
     modifier: Modifier = Modifier,
     character: Character
 ) {
+    val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
-    val interactionSource = remember { MutableInteractionSource() }
-    val isPressed by interactionSource.collectIsPressedAsStateMin()
-    val vibrate = rememberHapticFeedback()    
+    val currentChar = if (
+        shiftMode == ShiftMode.SHIFT ||
+        (shiftMode == ShiftMode.LOCK && character.lockable)
+    ) character.secondary else character.primary
 
-    Button (
+    BaseKey (
         modifier = modifier
             .fillMaxHeight()
             .aspectRatio(1f),
-        shape = RoundedCornerShape(3.dp),
-        colors = getKeyColors(isPressed),
-        interactionSource = interactionSource,
         onClick = {
-            onKey(character.primary)
-            vibrate()
+            onKey(currentChar)
         }
     ) {
         Text(
-            text = character.primary.toString(),
+            text = currentChar.toString(),
+            color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
             fontSize = dpToSp(sizes.keyFontSize)
         )
     }

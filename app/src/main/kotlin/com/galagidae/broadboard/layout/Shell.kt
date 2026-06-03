@@ -13,10 +13,19 @@ fun Shell(
     onKey: (Char) -> Unit,
     onBackspace: () -> Unit,
     onEnter: () -> Unit,
+    autoShift: State<Boolean>,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
+
+    fun onKeyInner(c: Char): Unit {
+        if (shiftMode == ShiftMode.SHIFT) {
+            shiftMode = ShiftMode.NORMAL
+        }
+        onKey(c)
+    }
 
     AppTheme() {
         Column() {
@@ -27,13 +36,24 @@ fun Shell(
                 .height(sizes.panBoxHeight)
             ) {
                 StandardBoard(
-                    onKey = onKey,
-                    onEnter = onEnter
+                    onKey = ::onKeyInner,
+                    onEnter = onEnter,
+                    shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode
                 )
             }
             BottomRow(
                 onSpace = { onKey(' ') },
-                onBackspace = onBackspace
+                onBackspace = onBackspace,
+                onShift = {lc -> 
+                    when (shiftMode) {
+                        ShiftMode.NORMAL -> shiftMode = if (lc) ShiftMode.LOCK 
+                                                        else ShiftMode.SHIFT
+                        ShiftMode.SHIFT -> shiftMode = if (lc) ShiftMode.LOCK 
+                                                        else ShiftMode.NORMAL
+                        ShiftMode.LOCK -> shiftMode = ShiftMode.NORMAL
+                    }
+                },
+                shiftMode = if (autoShift.value && shiftMode != ShiftMode.LOCK) ShiftMode.SHIFT else shiftMode
             )
         }
     }

@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val shift: ImageVector
+public val shift_off: ImageVector
   get() {
-    if (_shift != null) {
-      return _shift!!
+    if (_shift_off != null) {
+      return _shift_off!!
     }
-    _shift =
+    _shift_off =
       ImageVector.Builder(
-          name = "shift",
+          name = "shift_off",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -58,7 +58,7 @@ public val shift: ImageVector
           }
         }
         .build()
-    return _shift!!
+    return _shift_off!!
   }
 
-private var _shift: ImageVector? = null
+private var _shift_off: ImageVector? = null

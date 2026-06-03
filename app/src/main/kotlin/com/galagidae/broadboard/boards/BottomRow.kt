@@ -11,13 +11,15 @@ import androidx.compose.ui.graphics.Color
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.*
-import com.galagidae.broadboard.boards.keys.BottomRowKey
+import com.galagidae.broadboard.boards.keys.IconKey
 
 
 @Composable
 fun BottomRow(
     onSpace: () -> Unit,
     onBackspace: () -> Unit,
+    onShift: (longClick: Boolean) -> Unit,
+    shiftMode: ShiftMode,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -31,19 +33,24 @@ fun BottomRow(
             .padding(horizontal = 8.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        BottomRowKey(
-            onClick = {},
+        IconKey(
+            onClick = {onShift(false)},
+            onLongClick = {onShift(true)},
             modifier = Modifier.weight(1f),
-            icon = shift,
+            icon = when(shiftMode) {
+                ShiftMode.NORMAL -> shift_off
+                ShiftMode.SHIFT -> shift_on
+                ShiftMode.LOCK -> shift_lock
+            },
             description = stringResource(R.string.key_shift)
         )        
-        BottomRowKey(
+        IconKey(
             onClick = onSpace,
             modifier = Modifier.weight(2f),
-            icon = space_bar,
+            icon = spacebar,
             description = stringResource(R.string.key_space)
         )
-        BottomRowKey(
+        IconKey(
             onClick = onBackspace,
             modifier = Modifier.weight(1f),
             icon = backspace,

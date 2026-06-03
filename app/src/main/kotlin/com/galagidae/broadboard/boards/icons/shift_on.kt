@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val spacebar: ImageVector
+public val shift_on: ImageVector
   get() {
-    if (_spacebar != null) {
-      return _spacebar!!
+    if (_shift_on != null) {
+      return _shift_on!!
     }
-    _spacebar =
+    _shift_on =
       ImageVector.Builder(
-          name = "spacebar",
+          name = "shift_on",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,20 +35,19 @@ public val spacebar: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(4f, 15f)
-            verticalLineTo(9f)
-            horizontalLineTo(6f)
-            verticalLineToRelative(4f)
-            horizontalLineTo(18f)
-            verticalLineTo(9f)
-            horizontalLineToRelative(2f)
-            verticalLineToRelative(6f)
-            horizontalLineTo(4f)
+            moveTo(8f, 21f)
+            verticalLineTo(13f)
+            horizontalLineTo(3f)
+            lineTo(12f, 2f)
+            lineToRelative(9f, 11f)
+            horizontalLineTo(16f)
+            verticalLineToRelative(8f)
+            horizontalLineTo(8f)
             close()
           }
         }
         .build()
-    return _spacebar!!
+    return _shift_on!!
   }
 
-private var _spacebar: ImageVector? = null
+private var _shift_on: ImageVector? = null
