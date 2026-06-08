@@ -17,6 +17,7 @@ fun StandardBoard(
     onKey: (Char) -> Unit,    
     onEnter: () -> Unit,
     shiftMode: ShiftMode,
+    inputContext: InputContext,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -49,6 +50,21 @@ fun StandardBoard(
                             icon = enter,
                             description = stringResource(R.string.key_enter)
                         )
+                        key is Contextual -> {
+                            val char = when(inputContext) {
+                                InputContext.NORMAL -> ','
+                                InputContext.URL -> '/'
+                                InputContext.EMAIL -> '@'
+                            }
+
+                            CharacterKey(
+                                character = Character(
+                                    primary = char,
+                                    secondary = char
+                                ),
+                                onKey = onKey,
+                            )
+                        }
                     }
                 }
             }

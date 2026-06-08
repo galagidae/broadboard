@@ -11,7 +11,7 @@ import com.galagidae.broadboard.*
 @Composable
 fun CharacterKey (
     onKey: (Char) -> Unit,    
-    shiftMode: ShiftMode,
+    shiftMode: ShiftMode = ShiftMode.NORMAL,
     modifier: Modifier = Modifier,
     character: Character
 ) {

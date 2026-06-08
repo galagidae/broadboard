@@ -10,6 +10,12 @@ data class Character(
 
 object Enter : Key()
 
+object Contextual : Key()
+
 enum class ShiftMode {
     NORMAL, SHIFT, LOCK
+}
+
+enum class InputContext {
+    NORMAL, URL, EMAIL
 }

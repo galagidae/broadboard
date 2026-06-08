@@ -77,7 +77,8 @@ val enUS: List<List<Key>> = listOf(
         hKey,
         jKey,
         kKey,
-        lKey
+        lKey,
+        Contextual,
     ),
     listOf(
         zKey,
@@ -89,8 +90,7 @@ val enUS: List<List<Key>> = listOf(
         mKey,
         Character(
             primary = '.',
-            secondary = ',',
-            lockable = false
+            secondary = '.'
         ),
         Enter
     ),

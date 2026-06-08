@@ -1,6 +1,7 @@
 package com.galagidae.broadboard
 
 import android.inputmethodservice.InputMethodService
+import android.text.InputType
 import android.view.inputmethod.*
 import android.view.View
 import androidx.compose.foundation.layout.*
@@ -19,6 +20,7 @@ class BroadBoardService : InputMethodService(),
     private val lifecycleRegistry = LifecycleRegistry(this)
     private val savedStateRegistryController = SavedStateRegistryController.create(this)
     private val autoShift = mutableStateOf(false)
+    private val inputContext = mutableStateOf<InputContext>(InputContext.NORMAL)
 
     override val lifecycle: Lifecycle get() = lifecycleRegistry
     override val savedStateRegistry: SavedStateRegistry
@@ -59,7 +61,8 @@ class BroadBoardService : InputMethodService(),
                         onKey = ::onKey,
                         onBackspace= ::onBackspace,
                         onEnter = ::onEnter,
-                        autoShift = autoShift
+                        autoShift = autoShift,
+                        inputContext = inputContext
                     )
                 }
             }
@@ -72,6 +75,7 @@ class BroadBoardService : InputMethodService(),
         val ic = getCurrentInputConnection() ?: return
 
         updateAutoCasing(ic, info)
+        setInputContext(info)
     }
 
     override fun onUpdateSelection(
@@ -120,5 +124,26 @@ class BroadBoardService : InputMethodService(),
     private fun updateAutoCasing(ic: InputConnection, ei: EditorInfo) {
         val mode = ic.getCursorCapsMode(ei.inputType)
         autoShift.value = mode != 0
+    }
+
+    private fun setInputContext(ei: EditorInfo) {
+        val inputClass = ei.inputType and InputType.TYPE_MASK_CLASS
+        val inputVariation = ei.inputType and InputType.TYPE_MASK_VARIATION
+
+        when (inputClass) {
+            InputType.TYPE_CLASS_TEXT -> {
+                when (inputVariation) {
+                    InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS,
+                    InputType.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS ->
+                        inputContext.value = InputContext.EMAIL
+                    InputType.TYPE_TEXT_VARIATION_URI ->
+                        inputContext.value = InputContext.URL
+                    else ->
+                        inputContext.value = InputContext.NORMAL
+                }
+            }
+            else ->
+                inputContext.value = InputContext.NORMAL
+        }        
     }
 }

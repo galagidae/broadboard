@@ -14,6 +14,7 @@ fun Shell(
     onBackspace: () -> Unit,
     onEnter: () -> Unit,
     autoShift: State<Boolean>,
+    inputContext: State<InputContext>,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -38,7 +39,8 @@ fun Shell(
                 StandardBoard(
                     onKey = ::onKeyInner,
                     onEnter = onEnter,
-                    shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode
+                    shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
+                    inputContext = inputContext.value
                 )
             }
             BottomRow(
