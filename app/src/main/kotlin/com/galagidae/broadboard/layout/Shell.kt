@@ -20,28 +20,44 @@ fun Shell(
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
     var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
+    var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
 
     fun onKeyInner(c: Char): Unit {
-        if (shiftMode == ShiftMode.SHIFT) {
+        if (shiftMode == ShiftMode.SHIFT && boardMode != BoardMode.SYMBOLS) {
             shiftMode = ShiftMode.NORMAL
         }
         onKey(c)
     }
 
+    fun onChangeMode(mode: BoardMode) {
+        boardMode = mode
+        shiftMode = ShiftMode.NORMAL
+    }
+
     AppTheme() {
         Column() {
-            PanBox(
-            modifier = Modifier
-                .fillMaxWidth()
-                .background(colors.mainBackground)
-                .height(sizes.panBoxHeight)
-            ) {
-                StandardBoard(
-                    onKey = ::onKeyInner,
-                    onEnter = onEnter,
-                    shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
-                    inputContext = inputContext.value
-                )
+            key(boardMode) {
+                PanBox(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(colors.mainBackground)
+                        .height(sizes.panBoxHeight)
+                ) {
+                    when (boardMode) {
+                        BoardMode.ALPHANUMERIC -> StandardBoard(
+                            onKey = ::onKeyInner,
+                            onEnter = onEnter,
+                            shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
+                            inputContext = inputContext.value,
+                            onChangeMode = ::onChangeMode
+                        )
+                        BoardMode.SYMBOLS -> SymbolsBoard(
+                            onKey = ::onKeyInner,
+                            shiftMode = shiftMode,
+                            onChangeMode = ::onChangeMode
+                        )
+                    }
+                }
             }
             BottomRow(
                 onSpace = { onKey(' ') },
@@ -55,7 +71,8 @@ fun Shell(
                         ShiftMode.LOCK -> shiftMode = ShiftMode.NORMAL
                     }
                 },
-                shiftMode = if (autoShift.value && shiftMode != ShiftMode.LOCK) ShiftMode.SHIFT else shiftMode
+                shiftMode = if (autoShift.value && shiftMode != ShiftMode.LOCK) ShiftMode.SHIFT else shiftMode,
+                boardMode = boardMode
             )
         }
     }

@@ -4,14 +4,13 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.*
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.*
-import com.galagidae.broadboard.boards.keys.IconKey
+import com.galagidae.broadboard.boards.keys.*
 
 
 @Composable
@@ -20,6 +19,7 @@ fun BottomRow(
     onBackspace: () -> Unit,
     onShift: (longClick: Boolean) -> Unit,
     shiftMode: ShiftMode,
+    boardMode: BoardMode,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -33,28 +33,25 @@ fun BottomRow(
             .padding(horizontal = 8.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        IconKey(
+        ShiftKey(
+            modifier = Modifier
+                .weight(1f),
+            boardMode = boardMode,
+            shiftMode = shiftMode,
             onClick = {onShift(false)},
-            onLongClick = {onShift(true)},
-            modifier = Modifier.weight(1f),
-            icon = when(shiftMode) {
-                ShiftMode.NORMAL -> shift_off
-                ShiftMode.SHIFT -> shift_on
-                ShiftMode.LOCK -> shift_lock
-            },
-            description = stringResource(R.string.key_shift)
-        )        
+            onLongClick = {onShift(true)},            
+        )
         IconKey(
             onClick = onSpace,
             modifier = Modifier.weight(2f),
             icon = spacebar,
-            description = stringResource(R.string.key_space)
+            description = R.string.key_space
         )
         IconKey(
             onClick = onBackspace,
             modifier = Modifier.weight(1f),
             icon = backspace,
-            description = stringResource(R.string.key_delete)
+            description = R.string.key_delete
         )              
     }
 }

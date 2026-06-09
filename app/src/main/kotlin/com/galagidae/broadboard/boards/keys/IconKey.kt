@@ -1,10 +1,12 @@
 package com.galagidae.broadboard.boards.keys
 
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.material3.Text
 import com.galagidae.broadboard.*
 
@@ -12,9 +14,28 @@ import com.galagidae.broadboard.*
 fun IconKey(
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
-    modifier: Modifier = Modifier,
     icon: ImageVector,
-    description: String
+    @StringRes description: Int,
+    modifier: Modifier = Modifier
+) {
+    val description = stringResource(description)
+
+    IconKey(
+        onClick = onClick,
+        onLongClick = onLongClick,
+        icon = icon,
+        description = description,
+        modifier = modifier,
+    )
+}
+
+@Composable
+fun IconKey(
+    onClick: (() -> Unit)? = null,
+    onLongClick: (() -> Unit)? = null,
+    icon: ImageVector,
+    description: String,
+    modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
@@ -23,6 +44,7 @@ fun IconKey(
         modifier = modifier
             .fillMaxHeight(),
         onClick = onClick,
+        description = description,
         onLongClick = onLongClick,
     ) {
         Icon(

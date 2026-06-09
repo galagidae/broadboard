@@ -3,8 +3,67 @@
     <string name="ime_name">BroadBoard</string>
 
     <!-- Keys -->
+    <string name="key_alpha">Letter Keyboard</string>
     <string name="key_delete">Delete</string>
+    <string name="key_emojis">Emoji Keyboard</string>
     <string name="key_enter">Enter</string>
     <string name="key_shift">Shift</string>
     <string name="key_space">Space</string>
+    <string name="key_symbols">Symbol Keyboard</string>
+    <string name="key_symbols_shift">Symbols</string>
+    <string name="key_symbols_more">More Symbols</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Ampersand</string>
+    <string name="sym_asterisk">Asterisk</string>
+    <string name="sym_atsign">At sign</string>
+    <string name="sym_backslash">Backslash</string>
+    <string name="sym_braceleft">Open curly brace</string>
+    <string name="sym_braceright">Close curly brace</string>    
+    <string name="sym_bracketleft">Open square bracket</string>
+    <string name="sym_bracketright">Close square bracket</string>
+    <string name="sym_bullet">Bullet</string>
+    <string name="sym_caret">Caret</string>
+    <string name="sym_cent">Cent sign</string>
+    <string name="sym_checkmark">Checkmark</string>
+    <string name="sym_colon">Colon</string>
+    <string name="sym_copyright">Copyright symbol</string>
+    <string name="sym_dash">Dash</string>
+    <string name="sym_degree">Degree Symbol</string>
+    <string name="sym_division">Division symbol</string>
+    <string name="sym_dollarsign">Dollar</string>
+    <string name="sym_ellipsis">Ellipsis</string>
+    <string name="sym_emdash">Em dash</string>
+    <string name="sym_endash">En dash</string>
+    <string name="sym_equals">Equals</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Exclamation Mark</string>
+    <string name="sym_exclamationinverted">Inverted Exclamation Mark</string>
+    <string name="sym_graveaccent">Grave accent</string>
+    <string name="sym_greaterthan">Greater than sign</string>
+    <string name="sym_hashtag">Hashtag</string>
+    <string name="sym_infinity">Infinity</string>
+    <string name="sym_lessthan">Less than sign</string>
+    <string name="sym_multiplication">Multiplication symbol</string>
+    <string name="sym_paragraph">Paragraph sign</string>
+    <string name="sym_parenleft">Open parenthesis</string>
+    <string name="sym_parenright">Close parenthesis</string>
+    <string name="sym_percent">Percent</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Vertical bar</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Pound currency sign</string>
+    <string name="sym_question">Question Mark</string>
+    <string name="sym_questioninverted">Inverted question Mark</string>
+    <string name="sym_quotedouble">Quote</string>
+    <string name="sym_quotesingle">Apostrophe</string>
+    <string name="sym_registered">Registered symbol</string>
+    <string name="sym_section">Section symbol</string>
+    <string name="sym_semicolon">Semicolon</string>
+    <string name="sym_slash">Slash</string>
+    <string name="sym_squareroot">Square root</string>
+    <string name="sym_tilde">Tilde</string>
+    <string name="sym_trademark">Trademark sign</string>
+    <string name="sym_underscore">Underscore</string>
+    <string name="sym_yen">Yen</string>
 </resources>

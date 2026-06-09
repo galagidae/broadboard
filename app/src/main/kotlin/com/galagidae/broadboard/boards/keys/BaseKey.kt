@@ -1,5 +1,6 @@
 package com.galagidae.broadboard.boards.keys
 
+import androidx.annotation.StringRes
 import androidx.compose.foundation.*
 import androidx.compose.foundation.interaction.*
 import androidx.compose.foundation.layout.*
@@ -7,6 +8,8 @@ import androidx.compose.foundation.shape.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.*
 import androidx.compose.ui.unit.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.utils.*
@@ -19,6 +22,43 @@ interface BaseKeyScope {
 fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
+    @StringRes description: Int,
+    modifier: Modifier = Modifier,
+    content: @Composable BaseKeyScope.() -> Unit
+) {
+    val description = stringResource(description)
+
+    BaseKey(
+        onClick = onClick,
+        onLongClick = onLongClick,
+        description = description,
+        modifier = modifier,
+        content = content
+    )
+}
+
+@Composable
+fun BaseKey (
+    onClick: (() -> Unit)? = null,
+    onLongClick: (() -> Unit)? = null,
+    description: Char,
+    modifier: Modifier = Modifier,
+    content: @Composable BaseKeyScope.() -> Unit
+) {
+    BaseKey(
+        onClick = onClick,
+        onLongClick = onLongClick,
+        description = description.toString(),
+        modifier = modifier,
+        content = content
+    )    
+}
+
+@Composable
+fun BaseKey (
+    onClick: (() -> Unit)? = null,
+    onLongClick: (() -> Unit)? = null,
+    description: String,
     modifier: Modifier = Modifier,
     content: @Composable BaseKeyScope.() -> Unit
 ) {
@@ -33,6 +73,9 @@ fun BaseKey (
     
     Box (
         modifier = modifier
+            .clearAndSetSemantics {
+                contentDescription = description
+            }
             .background(if (isPressed) colors.keyBackgroundPressed else colors.keyBackground)
             .clip(RoundedCornerShape(3.dp))
             .combinedClickable(

@@ -5,55 +5,45 @@ import com.galagidae.broadboard.*
 
 val enUS: List<List<Key>> = listOf(
     listOf(
-        Character(
-            primary = '1',
-            secondary = '!',
-            lockable = false,
+        SymbolSet(
+            primary = oneKey,
+            secondary = exclamation,
         ),
-        Character(
-            primary = '2',
-            secondary = '@',
-            lockable = false,
+        SymbolSet(
+            primary = twoKey,
+            secondary = atSign,
         ),
-        Character(
-            primary = '3',
-            secondary = '#',
-            lockable = false,
+        SymbolSet(
+            primary = threeKey,
+            secondary = hashtag,
         ),
-        Character(
-            primary = '4',
-            secondary = '$',
-            lockable = false,
+        SymbolSet(
+            primary = fourKey,
+            secondary = dollarSign,
         ),
-        Character(
-            primary = '5',
-            secondary = '%',
-            lockable = false,
+        SymbolSet(
+            primary = fiveKey,
+            secondary = percent,
         ),
-        Character(
-            primary = '6',
-            secondary = '^',
-            lockable = false,
+        SymbolSet(
+            primary = sixKey,
+            secondary = caret,
         ),
-        Character(
-            primary = '7',
-            secondary = '&',
-            lockable = false,
+        SymbolSet(
+            primary = sevenKey,
+            secondary = ampersand,
         ),
-        Character(
-            primary = '8',
-            secondary = '*',
-            lockable = false,
+        SymbolSet(
+            primary = eightKey,
+            secondary = asterisk,
         ),                                                        
-        Character(
-            primary = '9',
-            secondary = '(',
-            lockable = false,
+        SymbolSet(
+            primary = nineKey,
+            secondary = parenLeft,
         ),
-        Character(
-            primary = '0',
-            secondary = ')',
-            lockable = false,
+        SymbolSet(
+            primary = zeroKey,
+            secondary = parenRight,
         ),
     ),
     listOf(

@@ -18,7 +18,9 @@ data class SizeTheme(
     val rowHeight: Dp = 150.dp,
     val keyFontSize: Dp = 48.dp,
     val keyIconSize: Dp = 96.dp,
-    val enterKeyWidth: Dp = 225.dp
+    val keySpacing: Dp = 6.dp,
+    val enterKeyWidth: Dp = 225.dp,
+    val modeKeyFontSize: Dp = 24.dp,
 )
 
 val lightTheme = ColorTheme()
