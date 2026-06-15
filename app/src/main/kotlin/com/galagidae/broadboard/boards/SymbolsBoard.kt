@@ -11,7 +11,48 @@ import com.galagidae.broadboard.boards.icons.enter
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
 
-val symbols: List<List<Key>> = listOf(
+@Composable
+fun SymbolsBoard(
+    onKey: ((Char) -> Unit)? = null,
+    onChangeMode: ((mode: BoardMode) -> Unit)? = null,
+    shiftMode: ShiftMode,
+    modifier: Modifier = Modifier
+) {
+    val sizes = LocalSizeTheme.current
+
+    Column(
+        verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
+    ) {
+        symbols.forEach { row ->
+            Row(
+                modifier = modifier
+                    .height(sizes.rowHeight),
+                horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing),
+            ) {
+                row.forEach { key ->
+                    when {
+                        key is SymbolSet -> SymbolKey(
+                            symbolSet = key,
+                            onKey = onKey,
+                            shiftMode = shiftMode
+                        )
+                        key is Alpha -> ModeKey(
+                            modifier = Modifier
+                                .height(sizes.rowHeight)
+                                .aspectRatio(1f),
+                            label = "abc",
+                            description = R.string.key_alpha,
+                            onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }
+                        )
+                        else -> {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+private val symbols: List<List<Key>> = listOf(
     listOf(
         SymbolSet(
             primary = exclamation,
@@ -122,44 +163,3 @@ val symbols: List<List<Key>> = listOf(
         ),
     )
 )
-
-@Composable
-fun SymbolsBoard(
-    onKey: ((Char) -> Unit)? = null,
-    onChangeMode: ((mode: BoardMode) -> Unit)? = null,
-    shiftMode: ShiftMode,
-    modifier: Modifier = Modifier
-) {
-    val sizes = LocalSizeTheme.current
-
-    Column(
-        verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
-    ) {
-        symbols.forEach { row ->
-            Row(
-                modifier = modifier
-                    .height(sizes.rowHeight),
-                horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing),
-            ) {
-                row.forEach { key ->
-                    when {
-                        key is SymbolSet -> SymbolKey(
-                            symbolSet = key,
-                            onKey = onKey,
-                            shiftMode = shiftMode
-                        )
-                        key is Alpha -> ModeKey(
-                            modifier = Modifier
-                                .height(sizes.rowHeight)
-                                .aspectRatio(1f),
-                            label = "abc",
-                            description = R.string.key_alpha,
-                            onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }
-                        )
-                        else -> {}
-                    }
-                }
-            }
-        }
-    }
-}

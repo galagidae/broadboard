@@ -19,6 +19,11 @@ data class SymbolSet(
     val secondary: Symbol,
 ) : Key()
 
+data class Emoji(
+    val primary: String,
+    val secondary: String,
+) : Key()
+
 object Enter : Key()
 
 object Contextual : Key()
@@ -34,5 +39,5 @@ enum class InputContext {
 }
 
 enum class BoardMode {
-    ALPHANUMERIC, SYMBOLS
+    ALPHANUMERIC, SYMBOLS, EMOJIS
 }

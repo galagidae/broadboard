@@ -27,6 +27,11 @@ fun ShiftKey(
                 R.string.key_symbols_more 
             else 
                 R.string.key_symbols_shift
+        BoardMode.EMOJIS ->  
+            if(shiftMode == ShiftMode.NORMAL) 
+                R.string.key_emojis_sad 
+            else 
+                R.string.key_emojis_happy                
         else ->
             R.string.key_shift
     }
@@ -35,14 +40,27 @@ fun ShiftKey(
         modifier = modifier
             .fillMaxHeight(),
         onClick = onClick,
-        onLongClick = onLongClick,
+        onLongClick = {
+            when(boardMode){
+                BoardMode.ALPHANUMERIC -> onLongClick?.invoke()
+                else -> onClick?.invoke()
+            }
+        },
         description = description
     ) {
         when(boardMode) {
             BoardMode.SYMBOLS -> Text(
                 text = when(shiftMode) {
-                    ShiftMode.NORMAL -> "!?:/"
-                    else -> "¡¿;\\"
+                    ShiftMode.NORMAL -> "¡¿;\\"
+                    else -> "!?:/"
+                },
+                color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
+                fontSize = dpToSp(sizes.modeKeyFontSize)
+            )
+            BoardMode.EMOJIS -> Text(
+                text = when(shiftMode) {
+                    ShiftMode.NORMAL -> "🙁"
+                    else -> "🙂"
                 },
                 color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
                 fontSize = dpToSp(sizes.modeKeyFontSize)

@@ -10,7 +10,7 @@ import com.galagidae.broadboard.boards.*
 
 @Composable
 fun Shell(
-    onKey: (Char) -> Unit,
+    onInput: (String) -> Unit,
     onBackspace: () -> Unit,
     onEnter: () -> Unit,
     autoShift: State<Boolean>,
@@ -22,11 +22,11 @@ fun Shell(
     var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
     var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
 
-    fun onKeyInner(c: Char): Unit {
-        if (shiftMode == ShiftMode.SHIFT && boardMode != BoardMode.SYMBOLS) {
+    fun onInputInner(t: String): Unit {
+        if (shiftMode == ShiftMode.SHIFT && boardMode == BoardMode.ALPHANUMERIC) {
             shiftMode = ShiftMode.NORMAL
         }
-        onKey(c)
+        onInput(t)
     }
 
     fun onChangeMode(mode: BoardMode) {
@@ -45,14 +45,19 @@ fun Shell(
                 ) {
                     when (boardMode) {
                         BoardMode.ALPHANUMERIC -> StandardBoard(
-                            onKey = ::onKeyInner,
+                            onKey = { c -> onInputInner(c.toString()) },
                             onEnter = onEnter,
                             shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
                             inputContext = inputContext.value,
                             onChangeMode = ::onChangeMode
                         )
                         BoardMode.SYMBOLS -> SymbolsBoard(
-                            onKey = ::onKeyInner,
+                            onKey = { c -> onInputInner(c.toString()) },
+                            shiftMode = shiftMode,
+                            onChangeMode = ::onChangeMode
+                        )
+                        BoardMode.EMOJIS -> EmojisBoard(
+                            onKey = ::onInputInner,
                             shiftMode = shiftMode,
                             onChangeMode = ::onChangeMode
                         )
@@ -60,7 +65,7 @@ fun Shell(
                 }
             }
             BottomRow(
-                onSpace = { onKey(' ') },
+                onSpace = { onInputInner(" ") },
                 onBackspace = onBackspace,
                 onShift = {lc -> 
                     when (shiftMode) {

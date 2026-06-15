@@ -28,7 +28,8 @@ fun StandardBoard(
         horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing),
     ) {
         Column(modifier = Modifier
-            .width(sizes.rowHeight)
+                .width(sizes.rowHeight),
+            verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
         ) {
             ModeKey(
                 label = "?!;()",
@@ -38,6 +39,14 @@ fun StandardBoard(
                     .height(sizes.rowHeight)
                     .aspectRatio(1f)
             )
+            ModeKey(
+                label = "🙂",
+                description = R.string.key_emojis,
+                onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
+                modifier = Modifier
+                    .height(sizes.rowHeight)
+                    .aspectRatio(1f)
+            )            
         }
         Column(
             modifier = Modifier

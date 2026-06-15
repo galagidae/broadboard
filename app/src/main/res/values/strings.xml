@@ -5,6 +5,8 @@
     <!-- Keys -->
     <string name="key_alpha">Letter Keyboard</string>
     <string name="key_delete">Delete</string>
+    <string name="key_emojis_happy">Happy Emojis</string>
+    <string name="key_emojis_sad">Sad Emojis</string>
     <string name="key_emojis">Emoji Keyboard</string>
     <string name="key_enter">Enter</string>
     <string name="key_shift">Shift</string>

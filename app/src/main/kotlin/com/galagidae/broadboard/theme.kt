@@ -17,6 +17,7 @@ data class SizeTheme(
     val bottomRowHeight: Dp = 100.dp,
     val rowHeight: Dp = 150.dp,
     val keyFontSize: Dp = 48.dp,
+    val keyEmojiFontSize: Dp = 36.dp,
     val keyIconSize: Dp = 96.dp,
     val keySpacing: Dp = 6.dp,
     val enterKeyWidth: Dp = 225.dp,

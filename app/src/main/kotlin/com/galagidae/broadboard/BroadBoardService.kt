@@ -58,7 +58,7 @@ class BroadBoardService : InputMethodService(),
                     .padding(bottom = navBarBottom),
                 ) {
                     Shell(
-                        onKey = ::onKey,
+                        onInput = ::inputText,
                         onBackspace= ::onBackspace,
                         onEnter = ::onEnter,
                         autoShift = autoShift,
@@ -94,10 +94,10 @@ class BroadBoardService : InputMethodService(),
         updateAutoCasing(ic, ei)
     }    
 
-    private fun onKey(char: Char) {
+    private fun inputText(text: String) {
         val ic = getCurrentInputConnection() ?: return
         
-        ic.commitText(char.toString(), 1)
+        ic.commitText(text, 1)
     }
 
     private fun onBackspace() {
