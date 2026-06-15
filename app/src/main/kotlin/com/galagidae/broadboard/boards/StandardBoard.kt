@@ -40,6 +40,14 @@ fun StandardBoard(
                     .aspectRatio(1f)
             )
             ModeKey(
+                label = "123",
+                description = R.string.key_symbols,
+                onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) },
+                modifier = Modifier
+                    .height(sizes.rowHeight)
+                    .aspectRatio(1f)
+            )            
+            ModeKey(
                 label = "🙂",
                 description = R.string.key_emojis,
                 onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },

@@ -39,5 +39,5 @@ enum class InputContext {
 }
 
 enum class BoardMode {
-    ALPHANUMERIC, SYMBOLS, EMOJIS
+    ALPHANUMERIC, SYMBOLS, EMOJIS, NUMERIC
 }

@@ -13,7 +13,7 @@ data class ColorTheme(
 )
 
 data class SizeTheme(
-    val panBoxHeight: Dp = 350.dp,
+    val panBoxHeight: Dp = 306.dp,
     val bottomRowHeight: Dp = 100.dp,
     val rowHeight: Dp = 150.dp,
     val keyFontSize: Dp = 48.dp,
@@ -22,6 +22,8 @@ data class SizeTheme(
     val keySpacing: Dp = 6.dp,
     val enterKeyWidth: Dp = 225.dp,
     val modeKeyFontSize: Dp = 24.dp,
+    val appHeight: Dp = 406.dp,
+    val numericFontSize: Dp = 36.dp,
 )
 
 val lightTheme = ColorTheme()

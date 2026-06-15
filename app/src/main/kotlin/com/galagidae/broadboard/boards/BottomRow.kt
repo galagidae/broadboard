@@ -52,6 +52,6 @@ fun BottomRow(
             modifier = Modifier.weight(1f),
             icon = backspace,
             description = R.string.key_delete
-        )              
+        )
     }
 }
