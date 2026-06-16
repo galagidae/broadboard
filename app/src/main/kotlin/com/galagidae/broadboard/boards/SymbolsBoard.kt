@@ -10,6 +10,7 @@ import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.enter
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun SymbolsBoard(
@@ -34,12 +35,11 @@ fun SymbolsBoard(
                         key is SymbolSet -> SymbolKey(
                             symbolSet = key,
                             onKey = onKey,
-                            shiftMode = shiftMode
+                            shiftMode = shiftMode,
+                            modifier = Modifier.bodyKey()
                         )
                         key is Alpha -> ModeKey(
-                            modifier = Modifier
-                                .height(sizes.rowHeight)
-                                .aspectRatio(1f),
+                            modifier = Modifier.bodyKey(),
                             label = "abc",
                             description = R.string.key_alpha,
                             onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }

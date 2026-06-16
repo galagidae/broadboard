@@ -37,8 +37,7 @@ fun ShiftKey(
     }
 
     BaseKey(
-        modifier = modifier
-            .fillMaxHeight(),
+        modifier = modifier,
         onClick = onClick,
         onLongClick = {
             when(boardMode){

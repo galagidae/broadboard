@@ -22,9 +22,7 @@ fun CharacterKey (
         character.secondary
 
     BaseKey (
-        modifier = modifier
-            .fillMaxHeight()
-            .aspectRatio(1f),
+        modifier = modifier,
         description = currentChar,
         onClick = {
             onKey?.invoke(currentChar)

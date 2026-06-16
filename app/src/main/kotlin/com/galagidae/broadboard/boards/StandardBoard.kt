@@ -10,6 +10,7 @@ import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.enter
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun StandardBoard(
@@ -35,25 +36,19 @@ fun StandardBoard(
                 label = "?!;()",
                 description = R.string.key_symbols,
                 onClick = { onChangeMode?.invoke(BoardMode.SYMBOLS) },
-                modifier = Modifier
-                    .height(sizes.rowHeight)
-                    .aspectRatio(1f)
+                modifier = Modifier.bodyKey()
             )
             ModeKey(
                 label = "123",
                 description = R.string.key_symbols,
                 onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) },
-                modifier = Modifier
-                    .height(sizes.rowHeight)
-                    .aspectRatio(1f)
+                modifier = Modifier.bodyKey()
             )            
             ModeKey(
                 label = "🙂",
                 description = R.string.key_emojis,
                 onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
-                modifier = Modifier
-                    .height(sizes.rowHeight)
-                    .aspectRatio(1f)
+                modifier = Modifier.bodyKey()
             )            
         }
         Column(
@@ -74,12 +69,14 @@ fun StandardBoard(
                             key is Character -> CharacterKey(
                                 character = key,
                                 onKey = onKey,
-                                shiftMode = shiftMode
+                                shiftMode = shiftMode,
+                                modifier = Modifier.bodyKey()
                             )
                             key is SymbolSet -> SymbolKey(
                                 symbolSet = key,
                                 onKey = onKey,
-                                shiftMode = shiftMode
+                                shiftMode = shiftMode,
+                                modifier = Modifier.bodyKey()
                             )                            
                             key is Enter -> IconKey(
                                 onClick = onEnter,
@@ -101,6 +98,7 @@ fun StandardBoard(
                                         secondary = char
                                     ),
                                     onKey = onKey,
+                                    modifier = Modifier.bodyKey()
                                 )
                             }
                         }

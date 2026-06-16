@@ -23,9 +23,7 @@ fun EmojiKey (
         emoji.primary
 
     BaseKey (
-        modifier = modifier
-            .fillMaxHeight()
-            .aspectRatio(1f),
+        modifier = modifier,
         description = currentEmoji,
         onClick = {
             onKey?.invoke(currentEmoji)

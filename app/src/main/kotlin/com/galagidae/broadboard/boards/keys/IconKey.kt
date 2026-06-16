@@ -41,8 +41,7 @@ fun IconKey(
     val sizes = LocalSizeTheme.current
 
     BaseKey(
-        modifier = modifier
-            .fillMaxHeight(),
+        modifier = modifier,
         onClick = onClick,
         description = description,
         onLongClick = onLongClick,

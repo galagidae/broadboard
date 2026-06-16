@@ -35,21 +35,26 @@ fun BottomRow(
     ) {
         ShiftKey(
             modifier = Modifier
-                .weight(1f),
+                .weight(1f)
+                .fillMaxHeight(),
             boardMode = boardMode,
             shiftMode = shiftMode,
             onClick = {onShift(false)},
             onLongClick = {onShift(true)},            
         )
         IconKey(
+            modifier = Modifier
+                .weight(2f)
+                .fillMaxHeight(),            
             onClick = onSpace,
-            modifier = Modifier.weight(2f),
             icon = spacebar,
             description = R.string.key_space
         )
         IconKey(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxHeight(),
             onClick = onBackspace,
-            modifier = Modifier.weight(1f),
             icon = backspace,
             description = R.string.key_delete
         )

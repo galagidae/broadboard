@@ -10,6 +10,7 @@ import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.enter
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun EmojisBoard(
@@ -32,14 +33,13 @@ fun EmojisBoard(
                 row.forEach { key ->
                     when {
                         key is Emoji -> EmojiKey(
+                            modifier = Modifier.bodyKey(),
                             emoji = key,
                             onKey = onKey,
                             shiftMode = shiftMode
                         )
                         key is Alpha -> ModeKey(
-                            modifier = Modifier
-                                .height(sizes.rowHeight)
-                                .aspectRatio(1f),
+                            modifier = Modifier.bodyKey(),
                             label = "abc",
                             description = R.string.key_alpha,
                             onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }

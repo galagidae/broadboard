@@ -27,9 +27,7 @@ fun SymbolKey (
         currentSymbol.character.toString()
 
     BaseKey (
-        modifier = modifier
-            .fillMaxHeight()
-            .aspectRatio(1f),
+        modifier = modifier,
         description = description,
         onClick = {
             onKey?.invoke(currentSymbol.character)
