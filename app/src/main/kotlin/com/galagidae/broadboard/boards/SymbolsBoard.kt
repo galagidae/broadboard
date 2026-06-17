@@ -44,6 +44,10 @@ fun SymbolsBoard(
                             description = R.string.key_alpha,
                             onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }
                         )
+                        key is Menu -> MenuKey(
+                            modifier = Modifier.bodyKey(),                            
+                            onClick = { onChangeMode?.invoke(BoardMode.MENU) }
+                        )
                         else -> {}
                     }
                 }
@@ -54,6 +58,7 @@ fun SymbolsBoard(
 
 private val symbols: List<List<Key>> = listOf(
     listOf(
+        Menu,
         SymbolSet(
             primary = exclamation,
             secondary = exclamationInverted,

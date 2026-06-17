@@ -32,6 +32,10 @@ fun StandardBoard(
                 .width(sizes.rowHeight),
             verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
         ) {
+            MenuKey(
+                onClick = { onChangeMode?.invoke(BoardMode.MENU) },
+                modifier = Modifier.bodyKey()
+            )
             ModeKey(
                 label = "?!;()",
                 description = R.string.key_symbols,
@@ -40,7 +44,7 @@ fun StandardBoard(
             )
             ModeKey(
                 label = "123",
-                description = R.string.key_symbols,
+                description = R.string.key_numeric,
                 onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) },
                 modifier = Modifier.bodyKey()
             )            
@@ -49,7 +53,7 @@ fun StandardBoard(
                 description = R.string.key_emojis,
                 onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
                 modifier = Modifier.bodyKey()
-            )            
+            )
         }
         Column(
             modifier = Modifier

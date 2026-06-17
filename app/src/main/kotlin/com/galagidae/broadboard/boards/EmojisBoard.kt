@@ -38,6 +38,10 @@ fun EmojisBoard(
                             onKey = onKey,
                             shiftMode = shiftMode
                         )
+                        key is Menu -> MenuKey(
+                            modifier = Modifier.bodyKey(),
+                            onClick = { onChangeMode?.invoke(BoardMode.MENU) }
+                        )
                         key is Alpha -> ModeKey(
                             modifier = Modifier.bodyKey(),
                             label = "abc",
@@ -54,6 +58,7 @@ fun EmojisBoard(
 
 private val emojis: List<List<Key>> = listOf(
     listOf(
+        Menu,
         Emoji(
             primary = "🙂",
             secondary = "🙁"

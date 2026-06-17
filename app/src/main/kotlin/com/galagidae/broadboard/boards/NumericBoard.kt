@@ -50,13 +50,9 @@ fun NumericBoard(
                 .fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing)
         ) {
-            ModeKey(
-                modifier = Modifier
-                    .fillMaxHeight()
-                    .weight(1f),
-                label = "abc",
-                description = R.string.key_alpha,
-                onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }
+            MenuKey(
+                onClick = { onChangeMode?.invoke(BoardMode.MENU) },
+                modifier = Modifier.weight(1f)
             )
             NumberKey(
                 number = '0',
@@ -74,7 +70,7 @@ fun NumericBoard(
 }
 
 @Composable
-fun NumberKey(
+private fun NumberKey(
     number: Char, 
     onClick: ((char: Char) -> Unit)? = null,
     modifier: Modifier = Modifier

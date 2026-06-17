@@ -30,6 +30,8 @@ object Contextual : Key()
 
 object Alpha : Key()
 
+object Menu : Key()
+
 enum class ShiftMode {
     NORMAL, SHIFT, LOCK
 }
@@ -39,5 +41,5 @@ enum class InputContext {
 }
 
 enum class BoardMode {
-    ALPHANUMERIC, SYMBOLS, EMOJIS, NUMERIC
+    ALPHANUMERIC, SYMBOLS, EMOJIS, NUMERIC, MENU
 }

@@ -41,6 +41,9 @@ fun Shell(
                 onBackspace = onBackspace,
                 onChangeMode = ::onChangeMode
             )
+            BoardMode.MENU -> MenuBoard(
+                onChangeMode = ::onChangeMode
+            )
             else -> Column() {
                 key(boardMode) {
                     PanBox(
