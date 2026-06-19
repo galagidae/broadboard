@@ -1,5 +1,6 @@
 package com.galagidae.broadboard
 
+import android.content.Context
 import android.inputmethodservice.InputMethodService
 import android.text.InputType
 import android.view.inputmethod.*
@@ -21,6 +22,9 @@ class BroadBoardService : InputMethodService(),
     private val savedStateRegistryController = SavedStateRegistryController.create(this)
     private val autoShift = mutableStateOf(false)
     private val inputContext = mutableStateOf<InputContext>(InputContext.NORMAL)
+    private val inputManager: InputMethodManager by lazy {
+        getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    }
 
     override val lifecycle: Lifecycle get() = lifecycleRegistry
     override val savedStateRegistry: SavedStateRegistry
@@ -62,7 +66,8 @@ class BroadBoardService : InputMethodService(),
                         onBackspace= ::onBackspace,
                         onEnter = ::onEnter,
                         autoShift = autoShift,
-                        inputContext = inputContext
+                        inputContext = inputContext,
+                        onClickKeyboardPicker = ::showKeyboardPicker
                     )
                 }
             }
@@ -145,5 +150,9 @@ class BroadBoardService : InputMethodService(),
             else ->
                 inputContext.value = InputContext.NORMAL
         }        
+    }
+
+    private fun showKeyboardPicker() {
+        inputManager.showInputMethodPicker();
     }
 }

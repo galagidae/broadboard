@@ -10,10 +10,12 @@ import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.*
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.utils.*
+import com.galagidae.broadboard.boards.icons.*
 
 @Composable
 fun MenuBoard(
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
+    onClickKeyboardPicker: (() -> Unit)? = null,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -52,6 +54,12 @@ fun MenuBoard(
                 label = "🙂",
                 description = R.string.key_emojis,
                 onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
+            )
+            IconKey(
+                modifier = menuKey,
+                onClick = onClickKeyboardPicker,
+                icon = keyboard,
+                description = R.string.key_picker
             )
         }
     }

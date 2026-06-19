@@ -85,7 +85,8 @@ fun StandardBoard(
                             key is Enter -> IconKey(
                                 onClick = onEnter,
                                 modifier = Modifier
-                                    .width(sizes.enterKeyWidth),
+                                    .width(sizes.enterKeyWidth)
+                                    .fillMaxHeight(),
                                 icon = enter,
                                 description = R.string.key_enter
                             )

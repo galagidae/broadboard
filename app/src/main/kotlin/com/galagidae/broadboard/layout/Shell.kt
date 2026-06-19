@@ -15,6 +15,7 @@ fun Shell(
     onEnter: () -> Unit,
     autoShift: State<Boolean>,
     inputContext: State<InputContext>,
+    onClickKeyboardPicker: (() -> Unit)? = null,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -42,7 +43,8 @@ fun Shell(
                 onChangeMode = ::onChangeMode
             )
             BoardMode.MENU -> MenuBoard(
-                onChangeMode = ::onChangeMode
+                onChangeMode = ::onChangeMode,
+                onClickKeyboardPicker = onClickKeyboardPicker
             )
             else -> Column() {
                 key(boardMode) {
