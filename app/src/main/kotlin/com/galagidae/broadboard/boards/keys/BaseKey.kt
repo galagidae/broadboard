@@ -84,9 +84,11 @@ fun BaseKey (
                     onClick?.invoke()
                     vibrate()
                 },
-                onLongClick = {
-                    onLongClick?.invoke() ?: onClick?.invoke()
-                    vibrate()
+                onLongClick = onLongClick?.let { handler ->
+                    {
+                        handler()
+                        vibrate()
+                    }
                 }
             ),
         contentAlignment = Alignment.Center,
