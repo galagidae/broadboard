@@ -23,6 +23,7 @@ fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
     @StringRes description: Int,
+    repeating: Boolean = false,
     modifier: Modifier = Modifier,
     content: @Composable BaseKeyScope.() -> Unit
 ) {
@@ -32,6 +33,7 @@ fun BaseKey (
         onClick = onClick,
         onLongClick = onLongClick,
         description = description,
+        repeating = repeating,
         modifier = modifier,
         content = content
     )
@@ -42,6 +44,7 @@ fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
     description: Char,
+    repeating: Boolean = false,
     modifier: Modifier = Modifier,
     content: @Composable BaseKeyScope.() -> Unit
 ) {
@@ -49,6 +52,7 @@ fun BaseKey (
         onClick = onClick,
         onLongClick = onLongClick,
         description = description.toString(),
+        repeating = repeating,
         modifier = modifier,
         content = content
     )    
@@ -59,8 +63,9 @@ fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
     description: String,
+    repeating: Boolean = false,
     modifier: Modifier = Modifier,
-    content: @Composable BaseKeyScope.() -> Unit
+    content: @Composable BaseKeyScope.() -> Unit,
 ) {
     val colors = LocalColorTheme.current
     val interactionSource = remember { MutableInteractionSource() }
@@ -69,7 +74,27 @@ fun BaseKey (
 
     val scope = object : BaseKeyScope {
         override val isPressed = isPressed
-    }    
+    }
+
+    val clickable = if (repeating) {
+        Modifier.repeatClick(
+            interactionSource = interactionSource,
+            onClick = { onClick?.invoke() },
+            onRelease = { vibrate() }   // matches your old Buzz()-on-UP
+        )
+    } else {
+        Modifier.combinedClickable(
+            interactionSource = interactionSource,
+            onClick = {
+                onClick?.invoke()
+                vibrate()
+            },
+            onLongClick = {
+                onLongClick?.invoke() ?: onClick?.invoke()
+                vibrate()
+            }
+        )
+    }
     
     Box (
         modifier = modifier
@@ -78,19 +103,7 @@ fun BaseKey (
             }
             .background(if (isPressed) colors.keyBackgroundPressed else colors.keyBackground)
             .clip(RoundedCornerShape(3.dp))
-            .combinedClickable(
-                interactionSource = interactionSource,
-                onClick = {
-                    onClick?.invoke()
-                    vibrate()
-                },
-                onLongClick = onLongClick?.let { handler ->
-                    {
-                        handler()
-                        vibrate()
-                    }
-                }
-            ),
+            .then(clickable),
         contentAlignment = Alignment.Center,
     ) {
         scope.content()

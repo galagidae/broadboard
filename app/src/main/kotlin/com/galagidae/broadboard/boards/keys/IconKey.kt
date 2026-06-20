@@ -16,6 +16,7 @@ fun IconKey(
     onLongClick: (() -> Unit)? = null,
     icon: ImageVector,
     @StringRes description: Int,
+    repeating: Boolean = false,    
     modifier: Modifier = Modifier
 ) {
     val description = stringResource(description)
@@ -25,6 +26,7 @@ fun IconKey(
         onLongClick = onLongClick,
         icon = icon,
         description = description,
+        repeating = repeating,
         modifier = modifier,
     )
 }
@@ -35,6 +37,7 @@ fun IconKey(
     onLongClick: (() -> Unit)? = null,
     icon: ImageVector,
     description: String,
+    repeating: Boolean = false,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -44,6 +47,7 @@ fun IconKey(
         modifier = modifier,
         onClick = onClick,
         description = description,
+        repeating = repeating,
         onLongClick = onLongClick,
     ) {
         Icon(

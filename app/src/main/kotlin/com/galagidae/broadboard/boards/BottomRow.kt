@@ -56,7 +56,8 @@ fun BottomRow(
                 .fillMaxHeight(),
             onClick = onBackspace,
             icon = backspace,
-            description = R.string.key_delete
+            description = R.string.key_delete,
+            repeating = true
         )
     }
 }
