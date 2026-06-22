@@ -10,6 +10,7 @@ import com.galagidae.broadboard.utils.*
 @Composable
 fun CharacterKey (
     onKey: ((Char) -> Unit)? = null,
+    onLongClick: (() -> Unit)? = null,
     shiftMode: ShiftMode = ShiftMode.NORMAL,
     character: Character,
     modifier: Modifier = Modifier
@@ -26,7 +27,8 @@ fun CharacterKey (
         description = currentChar,
         onClick = {
             onKey?.invoke(currentChar)
-        }
+        },
+        onLongClick = onLongClick
     ) {
         Text(
             text = currentChar.toString(),

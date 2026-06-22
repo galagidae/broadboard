@@ -22,6 +22,7 @@ fun Shell(
     val sizes = LocalSizeTheme.current
     var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
     var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
+    var alternate by remember { mutableStateOf<Alternate?>(null) }
 
     fun onInputInner(t: String): Unit {
         if (shiftMode == ShiftMode.SHIFT && boardMode == BoardMode.ALPHANUMERIC) {
@@ -33,6 +34,15 @@ fun Shell(
     fun onChangeMode(mode: BoardMode) {
         boardMode = mode
         shiftMode = ShiftMode.NORMAL
+    }
+
+    fun onClickAlternate(alt: Alternate) {
+        alternate = alt
+    }
+
+    fun closeAlternate() {
+        boardMode = BoardMode.ALPHANUMERIC  
+        alternate = null
     }
 
     AppTheme() {
@@ -47,7 +57,7 @@ fun Shell(
                 onClickKeyboardPicker = onClickKeyboardPicker
             )
             else -> Column() {
-                key(boardMode) {
+                key(boardMode, alternate) {
                     PanBox(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -55,13 +65,29 @@ fun Shell(
                             .height(sizes.panBoxHeight)
                     ) {
                         when (boardMode) {
-                            BoardMode.ALPHANUMERIC -> StandardBoard(
-                                onKey = { c -> onInputInner(c.toString()) },
-                                onEnter = onEnter,
-                                shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
-                                inputContext = inputContext.value,
-                                onChangeMode = ::onChangeMode
-                            )
+                            BoardMode.ALPHANUMERIC -> {
+                                val alt = alternate
+                                
+                                if (alt != null)
+                                    AlternateBoard(
+                                        onKey = { c -> 
+                                            onInputInner(c.toString())
+                                            closeAlternate()
+                                        },
+                                        shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
+                                        alternate = alt,
+                                        visibleWidth = visibleWidth,
+                                        visibleHeight = visibleHeight
+                                    )
+                                else StandardBoard(
+                                    onKey = { c -> onInputInner(c.toString()) },
+                                    onEnter = onEnter,
+                                    shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
+                                    inputContext = inputContext.value,
+                                    onChangeMode = ::onChangeMode,
+                                    onClickAlternate = ::onClickAlternate
+                                )
+                            }
                             BoardMode.SYMBOLS -> SymbolsBoard(
                                 onKey = { c -> onInputInner(c.toString()) },
                                 shiftMode = shiftMode,
@@ -89,7 +115,9 @@ fun Shell(
                         }
                     },
                     shiftMode = if (autoShift.value && shiftMode != ShiftMode.LOCK) ShiftMode.SHIFT else shiftMode,
-                    boardMode = boardMode
+                    boardMode = boardMode,
+                    isAlternate = boardMode == BoardMode.ALPHANUMERIC && alternate != null,
+                    onClickClose = ::closeAlternate
                 )
             }
         }

@@ -19,6 +19,11 @@ data class SymbolSet(
     val secondary: Symbol,
 ) : Key()
 
+data class Alternate(
+    val primary: Character,
+    val rows: List<List<SymbolSet>>
+) : Key()
+
 data class Emoji(
     val primary: String,
     val secondary: String,

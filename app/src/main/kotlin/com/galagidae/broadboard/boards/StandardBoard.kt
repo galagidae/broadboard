@@ -19,6 +19,7 @@ fun StandardBoard(
     shiftMode: ShiftMode,
     inputContext: InputContext,
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
+    onClickAlternate: ((Alternate) -> Unit)? = null,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -81,7 +82,14 @@ fun StandardBoard(
                                 onKey = onKey,
                                 shiftMode = shiftMode,
                                 modifier = Modifier.bodyKey()
-                            )                            
+                            )
+                            key is Alternate -> CharacterKey(
+                                character = key.primary,
+                                onKey = onKey,
+                                onLongClick = { onClickAlternate?.invoke(key) },
+                                shiftMode = shiftMode,
+                                modifier = Modifier.bodyKey()
+                            )
                             key is Enter -> IconKey(
                                 onClick = onEnter,
                                 modifier = Modifier

@@ -15,15 +15,20 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.*
 import androidx.compose.ui.layout.*
 import androidx.compose.ui.platform.*
-import androidx.compose.ui.unit.IntSize
+import androidx.compose.ui.unit.*
 import kotlin.math.abs
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
+interface BoardScope {
+    val visibleWidth: Dp
+    val visibleHeight: Dp
+}
+
 @Composable
 fun PanBox(
     modifier: Modifier = Modifier,
-    content: @Composable () -> Unit,
+    content: @Composable BoardScope.() -> Unit
 ) {
     var viewportSize by remember { mutableStateOf(IntSize.Zero) }
     var contentSize by remember { mutableStateOf(IntSize.Zero) }
@@ -58,7 +63,7 @@ fun PanBox(
         currentOffset.value = getClampedOffset(currentOffset.value, delta)
     }
 
-    Box(
+    BoxWithConstraints(
         modifier = modifier
             .onSizeChanged { viewportSize = it }
             .clipToBounds()
@@ -111,6 +116,9 @@ fun PanBox(
                 }
             )
     ) {
+        val maxW = maxWidth
+        val maxH = maxHeight            
+
         Box(
             modifier = Modifier
                 .wrapContentSize(align = Alignment.TopStart, unbounded = true)
@@ -120,7 +128,13 @@ fun PanBox(
                     translationY = currentOffset.value.y
                 },
         ) {
-            content()
+
+            val scope = object : BoardScope {
+                override val visibleWidth = maxW
+                override val visibleHeight = maxH
+            }
+
+            scope.content()
         }
 
         // Intercepts taps during fling, cancels it, swallows the tap

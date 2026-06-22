@@ -20,6 +20,8 @@ fun BottomRow(
     onShift: (longClick: Boolean) -> Unit,
     shiftMode: ShiftMode,
     boardMode: BoardMode,
+    isAlternate: Boolean = false,
+    onClickClose: (() -> Unit)? = null,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -42,22 +44,33 @@ fun BottomRow(
             onClick = {onShift(false)},
             onLongClick = {onShift(true)},            
         )
-        IconKey(
-            modifier = Modifier
-                .weight(2f)
-                .fillMaxHeight(),            
-            onClick = onSpace,
-            icon = spacebar,
-            description = R.string.key_space
-        )
-        IconKey(
-            modifier = Modifier
-                .weight(1f)
-                .fillMaxHeight(),
-            onClick = onBackspace,
-            icon = backspace,
-            description = R.string.key_delete,
-            repeating = true
-        )
+        if (!isAlternate) {
+            IconKey(
+                modifier = Modifier
+                    .weight(2f)
+                    .fillMaxHeight(),            
+                onClick = onSpace,
+                icon = spacebar,
+                description = R.string.key_space
+            )
+            IconKey(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxHeight(),
+                onClick = onBackspace,
+                icon = backspace,
+                description = R.string.key_delete,
+                repeating = true
+            )
+        } else {
+            IconKey(
+                modifier = Modifier
+                    .weight(2f)
+                    .fillMaxHeight(),            
+                onClick = onClickClose,
+                icon = close,
+                description = R.string.key_back
+            )
+        }
     }
 }

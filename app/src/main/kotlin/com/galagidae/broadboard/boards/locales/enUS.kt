@@ -49,18 +49,36 @@ val enUS: List<List<Key>> = listOf(
     listOf(
         qKey,
         wKey,
-        eKey,
+        Alternate(
+            primary = eKey,
+            rows = eAlternates
+        ),
         rKey,
         tKey,
         yKey,
-        uKey,
-        iKey,
-        oKey,
+        Alternate(
+            primary = uKey,
+            rows = uAlternates
+        ),
+        Alternate(
+            primary = iKey,
+            rows = iAlternates
+        ),
+        Alternate(
+            primary = oKey,
+            rows = oAlternates
+        ),
         pKey,
     ),
     listOf(
-        aKey,
-        sKey,
+        Alternate(
+            primary = aKey,
+            rows = aAlternates
+        ),
+        Alternate(
+            primary = sKey,
+            rows = sAlternates
+        ),
         dKey,
         fKey,
         gKey,
@@ -73,10 +91,16 @@ val enUS: List<List<Key>> = listOf(
     listOf(
         zKey,
         xKey,
-        cKey,
+        Alternate(
+            primary = cKey,
+            rows = cAlternates
+        ),
         vKey,
         bKey,
-        nKey,
+        Alternate(
+            primary = nKey,
+            rows = nAlternates
+        ),
         mKey,
         Character(
             primary = '.',
