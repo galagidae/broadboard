@@ -4,10 +4,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
-import com.galagidae.broadboard.boards.icons.enter
+import com.galagidae.broadboard.boards.icons.*
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
 import com.galagidae.broadboard.utils.*
@@ -20,6 +21,7 @@ fun StandardBoard(
     inputContext: InputContext,
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
     onClickAlternate: ((Alternate) -> Unit)? = null,
+    actionKey: State<ActionKey>,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -90,14 +92,28 @@ fun StandardBoard(
                                 shiftMode = shiftMode,
                                 modifier = Modifier.bodyKey()
                             )
-                            key is Enter -> IconKey(
-                                onClick = onEnter,
-                                modifier = Modifier
-                                    .width(sizes.enterKeyWidth)
-                                    .fillMaxHeight(),
-                                icon = enter,
-                                description = R.string.key_enter
-                            )
+                            key is Enter -> {
+                                val (description, icon) = when(val v = actionKey.value) {
+                                    is ActionKey.Standard -> when(v.actionType) {
+                                        StandardActionType.DONE -> stringResource(R.string.action_done) to check
+                                        StandardActionType.GO -> stringResource(R.string.action_go) to go
+                                        StandardActionType.NEXT -> stringResource(R.string.action_next) to next_arrow
+                                        StandardActionType.PREVIOUS -> stringResource(R.string.action_previous) to prev_arrow
+                                        StandardActionType.SEARCH -> stringResource(R.string.action_search) to search
+                                        StandardActionType.SEND -> stringResource(R.string.action_send) to send
+                                    }
+                                    is ActionKey.Custom -> v.label to enter
+                                    ActionKey.Newline -> stringResource(R.string.action_enter) to enter
+                                }
+                                IconKey(
+                                    onClick = onEnter,
+                                    modifier = Modifier
+                                        .width(sizes.enterKeyWidth)
+                                        .fillMaxHeight(),
+                                    icon = icon,
+                                    description = description
+                                )
+                            }
                             key is Contextual -> {
                                 val char = when(inputContext) {
                                     InputContext.NORMAL -> ','

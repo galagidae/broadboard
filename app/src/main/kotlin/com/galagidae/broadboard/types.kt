@@ -48,3 +48,13 @@ enum class InputContext {
 enum class BoardMode {
     ALPHANUMERIC, SYMBOLS, EMOJIS, NUMERIC, MENU
 }
+
+enum class StandardActionType {
+    DONE, GO, NEXT, PREVIOUS, SEARCH, SEND
+}
+
+sealed interface ActionKey {
+    data class Standard(val id: Int, val actionType: StandardActionType) : ActionKey
+    data class Custom(val id: Int, val label: String) : ActionKey
+    object Newline : ActionKey   // no action, or NO_ENTER_ACTION set
+}

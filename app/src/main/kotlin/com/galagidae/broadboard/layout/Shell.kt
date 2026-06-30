@@ -16,6 +16,7 @@ fun Shell(
     autoShift: State<Boolean>,
     inputContext: State<InputContext>,
     onClickKeyboardPicker: (() -> Unit)? = null,
+    actionKey: State<ActionKey>,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
@@ -85,7 +86,8 @@ fun Shell(
                                     shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
                                     inputContext = inputContext.value,
                                     onChangeMode = ::onChangeMode,
-                                    onClickAlternate = ::onClickAlternate
+                                    onClickAlternate = ::onClickAlternate,
+                                    actionKey = actionKey
                                 )
                             }
                             BoardMode.SYMBOLS -> SymbolsBoard(

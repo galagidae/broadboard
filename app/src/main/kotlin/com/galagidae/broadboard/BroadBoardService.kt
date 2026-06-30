@@ -12,6 +12,7 @@ import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.*
 import androidx.lifecycle.*
 import androidx.savedstate.*
+import com.galagidae.broadboard.R
 import com.galagidae.broadboard.layout.Shell
 
 class BroadBoardService : InputMethodService(),
@@ -25,6 +26,7 @@ class BroadBoardService : InputMethodService(),
     private val inputManager: InputMethodManager by lazy {
         getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     }
+    private val actionKey = mutableStateOf<ActionKey>(ActionKey.Newline)
 
     override val lifecycle: Lifecycle get() = lifecycleRegistry
     override val savedStateRegistry: SavedStateRegistry
@@ -67,7 +69,8 @@ class BroadBoardService : InputMethodService(),
                         onEnter = ::onEnter,
                         autoShift = autoShift,
                         inputContext = inputContext,
-                        onClickKeyboardPicker = ::showKeyboardPicker
+                        onClickKeyboardPicker = ::showKeyboardPicker,
+                        actionKey = actionKey
                     )
                 }
             }
@@ -76,6 +79,7 @@ class BroadBoardService : InputMethodService(),
 
     override fun onStartInputView(info: EditorInfo, restarting: Boolean) {
         super.onStartInputView(info, restarting)
+        actionKey.value = resolveActionKey(info)
 
         val ic = getCurrentInputConnection() ?: return
 
@@ -112,18 +116,13 @@ class BroadBoardService : InputMethodService(),
     }
 
     private fun onEnter() {
-        val ic = getCurrentInputConnection() ?: return
-        val ei = getCurrentInputEditorInfo() ?: return        
-
-        val imeOptions = ei.imeOptions        
-        val noEnterAction = (imeOptions and EditorInfo.IME_FLAG_NO_ENTER_ACTION) != 0
-
-        if (noEnterAction) {
-            ic.commitText("\n", 1)
-        } else {
-            val action = imeOptions and EditorInfo.IME_MASK_ACTION
-            ic.performEditorAction(action)
-        }        
+        val ic = currentInputConnection ?: return
+        
+        when (val key = actionKey.value) {
+            is ActionKey.Standard   -> ic.performEditorAction(key.id)
+            is ActionKey.Custom     -> ic.performEditorAction(key.id)
+            ActionKey.Newline           -> ic.commitText("\n", 1)
+        }
     }
 
     private fun updateAutoCasing(ic: InputConnection, ei: EditorInfo) {
@@ -154,5 +153,29 @@ class BroadBoardService : InputMethodService(),
 
     private fun showKeyboardPicker() {
         inputManager.showInputMethodPicker();
+    }
+
+    private fun resolveActionKey(info: EditorInfo): ActionKey {
+        // A custom label always wins.
+        info.actionLabel?.let { label ->
+            return ActionKey.Custom(info.actionId, label.toString())
+        }
+
+        val noEnterAction =
+            info.imeOptions and EditorInfo.IME_FLAG_NO_ENTER_ACTION != 0
+
+        if (noEnterAction) return ActionKey.Newline
+
+        val action = info.imeOptions and EditorInfo.IME_MASK_ACTION
+
+        return when (action) {
+            EditorInfo.IME_ACTION_GO       -> ActionKey.Standard(action, StandardActionType.GO)
+            EditorInfo.IME_ACTION_SEARCH   -> ActionKey.Standard(action, StandardActionType.SEARCH)
+            EditorInfo.IME_ACTION_SEND     -> ActionKey.Standard(action, StandardActionType.SEND)
+            EditorInfo.IME_ACTION_NEXT     -> ActionKey.Standard(action, StandardActionType.NEXT)
+            EditorInfo.IME_ACTION_PREVIOUS -> ActionKey.Standard(action, StandardActionType.PREVIOUS)
+            EditorInfo.IME_ACTION_DONE     -> ActionKey.Standard(action, StandardActionType.DONE)
+            else -> ActionKey.Newline
+        }
     }
 }

@@ -9,7 +9,6 @@
     <string name="key_emojis_happy">Happy Emojis</string>
     <string name="key_emojis_sad">Sad Emojis</string>
     <string name="key_emojis">Emoji Keyboard</string>
-    <string name="key_enter">Enter</string>
     <string name="key_menu">Menu</string>
     <string name="key_numeric">Number Keyboard</string>
     <string name="key_picker">Change Keyboard</string>
@@ -177,5 +176,14 @@
     <string name="char_s_caron">"S, with caron"</string>
     <string name="char_s_caron_cap">"Capital S, with caron"</string>
     <string name="char_s_sharp">"Sharp S"</string>
+
+    <!-- Action keys -->
+<string name="action_done">Done</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Go</string>
+    <string name="action_next">Next</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_search">Search</string>
+    <string name="action_send">Send</string>
 
 </resources>
