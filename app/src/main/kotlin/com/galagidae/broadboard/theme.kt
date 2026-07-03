@@ -54,6 +54,18 @@ val mediumSize = SizeTheme(
     enterKeyWidth = 166.dp,
 )
 
+val largeSize = SizeTheme(
+    keySize = 126.dp,
+    bottomRowHeight = 100.dp,
+    keySpacing = 6.dp,
+    keyFontSize = 104.sp,
+    keyEmojiFontSize = 88.sp,
+    keyModeFontSize = 48.sp,
+    keyNumericFontSize = 67.sp,
+    keyIconSize = 96.dp,
+    enterKeyWidth = 190.dp,
+)
+
 val LocalColorTheme = compositionLocalOf { lightTheme }
 val LocalSizeTheme = compositionLocalOf { mediumSize }
 
