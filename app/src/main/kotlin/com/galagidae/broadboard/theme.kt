@@ -30,6 +30,14 @@ data class SizeTheme(
 
 val lightTheme = ColorTheme()
 
+val darkTheme = ColorTheme(
+    mainBackground = Color.Blue,
+    keyBackground = Color.Black,
+    keyBackgroundPressed = Color.White,
+    keyLabel = Color.White,
+    keyLabelPressed = Color.Black
+)
+
 val smallSize = SizeTheme(
     keySize = 72.dp,
     bottomRowHeight = 65.dp,
