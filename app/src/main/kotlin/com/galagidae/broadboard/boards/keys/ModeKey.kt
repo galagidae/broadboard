@@ -8,7 +8,6 @@ import androidx.compose.ui.*
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import com.galagidae.broadboard.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun ModeKey (
@@ -45,7 +44,7 @@ fun ModeKey (
         Text(
             text = label,
             color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-            fontSize = dpToSp(sizes.modeKeyFontSize),
+            fontSize = sizes.keyModeFontSize,
             fontWeight = FontWeight.Bold            
         )
     }

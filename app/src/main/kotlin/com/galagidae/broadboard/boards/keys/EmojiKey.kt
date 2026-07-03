@@ -6,7 +6,6 @@ import androidx.compose.material3.*
 import androidx.compose.ui.*
 import androidx.compose.ui.res.stringResource
 import com.galagidae.broadboard.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun EmojiKey (
@@ -32,7 +31,7 @@ fun EmojiKey (
         Text(
             text = currentEmoji,
             color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-            fontSize = dpToSp(sizes.keyEmojiFontSize)
+            fontSize = sizes.keyEmojiFontSize
         )
     }
 }

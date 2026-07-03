@@ -9,7 +9,6 @@ import androidx.compose.material3.Text
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun ShiftKey(
@@ -54,7 +53,7 @@ fun ShiftKey(
                     else -> "!?:/"
                 },
                 color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-                fontSize = dpToSp(sizes.modeKeyFontSize)
+                fontSize = sizes.keyModeFontSize
             )
             BoardMode.EMOJIS -> Text(
                 text = when(shiftMode) {
@@ -62,7 +61,7 @@ fun ShiftKey(
                     else -> "🙂"
                 },
                 color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-                fontSize = dpToSp(sizes.modeKeyFontSize)
+                fontSize = sizes.keyModeFontSize
             )
             else -> Icon(
                 modifier = Modifier

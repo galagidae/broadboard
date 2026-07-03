@@ -9,7 +9,6 @@ import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.icons.*
 import com.galagidae.broadboard.boards.keys.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun NumericBoard(
@@ -86,7 +85,7 @@ private fun NumberKey(
         Text(
             text = number.toString(),
             color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-            fontSize = dpToSp(sizes.numericFontSize)
+            fontSize = sizes.keyNumericFontSize
         )
     }
 }

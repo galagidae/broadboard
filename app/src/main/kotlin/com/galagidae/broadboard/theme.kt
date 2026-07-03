@@ -13,22 +13,34 @@ data class ColorTheme(
 )
 
 data class SizeTheme(
-    val panBoxHeight: Dp = 306.dp,
-    val bottomRowHeight: Dp = 100.dp,
-    val rowHeight: Dp = 150.dp,
-    val keyFontSize: Dp = 48.dp,
-    val keyEmojiFontSize: Dp = 36.dp,
-    val keyIconSize: Dp = 96.dp,
-    val keySpacing: Dp = 6.dp,
-    val enterKeyWidth: Dp = 225.dp,
-    val modeKeyFontSize: Dp = 24.dp,
-    val appHeight: Dp = 406.dp,
-    val numericFontSize: Dp = 36.dp,
-)
+    val keySize: Dp,
+    val bottomRowHeight: Dp,
+    val keySpacing: Dp,
+    val keyFontSize: TextUnit,
+    val keyEmojiFontSize: TextUnit,
+    val keyModeFontSize: TextUnit,
+    val keyNumericFontSize: TextUnit,
+    val keyIconSize: Dp,
+    val enterKeyWidth: Dp,
+) {
+    val rowHeight: Dp = keySize
+    val panBoxHeight: Dp = keySize * 2 + keySpacing
+    val appHeight: Dp = bottomRowHeight + panBoxHeight
+}
 
 val lightTheme = ColorTheme()
 
-val mediumSize = SizeTheme()
+val mediumSize = SizeTheme(
+    keySize = 110.dp,
+    bottomRowHeight = 75.dp,
+    keySpacing = 6.dp,
+    keyFontSize = 91.sp,
+    keyEmojiFontSize = 64.sp,
+    keyModeFontSize = 48.sp,
+    keyNumericFontSize = 59.sp,
+    keyIconSize = 96.dp,
+    enterKeyWidth = 166.dp,
+)
 
 val LocalColorTheme = compositionLocalOf { lightTheme }
 val LocalSizeTheme = compositionLocalOf { mediumSize }

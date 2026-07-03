@@ -5,7 +5,6 @@ import androidx.compose.runtime.*
 import androidx.compose.material3.*
 import androidx.compose.ui.*
 import com.galagidae.broadboard.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun CharacterKey (
@@ -33,7 +32,7 @@ fun CharacterKey (
         Text(
             text = currentChar.toString(),
             color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-            fontSize = dpToSp(sizes.keyFontSize)
+            fontSize = sizes.keyFontSize
         )
     }
 }

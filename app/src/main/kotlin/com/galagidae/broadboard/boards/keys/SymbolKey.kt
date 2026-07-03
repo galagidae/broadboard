@@ -6,7 +6,6 @@ import androidx.compose.material3.*
 import androidx.compose.ui.*
 import androidx.compose.ui.res.stringResource
 import com.galagidae.broadboard.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun SymbolKey (
@@ -36,7 +35,7 @@ fun SymbolKey (
         Text(
             text = currentSymbol.character.toString(),
             color = if (isPressed) colors.keyLabelPressed else colors.keyLabel,
-            fontSize = dpToSp(sizes.keyFontSize)
+            fontSize = sizes.keyFontSize
         )
     }
 }
