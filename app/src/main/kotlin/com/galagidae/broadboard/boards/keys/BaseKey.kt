@@ -10,7 +10,6 @@ import androidx.compose.ui.*
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.*
-import androidx.compose.ui.unit.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.utils.*
 
@@ -68,6 +67,7 @@ fun BaseKey (
     content: @Composable BaseKeyScope.() -> Unit,
 ) {
     val colors = LocalColorTheme.current
+    val sizes = LocalSizeTheme.current
     val interactionSource = remember { MutableInteractionSource() }
     val isPressed by interactionSource.collectIsPressedAsStateMin()
     val vibrate = rememberHapticFeedback()    
@@ -101,8 +101,8 @@ fun BaseKey (
             .clearAndSetSemantics {
                 contentDescription = description
             }
+            .clip(RoundedCornerShape(sizes.keyCorners))
             .background(if (isPressed) colors.keyBackgroundPressed else colors.keyBackground)
-            .clip(RoundedCornerShape(3.dp))
             .then(clickable),
         contentAlignment = Alignment.Center,
     ) {

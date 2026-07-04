@@ -12,22 +12,6 @@ data class ColorTheme(
     val keyLabelPressed: Color = Color.White
 )
 
-data class SizeTheme(
-    val keySize: Dp,
-    val bottomRowHeight: Dp,
-    val keySpacing: Dp,
-    val keyFontSize: TextUnit,
-    val keyEmojiFontSize: TextUnit,
-    val keyModeFontSize: TextUnit,
-    val keyNumericFontSize: TextUnit,
-    val keyIconSize: Dp,
-    val enterKeyWidth: Dp,
-) {
-    val rowHeight: Dp = keySize
-    val panBoxHeight: Dp = keySize * 2 + keySpacing
-    val appHeight: Dp = bottomRowHeight + panBoxHeight
-}
-
 val lightTheme = ColorTheme()
 
 val darkTheme = ColorTheme(
@@ -38,10 +22,30 @@ val darkTheme = ColorTheme(
     keyLabelPressed = Color.Black
 )
 
+data class SizeTheme(
+    val keySize: Dp,
+    val rowCount: Int = 2,
+    val keyCorners: Dp,
+    val bottomRowHeight: Dp,
+    val keySpacing: Dp,
+    val keyFontSize: TextUnit,
+    val keyEmojiFontSize: TextUnit,
+    val keyModeFontSize: TextUnit,
+    val keyNumericFontSize: TextUnit,
+    val keyIconSize: Dp,
+    val enterKeyWidth: Dp,
+) {
+    val rowHeight: Dp = keySize
+    val panBoxHeight: Dp = keySize * rowCount + keySpacing
+    val appHeight: Dp = bottomRowHeight + panBoxHeight
+}
+
 val smallSize = SizeTheme(
     keySize = 72.dp,
+    rowCount = 3,
+    keyCorners = 2.dp,
     bottomRowHeight = 65.dp,
-    keySpacing = 3.dp,
+    keySpacing = 1.dp,
     keyFontSize = 60.sp,
     keyEmojiFontSize = 37.sp,
     keyModeFontSize = 37.sp,
@@ -52,8 +56,9 @@ val smallSize = SizeTheme(
 
 val mediumSize = SizeTheme(
     keySize = 110.dp,
+    keyCorners = 3.dp,
     bottomRowHeight = 75.dp,
-    keySpacing = 6.dp,
+    keySpacing = 2.dp,
     keyFontSize = 91.sp,
     keyEmojiFontSize = 64.sp,
     keyModeFontSize = 48.sp,
@@ -64,8 +69,9 @@ val mediumSize = SizeTheme(
 
 val largeSize = SizeTheme(
     keySize = 126.dp,
+    keyCorners = 4.dp,
     bottomRowHeight = 100.dp,
-    keySpacing = 6.dp,
+    keySpacing = 3.dp,
     keyFontSize = 104.sp,
     keyEmojiFontSize = 88.sp,
     keyModeFontSize = 48.sp,
@@ -75,7 +81,7 @@ val largeSize = SizeTheme(
 )
 
 val LocalColorTheme = compositionLocalOf { lightTheme }
-val LocalSizeTheme = compositionLocalOf { mediumSize }
+val LocalSizeTheme = compositionLocalOf { largeSize }
 
 @Composable
 fun AppTheme(
@@ -83,7 +89,7 @@ fun AppTheme(
 ) {
     CompositionLocalProvider(
         LocalColorTheme provides lightTheme,
-        LocalSizeTheme provides mediumSize
+        LocalSizeTheme provides largeSize
     ) {
         content()
     }

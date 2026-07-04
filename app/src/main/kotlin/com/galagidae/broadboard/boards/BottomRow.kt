@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
-import androidx.compose.ui.unit.*
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import com.galagidae.broadboard.*
@@ -32,8 +31,8 @@ fun BottomRow(
             .height(sizes.bottomRowHeight)
             .fillMaxWidth()
             .background(colors.mainBackground)
-            .padding(horizontal = 8.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp)
+            .padding(horizontal = sizes.keySpacing, vertical = sizes.keySpacing),
+        horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing)
     ) {
         ShiftKey(
             modifier = Modifier

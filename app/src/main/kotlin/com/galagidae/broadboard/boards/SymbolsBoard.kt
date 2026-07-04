@@ -24,7 +24,12 @@ fun SymbolsBoard(
     Column(
         verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
     ) {
-        symbols.forEach { row ->
+        val rows = if (sizes.rowCount > 2) 
+            threeRowSymbols 
+        else 
+            twoRowSymbols
+            
+        rows.forEach { row ->
             Row(
                 modifier = modifier
                     .height(sizes.rowHeight),
@@ -56,115 +61,127 @@ fun SymbolsBoard(
     }
 }
 
-private val symbols: List<List<Key>> = listOf(
-    listOf(
-        Menu,
-        SymbolSet(
-            primary = exclamation,
-            secondary = exclamationInverted,
-        ),
-        SymbolSet(
-            primary = quoteSingle,
-            secondary = quoteDouble,
-        ),
-        SymbolSet(
-            primary = atSign,
-            secondary = hashtag,
-        ),
-        SymbolSet(
-            primary = dollarSign,
-            secondary = poundSign,
-        ),
-        SymbolSet(
-            primary = asterisk,
-            secondary = ampersand,
-        ),
-        SymbolSet(
-            primary = dash,
-            secondary = underscore,
-        ),
-        SymbolSet(
-            primary = bracketLeft,
-            secondary = braceLeft,
-        ),
-        SymbolSet(
-            primary = bracketRight,
-            secondary = braceRight,
-        ),                                                        
-        SymbolSet(
-            primary = division,
-            secondary = multiplication,
-        ),
-        SymbolSet(
-            primary = graveAccent,
-            secondary = tilde,
-        ),
-        SymbolSet(
-            primary = pipe,
-            secondary = paragraph,
-        ),
-        SymbolSet(
-            primary = ellipsis,
-            secondary = trademark,
-        ),
-        SymbolSet(
-            primary = copyright,
-            secondary = registered,
-        ),
+private val rowOne: List<Key> = listOf(
+    Menu,
+    SymbolSet(
+        primary = exclamation,
+        secondary = exclamationInverted,
     ),
-    listOf(
-        Alpha,
-        SymbolSet(
-            primary = question,
-            secondary = questionInverted,
-        ),
-        SymbolSet(
-            primary = colon,
-            secondary = semicolon,
-        ),
-        SymbolSet(
-            primary = percent,
-            secondary = caret,
-        ),
-        SymbolSet(
-            primary = euro,
-            secondary = yen,
-        ),
-        SymbolSet(
-            primary = equals,
-            secondary = plus,
-        ),
-        SymbolSet(
-            primary = slash,
-            secondary = backslash,
-        ),
-        SymbolSet(
-            primary = parenLeft,
-            secondary = lessThan,
-        ),
-        SymbolSet(
-            primary = parenRight,
-            secondary = greaterThan,
-        ),                                                        
-        SymbolSet(
-            primary = pi,
-            secondary = infinity,
-        ),
-        SymbolSet(
-            primary = cent,
-            secondary = section,
-        ),
-        SymbolSet(
-            primary = endash,
-            secondary = emdash,
-        ),
-        SymbolSet(
-            primary = degree,
-            secondary = bullet,
-        ),
-        SymbolSet(
-            primary = squareroot,
-            secondary = checkmark,
-        ),
-    )
+    SymbolSet(
+        primary = quoteSingle,
+        secondary = quoteDouble,
+    ),
+    SymbolSet(
+        primary = atSign,
+        secondary = hashtag,
+    ),
+    SymbolSet(
+        primary = dollarSign,
+        secondary = poundSign,
+    ),
+    SymbolSet(
+        primary = asterisk,
+        secondary = ampersand,
+    ),
+    SymbolSet(
+        primary = dash,
+        secondary = underscore,
+    ),
+    SymbolSet(
+        primary = bracketLeft,
+        secondary = braceLeft,
+    ),
+    SymbolSet(
+        primary = bracketRight,
+        secondary = braceRight,
+    ),                                                        
+    SymbolSet(
+        primary = division,
+        secondary = multiplication,
+    ),
+    SymbolSet(
+        primary = graveAccent,
+        secondary = tilde,
+    ),
+    SymbolSet(
+        primary = pipe,
+        secondary = paragraph,
+    ),
+    SymbolSet(
+        primary = ellipsis,
+        secondary = trademark,
+    ),
+    SymbolSet(
+        primary = copyright,
+        secondary = registered,
+    ),
+)
+
+private val rowTwo: List<Key> = listOf(
+    Alpha,
+    SymbolSet(
+        primary = question,
+        secondary = questionInverted,
+    ),
+    SymbolSet(
+        primary = colon,
+        secondary = semicolon,
+    ),
+    SymbolSet(
+        primary = percent,
+        secondary = caret,
+    ),
+    SymbolSet(
+        primary = euro,
+        secondary = yen,
+    ),
+    SymbolSet(
+        primary = equals,
+        secondary = plus,
+    ),
+    SymbolSet(
+        primary = slash,
+        secondary = backslash,
+    ),
+    SymbolSet(
+        primary = parenLeft,
+        secondary = lessThan,
+    ),
+    SymbolSet(
+        primary = parenRight,
+        secondary = greaterThan,
+    ),                                                        
+    SymbolSet(
+        primary = pi,
+        secondary = infinity,
+    ),
+    SymbolSet(
+        primary = cent,
+        secondary = section,
+    ),
+    SymbolSet(
+        primary = endash,
+        secondary = emdash,
+    ),
+    SymbolSet(
+        primary = degree,
+        secondary = bullet,
+    ),
+    SymbolSet(
+        primary = squareroot,
+        secondary = checkmark,
+    ),
+)
+
+private const val THREE_ROW_SPLIT = 10
+
+private val twoRowSymbols: List<List<Key>> = listOf(
+    listOf(Menu) + rowOne,
+    listOf(Alpha) + rowTwo,
+)
+
+private val threeRowSymbols: List<List<Key>> = listOf(
+    rowOne.take(THREE_ROW_SPLIT),
+    rowTwo.take(THREE_ROW_SPLIT),
+    rowOne.drop(THREE_ROW_SPLIT) + rowTwo.drop(THREE_ROW_SPLIT),
 )
