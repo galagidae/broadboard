@@ -8,7 +8,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
-import com.galagidae.broadboard.boards.icons.*
+import com.galagidae.broadboard.icons.*
 import com.galagidae.broadboard.boards.keys.*
 
 

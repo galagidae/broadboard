@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val spacebar: ImageVector
+public val check: ImageVector
   get() {
-    if (_spacebar != null) {
-      return _spacebar!!
+    if (_check != null) {
+      return _check!!
     }
-    _spacebar =
+    _check =
       ImageVector.Builder(
-          name = "spacebar",
+          name = "check",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,20 +35,18 @@ public val spacebar: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(4f, 15f)
-            verticalLineTo(9f)
-            horizontalLineTo(6f)
-            verticalLineToRelative(4f)
-            horizontalLineTo(18f)
-            verticalLineTo(9f)
-            horizontalLineToRelative(2f)
-            verticalLineToRelative(6f)
-            horizontalLineTo(4f)
+            moveTo(9.55f, 18f)
+            lineTo(3.85f, 12.3f)
+            lineTo(5.28f, 10.88f)
+            lineToRelative(4.28f, 4.28f)
+            lineTo(18.73f, 5.97f)
+            lineTo(20.15f, 7.4f)
+            lineTo(9.55f, 18f)
             close()
           }
         }
         .build()
-    return _spacebar!!
+    return _check!!
   }
 
-private var _spacebar: ImageVector? = null
+private var _check: ImageVector? = null

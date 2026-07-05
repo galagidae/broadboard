@@ -14,6 +14,7 @@ import androidx.lifecycle.*
 import androidx.savedstate.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.layout.Shell
+import kotlinx.coroutines.cancel
 
 class BroadBoardService : InputMethodService(),
     LifecycleOwner,
@@ -27,6 +28,7 @@ class BroadBoardService : InputMethodService(),
         getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     }
     private val actionKey = mutableStateOf<ActionKey>(ActionKey.Newline)
+    private lateinit var preferencesViewModel: PreferencesViewModel    
 
     override val lifecycle: Lifecycle get() = lifecycleRegistry
     override val savedStateRegistry: SavedStateRegistry
@@ -37,6 +39,9 @@ class BroadBoardService : InputMethodService(),
         savedStateRegistryController.performRestore(null)
         lifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_CREATE)
 
+        val repository = PreferencesRepository(applicationContext)
+        preferencesViewModel = PreferencesViewModel(repository)
+
         // Set on the window decor view so Compose can find it walking up the hierarchy
         val decorView = window?.window?.decorView
         decorView?.setViewTreeLifecycleOwner(this)
@@ -45,6 +50,7 @@ class BroadBoardService : InputMethodService(),
 
     override fun onDestroy() {
         super.onDestroy()
+        preferencesViewModel.viewModelScope.cancel()
         lifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     }
 
@@ -54,24 +60,26 @@ class BroadBoardService : InputMethodService(),
 
         return ComposeView(this).apply {
             setContent {
-                val navBarInsets = WindowInsets.navigationBars
-                val navBarBottom = with(LocalDensity.current) {
-                    navBarInsets.getBottom(this).toDp()
-                }
+                AppPreferences(viewModel = preferencesViewModel) {
+                    val navBarInsets = WindowInsets.navigationBars
+                    val navBarBottom = with(LocalDensity.current) {
+                        navBarInsets.getBottom(this).toDp()
+                    }
 
-                Box(modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = navBarBottom),
-                ) {
-                    Shell(
-                        onInput = ::inputText,
-                        onBackspace= ::onBackspace,
-                        onEnter = ::onEnter,
-                        autoShift = autoShift,
-                        inputContext = inputContext,
-                        onClickKeyboardPicker = ::showKeyboardPicker,
-                        actionKey = actionKey
-                    )
+                    Box(modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = navBarBottom),
+                    ) {
+                        Shell(
+                            onInput = ::inputText,
+                            onBackspace= ::onBackspace,
+                            onEnter = ::onEnter,
+                            autoShift = autoShift,
+                            inputContext = inputContext,
+                            onClickKeyboardPicker = ::showKeyboardPicker,
+                            actionKey = actionKey
+                        )
+                    }
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val shift_off: ImageVector
+public val close: ImageVector
   get() {
-    if (_shift_off != null) {
-      return _shift_off!!
+    if (_close != null) {
+      return _close!!
     }
-    _shift_off =
+    _close =
       ImageVector.Builder(
-          name = "shift_off",
+          name = "close",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,30 +35,24 @@ public val shift_off: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(8f, 21f)
-            verticalLineTo(13f)
-            horizontalLineTo(3f)
-            lineTo(12f, 2f)
-            lineToRelative(9f, 11f)
-            horizontalLineTo(16f)
-            verticalLineToRelative(8f)
-            horizontalLineTo(8f)
-            close()
-            moveToRelative(2f, -2f)
-            horizontalLineToRelative(4f)
-            verticalLineTo(11f)
-            horizontalLineToRelative(2.78f)
-            lineTo(12f, 5.15f)
-            lineTo(7.23f, 11f)
-            horizontalLineTo(10f)
-            verticalLineToRelative(8f)
-            close()
-            moveToRelative(2f, -8f)
+            moveTo(6.4f, 19f)
+            lineTo(5f, 17.6f)
+            lineTo(10.6f, 12f)
+            lineTo(5f, 6.4f)
+            lineTo(6.4f, 5f)
+            lineTo(12f, 10.6f)
+            lineTo(17.6f, 5f)
+            lineTo(19f, 6.4f)
+            lineTo(13.4f, 12f)
+            lineTo(19f, 17.6f)
+            lineTo(17.6f, 19f)
+            lineTo(12f, 13.4f)
+            lineTo(6.4f, 19f)
             close()
           }
         }
         .build()
-    return _shift_off!!
+    return _close!!
   }
 
-private var _shift_off: ImageVector? = null
+private var _close: ImageVector? = null

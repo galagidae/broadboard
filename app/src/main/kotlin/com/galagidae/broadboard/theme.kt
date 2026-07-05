@@ -79,18 +79,3 @@ val largeSize = SizeTheme(
     keyIconSize = 96.dp,
     enterKeyWidth = 190.dp,
 )
-
-val LocalColorTheme = compositionLocalOf { lightTheme }
-val LocalSizeTheme = compositionLocalOf { largeSize }
-
-@Composable
-fun AppTheme(
-    content: @Composable () -> Unit
-) {
-    CompositionLocalProvider(
-        LocalColorTheme provides lightTheme,
-        LocalSizeTheme provides largeSize
-    ) {
-        content()
-    }
-}

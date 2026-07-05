@@ -8,7 +8,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
-import com.galagidae.broadboard.boards.icons.*
+import com.galagidae.broadboard.icons.*
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
 import com.galagidae.broadboard.utils.*

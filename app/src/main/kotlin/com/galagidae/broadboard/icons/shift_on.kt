@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val enter: ImageVector
+public val shift_on: ImageVector
   get() {
-    if (_enter != null) {
-      return _enter!!
+    if (_shift_on != null) {
+      return _shift_on!!
     }
-    _enter =
+    _shift_on =
       ImageVector.Builder(
-          name = "keyboard_return",
+          name = "shift_on",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,23 +35,19 @@ public val enter: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(9f, 18f)
-            lineTo(3f, 12f)
-            lineTo(9f, 6f)
-            lineToRelative(1.4f, 1.4f)
-            lineTo(6.8f, 11f)
-            horizontalLineTo(19f)
-            verticalLineTo(7f)
-            horizontalLineToRelative(2f)
-            verticalLineToRelative(6f)
-            horizontalLineTo(6.8f)
-            lineToRelative(3.6f, 3.6f)
-            lineTo(9f, 18f)
+            moveTo(8f, 21f)
+            verticalLineTo(13f)
+            horizontalLineTo(3f)
+            lineTo(12f, 2f)
+            lineToRelative(9f, 11f)
+            horizontalLineTo(16f)
+            verticalLineToRelative(8f)
+            horizontalLineTo(8f)
             close()
           }
         }
         .build()
-    return _enter!!
+    return _shift_on!!
   }
 
-private var _enter: ImageVector? = null
+private var _shift_on: ImageVector? = null

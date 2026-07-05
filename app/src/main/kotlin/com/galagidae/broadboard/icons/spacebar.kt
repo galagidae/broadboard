@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val go: ImageVector
+public val spacebar: ImageVector
   get() {
-    if (_go != null) {
-      return _go!!
+    if (_spacebar != null) {
+      return _spacebar!!
     }
-    _go =
+    _spacebar =
       ImageVector.Builder(
-          name = "go",
+          name = "spacebar",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,21 +35,20 @@ public val go: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(16.18f, 13f)
+            moveTo(4f, 15f)
+            verticalLineTo(9f)
+            horizontalLineTo(6f)
+            verticalLineToRelative(4f)
+            horizontalLineTo(18f)
+            verticalLineTo(9f)
+            horizontalLineToRelative(2f)
+            verticalLineToRelative(6f)
             horizontalLineTo(4f)
-            verticalLineTo(11f)
-            horizontalLineTo(16.18f)
-            lineTo(10.58f, 5.4f)
-            lineTo(12f, 4f)
-            lineToRelative(8f, 8f)
-            lineToRelative(-8f, 8f)
-            lineTo(10.58f, 18.6f)
-            lineTo(16.18f, 13f)
             close()
           }
         }
         .build()
-    return _go!!
+    return _spacebar!!
   }
 
-private var _go: ImageVector? = null
+private var _spacebar: ImageVector? = null

@@ -8,7 +8,7 @@ import androidx.compose.ui.res.stringResource
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.utils.*
-import com.galagidae.broadboard.boards.icons.menu
+import com.galagidae.broadboard.icons.menu
 
 @Composable
 fun MenuKey (

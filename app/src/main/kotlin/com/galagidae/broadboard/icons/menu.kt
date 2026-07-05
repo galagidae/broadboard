@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val close: ImageVector
+public val menu: ImageVector
   get() {
-    if (_close != null) {
-      return _close!!
+    if (_menu != null) {
+      return _menu!!
     }
-    _close =
+    _menu =
       ImageVector.Builder(
-          name = "close",
+          name = "menu",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,24 +35,28 @@ public val close: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(6.4f, 19f)
-            lineTo(5f, 17.6f)
-            lineTo(10.6f, 12f)
-            lineTo(5f, 6.4f)
-            lineTo(6.4f, 5f)
-            lineTo(12f, 10.6f)
-            lineTo(17.6f, 5f)
-            lineTo(19f, 6.4f)
-            lineTo(13.4f, 12f)
-            lineTo(19f, 17.6f)
-            lineTo(17.6f, 19f)
-            lineTo(12f, 13.4f)
-            lineTo(6.4f, 19f)
+            moveTo(3f, 18f)
+            verticalLineTo(16f)
+            horizontalLineTo(21f)
+            verticalLineToRelative(2f)
+            horizontalLineTo(3f)
+            close()
+            moveTo(3f, 13f)
+            verticalLineTo(11f)
+            horizontalLineTo(21f)
+            verticalLineToRelative(2f)
+            horizontalLineTo(3f)
+            close()
+            moveTo(3f, 8f)
+            verticalLineTo(6f)
+            horizontalLineTo(21f)
+            verticalLineTo(8f)
+            horizontalLineTo(3f)
             close()
           }
         }
         .build()
-    return _close!!
+    return _menu!!
   }
 
-private var _close: ImageVector? = null
+private var _menu: ImageVector? = null

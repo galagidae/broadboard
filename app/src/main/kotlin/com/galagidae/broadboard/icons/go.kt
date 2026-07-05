@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val prev_arrow: ImageVector
+public val go: ImageVector
   get() {
-    if (_prev_arrow != null) {
-      return _prev_arrow!!
+    if (_go != null) {
+      return _go!!
     }
-    _prev_arrow =
+    _go =
       ImageVector.Builder(
-          name = "prev_arrow",
+          name = "go",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,18 +35,21 @@ public val prev_arrow: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            moveTo(10f, 22f)
-            lineTo(0f, 12f)
-            lineTo(10f, 2f)
-            lineToRelative(1.78f, 1.77f)
-            lineTo(3.55f, 12f)
-            lineToRelative(8.23f, 8.23f)
-            lineTo(10f, 22f)
+            moveTo(16.18f, 13f)
+            horizontalLineTo(4f)
+            verticalLineTo(11f)
+            horizontalLineTo(16.18f)
+            lineTo(10.58f, 5.4f)
+            lineTo(12f, 4f)
+            lineToRelative(8f, 8f)
+            lineToRelative(-8f, 8f)
+            lineTo(10.58f, 18.6f)
+            lineTo(16.18f, 13f)
             close()
           }
         }
         .build()
-    return _prev_arrow!!
+    return _go!!
   }
 
-private var _prev_arrow: ImageVector? = null
+private var _go: ImageVector? = null

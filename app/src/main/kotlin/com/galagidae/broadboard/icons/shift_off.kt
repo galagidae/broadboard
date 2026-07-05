@@ -1,4 +1,4 @@
-package com.galagidae.broadboard.boards.icons
+package com.galagidae.broadboard.icons
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType
@@ -10,14 +10,14 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
 @Suppress("CheckReturnValue")
-public val shift_lock: ImageVector
+public val shift_off: ImageVector
   get() {
-    if (_shift_lock != null) {
-      return _shift_lock!!
+    if (_shift_off != null) {
+      return _shift_off!!
     }
-    _shift_lock =
+    _shift_off =
       ImageVector.Builder(
-          name = "shift_lock",
+          name = "shift_off",
           defaultWidth = 24.dp,
           defaultHeight = 24.dp,
           viewportWidth = 24f,
@@ -35,28 +35,30 @@ public val shift_lock: ImageVector
             strokeLineMiter = 1f,
             pathFillType = PathFillType.Companion.NonZero,
           ) {
-            // Outer arrow + stem
-            moveTo(8f, 18f)
+            moveTo(8f, 21f)
             verticalLineTo(13f)
             horizontalLineTo(3f)
             lineTo(12f, 2f)
             lineToRelative(9f, 11f)
             horizontalLineTo(16f)
-            verticalLineToRelative(5f)
+            verticalLineToRelative(8f)
             horizontalLineTo(8f)
             close()
-
-            // Bottom bar
-            moveTo(4f, 22f)
-            verticalLineTo(20f)
-            horizontalLineTo(20f)
-            verticalLineToRelative(2f)
-            horizontalLineTo(4f)
+            moveToRelative(2f, -2f)
+            horizontalLineToRelative(4f)
+            verticalLineTo(11f)
+            horizontalLineToRelative(2.78f)
+            lineTo(12f, 5.15f)
+            lineTo(7.23f, 11f)
+            horizontalLineTo(10f)
+            verticalLineToRelative(8f)
+            close()
+            moveToRelative(2f, -8f)
             close()
           }
         }
         .build()
-    return _shift_lock!!
+    return _shift_off!!
   }
 
-private var _shift_lock: ImageVector? = null
+private var _shift_off: ImageVector? = null

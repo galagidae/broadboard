@@ -1,16 +1,17 @@
 package com.galagidae.broadboard.boards
 
+import android.content.Intent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.material3.*
 import androidx.compose.ui.*
+import androidx.compose.ui.platform.LocalContext
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
-import com.galagidae.broadboard.boards.icons.*
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.utils.*
-import com.galagidae.broadboard.boards.icons.*
+import com.galagidae.broadboard.icons.*
 
 @Composable
 fun MenuBoard(
@@ -20,6 +21,7 @@ fun MenuBoard(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    val context = LocalContext.current    
 
     Column(
         modifier = modifier
@@ -61,6 +63,17 @@ fun MenuBoard(
                 icon = keyboard,
                 description = R.string.key_picker
             )
+            IconKey(
+                modifier = menuKey,
+                onClick = {
+                    val intent = Intent(context, PreferencesActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                    context.startActivity(intent)
+                },
+                icon = preferences,
+                description = R.string.key_preferences
+            )            
         }
     }
 }
@@ -83,4 +96,9 @@ private fun ColumnScope.MenuRow(
     ) {
         content()
     }
+}
+
+@Composable
+private fun openPreferences() {
+
 }

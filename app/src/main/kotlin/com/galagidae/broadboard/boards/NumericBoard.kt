@@ -7,7 +7,7 @@ import androidx.compose.material3.*
 import androidx.compose.ui.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
-import com.galagidae.broadboard.boards.icons.*
+import com.galagidae.broadboard.icons.*
 import com.galagidae.broadboard.boards.keys.*
 
 @Composable

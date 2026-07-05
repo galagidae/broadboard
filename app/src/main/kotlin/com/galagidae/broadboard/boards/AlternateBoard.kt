@@ -6,7 +6,7 @@ import androidx.compose.ui.*
 import androidx.compose.ui.unit.Dp
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
-import com.galagidae.broadboard.boards.icons.enter
+import com.galagidae.broadboard.icons.enter
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.boards.locales.*
 
