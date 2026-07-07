@@ -8,6 +8,7 @@ import androidx.compose.foundation.shape.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.*
 import com.galagidae.broadboard.*
@@ -23,6 +24,7 @@ fun BaseKey (
     onLongClick: (() -> Unit)? = null,
     @StringRes description: Int,
     repeating: Boolean = false,
+    backgroundOverride: Color? = null,
     modifier: Modifier = Modifier,
     content: @Composable BaseKeyScope.() -> Unit
 ) {
@@ -33,6 +35,7 @@ fun BaseKey (
         onLongClick = onLongClick,
         description = description,
         repeating = repeating,
+        backgroundOverride = backgroundOverride,
         modifier = modifier,
         content = content
     )
@@ -44,6 +47,7 @@ fun BaseKey (
     onLongClick: (() -> Unit)? = null,
     description: Char,
     repeating: Boolean = false,
+    backgroundOverride: Color? = null,
     modifier: Modifier = Modifier,
     content: @Composable BaseKeyScope.() -> Unit
 ) {
@@ -52,6 +56,7 @@ fun BaseKey (
         onLongClick = onLongClick,
         description = description.toString(),
         repeating = repeating,
+        backgroundOverride = backgroundOverride,
         modifier = modifier,
         content = content
     )    
@@ -63,6 +68,7 @@ fun BaseKey (
     onLongClick: (() -> Unit)? = null,
     description: String,
     repeating: Boolean = false,
+    backgroundOverride: Color? = null,
     modifier: Modifier = Modifier,
     content: @Composable BaseKeyScope.() -> Unit,
 ) {
@@ -102,7 +108,11 @@ fun BaseKey (
                 contentDescription = description
             }
             .clip(RoundedCornerShape(sizes.keyCorners))
-            .background(if (isPressed) colors.keyBackgroundPressed else colors.keyBackground)
+            .background(
+                if (isPressed) 
+                    colors.keyBackgroundPressed 
+                else 
+                    backgroundOverride ?: colors.keyBackground)
             .then(clickable),
         contentAlignment = Alignment.Center,
     ) {

@@ -29,7 +29,7 @@ fun StandardBoard(
 
     Row(
         modifier = modifier,
-        horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing),
+        horizontalArrangement = Arrangement.spacedBy(sizes.modeBarGap),
     ) {
         Column(modifier = Modifier
                 .width(sizes.rowHeight),

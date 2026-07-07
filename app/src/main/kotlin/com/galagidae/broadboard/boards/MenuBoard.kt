@@ -61,7 +61,8 @@ fun MenuBoard(
                 modifier = menuKey,
                 onClick = onClickKeyboardPicker,
                 icon = keyboard,
-                description = R.string.key_picker
+                description = R.string.key_picker,
+                backgroundOverride = colors.modeKeyBackground
             )
             IconKey(
                 modifier = menuKey,
@@ -72,7 +73,8 @@ fun MenuBoard(
                     context.startActivity(intent)
                 },
                 icon = preferences,
-                description = R.string.key_preferences
+                description = R.string.key_preferences,
+                backgroundOverride = colors.modeKeyBackground
             )            
         }
     }

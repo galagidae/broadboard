@@ -15,10 +15,13 @@ fun MenuKey (
     onClick: (() -> Unit)? = null,
     modifier: Modifier = Modifier
 ) {
+    val colors = LocalColorTheme.current
+
     IconKey (
         onClick = onClick,
         icon = menu,
         description = R.string.key_menu,
+        backgroundOverride = colors.modeKeyBackground,
         modifier = modifier
     )
 }

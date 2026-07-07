@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.material3.Text
@@ -17,6 +18,7 @@ fun IconKey(
     icon: ImageVector,
     @StringRes description: Int,
     repeating: Boolean = false,    
+    backgroundOverride: Color? = null,
     modifier: Modifier = Modifier
 ) {
     val description = stringResource(description)
@@ -27,6 +29,7 @@ fun IconKey(
         icon = icon,
         description = description,
         repeating = repeating,
+        backgroundOverride = backgroundOverride,
         modifier = modifier,
     )
 }
@@ -38,6 +41,7 @@ fun IconKey(
     icon: ImageVector,
     description: String,
     repeating: Boolean = false,
+    backgroundOverride: Color? = null,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -49,6 +53,7 @@ fun IconKey(
         description = description,
         repeating = repeating,
         onLongClick = onLongClick,
+        backgroundOverride = backgroundOverride
     ) {
         Icon(
             modifier = Modifier

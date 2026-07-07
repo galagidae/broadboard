@@ -39,7 +39,8 @@ fun ModeKey (
     BaseKey (
         modifier = modifier,
         onClick = onClick,
-        description = description
+        description = description,
+        backgroundOverride = colors.modeKeyBackground
     ) {
         Text(
             text = label,

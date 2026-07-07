@@ -176,8 +176,8 @@ private val rowTwo: List<Key> = listOf(
 private const val THREE_ROW_SPLIT = 10
 
 private val twoRowSymbols: List<List<Key>> = listOf(
-    listOf(Menu) + rowOne,
-    listOf(Alpha) + rowTwo,
+    rowOne,
+    rowTwo,
 )
 
 private val threeRowSymbols: List<List<Key>> = listOf(
