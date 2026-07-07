@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 typealias LabelMap = Map<String, Int>
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "user_prefs")
-val SIZES = listOf(
+val sizeOptions = listOf(
     "small",
     "medium",
     "large"
@@ -25,7 +25,7 @@ val sizeLabels: LabelMap = mapOf(
     "large" to R.string.pref_size_large 
 )
 
-val COLORS = listOf(
+val colorOptions = listOf(
     "light",
     "dark"
 )
@@ -44,14 +44,14 @@ class PreferencesRepository(private val context: Context) {
         .map { prefs ->
             val name = prefs[Keys.SIZE_THEME] ?: "medium"
             
-            if (name !in SIZES)
+            if (name !in sizeOptions)
                 "medium"
 
             name
         }
     suspend fun setSizeTheme(theme: String) {
         context.dataStore.edit { prefs -> 
-            prefs[Keys.SIZE_THEME] =  if (theme in SIZES) 
+            prefs[Keys.SIZE_THEME] =  if (theme in sizeOptions) 
                 theme 
             else 
                 "medium"
@@ -62,14 +62,14 @@ class PreferencesRepository(private val context: Context) {
         .map { prefs ->
             val name = prefs[Keys.COLOR_THEME] ?: "light"
             
-            if (name !in COLORS)
+            if (name !in colorOptions)
                 "light"
 
             name
         }
     suspend fun setColorTheme(theme: String) {
         context.dataStore.edit { prefs -> 
-            prefs[Keys.COLOR_THEME] =  if (theme in COLORS) 
+            prefs[Keys.COLOR_THEME] =  if (theme in colorOptions) 
                 theme 
             else 
                 "light"
