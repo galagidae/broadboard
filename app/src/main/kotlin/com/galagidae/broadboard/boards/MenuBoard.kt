@@ -97,8 +97,3 @@ private fun ColumnScope.MenuRow(
         content()
     }
 }
-
-@Composable
-private fun openPreferences() {
-
-}
