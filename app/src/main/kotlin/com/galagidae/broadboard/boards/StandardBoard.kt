@@ -26,7 +26,8 @@ fun StandardBoard(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
-    var menuBarOption = LocalMenuBarOption.current
+    val menuBarOption = LocalMenuBarOption.current
+    val naturalLayout = LocalNaturalLayout.current
 
     Row(
         modifier = modifier,
@@ -67,7 +68,7 @@ fun StandardBoard(
                 .background(colors.mainBackground)
                 .fillMaxWidth(),
             verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.Start
         ) {
             enUS.forEach { row ->
                 Row(
@@ -133,6 +134,9 @@ fun StandardBoard(
                                     onKey = onKey,
                                     modifier = Modifier.bodyKey()
                                 )
+                            }
+                            key is Space && naturalLayout -> {
+                                Box(modifier = Modifier.fillMaxHeight().width(sizes.keySize * key.multiplier))
                             }
                         }
                     }

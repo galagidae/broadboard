@@ -50,6 +50,7 @@ class PreferencesRepository(private val context: Context) {
         val SIZE_THEME = stringPreferencesKey("size_theme")
         val COLOR_THEME = stringPreferencesKey("color_theme")
         val MENU_BAR = stringPreferencesKey("menu_bar")
+        val NATURAL_LAYOUT = booleanPreferencesKey("natural_layout")
     }
 
     val sizeThemeFlow: Flow<String> = context.dataStore.data
@@ -105,6 +106,16 @@ class PreferencesRepository(private val context: Context) {
                 "bar"
         }
     }
+
+    val naturalLayoutFlow: Flow<Boolean> = context.dataStore.data
+        .map { prefs ->
+            prefs[Keys.NATURAL_LAYOUT] ?: false
+        }
+    suspend fun setNaturalLayout(enabled: Boolean) {
+        context.dataStore.edit { prefs -> 
+            prefs[Keys.NATURAL_LAYOUT] = enabled
+        }
+    }
 }
 
 class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel() {
@@ -125,11 +136,19 @@ class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel(
     fun setMenuBarOption(option: String) {
         viewModelScope.launch { repo.setMenuBar(option) }
     }
+
+    val naturalLayout: StateFlow<Boolean> = repo.naturalLayoutFlow
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), false)
+    fun setNaturalLayout(enabled: Boolean) {
+        viewModelScope.launch { repo.setNaturalLayout(enabled) }
+    }
+
 }
 
 val LocalColorTheme = compositionLocalOf { lightTheme }
 val LocalSizeTheme = compositionLocalOf { largeSize }
 val LocalMenuBarOption = compositionLocalOf { "bar" }
+val LocalNaturalLayout = compositionLocalOf { false }
 
 @Composable
 fun AppPreferences(
@@ -150,11 +169,13 @@ fun AppPreferences(
     }
 
     val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
+    val naturalLayout by viewModel.naturalLayout.collectAsStateWithLifecycle()
 
     CompositionLocalProvider(
         LocalSizeTheme provides sizeTheme,
         LocalColorTheme provides colorTheme,
-        LocalMenuBarOption provides menuBarOption
+        LocalMenuBarOption provides menuBarOption,
+        LocalNaturalLayout provides naturalLayout
     ) {
         content()
     }

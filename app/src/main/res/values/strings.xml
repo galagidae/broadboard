@@ -201,5 +201,7 @@
 <string name="pref_menu_bar">Menu Bar</string>
 <string name="pref_menu_space">Long press the spacebar</string>
 <string name="pref_menu_both">Both</string>
+<string name="pref_natural_layout">Natural Layout</string>
+<string name="pref_natural_layout_sub">Use natural keyboard layout spacing</string>
 
 </resources>

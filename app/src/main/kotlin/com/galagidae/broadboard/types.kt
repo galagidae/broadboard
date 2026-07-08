@@ -37,6 +37,10 @@ object Alpha : Key()
 
 object Menu : Key()
 
+data class Space(
+    val multiplier: Float,
+) : Key()
+
 enum class ShiftMode {
     NORMAL, SHIFT, LOCK
 }

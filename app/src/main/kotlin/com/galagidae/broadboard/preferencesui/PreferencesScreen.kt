@@ -17,6 +17,7 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
     val colorTheme by viewModel.colorTheme.collectAsStateWithLifecycle()
     val sizeTheme by viewModel.sizeTheme.collectAsStateWithLifecycle()
     val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
+    val naturalLayout by viewModel.naturalLayout.collectAsStateWithLifecycle()
     val dispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
     
     Column(
@@ -39,7 +40,7 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
             }
             Spacer(modifier = Modifier.width(8.dp))
             Text(
-                text = stringResource(R.string.pref_title),
+                text = stringResource(R.string.app_name),
                 style = MaterialTheme.typography.headlineLarge
             )
         }
@@ -53,8 +54,6 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
             onSelect = { viewModel.setColorTheme(it) }
         )
 
-        HorizontalDivider()
-
         Pickable(
             label = stringResource(R.string.pref_size),
             options = sizeLabels,
@@ -62,13 +61,19 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
             onSelect = { viewModel.setSizeTheme(it) }
         )
 
-        HorizontalDivider()
 
         Pickable(
             label = stringResource(R.string.pref_menu_option),
             options = menuBarLabels,
             selected = menuBarOption,
             onSelect = { viewModel.setMenuBarOption(it) }
+        )
+
+        Toggle(
+            title = R.string.pref_natural_layout,
+            subtitle = R.string.pref_natural_layout_sub,
+            checked = naturalLayout,
+            onChange = { viewModel.setNaturalLayout(it) }
         )
     }
 }

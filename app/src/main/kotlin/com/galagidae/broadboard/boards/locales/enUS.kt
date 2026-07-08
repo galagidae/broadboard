@@ -47,6 +47,7 @@ val enUS: List<List<Key>> = listOf(
         ),
     ),
     listOf(
+        Space(multiplier = 0.5f),
         qKey,
         wKey,
         Alternate(
@@ -71,6 +72,7 @@ val enUS: List<List<Key>> = listOf(
         pKey,
     ),
     listOf(
+        Space(multiplier = 0.75f),
         Alternate(
             primary = aKey,
             rows = aAlternates
@@ -85,10 +87,11 @@ val enUS: List<List<Key>> = listOf(
         hKey,
         jKey,
         kKey,
-        lKey,
-        Contextual,
+        lKey
     ),
     listOf(
+        Space(multiplier = 0.25f),
+        Contextual,
         zKey,
         xKey,
         Alternate(
