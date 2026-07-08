@@ -20,6 +20,7 @@ fun SymbolsBoard(
     modifier: Modifier = Modifier
 ) {
     val sizes = LocalSizeTheme.current
+    val barEnabled = LocalMenuBarOption.current != "space"
 
     Column(
         verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
@@ -43,13 +44,13 @@ fun SymbolsBoard(
                             shiftMode = shiftMode,
                             modifier = Modifier.bodyKey()
                         )
-                        key is Alpha -> ModeKey(
+                        key is Alpha && barEnabled -> ModeKey(
                             modifier = Modifier.bodyKey(),
                             label = "abc",
                             description = R.string.key_alpha,
                             onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }
                         )
-                        key is Menu -> MenuKey(
+                        key is Menu && barEnabled -> MenuKey(
                             modifier = Modifier.bodyKey(),                            
                             onClick = { onChangeMode?.invoke(BoardMode.MENU) }
                         )

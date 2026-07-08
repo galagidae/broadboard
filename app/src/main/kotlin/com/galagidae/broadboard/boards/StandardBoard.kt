@@ -26,38 +26,42 @@ fun StandardBoard(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    var menuBarOption = LocalMenuBarOption.current
 
     Row(
         modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(sizes.modeBarGap),
     ) {
-        Column(modifier = Modifier
-                .width(sizes.rowHeight),
-            verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
-        ) {
-            MenuKey(
-                onClick = { onChangeMode?.invoke(BoardMode.MENU) },
-                modifier = Modifier.bodyKey()
-            )
-            ModeKey(
-                label = "?!;()",
-                description = R.string.key_symbols,
-                onClick = { onChangeMode?.invoke(BoardMode.SYMBOLS) },
-                modifier = Modifier.bodyKey()
-            )
-            ModeKey(
-                label = "123",
-                description = R.string.key_numeric,
-                onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) },
-                modifier = Modifier.bodyKey()
-            )            
-            ModeKey(
-                label = "🙂",
-                description = R.string.key_emojis,
-                onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
-                modifier = Modifier.bodyKey()
-            )
+        if (menuBarOption != "space") {
+            Column(modifier = Modifier
+                    .width(sizes.rowHeight),
+                verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
+            ) {
+                MenuKey(
+                    onClick = { onChangeMode?.invoke(BoardMode.MENU) },
+                    modifier = Modifier.bodyKey()
+                )
+                ModeKey(
+                    label = "?!;()",
+                    description = R.string.key_symbols,
+                    onClick = { onChangeMode?.invoke(BoardMode.SYMBOLS) },
+                    modifier = Modifier.bodyKey()
+                )
+                ModeKey(
+                    label = "123",
+                    description = R.string.key_numeric,
+                    onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) },
+                    modifier = Modifier.bodyKey()
+                )            
+                ModeKey(
+                    label = "🙂",
+                    description = R.string.key_emojis,
+                    onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
+                    modifier = Modifier.bodyKey()
+                )
+            }
         }
+
         Column(
             modifier = Modifier
                 .background(colors.mainBackground)

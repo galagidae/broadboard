@@ -197,5 +197,9 @@
 <string name="pref_color">Color</string>
 <string name="pref_color_light">Light</string>
 <string name="pref_color_dark">Dark</string>
+<string name="pref_menu_option">Mode Selection</string>
+<string name="pref_menu_bar">Menu Bar</string>
+<string name="pref_menu_space">Long press the spacebar</string>
+<string name="pref_menu_both">Both</string>
 
 </resources>

@@ -122,7 +122,8 @@ fun Shell(
                     shiftMode = if (autoShift.value && shiftMode != ShiftMode.LOCK) ShiftMode.SHIFT else shiftMode,
                     boardMode = boardMode,
                     isAlternate = boardMode == BoardMode.ALPHANUMERIC && alternate != null,
-                    onClickClose = ::closeAlternate
+                    onClickClose = ::closeAlternate,
+                    onLongClickSpace = { onChangeMode(BoardMode.MENU) }
                 )
             }
         }

@@ -34,10 +34,22 @@ val colorLabels: LabelMap = mapOf(
     "dark" to R.string.pref_color_dark
 )
 
+val menuBarOptions = listOf(
+    "bar",
+    "space",
+    "both"
+)
+val menuBarLabels: LabelMap = mapOf(
+    "bar" to R.string.pref_menu_bar,
+    "space" to R.string.pref_menu_space,
+    "both" to R.string.pref_menu_both
+)
+
 class PreferencesRepository(private val context: Context) {
     private object Keys {
         val SIZE_THEME = stringPreferencesKey("size_theme")
         val COLOR_THEME = stringPreferencesKey("color_theme")
+        val MENU_BAR = stringPreferencesKey("menu_bar")
     }
 
     val sizeThemeFlow: Flow<String> = context.dataStore.data
@@ -74,7 +86,25 @@ class PreferencesRepository(private val context: Context) {
             else 
                 "light"
         }
-    }    
+    }
+
+    val menuBarFlow: Flow<String> = context.dataStore.data
+        .map { prefs ->
+            val name = prefs[Keys.MENU_BAR] ?: "bar"
+            
+            if (name !in colorOptions)
+                "bar"
+
+            name
+        }
+    suspend fun setMenuBar(option: String) {
+        context.dataStore.edit { prefs -> 
+            prefs[Keys.MENU_BAR] =  if (option in menuBarOptions) 
+                option 
+            else 
+                "bar"
+        }
+    }
 }
 
 class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel() {
@@ -89,10 +119,17 @@ class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel(
     fun setColorTheme(theme: String) {
         viewModelScope.launch { repo.setColorTheme(theme) }
     }
+
+    val menuBarOption: StateFlow<String> = repo.menuBarFlow
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), "bar")
+    fun setMenuBarOption(option: String) {
+        viewModelScope.launch { repo.setMenuBar(option) }
+    }
 }
 
 val LocalColorTheme = compositionLocalOf { lightTheme }
 val LocalSizeTheme = compositionLocalOf { largeSize }
+val LocalMenuBarOption = compositionLocalOf { "bar" }
 
 @Composable
 fun AppPreferences(
@@ -112,9 +149,12 @@ fun AppPreferences(
         else -> lightTheme
     }
 
+    val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
+
     CompositionLocalProvider(
         LocalSizeTheme provides sizeTheme,
-        LocalColorTheme provides colorTheme
+        LocalColorTheme provides colorTheme,
+        LocalMenuBarOption provides menuBarOption
     ) {
         content()
     }

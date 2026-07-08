@@ -21,10 +21,12 @@ fun BottomRow(
     boardMode: BoardMode,
     isAlternate: Boolean = false,
     onClickClose: (() -> Unit)? = null,
+    onLongClickSpace: (() -> Unit)? = null,
     modifier: Modifier = Modifier,
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    var menuBarOption = LocalMenuBarOption.current
 
     Row(
         modifier = Modifier
@@ -49,6 +51,7 @@ fun BottomRow(
                     .weight(2f)
                     .fillMaxHeight(),            
                 onClick = onSpace,
+                onLongClick = if (menuBarOption != "bar") onLongClickSpace else null,
                 icon = spacebar,
                 description = R.string.key_space
             )

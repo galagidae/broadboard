@@ -16,6 +16,7 @@ import com.galagidae.broadboard.icons.arrow_back
 fun PreferencesScreen(viewModel: PreferencesViewModel) {
     val colorTheme by viewModel.colorTheme.collectAsStateWithLifecycle()
     val sizeTheme by viewModel.sizeTheme.collectAsStateWithLifecycle()
+    val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
     val dispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
     
     Column(
@@ -59,6 +60,15 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
             options = sizeLabels,
             selected = sizeTheme,
             onSelect = { viewModel.setSizeTheme(it) }
+        )
+
+        HorizontalDivider()
+
+        Pickable(
+            label = stringResource(R.string.pref_menu_option),
+            options = menuBarLabels,
+            selected = menuBarOption,
+            onSelect = { viewModel.setMenuBarOption(it) }
         )
     }
 }
