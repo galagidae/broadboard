@@ -14,9 +14,9 @@ import com.galagidae.broadboard.boards.keys.*
 
 @Composable
 fun BottomRow(
-    onSpace: () -> Unit,
-    onBackspace: () -> Unit,
-    onShift: (longClick: Boolean) -> Unit,
+    onSpace: (() -> Unit)? = null,
+    onBackspace: (() -> Unit)? = null,
+    onShift: ((longClick: Boolean) -> Unit)? = null,
     shiftMode: ShiftMode,
     boardMode: BoardMode,
     isAlternate: Boolean = false,
@@ -42,8 +42,8 @@ fun BottomRow(
                 .fillMaxHeight(),
             boardMode = boardMode,
             shiftMode = shiftMode,
-            onClick = {onShift(false)},
-            onLongClick = {onShift(true)},            
+            onClick = {onShift?.invoke(false)},
+            onLongClick = {onShift?.invoke(true)},            
         )
         if (!isAlternate) {
             IconKey(

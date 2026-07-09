@@ -15,10 +15,10 @@ import com.galagidae.broadboard.utils.*
 
 @Composable
 fun StandardBoard(
-    onKey: (Char) -> Unit,    
-    onEnter: () -> Unit,
+    onKey: ((Char) -> Unit)? = null,
+    onEnter: (() -> Unit)? = null,
     shiftMode: ShiftMode,
-    inputContext: InputContext,
+    inputContext: State<InputContext>,
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
     onClickAlternate: ((Alternate) -> Unit)? = null,
     actionKey: State<ActionKey>,
@@ -120,7 +120,7 @@ fun StandardBoard(
                                 )
                             }
                             key is Contextual -> {
-                                val char = when(inputContext) {
+                                val char = when(inputContext.value) {
                                     InputContext.NORMAL -> ','
                                     InputContext.URL -> '/'
                                     InputContext.EMAIL -> '@'

@@ -62,3 +62,7 @@ sealed interface ActionKey {
     data class Custom(val id: Int, val label: String) : ActionKey
     object Newline : ActionKey   // no action, or NO_ENTER_ACTION set
 }
+
+enum class Orientation {
+    LANDSCAPE, PORTRAIT
+}

@@ -15,56 +15,76 @@ fun NumericBoard(
     onKey: ((Char) -> Unit)? = null,
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
     onBackspace: (() -> Unit)? = null,
+    orientation: Orientation,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+
+    val rows = when(orientation) {
+            Orientation.LANDSCAPE -> numericLayout_land
+            else -> numericLayout
+    }
 
     Column(
         modifier = modifier
             .background(colors.mainBackground)
             .fillMaxWidth()
             .height(sizes.appHeight),
-        verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
+        verticalArrangement = Arrangement.spacedBy(sizes.keySpacing)
     ) {
-        numericLayout.forEach { row ->
+        rows.forEach { row ->
+            NumberRow(row, onKey)
+        }
+
+        if (orientation == Orientation.PORTRAIT) {
             Row(
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing)
             ) {
-                row.forEach { n ->
-                    NumberKey(
-                        number = n, 
-                        onClick = onKey,
-                        modifier = Modifier.weight(1f)
-                    )
-                }                
+                MenuKey(
+                    onClick = { onChangeMode?.invoke(BoardMode.MENU) },
+                    modifier = Modifier.weight(1f)
+                )
+                NumberKey(
+                    number = '0',
+                    onClick = onKey,
+                    modifier = Modifier.weight(1f)
+                )
+                IconKey(
+                    onClick = onBackspace,
+                    icon = backspace,
+                    description = R.string.key_delete,
+                    repeating = true,
+                    modifier = Modifier.fillMaxHeight().weight(1f)
+                )
             }
         }
-        Row(
-            modifier = Modifier
-                .weight(1f)
-                .fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing)
-        ) {
-            MenuKey(
-                onClick = { onChangeMode?.invoke(BoardMode.MENU) },
-                modifier = Modifier.weight(1f)
-            )
+    }
+}
+
+@Composable
+private fun ColumnScope.NumberRow(
+    numbers: List<Char>,
+    onKey: ((Char) -> Unit)? = null
+) {
+    val sizes = LocalSizeTheme.current
+
+    Row(
+        modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing)
+    ) {
+        numbers.forEach { n ->
             NumberKey(
-                number = '0',
+                number = n, 
                 onClick = onKey,
                 modifier = Modifier.weight(1f)
             )
-            IconKey(
-                onClick = onBackspace,
-                icon = backspace,
-                description = R.string.key_delete,
-                modifier = Modifier.fillMaxHeight().weight(1f)
-            )            
-        }
+        }                
     }
 }
 
@@ -94,4 +114,9 @@ private val numericLayout = listOf(
     listOf('1', '2', '3'),
     listOf('4', '5', '6'),
     listOf('7', '8', '9'),
+)
+
+private val numericLayout_land = listOf(
+    listOf('1', '2', '3', '4', '5'),
+    listOf('6', '7', '8', '9', '0')
 )

@@ -41,6 +41,7 @@ data class SizeTheme(
     val rowHeight: Dp = keySize
     val panBoxHeight: Dp = keySize * rowCount + keySpacing
     val appHeight: Dp = bottomRowHeight + panBoxHeight
+    val appHeightLand: Dp = panBoxHeight
 }
 
 val smallSize = SizeTheme(

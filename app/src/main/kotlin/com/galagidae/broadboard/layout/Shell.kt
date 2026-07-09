@@ -1,5 +1,6 @@
 package com.galagidae.broadboard.layout
 
+import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
@@ -8,6 +9,7 @@ import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.boards.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun Shell(
@@ -20,11 +22,17 @@ fun Shell(
     actionKey: State<ActionKey>,
     modifier: Modifier = Modifier,
 ) {
-    val colors = LocalColorTheme.current
-    val sizes = LocalSizeTheme.current
     var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
     var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
     var alternate by remember { mutableStateOf<Alternate?>(null) }
+    val configuration = LocalConfiguration.current    
+
+    var orientation: Orientation = when(configuration.orientation) {
+        Configuration.ORIENTATION_LANDSCAPE -> Orientation.LANDSCAPE
+        else -> Orientation.PORTRAIT
+    }
+
+    log("SHELL", orientation)
 
     fun onInputInner(t: String): Unit {
         if (shiftMode == ShiftMode.SHIFT && boardMode == BoardMode.ALPHANUMERIC) {
@@ -47,85 +55,61 @@ fun Shell(
         alternate = null
     }
 
+    fun onShift(longClicklc: Boolean) {
+        when (shiftMode) {
+            ShiftMode.NORMAL -> shiftMode = if (longClicklc) ShiftMode.LOCK 
+                                            else ShiftMode.SHIFT
+            ShiftMode.SHIFT -> shiftMode = if (longClicklc) ShiftMode.LOCK 
+                                            else ShiftMode.NORMAL
+            ShiftMode.LOCK -> shiftMode = ShiftMode.NORMAL
+        }
+    }
+
+    fun onAlternateKey(c: Char) {
+        onInputInner(c.toString())
+        closeAlternate()
+    }
+
     CompositionLocalProvider(
         LocalDensity provides Density(LocalDensity.current.density, fontScale = 1f)
     ) {
-        when(boardMode) {
-            BoardMode.NUMERIC -> NumericBoard(
-                onKey = { c -> onInputInner(c.toString()) },
+        when(orientation) {
+            Orientation.LANDSCAPE -> LandscapeLayout(
+                actionKey = actionKey,
+                alternate = alternate,
+                autoShift = autoShift.value,
+                boardMode = boardMode,
+                inputContext = inputContext,
+                orientation = orientation,
+                shiftMode = shiftMode,
+                onAlternateKey = ::onAlternateKey,
                 onBackspace = onBackspace,
-                onChangeMode = ::onChangeMode
-            )
-            BoardMode.MENU -> MenuBoard(
                 onChangeMode = ::onChangeMode,
-                onClickKeyboardPicker = onClickKeyboardPicker
+                onClickClose = ::closeAlternate,
+                onClickAlternate = ::onClickAlternate,
+                onClickKeyboardPicker = onClickKeyboardPicker,
+                onEnter = onEnter,
+                onInput = ::onInputInner,
+                onShift = ::onShift,
             )
-            else -> Column() {
-                key(boardMode, alternate) {
-                    PanBox(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .background(colors.mainBackground)
-                            .height(sizes.panBoxHeight)
-                    ) {
-                        when (boardMode) {
-                            BoardMode.ALPHANUMERIC -> {
-                                val alt = alternate
-                                
-                                if (alt != null)
-                                    AlternateBoard(
-                                        onKey = { c -> 
-                                            onInputInner(c.toString())
-                                            closeAlternate()
-                                        },
-                                        shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
-                                        alternate = alt,
-                                        visibleWidth = visibleWidth,
-                                        visibleHeight = visibleHeight
-                                    )
-                                else StandardBoard(
-                                    onKey = { c -> onInputInner(c.toString()) },
-                                    onEnter = onEnter,
-                                    shiftMode = if (autoShift.value) ShiftMode.LOCK else shiftMode,
-                                    inputContext = inputContext.value,
-                                    onChangeMode = ::onChangeMode,
-                                    onClickAlternate = ::onClickAlternate,
-                                    actionKey = actionKey
-                                )
-                            }
-                            BoardMode.SYMBOLS -> SymbolsBoard(
-                                onKey = { c -> onInputInner(c.toString()) },
-                                shiftMode = shiftMode,
-                                onChangeMode = ::onChangeMode
-                            )
-                            BoardMode.EMOJIS -> EmojisBoard(
-                                onKey = ::onInputInner,
-                                shiftMode = shiftMode,
-                                onChangeMode = ::onChangeMode
-                            )
-                            else -> {}
-                        }
-                    }
-                }
-                BottomRow(
-                    onSpace = { onInputInner(" ") },
-                    onBackspace = onBackspace,
-                    onShift = {lc -> 
-                        when (shiftMode) {
-                            ShiftMode.NORMAL -> shiftMode = if (lc) ShiftMode.LOCK 
-                                                            else ShiftMode.SHIFT
-                            ShiftMode.SHIFT -> shiftMode = if (lc) ShiftMode.LOCK 
-                                                            else ShiftMode.NORMAL
-                            ShiftMode.LOCK -> shiftMode = ShiftMode.NORMAL
-                        }
-                    },
-                    shiftMode = if (autoShift.value && shiftMode != ShiftMode.LOCK) ShiftMode.SHIFT else shiftMode,
-                    boardMode = boardMode,
-                    isAlternate = boardMode == BoardMode.ALPHANUMERIC && alternate != null,
-                    onClickClose = ::closeAlternate,
-                    onLongClickSpace = { onChangeMode(BoardMode.MENU) }
-                )
-            }
+            else -> PortraitLayout(
+                actionKey = actionKey,
+                alternate = alternate,
+                autoShift = autoShift.value,
+                boardMode = boardMode,
+                inputContext = inputContext,
+                orientation = orientation,
+                shiftMode = shiftMode,
+                onAlternateKey = ::onAlternateKey,
+                onBackspace = onBackspace,
+                onChangeMode = ::onChangeMode,
+                onClickClose = ::closeAlternate,
+                onClickAlternate = ::onClickAlternate,
+                onClickKeyboardPicker = onClickKeyboardPicker,
+                onEnter = onEnter,
+                onInput = ::onInputInner,
+                onShift = ::onShift,
+            )
         }
     }
 }
