@@ -203,5 +203,7 @@
 <string name="pref_menu_both">Both</string>
 <string name="pref_natural_layout">Natural Layout</string>
 <string name="pref_natural_layout_sub">Use natural keyboard layout spacing</string>
+<string name="pref_highlights">Color Highlights</string>
+<string name="pref_highlights_sub">Add color highlights to special keys</string>
 
 </resources>

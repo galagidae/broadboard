@@ -1,6 +1,6 @@
 package com.galagidae.broadboard.boards
 
-import androidx.compose.foundation.background
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
@@ -28,6 +28,7 @@ fun StandardBoard(
     val sizes = LocalSizeTheme.current
     val menuBarOption = LocalMenuBarOption.current
     val naturalLayout = LocalNaturalLayout.current
+    val highlights = LocalHighlights.current
 
     Row(
         modifier = modifier,
@@ -114,7 +115,9 @@ fun StandardBoard(
                                     onClick = onEnter,
                                     modifier = Modifier
                                         .width(sizes.enterKeyWidth)
-                                        .fillMaxHeight(),
+                                        .fillMaxHeight()
+                                        .highlightBorder(highlights, colors.actionBorder, sizes.keyCorners),
+                                    backgroundOverride = if (highlights) colors.actionBackground else null,
                                     icon = icon,
                                     description = description
                                 )

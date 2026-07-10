@@ -18,6 +18,7 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
     val sizeTheme by viewModel.sizeTheme.collectAsStateWithLifecycle()
     val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
     val naturalLayout by viewModel.naturalLayout.collectAsStateWithLifecycle()
+    val highlights by viewModel.highlights.collectAsStateWithLifecycle()
     val dispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
     
     Column(
@@ -74,6 +75,13 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
             subtitle = R.string.pref_natural_layout_sub,
             checked = naturalLayout,
             onChange = { viewModel.setNaturalLayout(it) }
+        )
+
+        Toggle(
+            title = R.string.pref_highlights,
+            subtitle = R.string.pref_highlights_sub,
+            checked = highlights,
+            onChange = { viewModel.setHighlights(it) }
         )
     }
 }

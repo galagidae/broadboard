@@ -10,7 +10,16 @@ data class ColorTheme(
     val keyBackgroundPressed: Color = Color.Black,
     val keyLabel: Color = Color.Black,
     val keyLabelPressed: Color = Color.White,
-    val modeKeyBackground: Color = Color(0xFFBBBBFF)
+    val modeKeyBackground: Color = Color(0xFFBBBBFF),
+    val actionBorder: Color = Color(0xFF00FF00),
+    val actionBackground: Color = Color(0xFF00FF00),
+    val shiftBorder: Color = Color.Yellow,
+    val shiftBackground: Color = Color.Yellow,
+    val spaceBorder: Color = Color.Blue,
+    val spaceBackground: Color = Color.Blue,
+    val backspaceBorder: Color = Color(0xFFFF4646),
+    val backspaceBackground: Color = Color(0xFFFF4646)
+
 )
 
 val lightTheme = ColorTheme()
@@ -21,7 +30,15 @@ val darkTheme = ColorTheme(
     keyBackgroundPressed = Color.White,
     keyLabel = Color.White,
     keyLabelPressed = Color.Black,
-    modeKeyBackground = Color(0xFF2B2E64)
+    modeKeyBackground = Color(0xFF2B2E64),
+    actionBorder = Color.Green,
+    actionBackground = Color(0xFF2B2E32),
+    shiftBorder = Color.Yellow,
+    shiftBackground = Color(0xFF2B2E32),
+    spaceBorder = Color.Blue,
+    spaceBackground = Color(0xFF2B2E32),
+    backspaceBorder = Color.Red,
+    backspaceBackground = Color(0xFF2B2E32)
 )
 
 data class SizeTheme(

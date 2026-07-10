@@ -10,6 +10,7 @@ import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.*
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.icons.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun LandscapeLayout(
@@ -32,6 +33,7 @@ fun LandscapeLayout(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    val highlights = LocalHighlights.current
     var menuBarOption = LocalMenuBarOption.current
 
     Row(
@@ -47,7 +49,10 @@ fun LandscapeLayout(
             )
             BoardMode.MENU -> null
             else -> IconKey(
-                modifier = Modifier.fillMaxHeight(),
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .highlightBorder(highlights, colors.spaceBorder, sizes.keyCorners),
+                backgroundOverride = if (highlights) colors.spaceBackground else null,
                 onClick = { onInput?.invoke(" ") },
                 onLongClick = if (menuBarOption != "bar")
                     { { onChangeMode?.invoke(BoardMode.MENU) } }
@@ -111,7 +116,10 @@ fun LandscapeLayout(
                     }
             }
         }
-        Column(verticalArrangement = Arrangement.spacedBy(sizes.keySpacing)) {
+        Column(
+            modifier = Modifier.weight(1f),
+            verticalArrangement = Arrangement.spacedBy(sizes.keySpacing)
+        ) {
             when(boardMode) {
                 BoardMode.MENU -> null
                 else -> {
@@ -120,13 +128,17 @@ fun LandscapeLayout(
                         icon = backspace,
                         description = R.string.key_delete,
                         repeating = true,
-                        modifier = Modifier.fillMaxHeight().weight(1f)
+                        backgroundOverride = if (highlights) colors.backspaceBackground else null,
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxWidth()
+                            .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners)
                     )
                     if (boardMode != BoardMode.NUMERIC) {
                         ShiftKey(
                             modifier = Modifier
-                                .weight(1f)
-                                .fillMaxHeight(),
+                                .fillMaxWidth()
+                                .weight(1f),
                             boardMode = boardMode,
                             shiftMode = shiftMode,
                             onClick = {onShift?.invoke(false)},

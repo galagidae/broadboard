@@ -9,6 +9,7 @@ import androidx.compose.material3.Text
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.icons.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun ShiftKey(
@@ -20,6 +21,7 @@ fun ShiftKey(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    val highlights = LocalHighlights.current
     val description = when(boardMode) {
         BoardMode.SYMBOLS ->  
             if(shiftMode == ShiftMode.NORMAL) 
@@ -36,7 +38,9 @@ fun ShiftKey(
     }
 
     BaseKey(
-        modifier = modifier,
+        modifier = modifier
+            .highlightBorder(highlights, colors.shiftBorder, sizes.keyCorners),
+        backgroundOverride = if (highlights) colors.shiftBackground else null,
         onClick = onClick,
         onLongClick = {
             when(boardMode){

@@ -10,6 +10,7 @@ import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.icons.*
 import com.galagidae.broadboard.boards.keys.*
+import com.galagidae.broadboard.utils.*
 
 
 @Composable
@@ -26,6 +27,7 @@ fun BottomRow(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    val highlights = LocalHighlights.current
     var menuBarOption = LocalMenuBarOption.current
 
     Row(
@@ -49,7 +51,9 @@ fun BottomRow(
             IconKey(
                 modifier = Modifier
                     .weight(2f)
-                    .fillMaxHeight(),            
+                    .fillMaxHeight()
+                    .highlightBorder(highlights, colors.spaceBorder, sizes.keyCorners),
+                backgroundOverride = if (highlights) colors.spaceBackground else null,
                 onClick = onSpace,
                 onLongClick = if (menuBarOption != "bar") onLongClickSpace else null,
                 icon = spacebar,
@@ -58,7 +62,9 @@ fun BottomRow(
             IconKey(
                 modifier = Modifier
                     .weight(1f)
-                    .fillMaxHeight(),
+                    .fillMaxHeight()
+                    .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners),
+                backgroundOverride = if (highlights) colors.backspaceBackground else null,
                 onClick = onBackspace,
                 icon = backspace,
                 description = R.string.key_delete,
@@ -68,7 +74,9 @@ fun BottomRow(
             IconKey(
                 modifier = Modifier
                     .weight(2f)
-                    .fillMaxHeight(),            
+                    .fillMaxHeight()
+                    .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners),            
+                backgroundOverride = if (highlights) colors.backspaceBackground else null,
                 onClick = onClickClose,
                 icon = close,
                 description = R.string.key_back

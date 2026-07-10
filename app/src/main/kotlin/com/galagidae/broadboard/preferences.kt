@@ -51,6 +51,7 @@ class PreferencesRepository(private val context: Context) {
         val COLOR_THEME = stringPreferencesKey("color_theme")
         val MENU_BAR = stringPreferencesKey("menu_bar")
         val NATURAL_LAYOUT = booleanPreferencesKey("natural_layout")
+        val HIGHLIGHTS = booleanPreferencesKey("highlights")
     }
 
     val sizeThemeFlow: Flow<String> = context.dataStore.data
@@ -116,6 +117,16 @@ class PreferencesRepository(private val context: Context) {
             prefs[Keys.NATURAL_LAYOUT] = enabled
         }
     }
+
+    val highlightsFlow: Flow<Boolean> = context.dataStore.data
+        .map { prefs ->
+            prefs[Keys.HIGHLIGHTS] ?: false
+        }
+    suspend fun setHighlights(enabled: Boolean) {
+        context.dataStore.edit { prefs -> 
+            prefs[Keys.HIGHLIGHTS] = enabled
+        }
+    }
 }
 
 class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel() {
@@ -143,12 +154,18 @@ class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel(
         viewModelScope.launch { repo.setNaturalLayout(enabled) }
     }
 
+    val highlights: StateFlow<Boolean> = repo.highlightsFlow
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), false)
+    fun setHighlights(enabled: Boolean) {
+        viewModelScope.launch { repo.setHighlights(enabled) }
+    }
 }
 
 val LocalColorTheme = compositionLocalOf { lightTheme }
 val LocalSizeTheme = compositionLocalOf { largeSize }
 val LocalMenuBarOption = compositionLocalOf { "bar" }
 val LocalNaturalLayout = compositionLocalOf { false }
+val LocalHighlights = compositionLocalOf { false }
 
 @Composable
 fun AppPreferences(
@@ -170,12 +187,14 @@ fun AppPreferences(
 
     val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
     val naturalLayout by viewModel.naturalLayout.collectAsStateWithLifecycle()
+    val highlights by viewModel.highlights.collectAsStateWithLifecycle()
 
     CompositionLocalProvider(
         LocalSizeTheme provides sizeTheme,
         LocalColorTheme provides colorTheme,
         LocalMenuBarOption provides menuBarOption,
-        LocalNaturalLayout provides naturalLayout
+        LocalNaturalLayout provides naturalLayout,
+        LocalHighlights provides highlights,
     ) {
         content()
     }
