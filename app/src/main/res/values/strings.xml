@@ -76,107 +76,107 @@
 
     <!-- Diacritics & ligatures -->
     <!-- A -->
-    <string name="char_a_acute">"A, with acute accent"</string>
-    <string name="char_a_acute_cap">"Capital A, with acute accent"</string>
-    <string name="char_a_ash">"A, E, Ligature"</string>
-    <string name="char_a_ash_cap">"Capital A, E, Ligature"</string>
-    <string name="char_a_circumflex">"A, with Circumflex"</string>
-    <string name="char_a_circumflex_cap">"Capital A, with Circumflex"</string>
-    <string name="char_a_diaeresis">"A, with two dots"</string>
-    <string name="char_a_diaeresis_cap">"Capital A, with two dots"</string>
-    <string name="char_a_grave">"A, with Grave accent"</string>
-    <string name="char_a_grave_cap">"Capital A, with Grave accent"</string>
-    <string name="char_a_macron">"A, with Macron"</string>
-    <string name="char_a_macron_cap">"Capital A, with Macron"</string>
-    <string name="char_a_ogonek">"A, with Ogonek"</string>
-    <string name="char_a_ogonek_cap">"Capital A, with Ogonek"</string>
-    <string name="char_a_ordinal">"Raised A"</string>
-    <string name="char_a_overring">"A, with ring above"</string>
-    <string name="char_a_overring_cap">"Capital A, with ring above"</string>
-    <string name="char_a_tilde">"A, with Tilde"</string>
-    <string name="char_a_tilde_cap">"Capital A, with Tilde"</string>
+    <string name="char_a_acute">A, with acute accent</string>
+    <string name="char_a_acute_cap">Capital A, with acute accent</string>
+    <string name="char_a_ash">A, E, Ligature</string>
+    <string name="char_a_ash_cap">Capital A, E, Ligature</string>
+    <string name="char_a_circumflex">A, with Circumflex</string>
+    <string name="char_a_circumflex_cap">Capital A, with Circumflex</string>
+    <string name="char_a_diaeresis">A, with two dots</string>
+    <string name="char_a_diaeresis_cap">Capital A, with two dots</string>
+    <string name="char_a_grave">A, with Grave accent</string>
+    <string name="char_a_grave_cap">Capital A, with Grave accent</string>
+    <string name="char_a_macron">A, with Macron</string>
+    <string name="char_a_macron_cap">Capital A, with Macron</string>
+    <string name="char_a_ogonek">A, with Ogonek</string>
+    <string name="char_a_ogonek_cap">Capital A, with Ogonek</string>
+    <string name="char_a_ordinal">Raised A</string>
+    <string name="char_a_overring">A, with ring above</string>
+    <string name="char_a_overring_cap">Capital A, with ring above</string>
+    <string name="char_a_tilde">A, with Tilde</string>
+    <string name="char_a_tilde_cap">Capital A, with Tilde</string>
 
     <!-- E -->
-    <string name="char_e_acute">"E, with acute accent"</string>
-    <string name="char_e_acute_cap">"Capital E, with acute accent"</string>
-    <string name="char_e_circumflex">"E, with Circumflex"</string>
-    <string name="char_e_circumflex_cap">"Capital E, with Circumflex"</string>
-    <string name="char_e_diaeresis">"E, with two dots"</string>
-    <string name="char_e_diaeresis_cap">"Capital E, with two dots"</string>
-    <string name="char_e_grave">"E, with Grave accent"</string>
-    <string name="char_e_grave_cap">"Capital E, with Grave accent"</string>
-    <string name="char_e_macron">"E, with Macron"</string>
-    <string name="char_e_macron_cap">"Capital E, with Macron"</string>
-    <string name="char_e_ogonek">"E, with Ogonek"</string>
-    <string name="char_e_ogonek_cap">"Capital E, with Ogonek"</string>
-    <string name="char_e_overdot">"E, with dot above"</string>
-    <string name="char_e_overdot_cap">"Capital E, with dot above"</string>
+    <string name="char_e_acute">E, with acute accent</string>
+    <string name="char_e_acute_cap">Capital E, with acute accent</string>
+    <string name="char_e_circumflex">E, with Circumflex</string>
+    <string name="char_e_circumflex_cap">Capital E, with Circumflex</string>
+    <string name="char_e_diaeresis">E, with two dots</string>
+    <string name="char_e_diaeresis_cap">Capital E, with two dots</string>
+    <string name="char_e_grave">E, with Grave accent</string>
+    <string name="char_e_grave_cap">Capital E, with Grave accent</string>
+    <string name="char_e_macron">E, with Macron</string>
+    <string name="char_e_macron_cap">Capital E, with Macron</string>
+    <string name="char_e_ogonek">E, with Ogonek</string>
+    <string name="char_e_ogonek_cap">Capital E, with Ogonek</string>
+    <string name="char_e_overdot">E, with dot above</string>
+    <string name="char_e_overdot_cap">Capital E, with dot above</string>
 
     <!-- i -->
-    <string name="char_i_acute">"I, with acute accent"</string>
-    <string name="char_i_acute_cap">"Capital I, with acute accent"</string>    
-    <string name="char_i_circumflex">"I, with Circumflex"</string>
-    <string name="char_i_circumflex_cap">"Capital I, with Circumflex"</string>
-    <string name="char_i_diaeresis">"I, with two dots"</string>
-    <string name="char_i_diaeresis_cap">"Capital I, with two dots"</string>
-    <string name="char_i_grave">"i, with Grave accent"</string>
-    <string name="char_i_grave_cap">"Capital I, with Grave accent"</string>
-    <string name="char_i_macron">"I, with Macron"</string>
-    <string name="char_i_macron_cap">"Capital I, with Macron"</string>
-    <string name="char_i_ogonek">"I, with Ogonek"</string>
-    <string name="char_i_ogonek_cap">"Capital I, with Ogonek"</string>
+    <string name="char_i_acute">I, with acute accent</string>
+    <string name="char_i_acute_cap">Capital I, with acute accent</string>    
+    <string name="char_i_circumflex">I, with Circumflex</string>
+    <string name="char_i_circumflex_cap">Capital I, with Circumflex</string>
+    <string name="char_i_diaeresis">I, with two dots</string>
+    <string name="char_i_diaeresis_cap">Capital I, with two dots</string>
+    <string name="char_i_grave">i, with Grave accent</string>
+    <string name="char_i_grave_cap">Capital I, with Grave accent</string>
+    <string name="char_i_macron">I, with Macron</string>
+    <string name="char_i_macron_cap">Capital I, with Macron</string>
+    <string name="char_i_ogonek">I, with Ogonek</string>
+    <string name="char_i_ogonek_cap">Capital I, with Ogonek</string>
 
     <!-- o -->
-    <string name="char_o_acute">"O, with acute accent"</string>
-    <string name="char_o_acute_cap">"Capital O, with acute accent"</string>        
-    <string name="char_o_circumflex">"O, with Circumflex"</string>
-    <string name="char_o_circumflex_cap">"Capital O, with Circumflex"</string>
-    <string name="char_o_diaeresis">"O, with two dots"</string>
-    <string name="char_o_diaeresis_cap">"Capital O, with two dots"</string>
-    <string name="char_o_grave">"O, with Grave accent"</string>
-    <string name="char_o_grave_cap">"Capital O, with Grave accent"</string>
-    <string name="char_o_macron">"O, with Macron"</string>
-    <string name="char_o_macron_cap">"Capital O, with Macron"</string>
-    <string name="char_o_oe">"O, E, Ligature"</string>
-    <string name="char_o_oe_cap">"Capital O, E, Ligature"</string>
-    <string name="char_o_ordinal">"Raised O"</string>
-    <string name="char_o_stroke">"O, with stroke"</string>
-    <string name="char_o_stroke_cap">"Capital O, with stroke"</string>
-    <string name="char_o_tilde">"O, with Tilde"</string>
-    <string name="char_o_tilde_cap">"Capital O, with Tilde"</string>
+    <string name="char_o_acute">O, with acute accent</string>
+    <string name="char_o_acute_cap">Capital O, with acute accent</string>        
+    <string name="char_o_circumflex">O, with Circumflex</string>
+    <string name="char_o_circumflex_cap">Capital O, with Circumflex</string>
+    <string name="char_o_diaeresis">O, with two dots</string>
+    <string name="char_o_diaeresis_cap">Capital O, with two dots</string>
+    <string name="char_o_grave">O, with Grave accent</string>
+    <string name="char_o_grave_cap">Capital O, with Grave accent</string>
+    <string name="char_o_macron">O, with Macron</string>
+    <string name="char_o_macron_cap">Capital O, with Macron</string>
+    <string name="char_o_oe">O, E, Ligature</string>
+    <string name="char_o_oe_cap">Capital O, E, Ligature</string>
+    <string name="char_o_ordinal">Raised O</string>
+    <string name="char_o_stroke">O, with stroke</string>
+    <string name="char_o_stroke_cap">Capital O, with stroke</string>
+    <string name="char_o_tilde">O, with Tilde</string>
+    <string name="char_o_tilde_cap">Capital O, with Tilde</string>
 
     <!-- u -->
-    <string name="char_u_acute">"U, with acute accent"</string>
-    <string name="char_u_acute_cap">"Capital U, with acute accent"</string>
-    <string name="char_u_circumflex">"U, with Circumflex"</string>
-    <string name="char_u_circumflex_cap">"Capital U, with Circumflex"</string>
-    <string name="char_u_diaeresis">"U, with two dots"</string>
-    <string name="char_u_diaeresis_cap">"Capital U, with two dots"</string>
-    <string name="char_u_grave">"U, with Grave accent"</string>
-    <string name="char_u_grave_cap">"Capital U, with Grave accent"</string>
-    <string name="char_u_macron">"U, with Macron"</string>
-    <string name="char_u_macron_cap">"Capital U, with Macron"</string>
+    <string name="char_u_acute">U, with acute accent</string>
+    <string name="char_u_acute_cap">Capital U, with acute accent</string>
+    <string name="char_u_circumflex">U, with Circumflex</string>
+    <string name="char_u_circumflex_cap">Capital U, with Circumflex</string>
+    <string name="char_u_diaeresis">U, with two dots</string>
+    <string name="char_u_diaeresis_cap">Capital U, with two dots</string>
+    <string name="char_u_grave">U, with Grave accent</string>
+    <string name="char_u_grave_cap">Capital U, with Grave accent</string>
+    <string name="char_u_macron">U, with Macron</string>
+    <string name="char_u_macron_cap">Capital U, with Macron</string>
 
     <!-- c -->
-    <string name="char_c_acute">"C, with acute accent"</string>
-    <string name="char_c_acute_cap">"Capital C, with acute accent"</string>
-    <string name="char_c_caron">"C, with caron"</string>
-    <string name="char_c_caron_cap">"Capital C, with caron"</string>
-    <string name="char_c_cedilla">"C, with cedilla"</string>
-    <string name="char_c_cedilla_cap">"Capital C, with cedilla"</string>
+    <string name="char_c_acute">C, with acute accent</string>
+    <string name="char_c_acute_cap">Capital C, with acute accent</string>
+    <string name="char_c_caron">C, with caron</string>
+    <string name="char_c_caron_cap">Capital C, with caron</string>
+    <string name="char_c_cedilla">C, with cedilla</string>
+    <string name="char_c_cedilla_cap">Capital C, with cedilla</string>
 
     <!-- n -->
-    <string name="char_n_acute">"N, with acute accent"</string>
-    <string name="char_n_acute_cap">"Capital N, with acute accent"</string>
-    <string name="char_n_tilde">"N, with Tilde"</string>
-    <string name="char_n_tilde_cap">"Capital N, with Tilde"</string>
+    <string name="char_n_acute">N, with acute accent</string>
+    <string name="char_n_acute_cap">Capital N, with acute accent</string>
+    <string name="char_n_tilde">N, with Tilde</string>
+    <string name="char_n_tilde_cap">Capital N, with Tilde</string>
 
     <!-- s -->
-    <string name="char_s_acute">"S, with acute accent"</string>
-    <string name="char_s_acute_cap">"Capital S, with acute accent"</string>
-    <string name="char_s_caron">"S, with caron"</string>
-    <string name="char_s_caron_cap">"Capital S, with caron"</string>
-    <string name="char_s_sharp">"Sharp S"</string>
+    <string name="char_s_acute">S, with acute accent</string>
+    <string name="char_s_acute_cap">Capital S, with acute accent</string>
+    <string name="char_s_caron">S, with caron</string>
+    <string name="char_s_caron_cap">Capital S, with caron</string>
+    <string name="char_s_sharp">Sharp S</string>
 
     <!-- Action keys -->
 <string name="action_done">Done</string>
