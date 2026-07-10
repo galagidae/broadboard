@@ -46,7 +46,7 @@ fun MenuBoard(
             ModeKey(
                 modifier = menuKey,
                 label = "123",
-                description = R.string.key_symbols,
+                description = R.string.key_numeric,
                 onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) }
             )
         }
