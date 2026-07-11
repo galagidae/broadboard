@@ -197,6 +197,10 @@
     <string name="pref_color">Color</string>
     <string name="pref_color_light">Light</string>
     <string name="pref_color_dark">Dark</string>
+    <string name="pref_color_yellowblack">Yellow on Black</string>
+    <string name="pref_color_blackyellow">Black on Yellow</string>
+    <string name="pref_color_yellowblue">Yellow on Blue</string>
+    <string name="pref_color_blueyellow">Blue on Yellow</string>
     <string name="pref_menu_option">Mode Selection</string>
     <string name="pref_menu_bar">Menu Bar</string>
     <string name="pref_menu_space">Long press the spacebar</string>

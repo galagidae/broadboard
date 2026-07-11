@@ -19,7 +19,6 @@ data class ColorTheme(
     val spaceBackground: Color = Color.Blue,
     val backspaceBorder: Color = Color(0xFFFF4646),
     val backspaceBackground: Color = Color(0xFFFF4646)
-
 )
 
 val lightTheme = ColorTheme()
@@ -39,6 +38,74 @@ val darkTheme = ColorTheme(
     spaceBackground = Color(0xFF2B2E32),
     backspaceBorder = Color.Red,
     backspaceBackground = Color(0xFF2B2E32)
+)
+
+val yellowBlackTheme = ColorTheme(
+    mainBackground = Color(0xFF333333),
+    keyBackground = Color.Black,
+    keyBackgroundPressed = Color.Yellow,
+    keyLabel = Color.Yellow,
+    keyLabelPressed = Color.Black,
+    modeKeyBackground = Color(0xFF151515),
+    actionBorder = Color.Green,
+    actionBackground = Color(0xFF2B2E32),
+    shiftBorder = Color(0xFFFFA500),
+    shiftBackground = Color(0xFF2B2E32),
+    spaceBorder = Color.Blue,
+    spaceBackground = Color(0xFF2B2E32),
+    backspaceBorder = Color.Red,
+    backspaceBackground = Color(0xFF2B2E32)
+)
+
+val blackYellowTheme = ColorTheme(
+    mainBackground = Color.Black,
+    keyBackground = Color.Yellow,
+    keyBackgroundPressed = Color.Black,
+    keyLabel = Color.Black,
+    keyLabelPressed = Color.Yellow,
+    modeKeyBackground = Color(0xFFAAAA00),
+    actionBorder = Color.Green,
+    actionBackground = Color.Yellow,
+    shiftBorder = Color(0xFFFFA500),
+    shiftBackground = Color.Yellow,
+    spaceBorder = Color.Blue,
+    spaceBackground = Color.Yellow,
+    backspaceBorder = Color.Red,
+    backspaceBackground = Color.Yellow
+)
+
+val yellowBlueTheme = ColorTheme(
+    mainBackground = Color.Black,
+    keyBackground = Color.Blue,
+    keyBackgroundPressed = Color.Yellow,
+    keyLabel = Color.Yellow,
+    keyLabelPressed = Color.Blue,
+    modeKeyBackground = Color(0xFF0000aa),
+    actionBorder = Color.Green,
+    actionBackground = Color.Blue,
+    shiftBorder = Color(0xFFFFA500),
+    shiftBackground = Color.Blue,
+    spaceBorder = Color(0xFF800080),
+    spaceBackground = Color.Blue,
+    backspaceBorder = Color.Red,
+    backspaceBackground = Color.Blue
+)
+
+val blueYellowTheme = ColorTheme(
+    mainBackground = Color.Black,
+    keyBackground = Color.Yellow,
+    keyBackgroundPressed = Color.Blue,
+    keyLabel = Color.Blue,
+    keyLabelPressed = Color.Yellow,
+    modeKeyBackground = Color(0xFFAAAA00),
+    actionBorder = Color.Green,
+    actionBackground = Color.Yellow,
+    shiftBorder = Color.Yellow,
+    shiftBackground = Color.Yellow,
+    spaceBorder = Color(0xFF800080),
+    spaceBackground = Color.Yellow,
+    backspaceBorder = Color.Red,
+    backspaceBackground = Color.Yellow
 )
 
 data class SizeTheme(

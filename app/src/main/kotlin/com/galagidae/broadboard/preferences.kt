@@ -27,11 +27,19 @@ val sizeLabels: LabelMap = mapOf(
 
 val colorOptions = listOf(
     "light",
-    "dark"
+    "dark",
+    "yellowblack",
+    "blackyellow",
+    "yellowblue",
+    "blueyellow"
 )
 val colorLabels: LabelMap = mapOf(
     "light" to R.string.pref_color_light,
-    "dark" to R.string.pref_color_dark
+    "dark" to R.string.pref_color_dark,
+    "yellowblack" to R.string.pref_color_yellowblack,
+    "blackyellow" to R.string.pref_color_blackyellow,
+    "yellowblue" to R.string.pref_color_yellowblue,
+    "blueyellow" to R.string.pref_color_blueyellow
 )
 
 val menuBarOptions = listOf(
@@ -200,6 +208,10 @@ fun AppPreferences(
     val colorName by viewModel.colorTheme.collectAsStateWithLifecycle()
     val colorTheme = when (colorName) {
         "dark" -> darkTheme
+        "yellowblack" -> yellowBlackTheme
+        "blackyellow" -> blackYellowTheme
+        "yellowblue" -> yellowBlueTheme
+        "blueyellow" -> blueYellowTheme
         else -> lightTheme
     }
 
