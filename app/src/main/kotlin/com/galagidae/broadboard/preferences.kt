@@ -52,6 +52,7 @@ class PreferencesRepository(private val context: Context) {
         val MENU_BAR = stringPreferencesKey("menu_bar")
         val NATURAL_LAYOUT = booleanPreferencesKey("natural_layout")
         val HIGHLIGHTS = booleanPreferencesKey("highlights")
+        val VIBRATE = booleanPreferencesKey("vibrate")
     }
 
     val sizeThemeFlow: Flow<String> = context.dataStore.data
@@ -127,6 +128,16 @@ class PreferencesRepository(private val context: Context) {
             prefs[Keys.HIGHLIGHTS] = enabled
         }
     }
+
+    val vibrateFlow: Flow<Boolean> = context.dataStore.data
+        .map { prefs ->
+            prefs[Keys.VIBRATE] ?: true
+        }
+    suspend fun setVibrate(enabled: Boolean) {
+        context.dataStore.edit { prefs -> 
+            prefs[Keys.VIBRATE] = enabled
+        }
+    }
 }
 
 class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel() {
@@ -159,6 +170,12 @@ class PreferencesViewModel(private val repo: PreferencesRepository) : ViewModel(
     fun setHighlights(enabled: Boolean) {
         viewModelScope.launch { repo.setHighlights(enabled) }
     }
+
+    val vibrate: StateFlow<Boolean> = repo.vibrateFlow
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), true)
+    fun setVibrate(enabled: Boolean) {
+        viewModelScope.launch { repo.setVibrate(enabled) }
+    }
 }
 
 val LocalColorTheme = compositionLocalOf { lightTheme }
@@ -166,6 +183,7 @@ val LocalSizeTheme = compositionLocalOf { largeSize }
 val LocalMenuBarOption = compositionLocalOf { "bar" }
 val LocalNaturalLayout = compositionLocalOf { false }
 val LocalHighlights = compositionLocalOf { false }
+val LocalVibrate = compositionLocalOf { false }
 
 @Composable
 fun AppPreferences(
@@ -188,6 +206,7 @@ fun AppPreferences(
     val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
     val naturalLayout by viewModel.naturalLayout.collectAsStateWithLifecycle()
     val highlights by viewModel.highlights.collectAsStateWithLifecycle()
+    val vibrate by viewModel.vibrate.collectAsStateWithLifecycle()
 
     CompositionLocalProvider(
         LocalSizeTheme provides sizeTheme,
@@ -195,6 +214,7 @@ fun AppPreferences(
         LocalMenuBarOption provides menuBarOption,
         LocalNaturalLayout provides naturalLayout,
         LocalHighlights provides highlights,
+        LocalVibrate provides vibrate
     ) {
         content()
     }

@@ -24,6 +24,7 @@ fun PreferencesScreen(
     val naturalLayout by viewModel.naturalLayout.collectAsStateWithLifecycle()
     val highlights by viewModel.highlights.collectAsStateWithLifecycle()
     val dispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
+    val vibrate = LocalVibrate.current
     
     Column(
         modifier = Modifier
@@ -89,5 +90,13 @@ fun PreferencesScreen(
             checked = highlights,
             onChange = { viewModel.setHighlights(it) }
         )
+
+        Toggle(
+            title = R.string.pref_vibrate,
+            subtitle = R.string.pref_highlights_sub,
+            checked = vibrate,
+            onChange = { viewModel.setVibrate(it) }
+        )
+
     }
 }

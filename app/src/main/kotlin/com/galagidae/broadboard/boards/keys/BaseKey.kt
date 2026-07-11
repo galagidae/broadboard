@@ -74,9 +74,11 @@ fun BaseKey (
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    val vibratePref = LocalVibrate.current
     val interactionSource = remember { MutableInteractionSource() }
     val isPressed by interactionSource.collectIsPressedAsStateMin()
-    val vibrate = rememberHapticFeedback()    
+    val vib = rememberHapticFeedback()    
+    val vibrate = { if (vibratePref) vib() else {} }
 
     val scope = object : BaseKeyScope {
         override val isPressed = isPressed
@@ -86,7 +88,7 @@ fun BaseKey (
         Modifier.repeatClick(
             interactionSource = interactionSource,
             onClick = { onClick?.invoke() },
-            onRelease = { vibrate() }   // matches your old Buzz()-on-UP
+            onRelease = vibrate
         )
     } else {
         Modifier.combinedClickable(
