@@ -11,9 +11,13 @@ import androidx.lifecycle.compose.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.icons.arrow_back
+import com.galagidae.broadboard.utils.*
 
 @Composable
-fun PreferencesScreen(viewModel: PreferencesViewModel) {
+fun PreferencesScreen(
+    viewModel: PreferencesViewModel,
+    imeStatus: ImeStatus,
+) {
     val colorTheme by viewModel.colorTheme.collectAsStateWithLifecycle()
     val sizeTheme by viewModel.sizeTheme.collectAsStateWithLifecycle()
     val menuBarOption by viewModel.menuBarOption.collectAsStateWithLifecycle()
@@ -45,6 +49,8 @@ fun PreferencesScreen(viewModel: PreferencesViewModel) {
                 style = MaterialTheme.typography.headlineLarge
             )
         }
+        
+        ImeBanner(status = imeStatus)
 
         Spacer(Modifier.height(24.dp))
 

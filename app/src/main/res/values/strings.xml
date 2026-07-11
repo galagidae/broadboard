@@ -179,7 +179,7 @@
     <string name="char_s_sharp">Sharp S</string>
 
     <!-- Action keys -->
-<string name="action_done">Done</string>
+    <string name="action_done">Done</string>
     <string name="action_enter">Enter</string>
     <string name="action_go">Go</string>
     <string name="action_next">Next</string>
@@ -187,23 +187,27 @@
     <string name="action_search">Search</string>
     <string name="action_send">Send</string>
 
-<!-- Preferences -->
-<string name="pref_title">Preferences</string>
-<string name="pref_back">Back</string>
-<string name="pref_size">Size</string>
-<string name="pref_size_small">Small</string>
-<string name="pref_size_medium">Medium</string>
-<string name="pref_size_large">Large</string>
-<string name="pref_color">Color</string>
-<string name="pref_color_light">Light</string>
-<string name="pref_color_dark">Dark</string>
-<string name="pref_menu_option">Mode Selection</string>
-<string name="pref_menu_bar">Menu Bar</string>
-<string name="pref_menu_space">Long press the spacebar</string>
-<string name="pref_menu_both">Both</string>
-<string name="pref_natural_layout">Natural Layout</string>
-<string name="pref_natural_layout_sub">Use natural keyboard layout spacing</string>
-<string name="pref_highlights">Color Highlights</string>
-<string name="pref_highlights_sub">Add color highlights to special keys</string>
+    <!-- Preferences -->
+    <string name="pref_title">Preferences</string>
+    <string name="pref_back">Back</string>
+    <string name="pref_size">Size</string>
+    <string name="pref_size_small">Small</string>
+    <string name="pref_size_medium">Medium</string>
+    <string name="pref_size_large">Large</string>
+    <string name="pref_color">Color</string>
+    <string name="pref_color_light">Light</string>
+    <string name="pref_color_dark">Dark</string>
+    <string name="pref_menu_option">Mode Selection</string>
+    <string name="pref_menu_bar">Menu Bar</string>
+    <string name="pref_menu_space">Long press the spacebar</string>
+    <string name="pref_menu_both">Both</string>
+    <string name="pref_natural_layout">Natural Layout</string>
+    <string name="pref_natural_layout_sub">Use natural keyboard layout spacing</string>
+    <string name="pref_highlights">Color Highlights</string>
+    <string name="pref_highlights_sub">Add color highlights to special keys</string>
+    <string name="pref_banner_enable_1">Tap to Enable</string>
+    <string name="pref_banner_enable_2">BroadBoard needs to be enabled in Settings</string>
+    <string name="pref_banner_use_1">Tap to Use</string>
+    <string name="pref_banner_use_2">BroadBoard is ready — make it your default keyboard</string>
 
 </resources>
