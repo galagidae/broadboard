@@ -9,6 +9,7 @@ import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.icons.*
 import com.galagidae.broadboard.boards.keys.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun NumericBoard(
@@ -20,6 +21,7 @@ fun NumericBoard(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
+    val highlights = LocalHighlights.current
 
     val rows = when(orientation) {
             Orientation.LANDSCAPE -> numericLayout_land
@@ -58,7 +60,11 @@ fun NumericBoard(
                     icon = backspace,
                     description = R.string.key_delete,
                     repeating = true,
-                    modifier = Modifier.fillMaxHeight().weight(1f)
+                    backgroundOverride = if (highlights) colors.backspaceBackground else null,
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .weight(1f)
+                        .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners)
                 )
             }
         }
