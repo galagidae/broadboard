@@ -154,6 +154,9 @@ class BroadBoardService : InputMethodService(),
                         inputContext.value = InputContext.NORMAL
                 }
             }
+            InputType.TYPE_CLASS_NUMBER,
+            InputType.TYPE_CLASS_PHONE ->
+                inputContext.value = InputContext.NUMERIC
             else ->
                 inputContext.value = InputContext.NORMAL
         }        

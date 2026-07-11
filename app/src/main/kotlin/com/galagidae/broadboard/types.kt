@@ -46,7 +46,7 @@ enum class ShiftMode {
 }
 
 enum class InputContext {
-    NORMAL, URL, EMAIL
+    NORMAL, URL, EMAIL, NUMERIC
 }
 
 enum class BoardMode {

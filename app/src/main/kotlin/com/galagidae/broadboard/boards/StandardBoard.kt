@@ -124,9 +124,9 @@ fun StandardBoard(
                             }
                             key is Contextual -> {
                                 val char = when(inputContext.value) {
-                                    InputContext.NORMAL -> ','
                                     InputContext.URL -> '/'
                                     InputContext.EMAIL -> '@'
+                                    else -> ','
                                 }
 
                                 CharacterKey(

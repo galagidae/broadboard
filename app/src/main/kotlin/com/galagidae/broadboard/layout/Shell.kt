@@ -9,7 +9,6 @@ import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.boards.*
-import com.galagidae.broadboard.utils.*
 
 @Composable
 fun Shell(
@@ -23,16 +22,20 @@ fun Shell(
     modifier: Modifier = Modifier,
 ) {
     var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
-    var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
+    // var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
     var alternate by remember { mutableStateOf<Alternate?>(null) }
     val configuration = LocalConfiguration.current    
+    var boardMode by remember(inputContext.value) {
+        when(inputContext.value) {
+            InputContext.NUMERIC -> mutableStateOf(BoardMode.NUMERIC)
+            else -> mutableStateOf(BoardMode.ALPHANUMERIC)
+        }
+    }    
 
     var orientation: Orientation = when(configuration.orientation) {
         Configuration.ORIENTATION_LANDSCAPE -> Orientation.LANDSCAPE
         else -> Orientation.PORTRAIT
     }
-
-    log("SHELL", orientation)
 
     fun onInputInner(t: String): Unit {
         if (shiftMode == ShiftMode.SHIFT && boardMode == BoardMode.ALPHANUMERIC) {
