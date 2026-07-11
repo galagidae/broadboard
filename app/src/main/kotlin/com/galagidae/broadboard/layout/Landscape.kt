@@ -48,19 +48,34 @@ fun LandscapeLayout(
                     .fillMaxHeight()
             )
             BoardMode.MENU -> null
-            else -> IconKey(
-                modifier = Modifier
-                    .fillMaxHeight()
-                    .highlightBorder(highlights, colors.spaceBorder, sizes.keyCorners),
-                backgroundOverride = if (highlights) colors.spaceBackground else null,
-                onClick = { onInput?.invoke(" ") },
-                onLongClick = if (menuBarOption != "bar")
-                    { { onChangeMode?.invoke(BoardMode.MENU) } }
-                else 
-                    null,
-                icon = spacebar,
-                description = R.string.key_space
-            )
+            else -> {
+                if (alternate == null) {
+                    IconKey(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .highlightBorder(highlights, colors.spaceBorder, sizes.keyCorners),
+                        backgroundOverride = if (highlights) colors.spaceBackground else null,
+                        onClick = { onInput?.invoke(" ") },
+                        onLongClick = if (menuBarOption != "bar")
+                            { { onChangeMode?.invoke(BoardMode.MENU) } }
+                        else 
+                            null,
+                        icon = spacebar,
+                        description = R.string.key_space
+                    )
+                } else {
+                    IconKey(
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxHeight()
+                            .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners),            
+                                backgroundOverride = if (highlights) colors.backspaceBackground else null,
+                                onClick = onClickClose,
+                                icon = close,
+                                description = R.string.key_back
+                    )
+                }
+            }
         }
         Box(modifier = Modifier.weight(6f)) {
             when(boardMode) {
