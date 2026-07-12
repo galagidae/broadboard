@@ -1,5 +1,6 @@
 package com.galagidae.broadboard
 
+import android.content.Intent
 import android.database.ContentObserver
 import android.os.Bundle
 import android.os.Handler
@@ -81,4 +82,9 @@ class PreferencesActivity : ComponentActivity() {
             }
         }
     }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+}
 }

@@ -17,6 +17,7 @@
         <activity
             android:name=".PreferencesActivity"
             android:exported="true"
+            android:launchMode="singleInstance"
             android:label="@string/app_name"
             android:theme="@style/Theme.BroadBoard">
             <intent-filter>
