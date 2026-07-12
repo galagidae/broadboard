@@ -40,6 +40,23 @@ val darkTheme = ColorTheme(
     backspaceBackground = Color(0xFF2B2E32)
 )
 
+val extraDarkTheme = ColorTheme(
+    mainBackground = Color(0xFF2B2E32),
+    keyBackground = Color.Black,
+    keyBackgroundPressed = Color(0xFF2B2E32),
+    keyLabel = Color.White,
+    keyLabelPressed = Color.White,
+    modeKeyBackground = Color(0xFF111111),
+    actionBorder = Color.Green,
+    actionBackground = Color.Black,
+    shiftBorder = Color.Yellow,
+    shiftBackground = Color.Black,
+    spaceBorder = Color.Blue,
+    spaceBackground = Color.Black,
+    backspaceBorder = Color.Red,
+    backspaceBackground = Color.Black
+)
+
 val yellowBlackTheme = ColorTheme(
     mainBackground = Color(0xFF333333),
     keyBackground = Color.Black,

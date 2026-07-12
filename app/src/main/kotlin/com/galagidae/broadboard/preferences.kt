@@ -28,6 +28,7 @@ val sizeLabels: LabelMap = mapOf(
 val colorOptions = listOf(
     "light",
     "dark",
+    "extradark",
     "yellowblack",
     "blackyellow",
     "yellowblue",
@@ -36,6 +37,7 @@ val colorOptions = listOf(
 val colorLabels: LabelMap = mapOf(
     "light" to R.string.pref_color_light,
     "dark" to R.string.pref_color_dark,
+    "extradark" to R.string.pref_color_extradark,
     "yellowblack" to R.string.pref_color_yellowblack,
     "blackyellow" to R.string.pref_color_blackyellow,
     "yellowblue" to R.string.pref_color_yellowblue,
@@ -208,6 +210,7 @@ fun AppPreferences(
     val colorName by viewModel.colorTheme.collectAsStateWithLifecycle()
     val colorTheme = when (colorName) {
         "dark" -> darkTheme
+        "extradark" -> extraDarkTheme
         "yellowblack" -> yellowBlackTheme
         "blackyellow" -> blackYellowTheme
         "yellowblue" -> yellowBlueTheme
