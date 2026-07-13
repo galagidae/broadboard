@@ -19,6 +19,7 @@ fun LandscapeLayout(
     autoShift: Boolean,
     boardMode: BoardMode,
     inputContext: State<InputContext>,
+    currentLocale: State<String>,
     orientation: Orientation,
     shiftMode: ShiftMode,
     onAlternateKey: ((c: Char) -> Unit)? = null,
@@ -111,6 +112,7 @@ fun LandscapeLayout(
                                         onEnter = onEnter,
                                         shiftMode = if (autoShift) ShiftMode.LOCK else shiftMode,
                                         inputContext = inputContext,
+                                        currentLocale = currentLocale,
                                         onChangeMode = onChangeMode,
                                         onClickAlternate = onClickAlternate,
                                         actionKey = actionKey

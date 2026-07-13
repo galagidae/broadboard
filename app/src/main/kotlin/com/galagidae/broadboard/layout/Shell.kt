@@ -20,9 +20,9 @@ fun Shell(
     onClickKeyboardPicker: (() -> Unit)? = null,
     actionKey: State<ActionKey>,
     modifier: Modifier = Modifier,
+    currentLocale: State<String>
 ) {
     var shiftMode by remember { mutableStateOf<ShiftMode>(ShiftMode.NORMAL) }
-    // var boardMode by remember { mutableStateOf<BoardMode>(BoardMode.ALPHANUMERIC) }
     var alternate by remember { mutableStateOf<Alternate?>(null) }
     val configuration = LocalConfiguration.current    
     var boardMode by remember(inputContext.value) {
@@ -83,6 +83,7 @@ fun Shell(
                 autoShift = autoShift.value,
                 boardMode = boardMode,
                 inputContext = inputContext,
+                currentLocale = currentLocale,
                 orientation = orientation,
                 shiftMode = shiftMode,
                 onAlternateKey = ::onAlternateKey,
@@ -101,6 +102,7 @@ fun Shell(
                 autoShift = autoShift.value,
                 boardMode = boardMode,
                 inputContext = inputContext,
+                currentLocale = currentLocale,
                 orientation = orientation,
                 shiftMode = shiftMode,
                 onAlternateKey = ::onAlternateKey,

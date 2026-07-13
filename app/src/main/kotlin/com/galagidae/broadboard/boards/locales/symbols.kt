@@ -152,6 +152,11 @@ val lessThan = Symbol(
     description = R.string.sym_lessthan
 )
 
+val middleDot = Symbol(
+    character = '·',
+    description = R.string.sym_middledot
+)
+
 val multiplication = Symbol(
     character = '×',
     description = R.string.sym_multiplication

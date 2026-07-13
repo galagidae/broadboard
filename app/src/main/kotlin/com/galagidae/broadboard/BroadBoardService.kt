@@ -14,7 +14,10 @@ import androidx.lifecycle.*
 import androidx.savedstate.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.layout.Shell
+import com.galagidae.broadboard.utils.*
 import kotlinx.coroutines.cancel
+
+import java.util.Locale
 
 class BroadBoardService : InputMethodService(),
     LifecycleOwner,
@@ -24,6 +27,7 @@ class BroadBoardService : InputMethodService(),
     private val savedStateRegistryController = SavedStateRegistryController.create(this)
     private val autoShift = mutableStateOf(false)
     private val inputContext = mutableStateOf<InputContext>(InputContext.NORMAL)
+    private val currentLocale = mutableStateOf<String>("en-US")
     private val inputManager: InputMethodManager by lazy {
         getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     }
@@ -76,6 +80,7 @@ class BroadBoardService : InputMethodService(),
                             onEnter = ::onEnter,
                             autoShift = autoShift,
                             inputContext = inputContext,
+                            currentLocale = currentLocale,
                             onClickKeyboardPicker = ::showKeyboardPicker,
                             actionKey = actionKey
                         )
@@ -90,6 +95,9 @@ class BroadBoardService : InputMethodService(),
         actionKey.value = resolveActionKey(info)
 
         val ic = getCurrentInputConnection() ?: return
+
+        val currentSubType = inputManager.currentInputMethodSubtype
+        setLocale(currentSubType)
 
         updateAutoCasing(ic, info)
         setInputContext(info)
@@ -109,7 +117,12 @@ class BroadBoardService : InputMethodService(),
         val ei = getCurrentInputEditorInfo() ?: return                
 
         updateAutoCasing(ic, ei)
-    }    
+    }
+
+    override fun onCurrentInputMethodSubtypeChanged(subtype: InputMethodSubtype?) {
+        super.onCurrentInputMethodSubtypeChanged(subtype)
+        setLocale(subtype)
+    }
 
     private fun inputText(text: String) {
         val ic = getCurrentInputConnection() ?: return
@@ -187,6 +200,28 @@ class BroadBoardService : InputMethodService(),
             EditorInfo.IME_ACTION_PREVIOUS -> ActionKey.Standard(action, StandardActionType.PREVIOUS)
             EditorInfo.IME_ACTION_DONE     -> ActionKey.Standard(action, StandardActionType.DONE)
             else -> ActionKey.Newline
+        }
+    }
+
+    fun setLocale(subtype: InputMethodSubtype?) {
+        if (subtype == null) {
+            // TODO: Look at device's installed locales and pick one
+            currentLocale.value = "en_US"
+        }
+
+        val languageTag = subtype!!.getLanguageTag()
+        val language = Locale.forLanguageTag(languageTag).language
+
+        log("Tag", languageTag)
+        log("lang", language)
+
+        currentLocale.value = when(language) {
+            "es" -> when(languageTag) {
+                "es-ES" -> "es-ES"
+                "es-US" -> "en-US" // Basically jsut a US keyboard
+                else -> "es-419"
+            }
+            else -> languageTag
         }
     }
 }

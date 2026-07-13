@@ -19,6 +19,7 @@ fun StandardBoard(
     onEnter: (() -> Unit)? = null,
     shiftMode: ShiftMode,
     inputContext: State<InputContext>,
+    currentLocale: State<String>,
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
     onClickAlternate: ((Alternate) -> Unit)? = null,
     actionKey: State<ActionKey>,
@@ -71,7 +72,13 @@ fun StandardBoard(
             verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
             horizontalAlignment = Alignment.Start
         ) {
-            enUS.forEach { row ->
+            val localeRows = when(currentLocale.value) {
+                "es" -> es419
+                "es-ES" -> esES
+                else -> enUS
+            }
+
+            localeRows.forEach { row ->
                 Row(
                     modifier = modifier
                         .height(sizes.rowHeight),

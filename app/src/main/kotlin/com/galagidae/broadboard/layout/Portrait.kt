@@ -17,6 +17,7 @@ fun PortraitLayout(
     inputContext: State<InputContext>,
     orientation: Orientation,
     shiftMode: ShiftMode,
+    currentLocale: State<String>,
     onAlternateKey: ((c: Char) -> Unit)? = null,
     onBackspace: (() -> Unit)? = null,
     onChangeMode: ((mode: BoardMode) -> Unit)? = null,
@@ -64,6 +65,7 @@ fun PortraitLayout(
                                 onEnter = onEnter,
                                 shiftMode = if (autoShift) ShiftMode.LOCK else shiftMode,
                                 inputContext = inputContext,
+                                currentLocale = currentLocale,
                                 onChangeMode = onChangeMode,
                                 onClickAlternate = onClickAlternate,
                                 actionKey = actionKey
