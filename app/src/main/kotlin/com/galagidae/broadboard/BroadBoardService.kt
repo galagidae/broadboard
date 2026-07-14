@@ -216,6 +216,10 @@ class BroadBoardService : InputMethodService(),
         log("lang", language)
 
         currentLocale.value = when(language) {
+            "en" -> when(languageTag) {
+                "en-GB" -> "en-GB"
+                else -> "en-US"
+            }
             "es" -> when(languageTag) {
                 "es-ES" -> "es-ES"
                 "es-US" -> "en-US" // Basically jsut a US keyboard

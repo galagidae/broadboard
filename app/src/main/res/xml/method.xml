@@ -4,6 +4,11 @@
         android:imeSubtypeLocale="en_US"
         android:languageTag="en-US"
         android:imeSubtypeMode="keyboard" />
+    <subtype
+        android:imeSubtypeLocale="en_GB"
+        android:languageTag="en-GB"
+        android:imeSubtypeMode="keyboard" />
+
 
     <!-- Spanish -->
     <subtype

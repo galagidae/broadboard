@@ -73,7 +73,8 @@ fun StandardBoard(
             horizontalAlignment = Alignment.Start
         ) {
             val localeRows = when(currentLocale.value) {
-                "es" -> es419
+                "en-GB" -> enGB
+                "es-419" -> es419
                 "es-ES" -> esES
                 else -> enUS
             }
