@@ -76,6 +76,8 @@ fun StandardBoard(
                 "en-GB" -> enGB
                 "es-419" -> es419
                 "es-ES" -> esES
+                "pt-BR" -> ptBR
+                "pt-PT" -> ptPT
                 else -> enUS
             }
 

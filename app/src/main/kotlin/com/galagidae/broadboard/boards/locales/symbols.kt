@@ -82,6 +82,11 @@ val degree = Symbol(
     description = R.string.sym_degree
 )
 
+val diaeresis = Symbol(
+    character = '¨',
+    description = R.string.sym_diaeresis
+)
+
 val division = Symbol(
     character = '÷',
     description = R.string.sym_division

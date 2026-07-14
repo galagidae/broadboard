@@ -225,6 +225,10 @@ class BroadBoardService : InputMethodService(),
                 "es-US" -> "en-US" // Basically jsut a US keyboard
                 else -> "es-419"
             }
+            "pt" -> when(languageTag) {
+                "pt-PT" -> "pt-PT"
+                else -> "pt-BR"
+            }
             else -> languageTag
         }
     }

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <input-method xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- English -->
     <subtype
         android:imeSubtypeLocale="en_US"
         android:languageTag="en-US"
@@ -7,6 +9,16 @@
     <subtype
         android:imeSubtypeLocale="en_GB"
         android:languageTag="en-GB"
+        android:imeSubtypeMode="keyboard" />
+
+    <!-- Portuguese -->
+    <subtype
+        android:imeSubtypeLocale="pt_BR"
+        android:languageTag="pt-BR"
+        android:imeSubtypeMode="keyboard" />
+    <subtype
+        android:imeSubtypeLocale="pt_PT"
+        android:languageTag="pt-PT"
         android:imeSubtypeMode="keyboard" />
 
 

@@ -36,6 +36,7 @@
     <string name="sym_copyright">Copyright symbol</string>
     <string name="sym_dash">Dash</string>
     <string name="sym_degree">Degree Symbol</string>
+    <string name="sym_diaeresis">Diaeresis</string>
     <string name="sym_division">Division symbol</string>
     <string name="sym_dollarsign">Dollar</string>
     <string name="sym_ellipsis">Ellipsis</string>
