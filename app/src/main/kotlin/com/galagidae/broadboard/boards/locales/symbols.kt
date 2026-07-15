@@ -167,6 +167,11 @@ val multiplication = Symbol(
     description = R.string.sym_multiplication
 )
 
+val numero = Symbol(
+    character = '№',
+    description = R.string.sym_numero
+)
+
 val paragraph = Symbol(
     character = '¶',
     description = R.string.sym_paragraph

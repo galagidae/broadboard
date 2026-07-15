@@ -130,4 +130,11 @@
         android:languageTag="es-VE"
         android:imeSubtypeMode="keyboard" />
 
+    <!-- Russian -->
+    <subtype
+        android:imeSubtypeLocale="ru"
+        android:languageTag="ru"
+        android:imeSubtypeMode="keyboard" />
+
+
 </input-method>
