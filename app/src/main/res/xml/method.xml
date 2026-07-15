@@ -11,6 +11,12 @@
         android:languageTag="en-GB"
         android:imeSubtypeMode="keyboard" />
 
+    <!-- Italian -->
+    <subtype
+        android:imeSubtypeLocale="it"
+        android:languageTag="it"
+        android:imeSubtypeMode="keyboard" />
+
     <!-- Portuguese -->
     <subtype
         android:imeSubtypeLocale="pt_BR"
