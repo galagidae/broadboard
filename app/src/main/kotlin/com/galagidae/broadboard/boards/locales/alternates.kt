@@ -506,3 +506,150 @@ val uAlternates: List<List<SymbolSet>> = listOf(
         )
     )
 )
+
+val alphaAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ά',
+                description = R.string.char_alpha_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ά',
+                description = R.string.char_alpha_tonos_cap
+            )
+        )
+    )
+)
+
+val epsilonAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'έ',
+                description = R.string.char_epsilon_tonos
+            ),
+            secondary = Symbol(
+                character = 'Έ',
+                description = R.string.char_epsilon_tonos_cap
+            )
+        )
+    )
+)
+
+val etaAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ή',
+                description = R.string.char_eta_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ή',
+                description = R.string.char_eta_tonos_cap
+            )
+        )
+    )
+)
+
+val iotaAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ί',
+                description = R.string.char_iota_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ί',
+                description = R.string.char_iota_tonos_cap
+            )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ϊ',
+                description = R.string.char_iota_dialytika
+            ),
+            secondary = Symbol(
+                character = 'Ϊ',
+                description = R.string.char_iota_dialytika_cap
+            )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ΐ',
+                description = R.string.char_iota_dialytika_tonos
+            ),
+            secondary = Symbol(
+                character = 'ΐ',
+                description = R.string.char_iota_dialytika_tonos
+            )
+        )
+
+    )
+)
+
+val omicronAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ό',
+                description = R.string.char_omicron_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ό',
+                description = R.string.char_omicron_tonos_cap
+            )
+        )
+    )
+)
+
+val upsilonAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ύ',
+                description = R.string.char_upsilon_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ύ',
+                description = R.string.char_upsilon_tonos_cap
+            )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ϋ',
+                description = R.string.char_upsilon_dialytika
+            ),
+            secondary = Symbol(
+                character = 'Ϋ',
+                description = R.string.char_upsilon_dialytika_cap
+            )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ΰ',
+                description = R.string.char_upsilon_dialytika_tonos
+            ),
+            secondary = Symbol(
+                character = 'ΰ',
+                description = R.string.char_upsilon_dialytika_tonos
+            )
+        )
+
+    )
+)
+
+val omegaAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ώ',
+                description = R.string.char_omega_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ώ',
+                description = R.string.char_omega_tonos_cap
+            )
+        )
+    )
+)

@@ -181,6 +181,29 @@
     <string name="char_s_caron_cap">Capital S, with caron</string>
     <string name="char_s_sharp">Sharp S</string>
 
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alpha, with tonos</string>
+    <string name="char_alpha_tonos_cap">Capital Alpha, with tonos</string>
+    <string name="char_epsilon_tonos">Epsilon, with tonos</string>
+    <string name="char_epsilon_tonos_cap">Capital Epsilon, with tonos</string>
+    <string name="char_eta_tonos">Eta, with tonos</string>
+    <string name="char_eta_tonos_cap">Capital Eta, with tonos</string>
+    <string name="char_iota_tonos">Iota, with tonos</string>
+    <string name="char_iota_tonos_cap">Capital Iota, with tonos</string>
+    <string name="char_iota_dialytika">Iota, with dialytika</string>
+    <string name="char_iota_dialytika_cap">Capital Iota, with dialytika</string>
+    <string name="char_iota_dialytika_tonos">Iota, with dialytika and tonos</string>
+    <string name="char_omega_tonos">Omega, with tonos</string>
+    <string name="char_omega_tonos_cap">Capital Omega, with tonos</string>
+    <string name="char_omicron_tonos">Omicron, with tonos</string>
+    <string name="char_omicron_tonos_cap">Capital Omicron, with tonos</string>
+    <string name="char_upsilon_tonos">Upsilon, with tonos</string>
+    <string name="char_upsilon_tonos_cap">Capital Upsilon, with tonos</string>
+    <string name="char_upsilon_dialytika">Upsilon, with dialytika</string>
+    <string name="char_upsilon_dialytika_cap">Capital Upsilon, with dialytika</string>
+    <string name="char_upsilon_dialytika_tonos">Upsilon, with dialytika and tonos</string>
+
+
     <!-- Action keys -->
     <string name="action_done">Done</string>
     <string name="action_enter">Enter</string>

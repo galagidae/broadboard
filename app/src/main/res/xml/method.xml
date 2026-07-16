@@ -136,5 +136,10 @@
         android:languageTag="ru"
         android:imeSubtypeMode="keyboard" />
 
+    <!-- Greek -->
+    <subtype
+        android:imeSubtypeLocale="el"
+        android:languageTag="el"
+        android:imeSubtypeMode="keyboard" />
 
 </input-method>

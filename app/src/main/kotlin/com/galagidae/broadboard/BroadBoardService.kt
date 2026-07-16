@@ -216,6 +216,7 @@ class BroadBoardService : InputMethodService(),
         log("lang", language)
 
         currentLocale.value = when(language) {
+            "el" -> "el"
             "en" -> when(languageTag) {
                 "en-GB" -> "en-GB"
                 else -> "en-US"
