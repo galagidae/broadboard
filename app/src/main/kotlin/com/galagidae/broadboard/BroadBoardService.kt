@@ -212,9 +212,6 @@ class BroadBoardService : InputMethodService(),
         val languageTag = subtype!!.getLanguageTag()
         val language = Locale.forLanguageTag(languageTag).language
 
-        log("Tag", languageTag)
-        log("lang", language)
-
         currentLocale.value = when(language) {
             "el" -> "el"
             "en" -> when(languageTag) {

@@ -37,6 +37,10 @@ fun Shell(
         else -> Orientation.PORTRAIT
     }
 
+    LaunchedEffect(currentLocale.value) {
+        boardMode = BoardMode.ALPHANUMERIC
+    }
+
     fun onInputInner(t: String): Unit {
         if (shiftMode == ShiftMode.SHIFT && boardMode == BoardMode.ALPHANUMERIC) {
             shiftMode = ShiftMode.NORMAL
