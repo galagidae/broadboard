@@ -106,6 +106,7 @@ fun StandardBoard(
                             )
                             key is Alternate -> CharacterKey(
                                 character = key.primary,
+                                longDescription = R.string.key_alternate,
                                 onKey = onKey,
                                 onLongClick = { onClickAlternate?.invoke(key) },
                                 shiftMode = shiftMode,

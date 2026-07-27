@@ -1,5 +1,6 @@
 package com.galagidae.broadboard.boards.keys
 
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
 import androidx.compose.material3.*
@@ -12,6 +13,7 @@ fun CharacterKey (
     onLongClick: (() -> Unit)? = null,
     shiftMode: ShiftMode = ShiftMode.NORMAL,
     character: Character,
+    @StringRes longDescription: Int? = null,
     modifier: Modifier = Modifier
 ) {
     val colors = LocalColorTheme.current
@@ -24,6 +26,7 @@ fun CharacterKey (
     BaseKey (
         modifier = modifier,
         description = currentChar,
+        longDescription = longDescription,
         onClick = {
             onKey?.invoke(currentChar)
         },

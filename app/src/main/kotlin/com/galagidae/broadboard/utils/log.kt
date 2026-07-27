@@ -8,6 +8,6 @@ fun log(msg: String) {
     Log.d(TAG, msg)
 }
 
-fun log(msg: String, data: Any) {
+fun log(msg: String, data: Any?) {
     Log.d(TAG, "$msg: $data")
 }

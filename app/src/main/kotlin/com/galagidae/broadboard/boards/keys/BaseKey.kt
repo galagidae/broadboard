@@ -23,6 +23,7 @@ fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
     @StringRes description: Int,
+    @StringRes longDescription: Int? = null,
     repeating: Boolean = false,
     backgroundOverride: Color? = null,
     modifier: Modifier = Modifier,
@@ -34,6 +35,7 @@ fun BaseKey (
         onClick = onClick,
         onLongClick = onLongClick,
         description = description,
+        longDescription = longDescription,
         repeating = repeating,
         backgroundOverride = backgroundOverride,
         modifier = modifier,
@@ -46,6 +48,7 @@ fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
     description: Char,
+    @StringRes longDescription: Int? = null,
     repeating: Boolean = false,
     backgroundOverride: Color? = null,
     modifier: Modifier = Modifier,
@@ -55,6 +58,7 @@ fun BaseKey (
         onClick = onClick,
         onLongClick = onLongClick,
         description = description.toString(),
+        longDescription = longDescription,
         repeating = repeating,
         backgroundOverride = backgroundOverride,
         modifier = modifier,
@@ -67,6 +71,7 @@ fun BaseKey (
     onClick: (() -> Unit)? = null,
     onLongClick: (() -> Unit)? = null,
     description: String,
+    @StringRes longDescription: Int? = null,
     repeating: Boolean = false,
     backgroundOverride: Color? = null,
     modifier: Modifier = Modifier,
@@ -103,11 +108,20 @@ fun BaseKey (
             }
         )
     }
+
+    val longDesc = if (longDescription != null && onLongClick != null) 
+        stringResource(longDescription)
+    else
+        null
     
     Box (
         modifier = modifier
             .clearAndSetSemantics {
+                role = Role.Button
                 contentDescription = description
+                if (longDesc != null) {
+                    onLongClick(label = longDesc) { onLongClick?.invoke(); true }
+                }
             }
             .clip(RoundedCornerShape(sizes.keyCorners))
             .background(

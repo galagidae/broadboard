@@ -8,7 +8,9 @@ import androidx.compose.ui.*
 import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.*
 import com.galagidae.broadboard.*
+import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.*
+import com.galagidae.broadboard.utils.*
 
 @Composable
 fun Shell(
@@ -76,6 +78,26 @@ fun Shell(
         onInputInner(c.toString())
         closeAlternate()
     }
+
+    AccessibilityAnnouncement(
+        messageRes = when(boardMode) {
+            BoardMode.SYMBOLS -> R.string.mode_change_symbols
+            BoardMode.EMOJIS -> R.string.mode_change_emojis
+            BoardMode.NUMERIC -> R.string.mode_change_numeric
+            BoardMode.MENU -> R.string.mode_change_menu
+            else -> R.string.mode_change_alphanumeric
+        },
+        key = boardMode
+    )
+    AccessibilityAnnouncement(
+        messageRes = when(shiftMode) {
+            ShiftMode.SHIFT -> R.string.shift_change_on
+            ShiftMode.LOCK -> R.string.shift_change_caps
+            else -> R.string.shift_change_off
+        },
+        key = shiftMode
+    )
+
 
     CompositionLocalProvider(
         LocalDensity provides Density(LocalDensity.current.density, fontScale = 1f)

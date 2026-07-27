@@ -4,6 +4,7 @@
 
     <!-- Keys -->
     <string name="key_alpha">Letter Keyboard</string>
+    <string name="key_alternate">Enter alternate characters</string>
     <string name="key_back">Go back</string>
     <string name="key_delete">Delete</string>
     <string name="key_emojis_happy">Happy Emojis</string>
@@ -14,7 +15,10 @@
     <string name="key_picker">Change Keyboard</string>
     <string name="key_preferences">Preferences</string>
     <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Enable caps lock</string>
+    <string name="key_shift_disable">Disable caps lock</string>
     <string name="key_space">Space</string>
+    <string name="key_space_long">Open menu</string>
     <string name="key_symbols">Symbol Keyboard</string>
     <string name="key_symbols_shift">Symbols</string>
     <string name="key_symbols_more">More Symbols</string>
@@ -242,5 +246,15 @@
     <string name="pref_banner_use_1">Tap to Use</string>
     <string name="pref_banner_use_2">BroadBoard is ready — make it your default keyboard</string>
     <string name="pref_vibrate">Vibrate on key press</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Showing letter keyboard</string>
+    <string name="mode_change_emojis">Showing emoji keyboard</string>
+    <string name="mode_change_menu">Showing menu</string>
+    <string name="mode_change_numeric">Showing number keyboard</string>
+    <string name="mode_change_symbols">Showing symbol keyboard</string>
+    <string name="shift_change_off">Shift off</string>
+    <string name="shift_change_on">Shift on</string>
+    <string name="shift_change_caps">Caps lock on</string>
 
 </resources>

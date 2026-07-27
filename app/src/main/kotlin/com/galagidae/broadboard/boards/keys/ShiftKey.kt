@@ -36,7 +36,14 @@ fun ShiftKey(
         else ->
             R.string.key_shift
     }
-
+    val longDescription = when(boardMode) {
+        BoardMode.ALPHANUMERIC -> if (shiftMode == ShiftMode.LOCK)
+            R.string.key_shift_disable
+        else
+            R.string.key_shift_enable
+        else -> null
+    }
+    
     BaseKey(
         modifier = modifier
             .highlightBorder(highlights, colors.shiftBorder, sizes.keyCorners),
@@ -48,7 +55,8 @@ fun ShiftKey(
                 else -> onClick?.invoke()
             }
         },
-        description = description
+        description = description,
+        longDescription = longDescription
     ) {
         when(boardMode) {
             BoardMode.SYMBOLS -> Text(

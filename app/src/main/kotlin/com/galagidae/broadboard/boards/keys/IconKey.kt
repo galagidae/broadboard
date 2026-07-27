@@ -17,6 +17,7 @@ fun IconKey(
     onLongClick: (() -> Unit)? = null,
     icon: ImageVector,
     @StringRes description: Int,
+    @StringRes longDescription: Int? = null,
     repeating: Boolean = false,    
     backgroundOverride: Color? = null,
     modifier: Modifier = Modifier
@@ -28,6 +29,7 @@ fun IconKey(
         onLongClick = onLongClick,
         icon = icon,
         description = description,
+        longDescription = longDescription,
         repeating = repeating,
         backgroundOverride = backgroundOverride,
         modifier = modifier,
@@ -40,6 +42,7 @@ fun IconKey(
     onLongClick: (() -> Unit)? = null,
     icon: ImageVector,
     description: String,
+    @StringRes longDescription: Int? = null,
     repeating: Boolean = false,
     backgroundOverride: Color? = null,
     modifier: Modifier = Modifier
@@ -51,6 +54,7 @@ fun IconKey(
         modifier = modifier,
         onClick = onClick,
         description = description,
+        longDescription = longDescription,
         repeating = repeating,
         onLongClick = onLongClick,
         backgroundOverride = backgroundOverride

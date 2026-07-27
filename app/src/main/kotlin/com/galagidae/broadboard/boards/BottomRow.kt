@@ -57,7 +57,11 @@ fun BottomRow(
                 onClick = onSpace,
                 onLongClick = if (menuBarOption != "bar") onLongClickSpace else null,
                 icon = spacebar,
-                description = R.string.key_space
+                description = R.string.key_space,
+                longDescription = if (menuBarOption != "bar")
+                    R.string.key_space_long
+                else
+                    null
             )
             IconKey(
                 modifier = Modifier
