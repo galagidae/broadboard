@@ -220,6 +220,7 @@
     <string name="pref_size_small">Small</string>
     <string name="pref_size_medium">Medium</string>
     <string name="pref_size_large">Large</string>
+    <string name="pref_size_extra_large">Extra Large</string>
     <string name="pref_color">Color</string>
     <string name="pref_color_light">Light</string>
     <string name="pref_color_dark">Dark</string>

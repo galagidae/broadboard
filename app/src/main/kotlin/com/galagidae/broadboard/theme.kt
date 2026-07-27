@@ -187,3 +187,17 @@ val largeSize = SizeTheme(
     enterKeyWidth = 190.dp,
     modeBarGap = 12.dp
 )
+
+val extraLargeSize = SizeTheme(
+    keySize = 142.dp,
+    keyCorners = 4.dp,
+    bottomRowHeight = 112.dp,
+    keySpacing = 6.dp,
+    keyFontSize = 117.sp,
+    keyEmojiFontSize = 99.sp,
+    keyModeFontSize = 54.sp,
+    keyNumericFontSize = 76.sp,
+    keyIconSize = 108.dp,
+    enterKeyWidth = 214.dp,
+    modeBarGap = 12.dp
+)

@@ -17,12 +17,14 @@ val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "us
 val sizeOptions = listOf(
     "small",
     "medium",
-    "large"
+    "large",
+    "extralarge"
 )
 val sizeLabels: LabelMap = mapOf(
     "small" to R.string.pref_size_small,
     "medium" to R.string.pref_size_medium,
-    "large" to R.string.pref_size_large 
+    "large" to R.string.pref_size_large,
+    "extralarge" to R.string.pref_size_extra_large 
 )
 
 val colorOptions = listOf(
@@ -204,6 +206,7 @@ fun AppPreferences(
     val sizeTheme = when (sizeName) {
         "small" -> smallSize
         "large" -> largeSize
+        "extralarge" -> extraLargeSize
         else -> mediumSize
     }
 
