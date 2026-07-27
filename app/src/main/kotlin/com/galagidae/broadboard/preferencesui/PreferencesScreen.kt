@@ -77,26 +77,27 @@ fun PreferencesScreen(
             onSelect = { viewModel.setMenuBarOption(it) }
         )
 
-        Toggle(
-            title = R.string.pref_natural_layout,
-            subtitle = R.string.pref_natural_layout_sub,
-            checked = naturalLayout,
-            onChange = { viewModel.setNaturalLayout(it) }
-        )
+        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Toggle(
+                title = R.string.pref_natural_layout,
+                subtitle = R.string.pref_natural_layout_sub,
+                checked = naturalLayout,
+                onChange = { viewModel.setNaturalLayout(it) }
+            )
 
-        Toggle(
-            title = R.string.pref_highlights,
-            subtitle = R.string.pref_highlights_sub,
-            checked = highlights,
-            onChange = { viewModel.setHighlights(it) }
-        )
+            Toggle(
+                title = R.string.pref_highlights,
+                subtitle = R.string.pref_highlights_sub,
+                checked = highlights,
+                onChange = { viewModel.setHighlights(it) }
+            )
 
-        Toggle(
-            title = R.string.pref_vibrate,
-            subtitle = R.string.pref_highlights_sub,
-            checked = vibrate,
-            onChange = { viewModel.setVibrate(it) }
-        )
-
+            Toggle(
+                title = R.string.pref_vibrate,
+                subtitle = R.string.pref_highlights_sub,
+                checked = vibrate,
+                onChange = { viewModel.setVibrate(it) }
+            )
+        }
     }
 }
