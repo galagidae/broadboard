@@ -12,7 +12,6 @@ import com.galagidae.broadboard.*
 
 val ruRU: List<List<Key>> = listOf(
     listOf(
-        cyrYoKey,        // ё
         SymbolSet(
             primary = oneKey,
             secondary = exclamation,
@@ -55,12 +54,15 @@ val ruRU: List<List<Key>> = listOf(
         ),
     ),
     listOf(
-        Space(multiplier = 1.5f),
+        Space(multiplier = 0.5f),
         cyrShortIKey,    // й
         cyrTseKey,       // ц
         cyrUKey,         // у
         cyrKaKey,        // к
-        cyrYeKey,        // е
+        Alternate(       // е
+            primary = cyrYeKey,
+            rows = yoAlternates
+        ),
         cyrEnKey,        // н
         cyrGeKey,        // г
         cyrShaKey,       // ш
@@ -70,7 +72,7 @@ val ruRU: List<List<Key>> = listOf(
         cyrHardSignKey,  // ъ
     ),
     listOf(
-        Space(multiplier = 1.75f),
+        Space(multiplier = 0.75f),
         cyrEfKey,        // ф
         cyrYeryKey,      // ы
         cyrVeKey,        // в
@@ -84,7 +86,7 @@ val ruRU: List<List<Key>> = listOf(
         cyrEKey,         // э
     ),
     listOf(
-        Space(multiplier = 1.25f),
+        Space(multiplier = 0.25f),
         Contextual,
         cyrYaKey,        // я
         cyrCheKey,       // ч
@@ -92,7 +94,10 @@ val ruRU: List<List<Key>> = listOf(
         cyrEmKey,        // м
         cyrIKey,         // и
         cyrTeKey,        // т
-        cyrSoftSignKey,  // ь
+        Alternate(       // ь
+            primary = cyrSoftSignKey,
+            rows = softSignAlternates
+        ),
         cyrBeKey,        // б
         cyrYuKey,        // ю
         Character(

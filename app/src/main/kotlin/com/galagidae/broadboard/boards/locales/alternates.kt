@@ -653,3 +653,44 @@ val omegaAlternates: List<List<SymbolSet>> = listOf(
         )
     )
 )
+
+val Alternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ό',
+                description = R.string.char_omicron_tonos
+            ),
+            secondary = Symbol(
+                character = 'Ό',
+                description = R.string.char_omicron_tonos_cap
+            )
+        )
+    )
+)
+
+val yoAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ё',
+            ),
+            secondary = Symbol(
+                character = 'Ё',
+            )
+        )
+    )
+)
+
+val softSignAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ъ',
+            ),
+            secondary = Symbol(
+                character = 'Ъ',
+            )
+        )
+    )
+)
