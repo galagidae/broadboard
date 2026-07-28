@@ -117,7 +117,6 @@ fun BaseKey (
     Box (
         modifier = modifier
             .clearAndSetSemantics {
-                role = Role.Button
                 contentDescription = description
                 if (longDesc != null) {
                     onLongClick(label = longDesc) { onLongClick?.invoke(); true }
