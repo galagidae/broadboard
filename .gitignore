@@ -11,3 +11,4 @@ app/build/
 *.iml
 *.ipr
 *.iws
+keystore.properties
