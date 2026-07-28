@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Буквенная клавиатура</string>
+    <string name="key_alternate">Ввод дополнительных символов</string>
+    <string name="key_back">Назад</string>
+    <string name="key_delete">Удалить</string>
+    <string name="key_emojis_happy">Радостные эмодзи</string>
+    <string name="key_emojis_sad">Грустные эмодзи</string>
+    <string name="key_emojis">Клавиатура эмодзи</string>
+    <string name="key_menu">Меню</string>
+    <string name="key_numeric">Цифровая клавиатура</string>
+    <string name="key_picker">Сменить клавиатуру</string>
+    <string name="key_preferences">Настройки</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Включить Caps Lock</string>
+    <string name="key_shift_disable">Выключить Caps Lock</string>
+    <string name="key_space">Пробел</string>
+    <string name="key_space_long">Открыть меню</string>
+    <string name="key_symbols">Клавиатура символов</string>
+    <string name="key_symbols_shift">Символы</string>
+    <string name="key_symbols_more">Другие символы</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Амперсанд</string>
+    <string name="sym_asterisk">Звёздочка</string>
+    <string name="sym_atsign">Собака</string>
+    <string name="sym_backslash">Обратная косая черта</string>
+    <string name="sym_braceleft">Открывающая фигурная скобка</string>
+    <string name="sym_braceright">Закрывающая фигурная скобка</string>
+    <string name="sym_bracketleft">Открывающая квадратная скобка</string>
+    <string name="sym_bracketright">Закрывающая квадратная скобка</string>
+    <string name="sym_bullet">Маркер списка</string>
+    <string name="sym_caret">Крышка</string>
+    <string name="sym_cent">Цент</string>
+    <string name="sym_checkmark">Галочка</string>
+    <string name="sym_colon">Двоеточие</string>
+    <string name="sym_copyright">Знак авторского права</string>
+    <string name="sym_dash">Дефис</string>
+    <string name="sym_degree">Знак градуса</string>
+    <string name="sym_diaeresis">Диерезис</string>
+    <string name="sym_division">Знак деления</string>
+    <string name="sym_dollarsign">Доллар</string>
+    <string name="sym_ellipsis">Многоточие</string>
+    <string name="sym_emdash">Длинное тире</string>
+    <string name="sym_endash">Короткое тире</string>
+    <string name="sym_equals">Равно</string>
+    <string name="sym_euro">Евро</string>
+    <string name="sym_exclamation">Восклицательный знак</string>
+    <string name="sym_exclamationinverted">Перевёрнутый восклицательный знак</string>
+    <string name="sym_graveaccent">Гравис</string>
+    <string name="sym_greaterthan">Знак больше</string>
+    <string name="sym_hashtag">Решётка</string>
+    <string name="sym_infinity">Бесконечность</string>
+    <string name="sym_lessthan">Знак меньше</string>
+    <string name="sym_middledot">Средняя точка</string>
+    <string name="sym_multiplication">Знак умножения</string>
+    <string name="sym_numero">Знак номера</string>
+    <string name="sym_paragraph">Знак абзаца</string>
+    <string name="sym_parenleft">Открывающая скобка</string>
+    <string name="sym_parenright">Закрывающая скобка</string>
+    <string name="sym_percent">Процент</string>
+    <string name="sym_pi">Пи</string>
+    <string name="sym_pipe">Вертикальная черта</string>
+    <string name="sym_plus">Плюс</string>
+    <string name="sym_poundsign">Фунт стерлингов</string>
+    <string name="sym_question">Вопросительный знак</string>
+    <string name="sym_questioninverted">Перевёрнутый вопросительный знак</string>
+    <string name="sym_quotedouble">Кавычка</string>
+    <string name="sym_quotesingle">Апостроф</string>
+    <string name="sym_registered">Знак охраны товарного знака</string>
+    <string name="sym_section">Знак параграфа</string>
+    <string name="sym_semicolon">Точка с запятой</string>
+    <string name="sym_slash">Косая черта</string>
+    <string name="sym_squareroot">Квадратный корень</string>
+    <string name="sym_tilde">Тильда</string>
+    <string name="sym_trademark">Знак товарного знака</string>
+    <string name="sym_underscore">Подчёркивание</string>
+    <string name="sym_yen">Иена</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A с акутом</string>
+    <string name="char_a_acute_cap">Прописная A с акутом</string>
+    <string name="char_a_ash">Лигатура A, E</string>
+    <string name="char_a_ash_cap">Прописная лигатура A, E</string>
+    <string name="char_a_circumflex">A с циркумфлексом</string>
+    <string name="char_a_circumflex_cap">Прописная A с циркумфлексом</string>
+    <string name="char_a_diaeresis">A с двумя точками</string>
+    <string name="char_a_diaeresis_cap">Прописная A с двумя точками</string>
+    <string name="char_a_grave">A с грависом</string>
+    <string name="char_a_grave_cap">Прописная A с грависом</string>
+    <string name="char_a_macron">A с макроном</string>
+    <string name="char_a_macron_cap">Прописная A с макроном</string>
+    <string name="char_a_ogonek">A с огонэком</string>
+    <string name="char_a_ogonek_cap">Прописная A с огонэком</string>
+    <string name="char_a_ordinal">Надстрочная A</string>
+    <string name="char_a_overring">A с кружком сверху</string>
+    <string name="char_a_overring_cap">Прописная A с кружком сверху</string>
+    <string name="char_a_tilde">A с тильдой</string>
+    <string name="char_a_tilde_cap">Прописная A с тильдой</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E с акутом</string>
+    <string name="char_e_acute_cap">Прописная E с акутом</string>
+    <string name="char_e_circumflex">E с циркумфлексом</string>
+    <string name="char_e_circumflex_cap">Прописная E с циркумфлексом</string>
+    <string name="char_e_diaeresis">E с двумя точками</string>
+    <string name="char_e_diaeresis_cap">Прописная E с двумя точками</string>
+    <string name="char_e_grave">E с грависом</string>
+    <string name="char_e_grave_cap">Прописная E с грависом</string>
+    <string name="char_e_macron">E с макроном</string>
+    <string name="char_e_macron_cap">Прописная E с макроном</string>
+    <string name="char_e_ogonek">E с огонэком</string>
+    <string name="char_e_ogonek_cap">Прописная E с огонэком</string>
+    <string name="char_e_overdot">E с точкой сверху</string>
+    <string name="char_e_overdot_cap">Прописная E с точкой сверху</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I с акутом</string>
+    <string name="char_i_acute_cap">Прописная I с акутом</string>
+    <string name="char_i_circumflex">I с циркумфлексом</string>
+    <string name="char_i_circumflex_cap">Прописная I с циркумфлексом</string>
+    <string name="char_i_diaeresis">I с двумя точками</string>
+    <string name="char_i_diaeresis_cap">Прописная I с двумя точками</string>
+    <string name="char_i_grave">I с грависом</string>
+    <string name="char_i_grave_cap">Прописная I с грависом</string>
+    <string name="char_i_macron">I с макроном</string>
+    <string name="char_i_macron_cap">Прописная I с макроном</string>
+    <string name="char_i_ogonek">I с огонэком</string>
+    <string name="char_i_ogonek_cap">Прописная I с огонэком</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O с акутом</string>
+    <string name="char_o_acute_cap">Прописная O с акутом</string>
+    <string name="char_o_circumflex">O с циркумфлексом</string>
+    <string name="char_o_circumflex_cap">Прописная O с циркумфлексом</string>
+    <string name="char_o_diaeresis">O с двумя точками</string>
+    <string name="char_o_diaeresis_cap">Прописная O с двумя точками</string>
+    <string name="char_o_grave">O с грависом</string>
+    <string name="char_o_grave_cap">Прописная O с грависом</string>
+    <string name="char_o_macron">O с макроном</string>
+    <string name="char_o_macron_cap">Прописная O с макроном</string>
+    <string name="char_o_oe">Лигатура O, E</string>
+    <string name="char_o_oe_cap">Прописная лигатура O, E</string>
+    <string name="char_o_ordinal">Надстрочная O</string>
+    <string name="char_o_stroke">O со штрихом</string>
+    <string name="char_o_stroke_cap">Прописная O со штрихом</string>
+    <string name="char_o_tilde">O с тильдой</string>
+    <string name="char_o_tilde_cap">Прописная O с тильдой</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U с акутом</string>
+    <string name="char_u_acute_cap">Прописная U с акутом</string>
+    <string name="char_u_circumflex">U с циркумфлексом</string>
+    <string name="char_u_circumflex_cap">Прописная U с циркумфлексом</string>
+    <string name="char_u_diaeresis">U с двумя точками</string>
+    <string name="char_u_diaeresis_cap">Прописная U с двумя точками</string>
+    <string name="char_u_grave">U с грависом</string>
+    <string name="char_u_grave_cap">Прописная U с грависом</string>
+    <string name="char_u_macron">U с макроном</string>
+    <string name="char_u_macron_cap">Прописная U с макроном</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C с акутом</string>
+    <string name="char_c_acute_cap">Прописная C с акутом</string>
+    <string name="char_c_caron">C с гачеком</string>
+    <string name="char_c_caron_cap">Прописная C с гачеком</string>
+    <string name="char_c_cedilla">C с седилью</string>
+    <string name="char_c_cedilla_cap">Прописная C с седилью</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N с акутом</string>
+    <string name="char_n_acute_cap">Прописная N с акутом</string>
+    <string name="char_n_tilde">N с тильдой</string>
+    <string name="char_n_tilde_cap">Прописная N с тильдой</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S с акутом</string>
+    <string name="char_s_acute_cap">Прописная S с акутом</string>
+    <string name="char_s_caron">S с гачеком</string>
+    <string name="char_s_caron_cap">Прописная S с гачеком</string>
+    <string name="char_s_sharp">Эсцет</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Альфа с тоносом</string>
+    <string name="char_alpha_tonos_cap">Прописная альфа с тоносом</string>
+    <string name="char_epsilon_tonos">Эпсилон с тоносом</string>
+    <string name="char_epsilon_tonos_cap">Прописной эпсилон с тоносом</string>
+    <string name="char_eta_tonos">Эта с тоносом</string>
+    <string name="char_eta_tonos_cap">Прописная эта с тоносом</string>
+    <string name="char_iota_tonos">Йота с тоносом</string>
+    <string name="char_iota_tonos_cap">Прописная йота с тоносом</string>
+    <string name="char_iota_dialytika">Йота с диалитикой</string>
+    <string name="char_iota_dialytika_cap">Прописная йота с диалитикой</string>
+    <string name="char_iota_dialytika_tonos">Йота с диалитикой и тоносом</string>
+    <string name="char_omega_tonos">Омега с тоносом</string>
+    <string name="char_omega_tonos_cap">Прописная омега с тоносом</string>
+    <string name="char_omicron_tonos">Омикрон с тоносом</string>
+    <string name="char_omicron_tonos_cap">Прописной омикрон с тоносом</string>
+    <string name="char_upsilon_tonos">Ипсилон с тоносом</string>
+    <string name="char_upsilon_tonos_cap">Прописной ипсилон с тоносом</string>
+    <string name="char_upsilon_dialytika">Ипсилон с диалитикой</string>
+    <string name="char_upsilon_dialytika_cap">Прописной ипсилон с диалитикой</string>
+    <string name="char_upsilon_dialytika_tonos">Ипсилон с диалитикой и тоносом</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Готово</string>
+    <string name="action_enter">Ввод</string>
+    <string name="action_go">Перейти</string>
+    <string name="action_next">Далее</string>
+    <string name="action_previous">Предыдущее</string>
+    <string name="action_search">Поиск</string>
+    <string name="action_send">Отправить</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Настройки</string>
+    <string name="pref_back">Назад</string>
+    <string name="pref_size">Размер</string>
+    <string name="pref_size_small">Маленький</string>
+    <string name="pref_size_medium">Средний</string>
+    <string name="pref_size_large">Большой</string>
+    <string name="pref_size_extra_large">Очень большой</string>
+    <string name="pref_color">Цвет</string>
+    <string name="pref_color_light">Светлый</string>
+    <string name="pref_color_dark">Тёмный</string>
+    <string name="pref_color_extradark">Очень тёмный</string>
+    <string name="pref_color_yellowblack">Жёлтый на чёрном</string>
+    <string name="pref_color_blackyellow">Чёрный на жёлтом</string>
+    <string name="pref_color_yellowblue">Жёлтый на синем</string>
+    <string name="pref_color_blueyellow">Синий на жёлтом</string>
+    <string name="pref_menu_option">Выбор режима</string>
+    <string name="pref_menu_bar">Панель меню</string>
+    <string name="pref_menu_space">Долгое нажатие пробела</string>
+    <string name="pref_menu_both">Оба варианта</string>
+    <string name="pref_natural_layout">Естественная раскладка</string>
+    <string name="pref_natural_layout_sub">Использовать естественные отступы раскладки</string>
+    <string name="pref_highlights">Цветовые выделения</string>
+    <string name="pref_highlights_sub">Выделять специальные клавиши цветом</string>
+    <string name="pref_banner_enable_1">Нажмите, чтобы включить</string>
+    <string name="pref_banner_enable_2">BroadBoard нужно включить в настройках</string>
+    <string name="pref_banner_use_1">Нажмите, чтобы использовать</string>
+    <string name="pref_banner_use_2">BroadBoard готов — сделайте его клавиатурой по умолчанию</string>
+    <string name="pref_vibrate">Вибрация при нажатии</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Показана буквенная клавиатура</string>
+    <string name="mode_change_emojis">Показана клавиатура эмодзи</string>
+    <string name="mode_change_menu">Показано меню</string>
+    <string name="mode_change_numeric">Показана цифровая клавиатура</string>
+    <string name="mode_change_symbols">Показана клавиатура символов</string>
+    <string name="shift_change_off">Shift выключен</string>
+    <string name="shift_change_on">Shift включён</string>
+    <string name="shift_change_caps">Caps Lock включён</string>
+
+</resources>

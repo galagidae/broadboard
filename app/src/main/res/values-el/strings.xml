@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Πληκτρολόγιο γραμμάτων</string>
+    <string name="key_alternate">Εισαγωγή εναλλακτικών χαρακτήρων</string>
+    <string name="key_back">Επιστροφή</string>
+    <string name="key_delete">Διαγραφή</string>
+    <string name="key_emojis_happy">Χαρούμενα emoji</string>
+    <string name="key_emojis_sad">Λυπημένα emoji</string>
+    <string name="key_emojis">Πληκτρολόγιο emoji</string>
+    <string name="key_menu">Μενού</string>
+    <string name="key_numeric">Πληκτρολόγιο αριθμών</string>
+    <string name="key_picker">Αλλαγή πληκτρολογίου</string>
+    <string name="key_preferences">Προτιμήσεις</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Ενεργοποίηση κλειδώματος κεφαλαίων</string>
+    <string name="key_shift_disable">Απενεργοποίηση κλειδώματος κεφαλαίων</string>
+    <string name="key_space">Διάστημα</string>
+    <string name="key_space_long">Άνοιγμα μενού</string>
+    <string name="key_symbols">Πληκτρολόγιο συμβόλων</string>
+    <string name="key_symbols_shift">Σύμβολα</string>
+    <string name="key_symbols_more">Περισσότερα σύμβολα</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Εμπορικό και</string>
+    <string name="sym_asterisk">Αστερίσκος</string>
+    <string name="sym_atsign">Παπάκι</string>
+    <string name="sym_backslash">Ανάστροφη κάθετος</string>
+    <string name="sym_braceleft">Άνοιγμα άγκιστρου</string>
+    <string name="sym_braceright">Κλείσιμο άγκιστρου</string>
+    <string name="sym_bracketleft">Άνοιγμα αγκύλης</string>
+    <string name="sym_bracketright">Κλείσιμο αγκύλης</string>
+    <string name="sym_bullet">Κουκκίδα</string>
+    <string name="sym_caret">Καπέλο</string>
+    <string name="sym_cent">Σεντ</string>
+    <string name="sym_checkmark">Σημάδι επιλογής</string>
+    <string name="sym_colon">Άνω κάτω τελεία</string>
+    <string name="sym_copyright">Σύμβολο πνευματικών δικαιωμάτων</string>
+    <string name="sym_dash">Παύλα</string>
+    <string name="sym_degree">Σύμβολο μοιρών</string>
+    <string name="sym_diaeresis">Διαλυτικά</string>
+    <string name="sym_division">Σύμβολο διαίρεσης</string>
+    <string name="sym_dollarsign">Δολάριο</string>
+    <string name="sym_ellipsis">Αποσιωπητικά</string>
+    <string name="sym_emdash">Μεγάλη παύλα</string>
+    <string name="sym_endash">Μεσαία παύλα</string>
+    <string name="sym_equals">Ίσον</string>
+    <string name="sym_euro">Ευρώ</string>
+    <string name="sym_exclamation">Θαυμαστικό</string>
+    <string name="sym_exclamationinverted">Ανεστραμμένο θαυμαστικό</string>
+    <string name="sym_graveaccent">Βαρεία</string>
+    <string name="sym_greaterthan">Μεγαλύτερο από</string>
+    <string name="sym_hashtag">Δίεση</string>
+    <string name="sym_infinity">Άπειρο</string>
+    <string name="sym_lessthan">Μικρότερο από</string>
+    <string name="sym_middledot">Άνω τελεία</string>
+    <string name="sym_multiplication">Σύμβολο πολλαπλασιασμού</string>
+    <string name="sym_numero">Σύμβολο αριθμού</string>
+    <string name="sym_paragraph">Σύμβολο παραγράφου</string>
+    <string name="sym_parenleft">Άνοιγμα παρένθεσης</string>
+    <string name="sym_parenright">Κλείσιμο παρένθεσης</string>
+    <string name="sym_percent">Τοις εκατό</string>
+    <string name="sym_pi">Πι</string>
+    <string name="sym_pipe">Κάθετη γραμμή</string>
+    <string name="sym_plus">Συν</string>
+    <string name="sym_poundsign">Λίρα Αγγλίας</string>
+    <string name="sym_question">Ερωτηματικό</string>
+    <string name="sym_questioninverted">Ανεστραμμένο ερωτηματικό</string>
+    <string name="sym_quotedouble">Εισαγωγικά</string>
+    <string name="sym_quotesingle">Απόστροφος</string>
+    <string name="sym_registered">Σύμβολο σήματος κατατεθέντος</string>
+    <string name="sym_section">Σύμβολο ενότητας</string>
+    <string name="sym_semicolon">Ελληνικό ερωτηματικό</string>
+    <string name="sym_slash">Κάθετος</string>
+    <string name="sym_squareroot">Τετραγωνική ρίζα</string>
+    <string name="sym_tilde">Τίλντε</string>
+    <string name="sym_trademark">Σύμβολο εμπορικού σήματος</string>
+    <string name="sym_underscore">Κάτω παύλα</string>
+    <string name="sym_yen">Γιεν</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A με οξεία</string>
+    <string name="char_a_acute_cap">Κεφαλαίο A με οξεία</string>
+    <string name="char_a_ash">Σύμπλεγμα A E</string>
+    <string name="char_a_ash_cap">Κεφαλαίο σύμπλεγμα A E</string>
+    <string name="char_a_circumflex">A με περισπωμένη</string>
+    <string name="char_a_circumflex_cap">Κεφαλαίο A με περισπωμένη</string>
+    <string name="char_a_diaeresis">A με διαλυτικά</string>
+    <string name="char_a_diaeresis_cap">Κεφαλαίο A με διαλυτικά</string>
+    <string name="char_a_grave">A με βαρεία</string>
+    <string name="char_a_grave_cap">Κεφαλαίο A με βαρεία</string>
+    <string name="char_a_macron">A με μακρόν</string>
+    <string name="char_a_macron_cap">Κεφαλαίο A με μακρόν</string>
+    <string name="char_a_ogonek">A με ογκονέκ</string>
+    <string name="char_a_ogonek_cap">Κεφαλαίο A με ογκονέκ</string>
+    <string name="char_a_ordinal">Ανασηκωμένο A</string>
+    <string name="char_a_overring">A με κύκλο επάνω</string>
+    <string name="char_a_overring_cap">Κεφαλαίο A με κύκλο επάνω</string>
+    <string name="char_a_tilde">A με τίλντε</string>
+    <string name="char_a_tilde_cap">Κεφαλαίο A με τίλντε</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E με οξεία</string>
+    <string name="char_e_acute_cap">Κεφαλαίο E με οξεία</string>
+    <string name="char_e_circumflex">E με περισπωμένη</string>
+    <string name="char_e_circumflex_cap">Κεφαλαίο E με περισπωμένη</string>
+    <string name="char_e_diaeresis">E με διαλυτικά</string>
+    <string name="char_e_diaeresis_cap">Κεφαλαίο E με διαλυτικά</string>
+    <string name="char_e_grave">E με βαρεία</string>
+    <string name="char_e_grave_cap">Κεφαλαίο E με βαρεία</string>
+    <string name="char_e_macron">E με μακρόν</string>
+    <string name="char_e_macron_cap">Κεφαλαίο E με μακρόν</string>
+    <string name="char_e_ogonek">E με ογκονέκ</string>
+    <string name="char_e_ogonek_cap">Κεφαλαίο E με ογκονέκ</string>
+    <string name="char_e_overdot">E με τελεία επάνω</string>
+    <string name="char_e_overdot_cap">Κεφαλαίο E με τελεία επάνω</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I με οξεία</string>
+    <string name="char_i_acute_cap">Κεφαλαίο I με οξεία</string>
+    <string name="char_i_circumflex">I με περισπωμένη</string>
+    <string name="char_i_circumflex_cap">Κεφαλαίο I με περισπωμένη</string>
+    <string name="char_i_diaeresis">I με διαλυτικά</string>
+    <string name="char_i_diaeresis_cap">Κεφαλαίο I με διαλυτικά</string>
+    <string name="char_i_grave">I με βαρεία</string>
+    <string name="char_i_grave_cap">Κεφαλαίο I με βαρεία</string>
+    <string name="char_i_macron">I με μακρόν</string>
+    <string name="char_i_macron_cap">Κεφαλαίο I με μακρόν</string>
+    <string name="char_i_ogonek">I με ογκονέκ</string>
+    <string name="char_i_ogonek_cap">Κεφαλαίο I με ογκονέκ</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O με οξεία</string>
+    <string name="char_o_acute_cap">Κεφαλαίο O με οξεία</string>
+    <string name="char_o_circumflex">O με περισπωμένη</string>
+    <string name="char_o_circumflex_cap">Κεφαλαίο O με περισπωμένη</string>
+    <string name="char_o_diaeresis">O με διαλυτικά</string>
+    <string name="char_o_diaeresis_cap">Κεφαλαίο O με διαλυτικά</string>
+    <string name="char_o_grave">O με βαρεία</string>
+    <string name="char_o_grave_cap">Κεφαλαίο O με βαρεία</string>
+    <string name="char_o_macron">O με μακρόν</string>
+    <string name="char_o_macron_cap">Κεφαλαίο O με μακρόν</string>
+    <string name="char_o_oe">Σύμπλεγμα O E</string>
+    <string name="char_o_oe_cap">Κεφαλαίο σύμπλεγμα O E</string>
+    <string name="char_o_ordinal">Ανασηκωμένο O</string>
+    <string name="char_o_stroke">O με διαγώνια γραμμή</string>
+    <string name="char_o_stroke_cap">Κεφαλαίο O με διαγώνια γραμμή</string>
+    <string name="char_o_tilde">O με τίλντε</string>
+    <string name="char_o_tilde_cap">Κεφαλαίο O με τίλντε</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U με οξεία</string>
+    <string name="char_u_acute_cap">Κεφαλαίο U με οξεία</string>
+    <string name="char_u_circumflex">U με περισπωμένη</string>
+    <string name="char_u_circumflex_cap">Κεφαλαίο U με περισπωμένη</string>
+    <string name="char_u_diaeresis">U με διαλυτικά</string>
+    <string name="char_u_diaeresis_cap">Κεφαλαίο U με διαλυτικά</string>
+    <string name="char_u_grave">U με βαρεία</string>
+    <string name="char_u_grave_cap">Κεφαλαίο U με βαρεία</string>
+    <string name="char_u_macron">U με μακρόν</string>
+    <string name="char_u_macron_cap">Κεφαλαίο U με μακρόν</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C με οξεία</string>
+    <string name="char_c_acute_cap">Κεφαλαίο C με οξεία</string>
+    <string name="char_c_caron">C με καρόν</string>
+    <string name="char_c_caron_cap">Κεφαλαίο C με καρόν</string>
+    <string name="char_c_cedilla">C με σεντίγ</string>
+    <string name="char_c_cedilla_cap">Κεφαλαίο C με σεντίγ</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N με οξεία</string>
+    <string name="char_n_acute_cap">Κεφαλαίο N με οξεία</string>
+    <string name="char_n_tilde">N με τίλντε</string>
+    <string name="char_n_tilde_cap">Κεφαλαίο N με τίλντε</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S με οξεία</string>
+    <string name="char_s_acute_cap">Κεφαλαίο S με οξεία</string>
+    <string name="char_s_caron">S με καρόν</string>
+    <string name="char_s_caron_cap">Κεφαλαίο S με καρόν</string>
+    <string name="char_s_sharp">Ες-τσετ</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Άλφα με τόνο</string>
+    <string name="char_alpha_tonos_cap">Κεφαλαίο Άλφα με τόνο</string>
+    <string name="char_epsilon_tonos">Έψιλον με τόνο</string>
+    <string name="char_epsilon_tonos_cap">Κεφαλαίο Έψιλον με τόνο</string>
+    <string name="char_eta_tonos">Ήτα με τόνο</string>
+    <string name="char_eta_tonos_cap">Κεφαλαίο Ήτα με τόνο</string>
+    <string name="char_iota_tonos">Ιώτα με τόνο</string>
+    <string name="char_iota_tonos_cap">Κεφαλαίο Ιώτα με τόνο</string>
+    <string name="char_iota_dialytika">Ιώτα με διαλυτικά</string>
+    <string name="char_iota_dialytika_cap">Κεφαλαίο Ιώτα με διαλυτικά</string>
+    <string name="char_iota_dialytika_tonos">Ιώτα με διαλυτικά και τόνο</string>
+    <string name="char_omega_tonos">Ωμέγα με τόνο</string>
+    <string name="char_omega_tonos_cap">Κεφαλαίο Ωμέγα με τόνο</string>
+    <string name="char_omicron_tonos">Όμικρον με τόνο</string>
+    <string name="char_omicron_tonos_cap">Κεφαλαίο Όμικρον με τόνο</string>
+    <string name="char_upsilon_tonos">Ύψιλον με τόνο</string>
+    <string name="char_upsilon_tonos_cap">Κεφαλαίο Ύψιλον με τόνο</string>
+    <string name="char_upsilon_dialytika">Ύψιλον με διαλυτικά</string>
+    <string name="char_upsilon_dialytika_cap">Κεφαλαίο Ύψιλον με διαλυτικά</string>
+    <string name="char_upsilon_dialytika_tonos">Ύψιλον με διαλυτικά και τόνο</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Τέλος</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Μετάβαση</string>
+    <string name="action_next">Επόμενο</string>
+    <string name="action_previous">Προηγούμενο</string>
+    <string name="action_search">Αναζήτηση</string>
+    <string name="action_send">Αποστολή</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Προτιμήσεις</string>
+    <string name="pref_back">Πίσω</string>
+    <string name="pref_size">Μέγεθος</string>
+    <string name="pref_size_small">Μικρό</string>
+    <string name="pref_size_medium">Μεσαίο</string>
+    <string name="pref_size_large">Μεγάλο</string>
+    <string name="pref_size_extra_large">Πολύ μεγάλο</string>
+    <string name="pref_color">Χρώμα</string>
+    <string name="pref_color_light">Φωτεινό</string>
+    <string name="pref_color_dark">Σκούρο</string>
+    <string name="pref_color_extradark">Πολύ σκούρο</string>
+    <string name="pref_color_yellowblack">Κίτρινο σε μαύρο</string>
+    <string name="pref_color_blackyellow">Μαύρο σε κίτρινο</string>
+    <string name="pref_color_yellowblue">Κίτρινο σε μπλε</string>
+    <string name="pref_color_blueyellow">Μπλε σε κίτρινο</string>
+    <string name="pref_menu_option">Επιλογή λειτουργίας</string>
+    <string name="pref_menu_bar">Γραμμή μενού</string>
+    <string name="pref_menu_space">Παρατεταμένο πάτημα στο πλήκτρο διαστήματος</string>
+    <string name="pref_menu_both">Και τα δύο</string>
+    <string name="pref_natural_layout">Φυσική διάταξη</string>
+    <string name="pref_natural_layout_sub">Χρήση φυσικών αποστάσεων πλήκτρων</string>
+    <string name="pref_highlights">Χρωματικές επισημάνσεις</string>
+    <string name="pref_highlights_sub">Προσθήκη χρωματικών επισημάνσεων στα ειδικά πλήκτρα</string>
+    <string name="pref_banner_enable_1">Πατήστε για ενεργοποίηση</string>
+    <string name="pref_banner_enable_2">Το BroadBoard πρέπει να ενεργοποιηθεί στις Ρυθμίσεις</string>
+    <string name="pref_banner_use_1">Πατήστε για χρήση</string>
+    <string name="pref_banner_use_2">Το BroadBoard είναι έτοιμο — ορίστε το ως προεπιλεγμένο πληκτρολόγιο</string>
+    <string name="pref_vibrate">Δόνηση κατά το πάτημα πλήκτρων</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Εμφάνιση πληκτρολογίου γραμμάτων</string>
+    <string name="mode_change_emojis">Εμφάνιση πληκτρολογίου emoji</string>
+    <string name="mode_change_menu">Εμφάνιση μενού</string>
+    <string name="mode_change_numeric">Εμφάνιση πληκτρολογίου αριθμών</string>
+    <string name="mode_change_symbols">Εμφάνιση πληκτρολογίου συμβόλων</string>
+    <string name="shift_change_off">Το Shift είναι ανενεργό</string>
+    <string name="shift_change_on">Το Shift είναι ενεργό</string>
+    <string name="shift_change_caps">Κλείδωμα κεφαλαίων ενεργό</string>
+
+</resources>
