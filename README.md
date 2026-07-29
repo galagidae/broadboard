@@ -10,9 +10,20 @@ An Android IME keyboard designed for low vision users
 ## Features
 
 - Large, scrollable keyboard
+- Different color themes
 - Different size options
 - Haptic feedback option
-- No network access, no data sharing
+- Locale support
+  - English (United Kingdom)
+  - English (United States)
+  - Greek
+  - Italian
+  - Portuguese (Brazil)
+  - Portuguese (Portugal)
+  - Russian
+  - Spanish (Latin American)
+  - Spanish (Spain)
+  - More to come
 
 ## Installation
 
@@ -28,7 +39,9 @@ After installing, BroadBoard must be enabled and selected as your input method:
 
 1. Go to **Settings → System → Languages & input → On-screen keyboard → Manage keyboards**
 2. Enable **BroadBoard**
-3. Switch to it via the keyboard picker (tap the keyboard icon in the navigation bar, or long-press the spacebar in most apps). Alternatively, launching BroadBoard from the app tray provides a link to the keyboard picker.
+3. Switch to it via the keyboard picker (tap the keyboard icon in the navigation bar, or long-press the spacebar in most apps).
+
+Alternatively, launching BroadBoard from the app tray provides guided links to the correct settings screen and keyboard picker
 
 ## Building from source
 
