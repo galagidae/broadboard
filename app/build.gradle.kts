@@ -34,7 +34,7 @@ android {
     }
 
     signingConfigs {
-        create("release") {
+        create("playbundle") {
             if (keystorePropertiesFile.exists()) {
                 storeFile = file(keystoreProperties["storeFile"] as String)
                 storePassword = keystoreProperties["storePassword"] as String
@@ -46,7 +46,11 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("release")
+            isMinifyEnabled = true
+        }
+        create ("playbundle") {
+            initWith(getByName("release"))
+            signingConfig = signingConfigs.getByName("playbundle")
         }
     }
 }

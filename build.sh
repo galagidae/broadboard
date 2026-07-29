@@ -24,7 +24,7 @@ case "$BUILD_TYPE" in
         OUT_DIR="app/build/outputs/apk/release"
         ;;
     bundle)
-        ./gradlew bundleRelease
+        ./gradlew bundlePlayBundle
         OUT_DIR="app/build/outputs/bundle/release"
         ;;
     *)
