@@ -12,3 +12,7 @@ app/build/
 *.ipr
 *.iws
 keystore.properties
+ *.jks
+*.keystore
+*.p12
+*.pepk
