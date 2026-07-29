@@ -5,11 +5,7 @@ An Android IME keyboard designed for low vision users
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Get it on Google Play](https://img.shields.io/badge/Google%20Play-available-brightgreen)](https://play.google.com/store/apps/details?id=com.galagidae.broadboard)
 
-## Screenshots
-
-| Standard                                                                      | High Contrast                                                                 | Settings                                                                      |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| ![screenshot1](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png) | ![screenshot2](fastlane/metadata/android/en-US/images/phoneScreenshots/2.png) | ![screenshot3](fastlane/metadata/android/en-US/images/phoneScreenshots/3.png) |
+![BroadBoard Demo](screenshots/demo.gif)
 
 ## Features
 
