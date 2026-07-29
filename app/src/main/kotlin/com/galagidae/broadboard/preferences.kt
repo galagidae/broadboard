@@ -125,7 +125,7 @@ class PreferencesRepository(private val context: Context) {
         .map { prefs ->
             val name = prefs[Keys.MENU_BAR] ?: "bar"
             
-            if (name !in colorOptions)
+            if (name !in menuBarOptions)
                 "bar"
 
             name
