@@ -1,6 +1,6 @@
 # BroadBoard
 
-An Android IME keyboard designed for low vision users
+BroadBoard is an on-screen keyboard (IME) designed for people with low vision. Instead of shrinking keys to fit everything on the screen at once, BroadBoard keeps every key big and readable — you simply pan around the keyboard to reach the keys you need, so no key ever has to be small.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Get it on Google Play](https://img.shields.io/badge/Google%20Play-available-brightgreen)](https://play.google.com/store/apps/details?id=com.galagidae.broadboard)
@@ -9,10 +9,11 @@ An Android IME keyboard designed for low vision users
 
 ## Features
 
-- Large, scrollable keyboard
-- Different color themes
-- Different size options
-- Haptic feedback option
+- Large, scrollable keyboard with oversized, high-contrast keys
+- Multiple color themes, including extra dark and high-visibility options
+- Adjustable keyboard sizes, up to extra large
+- Optional haptic feedback
+- Screen reader friendly
 - Locale support
   - English (United Kingdom)
   - English (United States)

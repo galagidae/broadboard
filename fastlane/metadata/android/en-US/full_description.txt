@@ -1,0 +1,22 @@
+BroadBoard is an on-screen keyboard (IME) designed for people with low vision. Instead of shrinking keys to fit everything on the screen at once, BroadBoard keeps every key big and readable — you simply pan around the keyboard to reach the keys you need, so no key ever has to be small.
+
+Features:
+
+* Large, scrollable keyboard with oversized, high-contrast keys
+* Multiple color themes, including extra dark and high-visibility options
+* Adjustable keyboard sizes, up to extra large
+* Optional haptic feedback
+* Screen reader friendly
+* Layouts for English (UK and US), Greek, Italian, Portuguese (Brazil and Portugal), Russian, and Spanish (Latin America and Spain) — more to come
+
+Privacy:
+
+BroadBoard collects no data. It has no internet permission, no analytics, no ads, and no third-party components. Nothing you type ever leaves your device.
+
+After installing, BroadBoard must be enabled and selected as your input method:
+
+1. Go to **Settings → System → Languages & input → On-screen keyboard → Manage keyboards**
+2. Enable **BroadBoard**
+3. Switch to it via the keyboard picker (tap the keyboard icon in the navigation bar, or long-press the spacebar in most apps).
+
+Alternatively, launching BroadBoard from the app tray provides guided links to the correct settings screen and keyboard picker
