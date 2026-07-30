@@ -1,0 +1,22 @@
+BroadBoard è una tastiera a schermo (IME) progettata per persone con bassa visione. Invece di rimpicciolire i tasti per farli stare tutti sullo schermo contemporaneamente, BroadBoard mantiene ogni tasto grande e leggibile: basta scorrere la tastiera per raggiungere i tasti che ti servono, così nessun tasto deve mai essere piccolo.
+
+Funzionalità:
+
+* Tastiera grande e scorrevole con tasti sovradimensionati e ad alto contrasto
+* Diversi temi di colore, comprese opzioni extra scure e ad alta visibilità
+* Dimensioni della tastiera regolabili, fino a extra large
+* Feedback aptico opzionale
+* Compatibile con gli screen reader
+* Layout per inglese (Regno Unito e Stati Uniti), francese, tedesco, greco, italiano, portoghese (Brasile e Portogallo), russo e spagnolo (America Latina e Spagna) — altri in arrivo
+
+Privacy:
+
+BroadBoard non raccoglie alcun dato. Non richiede il permesso di accesso a Internet, non ha analisi, non ha pubblicità e non utilizza componenti di terze parti. Nulla di ciò che digiti lascia mai il tuo dispositivo.
+
+Dopo l'installazione, BroadBoard deve essere abilitato e selezionato come metodo di inserimento:
+
+Vai su Impostazioni → Sistema → Lingue e inserimento → Tastiera a schermo → Gestisci tastiere
+Abilita BroadBoard
+Passa a essa tramite il selettore di tastiera (tocca l'icona della tastiera nella barra di navigazione, oppure tieni premuta la barra spaziatrice nella maggior parte delle app).
+
+In alternativa, avviando BroadBoard dal cassetto delle app si accede a collegamenti guidati alle schermate delle impostazioni corrette e al selettore di tastiera.

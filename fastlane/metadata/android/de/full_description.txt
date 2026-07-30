@@ -1,0 +1,22 @@
+BroadBoard ist eine Bildschirmtastatur (IME), die für Menschen mit Sehbehinderung entwickelt wurde. Anstatt die Tasten zu verkleinern, damit alles gleichzeitig auf den Bildschirm passt, hält BroadBoard jede Taste groß und gut lesbar – man scrollt einfach über die Tastatur, um die benötigten Tasten zu erreichen, sodass keine Taste jemals klein sein muss.
+
+Funktionen:
+
+* Große, scrollbare Tastatur mit übergroßen, kontrastreichen Tasten
+* Mehrere Farbthemen, darunter extra dunkle und besonders gut sichtbare Optionen
+* Anpassbare Tastaturgrößen, bis hin zu extra groß
+* Optionales haptisches Feedback
+* Screenreader-freundlich
+* Layouts für Englisch (UK und USA), Französisch, Deutsch, Griechisch, Italienisch, Portugiesisch (Brasilien und Portugal), Russisch und Spanisch (Lateinamerika und Spanien) – weitere folgen
+
+Datenschutz:
+
+BroadBoard sammelt keine Daten. Die App hat keine Internetberechtigung, keine Analysefunktionen, keine Werbung und keine Komponenten von Drittanbietern. Nichts, was du eingibst, verlässt jemals dein Gerät.
+
+Nach der Installation muss BroadBoard aktiviert und als Eingabemethode ausgewählt werden:
+
+Gehe zu Einstellungen → System → Sprachen & Eingabe → Bildschirmtastatur → Tastaturen verwalten
+Aktiviere BroadBoard
+Wechsle über die Tastaturauswahl dorthin (tippe auf das Tastatursymbol in der Navigationsleiste oder halte die Leertaste in den meisten Apps lange gedrückt).
+
+Alternativ bietet der Start von BroadBoard über die App-Übersicht geführte Links zum passenden Einstellungsbildschirm und zur Tastaturauswahl.

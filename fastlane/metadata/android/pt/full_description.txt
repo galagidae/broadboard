@@ -1,0 +1,22 @@
+BroadBoard é um teclado na tela (IME) desenvolvido para pessoas com baixa visão. Em vez de encolher as teclas para caber tudo na tela de uma vez, o BroadBoard mantém todas as teclas grandes e legíveis — basta deslizar pelo teclado para alcançar as teclas que você precisa, então nenhuma tecla precisa ser pequena.
+
+Recursos:
+
+* Teclado grande e rolável, com teclas grandes e de alto contraste
+* Vários temas de cores, incluindo opções extra escuras e de alta visibilidade
+* Tamanhos de teclado ajustáveis, até extra grande
+* Feedback tátil opcional
+* Compatível com leitores de tela
+* Layouts para inglês (Reino Unido e EUA), francês, alemão, grego, italiano, português (Brasil e Portugal), russo e espanhol (América Latina e Espanha) — mais idiomas em breve
+
+Privacidade:
+
+O BroadBoard não coleta nenhum dado. Ele não tem permissão de internet, não possui análises, anúncios nem componentes de terceiros. Nada do que você digita sai do seu dispositivo.
+
+Após a instalação, o BroadBoard precisa ser ativado e selecionado como seu método de entrada:
+
+Vá em Configurações → Sistema → Idiomas e entrada de texto → Teclado virtual → Gerenciar teclados
+Ative o BroadBoard
+Mude para ele usando o seletor de teclado (toque no ícone de teclado na barra de navegação ou toque e segure a barra de espaço na maioria dos aplicativos).
+
+Alternativamente, abrir o BroadBoard pela gaveta de aplicativos oferece links guiados para a tela de configurações e o seletor de teclado corretos.

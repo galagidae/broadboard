@@ -1,0 +1,22 @@
+BroadBoard est un clavier virtuel (IME) conçu pour les personnes malvoyantes. Plutôt que de réduire les touches pour tout faire tenir à l'écran en même temps, BroadBoard garde chaque touche grande et lisible — il suffit de faire défiler le clavier pour atteindre les touches souhaitées, ainsi aucune touche n'a besoin d'être petite.
+
+Fonctionnalités :
+
+* Clavier large et défilant avec des touches surdimensionnées à fort contraste
+* Plusieurs thèmes de couleurs, y compris des options extra sombres et à haute visibilité
+* Tailles de clavier ajustables, jusqu'à très grand
+* Retour haptique optionnel
+* Compatible avec les lecteurs d'écran
+* Dispositions pour l'anglais (Royaume-Uni et États-Unis), le français, l'allemand, le grec, l'italien, le portugais (Brésil et Portugal), le russe et l'espagnol (Amérique latine et Espagne) — d'autres à venir
+
+Confidentialité :
+
+BroadBoard ne collecte aucune donnée. Il n'a aucune autorisation d'accès à Internet, aucune analyse, aucune publicité et aucun composant tiers. Rien de ce que vous tapez ne quitte jamais votre appareil.
+
+Après l'installation, BroadBoard doit être activé et sélectionné comme méthode de saisie :
+
+1. Allez dans **Paramètres → Système → Langues et saisie → Clavier virtuel → Gérer les claviers**
+2. Activez **BroadBoard**
+3. Passez à ce clavier via le sélecteur de clavier (appuyez sur l'icône de clavier dans la barre de navigation, ou effectuez un appui long sur la barre d'espace dans la plupart des applications).
+
+Autrement, le lancement de BroadBoard depuis le tiroir d'applications fournit des liens guidés vers l'écran de paramètres correct et le sélecteur de clavier.
