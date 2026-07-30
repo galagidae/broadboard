@@ -19,6 +19,7 @@
 package com.galagidae.broadboard.preferencesui
 
 import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -46,6 +47,7 @@ fun PreferencesScreen(
     
     Column(
         modifier = Modifier
+            .verticalScroll(rememberScrollState())
             .padding(
                 start = 16.dp,
                 end= 16.dp,
