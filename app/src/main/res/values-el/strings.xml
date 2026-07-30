@@ -185,6 +185,7 @@
     <string name="char_s_caron">S με καρόν</string>
     <string name="char_s_caron_cap">Κεφαλαίο S με καρόν</string>
     <string name="char_s_sharp">Ες-τσετ</string>
+    <string name="char_s_sharp_cap">Κεφαλαίο Ες-τσετ</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Άλφα με τόνο</string>

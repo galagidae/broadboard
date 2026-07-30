@@ -461,7 +461,7 @@ val sAlternates: List<List<SymbolSet>> = listOf(
                 description = R.string.char_s_sharp
             ),
             secondary = Symbol(
-                character = 'ß',
+                character = 'ẞ',
                 description = R.string.char_s_sharp
             )
         )

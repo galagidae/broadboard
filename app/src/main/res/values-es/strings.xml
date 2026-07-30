@@ -184,6 +184,7 @@
     <string name="char_s_caron">S, con carón</string>
     <string name="char_s_caron_cap">S mayúscula, con carón</string>
     <string name="char_s_sharp">Ese alemana</string>
+    <string name="char_s_sharp_cap">Ese alemana mayúscula</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Alfa, con tonos</string>

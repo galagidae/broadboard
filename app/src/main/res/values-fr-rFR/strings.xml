@@ -1,0 +1,261 @@
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Clavier alphabétique</string>
+    <string name="key_alternate">Saisir des caractères alternatifs</string>
+    <string name="key_back">Revenir en arrière</string>
+    <string name="key_delete">Supprimer</string>
+    <string name="key_emojis_happy">Émojis joyeux</string>
+    <string name="key_emojis_sad">Émojis tristes</string>
+    <string name="key_emojis">Clavier d\'émojis</string>
+    <string name="key_menu">Menu</string>
+    <string name="key_numeric">Clavier numérique</string>
+    <string name="key_picker">Changer de clavier</string>
+    <string name="key_preferences">Préférences</string>
+    <string name="key_shift">Maj</string>
+    <string name="key_shift_enable">Activer le verrouillage des majuscules</string>
+    <string name="key_shift_disable">Désactiver le verrouillage des majuscules</string>
+    <string name="key_space">Espace</string>
+    <string name="key_space_long">Ouvrir le menu</string>
+    <string name="key_symbols">Clavier de symboles</string>
+    <string name="key_symbols_shift">Symboles</string>
+    <string name="key_symbols_more">Plus de symboles</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Esperluette</string>
+    <string name="sym_asterisk">Astérisque</string>
+    <string name="sym_atsign">Arobase</string>
+    <string name="sym_backslash">Barre oblique inverse</string>
+    <string name="sym_braceleft">Accolade ouvrante</string>
+    <string name="sym_braceright">Accolade fermante</string>
+    <string name="sym_bracketleft">Crochet ouvrant</string>
+    <string name="sym_bracketright">Crochet fermant</string>
+    <string name="sym_bullet">Puce</string>
+    <string name="sym_caret">Accent circonflexe</string>
+    <string name="sym_cent">Symbole cent</string>
+    <string name="sym_checkmark">Coche</string>
+    <string name="sym_colon">Deux-points</string>
+    <string name="sym_copyright">Symbole copyright</string>
+    <string name="sym_dash">Trait d\'union</string>
+    <string name="sym_degree">Symbole degré</string>
+    <string name="sym_diaeresis">Tréma</string>
+    <string name="sym_division">Signe de division</string>
+    <string name="sym_dollarsign">Dollar</string>
+    <string name="sym_ellipsis">Points de suspension</string>
+    <string name="sym_emdash">Tiret cadratin</string>
+    <string name="sym_endash">Tiret demi-cadratin</string>
+    <string name="sym_equals">Égal</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Point d\'exclamation</string>
+    <string name="sym_exclamationinverted">Point d\'exclamation inversé</string>
+    <string name="sym_graveaccent">Accent grave</string>
+    <string name="sym_greaterthan">Signe supérieur à</string>
+    <string name="sym_hashtag">Dièse</string>
+    <string name="sym_infinity">Infini</string>
+    <string name="sym_lessthan">Signe inférieur à</string>
+    <string name="sym_middledot">Point médian</string>
+    <string name="sym_multiplication">Signe de multiplication</string>
+    <string name="sym_numero">Symbole numéro</string>
+    <string name="sym_paragraph">Signe de paragraphe</string>
+    <string name="sym_parenleft">Parenthèse ouvrante</string>
+    <string name="sym_parenright">Parenthèse fermante</string>
+    <string name="sym_percent">Pourcentage</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Barre verticale</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Livre sterling</string>
+    <string name="sym_question">Point d\'interrogation</string>
+    <string name="sym_questioninverted">Point d\'interrogation inversé</string>
+    <string name="sym_quotedouble">Guillemet</string>
+    <string name="sym_quotesingle">Apostrophe</string>
+    <string name="sym_registered">Symbole marque déposée</string>
+    <string name="sym_section">Signe de section</string>
+    <string name="sym_semicolon">Point-virgule</string>
+    <string name="sym_slash">Barre oblique</string>
+    <string name="sym_squareroot">Racine carrée</string>
+    <string name="sym_tilde">Tilde</string>
+    <string name="sym_trademark">Symbole marque commerciale</string>
+    <string name="sym_underscore">Tiret bas</string>
+    <string name="sym_yen">Yen</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A, avec accent aigu</string>
+    <string name="char_a_acute_cap">A majuscule, avec accent aigu</string>
+    <string name="char_a_ash">Ligature A, E</string>
+    <string name="char_a_ash_cap">Ligature A, E majuscule</string>
+    <string name="char_a_circumflex">A, avec accent circonflexe</string>
+    <string name="char_a_circumflex_cap">A majuscule, avec accent circonflexe</string>
+    <string name="char_a_diaeresis">A, avec tréma</string>
+    <string name="char_a_diaeresis_cap">A majuscule, avec tréma</string>
+    <string name="char_a_grave">A, avec accent grave</string>
+    <string name="char_a_grave_cap">A majuscule, avec accent grave</string>
+    <string name="char_a_macron">A, avec macron</string>
+    <string name="char_a_macron_cap">A majuscule, avec macron</string>
+    <string name="char_a_ogonek">A, avec ogonek</string>
+    <string name="char_a_ogonek_cap">A majuscule, avec ogonek</string>
+    <string name="char_a_ordinal">A en exposant</string>
+    <string name="char_a_overring">A, avec rond au-dessus</string>
+    <string name="char_a_overring_cap">A majuscule, avec rond au-dessus</string>
+    <string name="char_a_tilde">A, avec tilde</string>
+    <string name="char_a_tilde_cap">A majuscule, avec tilde</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E, avec accent aigu</string>
+    <string name="char_e_acute_cap">E majuscule, avec accent aigu</string>
+    <string name="char_e_circumflex">E, avec accent circonflexe</string>
+    <string name="char_e_circumflex_cap">E majuscule, avec accent circonflexe</string>
+    <string name="char_e_diaeresis">E, avec tréma</string>
+    <string name="char_e_diaeresis_cap">E majuscule, avec tréma</string>
+    <string name="char_e_grave">E, avec accent grave</string>
+    <string name="char_e_grave_cap">E majuscule, avec accent grave</string>
+    <string name="char_e_macron">E, avec macron</string>
+    <string name="char_e_macron_cap">E majuscule, avec macron</string>
+    <string name="char_e_ogonek">E, avec ogonek</string>
+    <string name="char_e_ogonek_cap">E majuscule, avec ogonek</string>
+    <string name="char_e_overdot">E, avec point au-dessus</string>
+    <string name="char_e_overdot_cap">E majuscule, avec point au-dessus</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I, avec accent aigu</string>
+    <string name="char_i_acute_cap">I majuscule, avec accent aigu</string>
+    <string name="char_i_circumflex">I, avec accent circonflexe</string>
+    <string name="char_i_circumflex_cap">I majuscule, avec accent circonflexe</string>
+    <string name="char_i_diaeresis">I, avec tréma</string>
+    <string name="char_i_diaeresis_cap">I majuscule, avec tréma</string>
+    <string name="char_i_grave">I, avec accent grave</string>
+    <string name="char_i_grave_cap">I majuscule, avec accent grave</string>
+    <string name="char_i_macron">I, avec macron</string>
+    <string name="char_i_macron_cap">I majuscule, avec macron</string>
+    <string name="char_i_ogonek">I, avec ogonek</string>
+    <string name="char_i_ogonek_cap">I majuscule, avec ogonek</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O, avec accent aigu</string>
+    <string name="char_o_acute_cap">O majuscule, avec accent aigu</string>
+    <string name="char_o_circumflex">O, avec accent circonflexe</string>
+    <string name="char_o_circumflex_cap">O majuscule, avec accent circonflexe</string>
+    <string name="char_o_diaeresis">O, avec tréma</string>
+    <string name="char_o_diaeresis_cap">O majuscule, avec tréma</string>
+    <string name="char_o_grave">O, avec accent grave</string>
+    <string name="char_o_grave_cap">O majuscule, avec accent grave</string>
+    <string name="char_o_macron">O, avec macron</string>
+    <string name="char_o_macron_cap">O majuscule, avec macron</string>
+    <string name="char_o_oe">Ligature O, E</string>
+    <string name="char_o_oe_cap">Ligature O, E majuscule</string>
+    <string name="char_o_ordinal">O en exposant</string>
+    <string name="char_o_stroke">O, avec barre oblique</string>
+    <string name="char_o_stroke_cap">O majuscule, avec barre oblique</string>
+    <string name="char_o_tilde">O, avec tilde</string>
+    <string name="char_o_tilde_cap">O majuscule, avec tilde</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U, avec accent aigu</string>
+    <string name="char_u_acute_cap">U majuscule, avec accent aigu</string>
+    <string name="char_u_circumflex">U, avec accent circonflexe</string>
+    <string name="char_u_circumflex_cap">U majuscule, avec accent circonflexe</string>
+    <string name="char_u_diaeresis">U, avec tréma</string>
+    <string name="char_u_diaeresis_cap">U majuscule, avec tréma</string>
+    <string name="char_u_grave">U, avec accent grave</string>
+    <string name="char_u_grave_cap">U majuscule, avec accent grave</string>
+    <string name="char_u_macron">U, avec macron</string>
+    <string name="char_u_macron_cap">U majuscule, avec macron</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C, avec accent aigu</string>
+    <string name="char_c_acute_cap">C majuscule, avec accent aigu</string>
+    <string name="char_c_caron">C, avec caron</string>
+    <string name="char_c_caron_cap">C majuscule, avec caron</string>
+    <string name="char_c_cedilla">C, avec cédille</string>
+    <string name="char_c_cedilla_cap">C majuscule, avec cédille</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N, avec accent aigu</string>
+    <string name="char_n_acute_cap">N majuscule, avec accent aigu</string>
+    <string name="char_n_tilde">N, avec tilde</string>
+    <string name="char_n_tilde_cap">N majuscule, avec tilde</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S, avec accent aigu</string>
+    <string name="char_s_acute_cap">S majuscule, avec accent aigu</string>
+    <string name="char_s_caron">S, avec caron</string>
+    <string name="char_s_caron_cap">S majuscule, avec caron</string>
+    <string name="char_s_sharp">S dur</string>
+    <string name="char_s_sharp_cap">S dur majuscule</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alpha, avec tonos</string>
+    <string name="char_alpha_tonos_cap">Alpha majuscule, avec tonos</string>
+    <string name="char_epsilon_tonos">Epsilon, avec tonos</string>
+    <string name="char_epsilon_tonos_cap">Epsilon majuscule, avec tonos</string>
+    <string name="char_eta_tonos">Êta, avec tonos</string>
+    <string name="char_eta_tonos_cap">Êta majuscule, avec tonos</string>
+    <string name="char_iota_tonos">Iota, avec tonos</string>
+    <string name="char_iota_tonos_cap">Iota majuscule, avec tonos</string>
+    <string name="char_iota_dialytika">Iota, avec dialytika</string>
+    <string name="char_iota_dialytika_cap">Iota majuscule, avec dialytika</string>
+    <string name="char_iota_dialytika_tonos">Iota, avec dialytika et tonos</string>
+    <string name="char_omega_tonos">Oméga, avec tonos</string>
+    <string name="char_omega_tonos_cap">Oméga majuscule, avec tonos</string>
+    <string name="char_omicron_tonos">Omicron, avec tonos</string>
+    <string name="char_omicron_tonos_cap">Omicron majuscule, avec tonos</string>
+    <string name="char_upsilon_tonos">Upsilon, avec tonos</string>
+    <string name="char_upsilon_tonos_cap">Upsilon majuscule, avec tonos</string>
+    <string name="char_upsilon_dialytika">Upsilon, avec dialytika</string>
+    <string name="char_upsilon_dialytika_cap">Upsilon majuscule, avec dialytika</string>
+    <string name="char_upsilon_dialytika_tonos">Upsilon, avec dialytika et tonos</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Terminé</string>
+    <string name="action_enter">Entrée</string>
+    <string name="action_go">Aller</string>
+    <string name="action_next">Suivant</string>
+    <string name="action_previous">Précédent</string>
+    <string name="action_search">Rechercher</string>
+    <string name="action_send">Envoyer</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Préférences</string>
+    <string name="pref_back">Retour</string>
+    <string name="pref_size">Taille</string>
+    <string name="pref_size_small">Petite</string>
+    <string name="pref_size_medium">Moyenne</string>
+    <string name="pref_size_large">Grande</string>
+    <string name="pref_size_extra_large">Très grande</string>
+    <string name="pref_color">Couleur</string>
+    <string name="pref_color_light">Clair</string>
+    <string name="pref_color_dark">Sombre</string>
+    <string name="pref_color_extradark">Très sombre</string>
+    <string name="pref_color_yellowblack">Jaune sur noir</string>
+    <string name="pref_color_blackyellow">Noir sur jaune</string>
+    <string name="pref_color_yellowblue">Jaune sur bleu</string>
+    <string name="pref_color_blueyellow">Bleu sur jaune</string>
+    <string name="pref_menu_option">Sélection du mode</string>
+    <string name="pref_menu_bar">Barre de menu</string>
+    <string name="pref_menu_space">Appui long sur la barre d\'espace</string>
+    <string name="pref_menu_both">Les deux</string>
+    <string name="pref_natural_layout">Disposition naturelle</string>
+    <string name="pref_natural_layout_sub">Utiliser l\'espacement naturel des touches</string>
+    <string name="pref_highlights">Couleurs d\'accentuation</string>
+    <string name="pref_highlights_sub">Ajouter des couleurs aux touches spéciales</string>
+    <string name="pref_banner_enable_1">Appuyez pour activer</string>
+    <string name="pref_banner_enable_2">BroadBoard doit être activé dans les Paramètres</string>
+    <string name="pref_banner_use_1">Appuyez pour utiliser</string>
+    <string name="pref_banner_use_2">BroadBoard est prêt — définissez-le comme clavier par défaut</string>
+    <string name="pref_vibrate">Vibrer à chaque appui</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Clavier alphabétique affiché</string>
+    <string name="mode_change_emojis">Clavier d\'émojis affiché</string>
+    <string name="mode_change_menu">Menu affiché</string>
+    <string name="mode_change_numeric">Clavier numérique affiché</string>
+    <string name="mode_change_symbols">Clavier de symboles affiché</string>
+    <string name="shift_change_off">Maj désactivée</string>
+    <string name="shift_change_on">Maj activée</string>
+    <string name="shift_change_caps">Verrouillage des majuscules activé</string>
+
+</resources>

@@ -20,6 +20,20 @@
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="true" />
 
+    <!-- Italian -->
+    <subtype
+        android:imeSubtypeLocale="de"
+        android:languageTag="de"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
+    <!-- French -->
+    <subtype
+        android:imeSubtypeLocale="fr"
+        android:languageTag="fr"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
     <!-- Portuguese -->
     <subtype
         android:imeSubtypeLocale="pt_BR"

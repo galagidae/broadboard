@@ -184,6 +184,7 @@
     <string name="char_s_caron">S с гачеком</string>
     <string name="char_s_caron_cap">Прописная S с гачеком</string>
     <string name="char_s_sharp">Эсцет</string>
+    <string name="char_s_sharp_cap">Прописная Эсцет</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Альфа с тоносом</string>

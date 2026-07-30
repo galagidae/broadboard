@@ -91,10 +91,12 @@ fun StandardBoard(
             horizontalAlignment = Alignment.Start
         ) {
             val localeRows = when(currentLocale.value) {
+                "de" -> deDE
                 "el" -> elGR
                 "en-GB" -> enGB
                 "es-419" -> es419
                 "es-ES" -> esES
+                "fr" -> frFR
                 "it" -> itIT
                 "pt-BR" -> ptBR
                 "pt-PT" -> ptPT

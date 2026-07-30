@@ -184,6 +184,7 @@
     <string name="char_s_caron">S, com cáron</string>
     <string name="char_s_caron_cap">S maiúsculo, com cáron</string>
     <string name="char_s_sharp">Eszett</string>
+    <string name="char_s_sharp_cap">Eszett maiúsculo</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Alfa, com tonos</string>

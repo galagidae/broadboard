@@ -184,6 +184,7 @@
     <string name="char_s_caron">S, with caron</string>
     <string name="char_s_caron_cap">Capital S, with caron</string>
     <string name="char_s_sharp">Sharp S</string>
+    <string name="char_s_sharp_cap">Capital Sharp S</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Alpha, with tonos</string>

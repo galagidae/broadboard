@@ -7,7 +7,7 @@ Features:
 * Adjustable keyboard sizes, up to extra large
 * Optional haptic feedback
 * Screen reader friendly
-* Layouts for English (UK and US), Greek, Italian, Portuguese (Brazil and Portugal), Russian, and Spanish (Latin America and Spain) — more to come
+* Layouts for English (UK and US), French, German, Greek, Italian, Portuguese (Brazil and Portugal), Russian, and Spanish (Latin America and Spain) — more to come
 
 Privacy:
 

@@ -17,6 +17,8 @@ BroadBoard is an on-screen keyboard (IME) designed for people with low vision. I
 - Locale support
   - English (United Kingdom)
   - English (United States)
+  - French (France)
+  - German (Germany)
   - Greek
   - Italian
   - Portuguese (Brazil)
