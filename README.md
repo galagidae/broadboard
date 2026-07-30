@@ -63,7 +63,7 @@ cd broadboard
 
 Requirements:
 
-- JDK 17
+- JDK 21
 - Android SDK with platform 36 and build-tools 36 installed (`sdkmanager` is sufficient – Android Studio is not needed)
 
 ## Privacy
