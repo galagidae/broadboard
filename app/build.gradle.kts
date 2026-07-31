@@ -57,6 +57,11 @@ android {
             signingConfig = signingConfigs.getByName("playbundle")
         }
     }
+
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
 }
 
 dependencies {
