@@ -224,7 +224,8 @@ class BroadBoardService : InputMethodService(),
     fun setLocale(subtype: InputMethodSubtype?) {
         if (subtype == null) {
             // TODO: Look at device's installed locales and pick one
-            currentLocale.value = "en_US"
+            currentLocale.value = "en-US"
+            return
         }
 
         val languageTag = subtype!!.getLanguageTag()
