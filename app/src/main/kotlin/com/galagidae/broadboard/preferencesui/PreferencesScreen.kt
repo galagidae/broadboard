@@ -114,7 +114,7 @@ fun PreferencesScreen(
 
             Toggle(
                 title = R.string.pref_vibrate,
-                subtitle = R.string.pref_highlights_sub,
+                subtitle = R.string.pref_vibrate_sub,
                 checked = vibrate,
                 onChange = { viewModel.setVibrate(it) }
             )

@@ -246,7 +246,8 @@
     <string name="pref_banner_enable_2">BroadBoard muss in den Systemeinstellungen aktiviert werden</string>
     <string name="pref_banner_use_1">Zum Verwenden tippen</string>
     <string name="pref_banner_use_2">BroadBoard ist bereit – jetzt als Standardtastatur festlegen</string>
-    <string name="pref_vibrate">Bei Tastendruck vibrieren</string>
+    <string name="pref_vibrate">Vibration</string>
+    <string name="pref_vibrate_sub">Bei Tastendruck vibrieren</string>
 
     <!-- Announcements -->
     <string name="mode_change_alphanumeric">Buchstabentastatur wird angezeigt</string>

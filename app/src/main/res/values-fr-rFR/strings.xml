@@ -246,7 +246,8 @@
     <string name="pref_banner_enable_2">BroadBoard doit être activé dans les Paramètres</string>
     <string name="pref_banner_use_1">Appuyez pour utiliser</string>
     <string name="pref_banner_use_2">BroadBoard est prêt — définissez-le comme clavier par défaut</string>
-    <string name="pref_vibrate">Vibrer à chaque appui</string>
+    <string name="pref_vibrate">Vibration</string>
+    <string name="pref_vibrate_sub">Vibrer à chaque appui</string>
 
     <!-- Announcements -->
     <string name="mode_change_alphanumeric">Clavier alphabétique affiché</string>
