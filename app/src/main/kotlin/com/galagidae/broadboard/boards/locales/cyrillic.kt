@@ -40,6 +40,11 @@ val cyrGeKey = Character(         // г
     secondary = 'Г',
 )
 
+val cyrGeUpturnKey = Character(   // ґ
+    primary = 'ґ',
+    secondary = 'Ґ',
+)
+
 val cyrDeKey = Character(         // д
     primary = 'д',
     secondary = 'Д',
@@ -48,6 +53,11 @@ val cyrDeKey = Character(         // д
 val cyrYeKey = Character(         // е
     primary = 'е',
     secondary = 'Е',
+)
+
+val cyrUkrYeKey = Character(      // є
+    primary = 'є',
+    secondary = 'Є',
 )
 
 val cyrZheKey = Character(        // ж
@@ -63,6 +73,11 @@ val cyrZeKey = Character(         // з
 val cyrIKey = Character(          // и
     primary = 'и',
     secondary = 'И',
+)
+
+val cyrDottedIKey = Character(    // і
+    primary = 'і',
+    secondary = 'І',
 )
 
 val cyrShortIKey = Character(     // й (и краткое)
@@ -158,6 +173,11 @@ val cyrHardSignKey = Character(   // ъ (твёрдый знак)
 val cyrYeryKey = Character(       // ы
     primary = 'ы',
     secondary = 'Ы',
+)
+
+val cyrYiKey = Character(         // ї
+    primary = 'ї',
+    secondary = 'Ї',
 )
 
 val cyrSoftSignKey = Character(   // ь (мягкий знак)

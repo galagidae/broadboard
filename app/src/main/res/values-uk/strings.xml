@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Літерна клавіатура</string>
+    <string name="key_alternate">Ввести альтернативні символи</string>
+    <string name="key_back">Повернутися назад</string>
+    <string name="key_delete">Видалити</string>
+    <string name="key_emojis_happy">Веселі емодзі</string>
+    <string name="key_emojis_sad">Сумні емодзі</string>
+    <string name="key_emojis">Клавіатура емодзі</string>
+    <string name="key_menu">Меню</string>
+    <string name="key_numeric">Цифрова клавіатура</string>
+    <string name="key_picker">Змінити клавіатуру</string>
+    <string name="key_preferences">Налаштування</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Увімкнути Caps Lock</string>
+    <string name="key_shift_disable">Вимкнути Caps Lock</string>
+    <string name="key_space">Пробіл</string>
+    <string name="key_space_long">Відкрити меню</string>
+    <string name="key_symbols">Символьна клавіатура</string>
+    <string name="key_symbols_shift">Символи</string>
+    <string name="key_symbols_more">Більше символів</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Амперсанд</string>
+    <string name="sym_asterisk">Зірочка</string>
+    <string name="sym_atsign">Равлик</string>
+    <string name="sym_backslash">Зворотна коса риска</string>
+    <string name="sym_braceleft">Відкрита фігурна дужка</string>
+    <string name="sym_braceright">Закрита фігурна дужка</string>
+    <string name="sym_bracketleft">Відкрита квадратна дужка</string>
+    <string name="sym_bracketright">Закрита квадратна дужка</string>
+    <string name="sym_bullet">Маркер списку</string>
+    <string name="sym_caret">Циркумфлекс</string>
+    <string name="sym_cent">Знак цента</string>
+    <string name="sym_checkmark">Галочка</string>
+    <string name="sym_colon">Двокрапка</string>
+    <string name="sym_copyright">Знак авторського права</string>
+    <string name="sym_dash">Дефіс</string>
+    <string name="sym_degree">Знак градуса</string>
+    <string name="sym_diaeresis">Діерезис</string>
+    <string name="sym_division">Знак ділення</string>
+    <string name="sym_dollarsign">Долар</string>
+    <string name="sym_ellipsis">Три крапки</string>
+    <string name="sym_emdash">Довге тире</string>
+    <string name="sym_endash">Коротке тире</string>
+    <string name="sym_equals">Дорівнює</string>
+    <string name="sym_euro">Євро</string>
+    <string name="sym_exclamation">Знак оклику</string>
+    <string name="sym_exclamationinverted">Перевернутий знак оклику</string>
+    <string name="sym_graveaccent">Гравіс</string>
+    <string name="sym_greaterthan">Знак більше</string>
+    <string name="sym_hashtag">Решітка</string>
+    <string name="sym_infinity">Нескінченність</string>
+    <string name="sym_lessthan">Знак менше</string>
+    <string name="sym_middledot">Серединна крапка</string>
+    <string name="sym_multiplication">Знак множення</string>
+    <string name="sym_numero">Знак номера</string>
+    <string name="sym_paragraph">Знак абзацу</string>
+    <string name="sym_parenleft">Відкрита кругла дужка</string>
+    <string name="sym_parenright">Закрита кругла дужка</string>
+    <string name="sym_percent">Відсоток</string>
+    <string name="sym_pi">Пі</string>
+    <string name="sym_pipe">Вертикальна риска</string>
+    <string name="sym_plus">Плюс</string>
+    <string name="sym_poundsign">Знак фунта стерлінгів</string>
+    <string name="sym_question">Знак питання</string>
+    <string name="sym_questioninverted">Перевернутий знак питання</string>
+    <string name="sym_quotedouble">Лапки</string>
+    <string name="sym_quotesingle">Апостроф</string>
+    <string name="sym_registered">Зареєстрована торгова марка</string>
+    <string name="sym_section">Знак параграфа</string>
+    <string name="sym_semicolon">Крапка з комою</string>
+    <string name="sym_slash">Коса риска</string>
+    <string name="sym_squareroot">Квадратний корінь</string>
+    <string name="sym_tilde">Тильда</string>
+    <string name="sym_trademark">Знак торгової марки</string>
+    <string name="sym_underscore">Підкреслення</string>
+    <string name="sym_yen">Єна</string>
+
+
+    <!-- Diacritics &amp; ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A, з акутом</string>
+    <string name="char_a_acute_cap">Велика A, з акутом</string>
+    <string name="char_a_ash">A, E, лігатура</string>
+    <string name="char_a_ash_cap">Велика A, E, лігатура</string>
+    <string name="char_a_circumflex">A, з циркумфлексом</string>
+    <string name="char_a_circumflex_cap">Велика A, з циркумфлексом</string>
+    <string name="char_a_diaeresis">A, з двома крапками</string>
+    <string name="char_a_diaeresis_cap">Велика A, з двома крапками</string>
+    <string name="char_a_grave">A, з гравісом</string>
+    <string name="char_a_grave_cap">Велика A, з гравісом</string>
+    <string name="char_a_macron">A, з макроном</string>
+    <string name="char_a_macron_cap">Велика A, з макроном</string>
+    <string name="char_a_ogonek">A, з огонеком</string>
+    <string name="char_a_ogonek_cap">Велика A, з огонеком</string>
+    <string name="char_a_ordinal">Надрядкова A</string>
+    <string name="char_a_overring">A, з кільцем угорі</string>
+    <string name="char_a_overring_cap">Велика A, з кільцем угорі</string>
+    <string name="char_a_tilde">A, з тильдою</string>
+    <string name="char_a_tilde_cap">Велика A, з тильдою</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E, з акутом</string>
+    <string name="char_e_acute_cap">Велика E, з акутом</string>
+    <string name="char_e_circumflex">E, з циркумфлексом</string>
+    <string name="char_e_circumflex_cap">Велика E, з циркумфлексом</string>
+    <string name="char_e_diaeresis">E, з двома крапками</string>
+    <string name="char_e_diaeresis_cap">Велика E, з двома крапками</string>
+    <string name="char_e_grave">E, з гравісом</string>
+    <string name="char_e_grave_cap">Велика E, з гравісом</string>
+    <string name="char_e_macron">E, з макроном</string>
+    <string name="char_e_macron_cap">Велика E, з макроном</string>
+    <string name="char_e_ogonek">E, з огонеком</string>
+    <string name="char_e_ogonek_cap">Велика E, з огонеком</string>
+    <string name="char_e_overdot">E, з крапкою вгорі</string>
+    <string name="char_e_overdot_cap">Велика E, з крапкою вгорі</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I, з акутом</string>
+    <string name="char_i_acute_cap">Велика I, з акутом</string>
+    <string name="char_i_circumflex">I, з циркумфлексом</string>
+    <string name="char_i_circumflex_cap">Велика I, з циркумфлексом</string>
+    <string name="char_i_diaeresis">I, з двома крапками</string>
+    <string name="char_i_diaeresis_cap">Велика I, з двома крапками</string>
+    <string name="char_i_grave">i, з гравісом</string>
+    <string name="char_i_grave_cap">Велика I, з гравісом</string>
+    <string name="char_i_macron">I, з макроном</string>
+    <string name="char_i_macron_cap">Велика I, з макроном</string>
+    <string name="char_i_ogonek">I, з огонеком</string>
+    <string name="char_i_ogonek_cap">Велика I, з огонеком</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O, з акутом</string>
+    <string name="char_o_acute_cap">Велика O, з акутом</string>
+    <string name="char_o_circumflex">O, з циркумфлексом</string>
+    <string name="char_o_circumflex_cap">Велика O, з циркумфлексом</string>
+    <string name="char_o_diaeresis">O, з двома крапками</string>
+    <string name="char_o_diaeresis_cap">Велика O, з двома крапками</string>
+    <string name="char_o_grave">O, з гравісом</string>
+    <string name="char_o_grave_cap">Велика O, з гравісом</string>
+    <string name="char_o_macron">O, з макроном</string>
+    <string name="char_o_macron_cap">Велика O, з макроном</string>
+    <string name="char_o_oe">O, E, лігатура</string>
+    <string name="char_o_oe_cap">Велика O, E, лігатура</string>
+    <string name="char_o_ordinal">Надрядкова O</string>
+    <string name="char_o_stroke">O, з перекресленням</string>
+    <string name="char_o_stroke_cap">Велика O, з перекресленням</string>
+    <string name="char_o_tilde">O, з тильдою</string>
+    <string name="char_o_tilde_cap">Велика O, з тильдою</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U, з акутом</string>
+    <string name="char_u_acute_cap">Велика U, з акутом</string>
+    <string name="char_u_circumflex">U, з циркумфлексом</string>
+    <string name="char_u_circumflex_cap">Велика U, з циркумфлексом</string>
+    <string name="char_u_diaeresis">U, з двома крапками</string>
+    <string name="char_u_diaeresis_cap">Велика U, з двома крапками</string>
+    <string name="char_u_grave">U, з гравісом</string>
+    <string name="char_u_grave_cap">Велика U, з гравісом</string>
+    <string name="char_u_macron">U, з макроном</string>
+    <string name="char_u_macron_cap">Велика U, з макроном</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C, з акутом</string>
+    <string name="char_c_acute_cap">Велика C, з акутом</string>
+    <string name="char_c_caron">C, з гачеком</string>
+    <string name="char_c_caron_cap">Велика C, з гачеком</string>
+    <string name="char_c_cedilla">C, з седилем</string>
+    <string name="char_c_cedilla_cap">Велика C, з седилем</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N, з акутом</string>
+    <string name="char_n_acute_cap">Велика N, з акутом</string>
+    <string name="char_n_tilde">N, з тильдою</string>
+    <string name="char_n_tilde_cap">Велика N, з тильдою</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S, з акутом</string>
+    <string name="char_s_acute_cap">Велика S, з акутом</string>
+    <string name="char_s_caron">S, з гачеком</string>
+    <string name="char_s_caron_cap">Велика S, з гачеком</string>
+    <string name="char_s_sharp">Есцет</string>
+    <string name="char_s_sharp_cap">Велика есцет</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Альфа, з тоносом</string>
+    <string name="char_alpha_tonos_cap">Велика альфа, з тоносом</string>
+    <string name="char_epsilon_tonos">Епсилон, з тоносом</string>
+    <string name="char_epsilon_tonos_cap">Великий епсилон, з тоносом</string>
+    <string name="char_eta_tonos">Ета, з тоносом</string>
+    <string name="char_eta_tonos_cap">Велика ета, з тоносом</string>
+    <string name="char_iota_tonos">Йота, з тоносом</string>
+    <string name="char_iota_tonos_cap">Велика йота, з тоносом</string>
+    <string name="char_iota_dialytika">Йота, з діалітикою</string>
+    <string name="char_iota_dialytika_cap">Велика йота, з діалітикою</string>
+    <string name="char_iota_dialytika_tonos">Йота, з діалітикою і тоносом</string>
+    <string name="char_omega_tonos">Омега, з тоносом</string>
+    <string name="char_omega_tonos_cap">Велика омега, з тоносом</string>
+    <string name="char_omicron_tonos">Омікрон, з тоносом</string>
+    <string name="char_omicron_tonos_cap">Великий омікрон, з тоносом</string>
+    <string name="char_upsilon_tonos">Іпсилон, з тоносом</string>
+    <string name="char_upsilon_tonos_cap">Великий іпсилон, з тоносом</string>
+    <string name="char_upsilon_dialytika">Іпсилон, з діалітикою</string>
+    <string name="char_upsilon_dialytika_cap">Великий іпсилон, з діалітикою</string>
+    <string name="char_upsilon_dialytika_tonos">Іпсилон, з діалітикою і тоносом</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Готово</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Перейти</string>
+    <string name="action_next">Далі</string>
+    <string name="action_previous">Попереднє</string>
+    <string name="action_search">Пошук</string>
+    <string name="action_send">Надіслати</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Налаштування</string>
+    <string name="pref_back">Назад</string>
+    <string name="pref_size">Розмір</string>
+    <string name="pref_size_small">Малий</string>
+    <string name="pref_size_medium">Середній</string>
+    <string name="pref_size_large">Великий</string>
+    <string name="pref_size_extra_large">Дуже великий</string>
+    <string name="pref_color">Колір</string>
+    <string name="pref_color_light">Світлий</string>
+    <string name="pref_color_dark">Темний</string>
+    <string name="pref_color_extradark">Дуже темний</string>
+    <string name="pref_color_yellowblack">Жовтий на чорному</string>
+    <string name="pref_color_blackyellow">Чорний на жовтому</string>
+    <string name="pref_color_yellowblue">Жовтий на синьому</string>
+    <string name="pref_color_blueyellow">Синій на жовтому</string>
+    <string name="pref_menu_option">Вибір режиму</string>
+    <string name="pref_menu_bar">Панель меню</string>
+    <string name="pref_menu_space">Довге натискання пробілу</string>
+    <string name="pref_menu_both">Обидва</string>
+    <string name="pref_natural_layout">Природне розташування</string>
+    <string name="pref_natural_layout_sub">Використовувати природні інтервали розкладки клавіатури</string>
+    <string name="pref_highlights">Кольорові виділення</string>
+    <string name="pref_highlights_sub">Додавати кольорові виділення до спеціальних клавіш</string>
+    <string name="pref_banner_enable_1">Торкніться, щоб увімкнути</string>
+    <string name="pref_banner_enable_2">BroadBoard потрібно увімкнути в налаштуваннях</string>
+    <string name="pref_banner_use_1">Торкніться, щоб вибрати</string>
+    <string name="pref_banner_use_2">BroadBoard готовий — зробіть його клавіатурою за умовчанням</string>
+    <string name="pref_vibrate">Вібрація</string>
+    <string name="pref_vibrate_sub">Вібрація при натисканні клавіші</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Показано літерну клавіатуру</string>
+    <string name="mode_change_emojis">Показано клавіатуру емодзі</string>
+    <string name="mode_change_menu">Показано меню</string>
+    <string name="mode_change_numeric">Показано цифрову клавіатуру</string>
+    <string name="mode_change_symbols">Показано символьну клавіатуру</string>
+    <string name="shift_change_off">Shift вимкнено</string>
+    <string name="shift_change_on">Shift увімкнено</string>
+    <string name="shift_change_caps">Caps Lock увімкнено</string>
+
+</resources>
