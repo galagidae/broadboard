@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Keyboard huruf</string>
+    <string name="key_alternate">Masukkan karakter alternatif</string>
+    <string name="key_back">Kembali</string>
+    <string name="key_delete">Hapus</string>
+    <string name="key_emojis_happy">Emoji senang</string>
+    <string name="key_emojis_sad">Emoji sedih</string>
+    <string name="key_emojis">Keyboard emoji</string>
+    <string name="key_menu">Menu</string>
+    <string name="key_numeric">Keyboard angka</string>
+    <string name="key_picker">Ganti keyboard</string>
+    <string name="key_preferences">Preferensi</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Aktifkan caps lock</string>
+    <string name="key_shift_disable">Nonaktifkan caps lock</string>
+    <string name="key_space">Spasi</string>
+    <string name="key_space_long">Buka menu</string>
+    <string name="key_symbols">Keyboard simbol</string>
+    <string name="key_symbols_shift">Simbol</string>
+    <string name="key_symbols_more">Simbol lainnya</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Ampersand</string>
+    <string name="sym_asterisk">Tanda bintang</string>
+    <string name="sym_atsign">Tanda at</string>
+    <string name="sym_backslash">Garis miring terbalik</string>
+    <string name="sym_braceleft">Kurung kurawal buka</string>
+    <string name="sym_braceright">Kurung kurawal tutup</string>
+    <string name="sym_bracketleft">Kurung siku buka</string>
+    <string name="sym_bracketright">Kurung siku tutup</string>
+    <string name="sym_bullet">Tanda butir</string>
+    <string name="sym_caret">Tanda sisipan</string>
+    <string name="sym_cent">Tanda sen</string>
+    <string name="sym_checkmark">Tanda centang</string>
+    <string name="sym_colon">Titik dua</string>
+    <string name="sym_copyright">Simbol hak cipta</string>
+    <string name="sym_dash">Tanda hubung</string>
+    <string name="sym_degree">Simbol derajat</string>
+    <string name="sym_diaeresis">Trema</string>
+    <string name="sym_division">Tanda bagi</string>
+    <string name="sym_dollarsign">Dolar</string>
+    <string name="sym_ellipsis">Elipsis</string>
+    <string name="sym_emdash">Tanda pisah em</string>
+    <string name="sym_endash">Tanda pisah en</string>
+    <string name="sym_equals">Sama dengan</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Tanda seru</string>
+    <string name="sym_exclamationinverted">Tanda seru terbalik</string>
+    <string name="sym_graveaccent">Aksen gravis</string>
+    <string name="sym_greaterthan">Tanda lebih besar dari</string>
+    <string name="sym_hashtag">Tanda pagar</string>
+    <string name="sym_infinity">Simbol tak hingga</string>
+    <string name="sym_lessthan">Tanda lebih kecil dari</string>
+    <string name="sym_middledot">Titik tengah</string>
+    <string name="sym_multiplication">Tanda kali</string>
+    <string name="sym_numero">Tanda nomor</string>
+    <string name="sym_paragraph">Tanda paragraf</string>
+    <string name="sym_parenleft">Kurung buka</string>
+    <string name="sym_parenright">Kurung tutup</string>
+    <string name="sym_percent">Persen</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Garis vertikal</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Tanda mata uang pound</string>
+    <string name="sym_question">Tanda tanya</string>
+    <string name="sym_questioninverted">Tanda tanya terbalik</string>
+    <string name="sym_quotedouble">Tanda kutip</string>
+    <string name="sym_quotesingle">Apostrof</string>
+    <string name="sym_registered">Simbol terdaftar</string>
+    <string name="sym_section">Tanda bagian</string>
+    <string name="sym_semicolon">Titik koma</string>
+    <string name="sym_slash">Garis miring</string>
+    <string name="sym_squareroot">Akar kuadrat</string>
+    <string name="sym_tilde">Tilde</string>
+    <string name="sym_trademark">Tanda merek dagang</string>
+    <string name="sym_underscore">Garis bawah</string>
+    <string name="sym_yen">Yen</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A, dengan aksen akut</string>
+    <string name="char_a_acute_cap">A kapital, dengan aksen akut</string>
+    <string name="char_a_ash">Ligatur A, E</string>
+    <string name="char_a_ash_cap">Ligatur A, E kapital</string>
+    <string name="char_a_circumflex">A, dengan sirkumfleks</string>
+    <string name="char_a_circumflex_cap">A kapital, dengan sirkumfleks</string>
+    <string name="char_a_diaeresis">A, dengan dua titik</string>
+    <string name="char_a_diaeresis_cap">A kapital, dengan dua titik</string>
+    <string name="char_a_grave">A, dengan aksen gravis</string>
+    <string name="char_a_grave_cap">A kapital, dengan aksen gravis</string>
+    <string name="char_a_macron">A, dengan makron</string>
+    <string name="char_a_macron_cap">A kapital, dengan makron</string>
+    <string name="char_a_ogonek">A, dengan ogonek</string>
+    <string name="char_a_ogonek_cap">A kapital, dengan ogonek</string>
+    <string name="char_a_ordinal">A superskrip</string>
+    <string name="char_a_overring">A, dengan cincin di atas</string>
+    <string name="char_a_overring_cap">A kapital, dengan cincin di atas</string>
+    <string name="char_a_tilde">A, dengan tilde</string>
+    <string name="char_a_tilde_cap">A kapital, dengan tilde</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E, dengan aksen akut</string>
+    <string name="char_e_acute_cap">E kapital, dengan aksen akut</string>
+    <string name="char_e_circumflex">E, dengan sirkumfleks</string>
+    <string name="char_e_circumflex_cap">E kapital, dengan sirkumfleks</string>
+    <string name="char_e_diaeresis">E, dengan dua titik</string>
+    <string name="char_e_diaeresis_cap">E kapital, dengan dua titik</string>
+    <string name="char_e_grave">E, dengan aksen gravis</string>
+    <string name="char_e_grave_cap">E kapital, dengan aksen gravis</string>
+    <string name="char_e_macron">E, dengan makron</string>
+    <string name="char_e_macron_cap">E kapital, dengan makron</string>
+    <string name="char_e_ogonek">E, dengan ogonek</string>
+    <string name="char_e_ogonek_cap">E kapital, dengan ogonek</string>
+    <string name="char_e_overdot">E, dengan titik di atas</string>
+    <string name="char_e_overdot_cap">E kapital, dengan titik di atas</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I, dengan aksen akut</string>
+    <string name="char_i_acute_cap">I kapital, dengan aksen akut</string>
+    <string name="char_i_circumflex">I, dengan sirkumfleks</string>
+    <string name="char_i_circumflex_cap">I kapital, dengan sirkumfleks</string>
+    <string name="char_i_diaeresis">I, dengan dua titik</string>
+    <string name="char_i_diaeresis_cap">I kapital, dengan dua titik</string>
+    <string name="char_i_grave">I, dengan aksen gravis</string>
+    <string name="char_i_grave_cap">I kapital, dengan aksen gravis</string>
+    <string name="char_i_macron">I, dengan makron</string>
+    <string name="char_i_macron_cap">I kapital, dengan makron</string>
+    <string name="char_i_ogonek">I, dengan ogonek</string>
+    <string name="char_i_ogonek_cap">I kapital, dengan ogonek</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O, dengan aksen akut</string>
+    <string name="char_o_acute_cap">O kapital, dengan aksen akut</string>
+    <string name="char_o_circumflex">O, dengan sirkumfleks</string>
+    <string name="char_o_circumflex_cap">O kapital, dengan sirkumfleks</string>
+    <string name="char_o_diaeresis">O, dengan dua titik</string>
+    <string name="char_o_diaeresis_cap">O kapital, dengan dua titik</string>
+    <string name="char_o_grave">O, dengan aksen gravis</string>
+    <string name="char_o_grave_cap">O kapital, dengan aksen gravis</string>
+    <string name="char_o_macron">O, dengan makron</string>
+    <string name="char_o_macron_cap">O kapital, dengan makron</string>
+    <string name="char_o_oe">Ligatur O, E</string>
+    <string name="char_o_oe_cap">Ligatur O, E kapital</string>
+    <string name="char_o_ordinal">O superskrip</string>
+    <string name="char_o_stroke">O, dengan garis miring</string>
+    <string name="char_o_stroke_cap">O kapital, dengan garis miring</string>
+    <string name="char_o_tilde">O, dengan tilde</string>
+    <string name="char_o_tilde_cap">O kapital, dengan tilde</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U, dengan aksen akut</string>
+    <string name="char_u_acute_cap">U kapital, dengan aksen akut</string>
+    <string name="char_u_circumflex">U, dengan sirkumfleks</string>
+    <string name="char_u_circumflex_cap">U kapital, dengan sirkumfleks</string>
+    <string name="char_u_diaeresis">U, dengan dua titik</string>
+    <string name="char_u_diaeresis_cap">U kapital, dengan dua titik</string>
+    <string name="char_u_grave">U, dengan aksen gravis</string>
+    <string name="char_u_grave_cap">U kapital, dengan aksen gravis</string>
+    <string name="char_u_macron">U, dengan makron</string>
+    <string name="char_u_macron_cap">U kapital, dengan makron</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C, dengan aksen akut</string>
+    <string name="char_c_acute_cap">C kapital, dengan aksen akut</string>
+    <string name="char_c_caron">C, dengan karon</string>
+    <string name="char_c_caron_cap">C kapital, dengan karon</string>
+    <string name="char_c_cedilla">C, dengan sedila</string>
+    <string name="char_c_cedilla_cap">C kapital, dengan sedila</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N, dengan aksen akut</string>
+    <string name="char_n_acute_cap">N kapital, dengan aksen akut</string>
+    <string name="char_n_tilde">N, dengan tilde</string>
+    <string name="char_n_tilde_cap">N kapital, dengan tilde</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S, dengan aksen akut</string>
+    <string name="char_s_acute_cap">S kapital, dengan aksen akut</string>
+    <string name="char_s_caron">S, dengan karon</string>
+    <string name="char_s_caron_cap">S kapital, dengan karon</string>
+    <string name="char_s_sharp">S tajam</string>
+    <string name="char_s_sharp_cap">S tajam kapital</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alfa, dengan tonos</string>
+    <string name="char_alpha_tonos_cap">Alfa kapital, dengan tonos</string>
+    <string name="char_epsilon_tonos">Epsilon, dengan tonos</string>
+    <string name="char_epsilon_tonos_cap">Epsilon kapital, dengan tonos</string>
+    <string name="char_eta_tonos">Eta, dengan tonos</string>
+    <string name="char_eta_tonos_cap">Eta kapital, dengan tonos</string>
+    <string name="char_iota_tonos">Iota, dengan tonos</string>
+    <string name="char_iota_tonos_cap">Iota kapital, dengan tonos</string>
+    <string name="char_iota_dialytika">Iota, dengan dialitika</string>
+    <string name="char_iota_dialytika_cap">Iota kapital, dengan dialitika</string>
+    <string name="char_iota_dialytika_tonos">Iota, dengan dialitika dan tonos</string>
+    <string name="char_omega_tonos">Omega, dengan tonos</string>
+    <string name="char_omega_tonos_cap">Omega kapital, dengan tonos</string>
+    <string name="char_omicron_tonos">Omikron, dengan tonos</string>
+    <string name="char_omicron_tonos_cap">Omikron kapital, dengan tonos</string>
+    <string name="char_upsilon_tonos">Upsilon, dengan tonos</string>
+    <string name="char_upsilon_tonos_cap">Upsilon kapital, dengan tonos</string>
+    <string name="char_upsilon_dialytika">Upsilon, dengan dialitika</string>
+    <string name="char_upsilon_dialytika_cap">Upsilon kapital, dengan dialitika</string>
+    <string name="char_upsilon_dialytika_tonos">Upsilon, dengan dialitika dan tonos</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Selesai</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Buka</string>
+    <string name="action_next">Berikutnya</string>
+    <string name="action_previous">Sebelumnya</string>
+    <string name="action_search">Cari</string>
+    <string name="action_send">Kirim</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Preferensi</string>
+    <string name="pref_back">Kembali</string>
+    <string name="pref_size">Ukuran</string>
+    <string name="pref_size_small">Kecil</string>
+    <string name="pref_size_medium">Sedang</string>
+    <string name="pref_size_large">Besar</string>
+    <string name="pref_size_extra_large">Sangat Besar</string>
+    <string name="pref_color">Warna</string>
+    <string name="pref_color_light">Terang</string>
+    <string name="pref_color_dark">Gelap</string>
+    <string name="pref_color_extradark">Sangat Gelap</string>
+    <string name="pref_color_yellowblack">Kuning pada Hitam</string>
+    <string name="pref_color_blackyellow">Hitam pada Kuning</string>
+    <string name="pref_color_yellowblue">Kuning pada Biru</string>
+    <string name="pref_color_blueyellow">Biru pada Kuning</string>
+    <string name="pref_menu_option">Pemilihan Mode</string>
+    <string name="pref_menu_bar">Bilah Menu</string>
+    <string name="pref_menu_space">Tekan lama tombol spasi</string>
+    <string name="pref_menu_both">Keduanya</string>
+    <string name="pref_natural_layout">Tata Letak Alami</string>
+    <string name="pref_natural_layout_sub">Gunakan jarak tata letak keyboard yang alami</string>
+    <string name="pref_highlights">Sorotan Warna</string>
+    <string name="pref_highlights_sub">Tambahkan sorotan warna pada tombol khusus</string>
+    <string name="pref_banner_enable_1">Ketuk untuk Mengaktifkan</string>
+    <string name="pref_banner_enable_2">BroadBoard perlu diaktifkan di Setelan</string>
+    <string name="pref_banner_use_1">Ketuk untuk Menggunakan</string>
+    <string name="pref_banner_use_2">BroadBoard sudah siap — jadikan sebagai keyboard default Anda</string>
+    <string name="pref_vibrate">Getaran</string>
+    <string name="pref_vibrate_sub">Bergetar saat tombol ditekan</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Menampilkan keyboard huruf</string>
+    <string name="mode_change_emojis">Menampilkan keyboard emoji</string>
+    <string name="mode_change_menu">Menampilkan menu</string>
+    <string name="mode_change_numeric">Menampilkan keyboard angka</string>
+    <string name="mode_change_symbols">Menampilkan keyboard simbol</string>
+    <string name="shift_change_off">Shift nonaktif</string>
+    <string name="shift_change_on">Shift aktif</string>
+    <string name="shift_change_caps">Caps lock aktif</string>
+
+</resources>

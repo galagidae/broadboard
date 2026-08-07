@@ -186,4 +186,15 @@
         android:languageTag="el"
         android:imeSubtypeMode="keyboard" />
 
+    <!-- Malayic languages -->
+    <subtype
+        android:imeSubtypeLocale="ms"
+        android:languageTag="ms"
+        android:imeSubtypeMode="keyboard" />
+    <subtype
+        android:imeSubtypeLocale="id"
+        android:languageTag="id"
+        android:imeSubtypeMode="keyboard" />
+
+
 </input-method>

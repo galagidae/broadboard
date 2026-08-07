@@ -244,7 +244,9 @@ class BroadBoardService : InputMethodService(),
                 else -> "es-419"
             }
             "fr" -> "fr"
+            "id" -> "id"
             "it" -> "it"
+            "ms" -> "ms"
             "pt" -> when(languageTag) {
                 "pt-PT" -> "pt-PT"
                 else -> "pt-BR"

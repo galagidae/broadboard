@@ -97,7 +97,9 @@ fun StandardBoard(
                 "es-419" -> es419
                 "es-ES" -> esES
                 "fr" -> frFR
+                "id" -> enUS
                 "it" -> itIT
+                "ms" -> enUS
                 "pt-BR" -> ptBR
                 "pt-PT" -> ptPT
                 "ru" -> ruRU
