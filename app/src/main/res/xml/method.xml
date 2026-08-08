@@ -196,11 +196,19 @@
     <subtype
         android:imeSubtypeLocale="ms"
         android:languageTag="ms"
-        android:imeSubtypeMode="keyboard" />
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
     <subtype
         android:imeSubtypeLocale="id"
         android:languageTag="id"
-        android:imeSubtypeMode="keyboard" />
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
 
+    <!-- Polish -->
+    <subtype
+        android:imeSubtypeLocale="pl"
+        android:languageTag="pl"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
 
 </input-method>

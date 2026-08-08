@@ -177,6 +177,8 @@
     <string name="char_n_acute_cap">Прописная N с акутом</string>
     <string name="char_n_tilde">N с тильдой</string>
     <string name="char_n_tilde_cap">Прописная N с тильдой</string>
+    <string name="char_n_caron">N с гачеком</string>
+    <string name="char_n_caron_cap">Прописная N с гачеком</string>
 
     <!-- s -->
     <string name="char_s_acute">S с акутом</string>
@@ -185,6 +187,8 @@
     <string name="char_s_caron_cap">Прописная S с гачеком</string>
     <string name="char_s_sharp">Эсцет</string>
     <string name="char_s_sharp_cap">Прописная Эсцет</string>
+    <string name="char_s_cedilla">S с седилью</string>
+    <string name="char_s_cedilla_cap">Прописная S с седилью</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Альфа с тоносом</string>

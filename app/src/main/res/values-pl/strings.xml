@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Klawiatura literowa</string>
+    <string name="key_alternate">Wprowadź znaki alternatywne</string>
+    <string name="key_back">Wróć</string>
+    <string name="key_delete">Usuń</string>
+    <string name="key_emojis_happy">Wesołe emoji</string>
+    <string name="key_emojis_sad">Smutne emoji</string>
+    <string name="key_emojis">Klawiatura emoji</string>
+    <string name="key_menu">Menu</string>
+    <string name="key_numeric">Klawiatura numeryczna</string>
+    <string name="key_picker">Zmień klawiaturę</string>
+    <string name="key_preferences">Ustawienia</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Włącz Caps Lock</string>
+    <string name="key_shift_disable">Wyłącz Caps Lock</string>
+    <string name="key_space">Spacja</string>
+    <string name="key_space_long">Otwórz menu</string>
+    <string name="key_symbols">Klawiatura symboli</string>
+    <string name="key_symbols_shift">Symbole</string>
+    <string name="key_symbols_more">Więcej symboli</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Ampersand</string>
+    <string name="sym_asterisk">Gwiazdka</string>
+    <string name="sym_atsign">Małpa</string>
+    <string name="sym_backslash">Ukośnik wsteczny</string>
+    <string name="sym_braceleft">Nawias klamrowy otwierający</string>
+    <string name="sym_braceright">Nawias klamrowy zamykający</string>
+    <string name="sym_bracketleft">Nawias kwadratowy otwierający</string>
+    <string name="sym_bracketright">Nawias kwadratowy zamykający</string>
+    <string name="sym_bullet">Punktor</string>
+    <string name="sym_caret">Daszek</string>
+    <string name="sym_cent">Znak centa</string>
+    <string name="sym_checkmark">Znak zaznaczenia</string>
+    <string name="sym_colon">Dwukropek</string>
+    <string name="sym_copyright">Znak praw autorskich</string>
+    <string name="sym_dash">Łącznik</string>
+    <string name="sym_degree">Znak stopnia</string>
+    <string name="sym_diaeresis">Diereza</string>
+    <string name="sym_division">Znak dzielenia</string>
+    <string name="sym_dollarsign">Dolar</string>
+    <string name="sym_ellipsis">Wielokropek</string>
+    <string name="sym_emdash">Pauza</string>
+    <string name="sym_endash">Półpauza</string>
+    <string name="sym_equals">Znak równości</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Wykrzyknik</string>
+    <string name="sym_exclamationinverted">Odwrócony wykrzyknik</string>
+    <string name="sym_graveaccent">Grawis</string>
+    <string name="sym_greaterthan">Znak większości</string>
+    <string name="sym_hashtag">Hasztag</string>
+    <string name="sym_infinity">Nieskończoność</string>
+    <string name="sym_lessthan">Znak mniejszości</string>
+    <string name="sym_middledot">Kropka środkowa</string>
+    <string name="sym_multiplication">Znak mnożenia</string>
+    <string name="sym_numero">Znak numeru</string>
+    <string name="sym_paragraph">Znak akapitu</string>
+    <string name="sym_parenleft">Nawias otwierający</string>
+    <string name="sym_parenright">Nawias zamykający</string>
+    <string name="sym_percent">Procent</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Kreska pionowa</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Znak funta</string>
+    <string name="sym_question">Znak zapytania</string>
+    <string name="sym_questioninverted">Odwrócony znak zapytania</string>
+    <string name="sym_quotedouble">Cudzysłów</string>
+    <string name="sym_quotesingle">Apostrof</string>
+    <string name="sym_registered">Znak zastrzeżony</string>
+    <string name="sym_section">Paragraf</string>
+    <string name="sym_semicolon">Średnik</string>
+    <string name="sym_slash">Ukośnik</string>
+    <string name="sym_squareroot">Pierwiastek kwadratowy</string>
+    <string name="sym_tilde">Tylda</string>
+    <string name="sym_trademark">Znak towarowy</string>
+    <string name="sym_underscore">Podkreślenie</string>
+    <string name="sym_yen">Jen</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A z akcentem ostrym</string>
+    <string name="char_a_acute_cap">Wielkie A z akcentem ostrym</string>
+    <string name="char_a_ash">Ligatura AE</string>
+    <string name="char_a_ash_cap">Wielka ligatura AE</string>
+    <string name="char_a_circumflex">A z daszkiem</string>
+    <string name="char_a_circumflex_cap">Wielkie A z daszkiem</string>
+    <string name="char_a_diaeresis">A z dwiema kropkami</string>
+    <string name="char_a_diaeresis_cap">Wielkie A z dwiema kropkami</string>
+    <string name="char_a_grave">A z akcentem słabym</string>
+    <string name="char_a_grave_cap">Wielkie A z akcentem słabym</string>
+    <string name="char_a_macron">A z makronem</string>
+    <string name="char_a_macron_cap">Wielkie A z makronem</string>
+    <string name="char_a_ogonek">A z ogonkiem</string>
+    <string name="char_a_ogonek_cap">Wielkie A z ogonkiem</string>
+    <string name="char_a_ordinal">Podniesione A</string>
+    <string name="char_a_overring">A z kółkiem u góry</string>
+    <string name="char_a_overring_cap">Wielkie A z kółkiem u góry</string>
+    <string name="char_a_tilde">A z tyldą</string>
+    <string name="char_a_tilde_cap">Wielkie A z tyldą</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E z akcentem ostrym</string>
+    <string name="char_e_acute_cap">Wielkie E z akcentem ostrym</string>
+    <string name="char_e_circumflex">E z daszkiem</string>
+    <string name="char_e_circumflex_cap">Wielkie E z daszkiem</string>
+    <string name="char_e_diaeresis">E z dwiema kropkami</string>
+    <string name="char_e_diaeresis_cap">Wielkie E z dwiema kropkami</string>
+    <string name="char_e_grave">E z akcentem słabym</string>
+    <string name="char_e_grave_cap">Wielkie E z akcentem słabym</string>
+    <string name="char_e_macron">E z makronem</string>
+    <string name="char_e_macron_cap">Wielkie E z makronem</string>
+    <string name="char_e_ogonek">E z ogonkiem</string>
+    <string name="char_e_ogonek_cap">Wielkie E z ogonkiem</string>
+    <string name="char_e_overdot">E z kropką u góry</string>
+    <string name="char_e_overdot_cap">Wielkie E z kropką u góry</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I z akcentem ostrym</string>
+    <string name="char_i_acute_cap">Wielkie I z akcentem ostrym</string>
+    <string name="char_i_circumflex">I z daszkiem</string>
+    <string name="char_i_circumflex_cap">Wielkie I z daszkiem</string>
+    <string name="char_i_diaeresis">I z dwiema kropkami</string>
+    <string name="char_i_diaeresis_cap">Wielkie I z dwiema kropkami</string>
+    <string name="char_i_grave">I z akcentem słabym</string>
+    <string name="char_i_grave_cap">Wielkie I z akcentem słabym</string>
+    <string name="char_i_macron">I z makronem</string>
+    <string name="char_i_macron_cap">Wielkie I z makronem</string>
+    <string name="char_i_ogonek">I z ogonkiem</string>
+    <string name="char_i_ogonek_cap">Wielkie I z ogonkiem</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O z akcentem ostrym</string>
+    <string name="char_o_acute_cap">Wielkie O z akcentem ostrym</string>
+    <string name="char_o_circumflex">O z daszkiem</string>
+    <string name="char_o_circumflex_cap">Wielkie O z daszkiem</string>
+    <string name="char_o_diaeresis">O z dwiema kropkami</string>
+    <string name="char_o_diaeresis_cap">Wielkie O z dwiema kropkami</string>
+    <string name="char_o_grave">O z akcentem słabym</string>
+    <string name="char_o_grave_cap">Wielkie O z akcentem słabym</string>
+    <string name="char_o_macron">O z makronem</string>
+    <string name="char_o_macron_cap">Wielkie O z makronem</string>
+    <string name="char_o_oe">Ligatura OE</string>
+    <string name="char_o_oe_cap">Wielka ligatura OE</string>
+    <string name="char_o_ordinal">Podniesione O</string>
+    <string name="char_o_stroke">O z kreską ukośną</string>
+    <string name="char_o_stroke_cap">Wielkie O z kreską ukośną</string>
+    <string name="char_o_tilde">O z tyldą</string>
+    <string name="char_o_tilde_cap">Wielkie O z tyldą</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U z akcentem ostrym</string>
+    <string name="char_u_acute_cap">Wielkie U z akcentem ostrym</string>
+    <string name="char_u_circumflex">U z daszkiem</string>
+    <string name="char_u_circumflex_cap">Wielkie U z daszkiem</string>
+    <string name="char_u_diaeresis">U z dwiema kropkami</string>
+    <string name="char_u_diaeresis_cap">Wielkie U z dwiema kropkami</string>
+    <string name="char_u_grave">U z akcentem słabym</string>
+    <string name="char_u_grave_cap">Wielkie U z akcentem słabym</string>
+    <string name="char_u_macron">U z makronem</string>
+    <string name="char_u_macron_cap">Wielkie U z makronem</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C z akcentem ostrym</string>
+    <string name="char_c_acute_cap">Wielkie C z akcentem ostrym</string>
+    <string name="char_c_caron">C z haczkiem</string>
+    <string name="char_c_caron_cap">Wielkie C z haczkiem</string>
+    <string name="char_c_cedilla">C z cedyllą</string>
+    <string name="char_c_cedilla_cap">Wielkie C z cedyllą</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N z akcentem ostrym</string>
+    <string name="char_n_acute_cap">Wielkie N z akcentem ostrym</string>
+    <string name="char_n_tilde">N z tyldą</string>
+    <string name="char_n_tilde_cap">Wielkie N z tyldą</string>
+    <string name="char_n_caron">ň</string>
+    <string name="char_n_caron_cap">Ň</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S z akcentem ostrym</string>
+    <string name="char_s_acute_cap">Wielkie S z akcentem ostrym</string>
+    <string name="char_s_caron">S z haczkiem</string>
+    <string name="char_s_caron_cap">Wielkie S z haczkiem</string>
+    <string name="char_s_sharp">Ostre S</string>
+    <string name="char_s_sharp_cap">Wielkie ostre S</string>
+    <string name="char_s_cedilla">ş</string>
+    <string name="char_s_cedilla_cap">Ş</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alfa z tonosem</string>
+    <string name="char_alpha_tonos_cap">Wielka alfa z tonosem</string>
+    <string name="char_epsilon_tonos">Epsilon z tonosem</string>
+    <string name="char_epsilon_tonos_cap">Wielki epsilon z tonosem</string>
+    <string name="char_eta_tonos">Eta z tonosem</string>
+    <string name="char_eta_tonos_cap">Wielka eta z tonosem</string>
+    <string name="char_iota_tonos">Jota z tonosem</string>
+    <string name="char_iota_tonos_cap">Wielka jota z tonosem</string>
+    <string name="char_iota_dialytika">Jota z dialityką</string>
+    <string name="char_iota_dialytika_cap">Wielka jota z dialityką</string>
+    <string name="char_iota_dialytika_tonos">Jota z dialityką i tonosem</string>
+    <string name="char_omega_tonos">Omega z tonosem</string>
+    <string name="char_omega_tonos_cap">Wielka omega z tonosem</string>
+    <string name="char_omicron_tonos">Omikron z tonosem</string>
+    <string name="char_omicron_tonos_cap">Wielki omikron z tonosem</string>
+    <string name="char_upsilon_tonos">Ypsilon z tonosem</string>
+    <string name="char_upsilon_tonos_cap">Wielki ypsilon z tonosem</string>
+    <string name="char_upsilon_dialytika">Ypsilon z dialityką</string>
+    <string name="char_upsilon_dialytika_cap">Wielki ypsilon z dialityką</string>
+    <string name="char_upsilon_dialytika_tonos">Ypsilon z dialityką i tonosem</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Gotowe</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Przejdź</string>
+    <string name="action_next">Dalej</string>
+    <string name="action_previous">Wstecz</string>
+    <string name="action_search">Szukaj</string>
+    <string name="action_send">Wyślij</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Ustawienia</string>
+    <string name="pref_back">Wróć</string>
+    <string name="pref_size">Rozmiar</string>
+    <string name="pref_size_small">Mały</string>
+    <string name="pref_size_medium">Średni</string>
+    <string name="pref_size_large">Duży</string>
+    <string name="pref_size_extra_large">Bardzo duży</string>
+    <string name="pref_color">Kolor</string>
+    <string name="pref_color_light">Jasny</string>
+    <string name="pref_color_dark">Ciemny</string>
+    <string name="pref_color_extradark">Bardzo ciemny</string>
+    <string name="pref_color_yellowblack">Żółty na czarnym</string>
+    <string name="pref_color_blackyellow">Czarny na żółtym</string>
+    <string name="pref_color_yellowblue">Żółty na niebieskim</string>
+    <string name="pref_color_blueyellow">Niebieski na żółtym</string>
+    <string name="pref_menu_option">Wybór trybu</string>
+    <string name="pref_menu_bar">Pasek menu</string>
+    <string name="pref_menu_space">Długie naciśnięcie spacji</string>
+    <string name="pref_menu_both">Oba</string>
+    <string name="pref_natural_layout">Naturalny układ</string>
+    <string name="pref_natural_layout_sub">Używaj naturalnych odstępów układu klawiatury</string>
+    <string name="pref_highlights">Wyróżnienia kolorem</string>
+    <string name="pref_highlights_sub">Wyróżnij klawisze specjalne kolorem</string>
+    <string name="pref_banner_enable_1">Dotknij, aby włączyć</string>
+    <string name="pref_banner_enable_2">BroadBoard musi zostać włączony w Ustawieniach</string>
+    <string name="pref_banner_use_1">Dotknij, aby używać</string>
+    <string name="pref_banner_use_2">BroadBoard jest gotowy — ustaw go jako domyślną klawiaturę</string>
+    <string name="pref_vibrate">Wibracje</string>
+    <string name="pref_vibrate_sub">Wibracja przy naciśnięciu klawisza</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Wyświetlono klawiaturę literową</string>
+    <string name="mode_change_emojis">Wyświetlono klawiaturę emoji</string>
+    <string name="mode_change_menu">Wyświetlono menu</string>
+    <string name="mode_change_numeric">Wyświetlono klawiaturę numeryczną</string>
+    <string name="mode_change_symbols">Wyświetlono klawiaturę symboli</string>
+    <string name="shift_change_off">Shift wyłączony</string>
+    <string name="shift_change_on">Shift włączony</string>
+    <string name="shift_change_caps">Caps Lock włączony</string>
+
+</resources>

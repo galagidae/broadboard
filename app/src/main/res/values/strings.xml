@@ -177,6 +177,8 @@
     <string name="char_n_acute_cap">Capital N, with acute accent</string>
     <string name="char_n_tilde">N, with Tilde</string>
     <string name="char_n_tilde_cap">Capital N, with Tilde</string>
+    <string name="char_n_caron">N, with Caron</string>
+    <string name="char_n_caron_cap">Capital N, with Caron</string>
 
     <!-- s -->
     <string name="char_s_acute">S, with acute accent</string>
@@ -185,6 +187,8 @@
     <string name="char_s_caron_cap">Capital S, with caron</string>
     <string name="char_s_sharp">Sharp S</string>
     <string name="char_s_sharp_cap">Capital Sharp S</string>
+    <string name="char_s_cedilla">S, with cedilla</string>
+    <string name="char_s_cedilla_cap">Capital S, with cedilla</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Alpha, with tonos</string>

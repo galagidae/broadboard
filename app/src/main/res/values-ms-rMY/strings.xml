@@ -178,6 +178,8 @@
     <string name="char_n_acute_cap">N besar, dengan aksen akut</string>
     <string name="char_n_tilde">N, dengan tilde</string>
     <string name="char_n_tilde_cap">N besar, dengan tilde</string>
+    <string name="char_n_caron">N, dengan karon</string>
+    <string name="char_n_caron_cap">N besar, dengan karon</string>
 
     <!-- s -->
     <string name="char_s_acute">S, dengan aksen akut</string>
@@ -186,6 +188,8 @@
     <string name="char_s_caron_cap">S besar, dengan karon</string>
     <string name="char_s_sharp">S tajam</string>
     <string name="char_s_sharp_cap">S tajam besar</string>
+    <string name="char_s_cedilla">S, dengan sedila</string>
+    <string name="char_s_cedilla_cap">S besar, dengan sedila</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Alfa, dengan tonos</string>

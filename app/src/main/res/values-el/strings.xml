@@ -178,6 +178,8 @@
     <string name="char_n_acute_cap">Κεφαλαίο N με οξεία</string>
     <string name="char_n_tilde">N με τίλντε</string>
     <string name="char_n_tilde_cap">Κεφαλαίο N με τίλντε</string>
+    <string name="char_n_caron">N με καρόν</string>
+    <string name="char_n_caron_cap">Κεφαλαίο N με καρόν</string>
 
     <!-- s -->
     <string name="char_s_acute">S με οξεία</string>
@@ -186,6 +188,8 @@
     <string name="char_s_caron_cap">Κεφαλαίο S με καρόν</string>
     <string name="char_s_sharp">Ες-τσετ</string>
     <string name="char_s_sharp_cap">Κεφαλαίο Ες-τσετ</string>
+    <string name="char_s_cedilla">S με σεντίγ</string>
+    <string name="char_s_cedilla_cap">Κεφαλαίο S με σεντίγ</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Άλφα με τόνο</string>

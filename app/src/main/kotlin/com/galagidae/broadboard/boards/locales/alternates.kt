@@ -309,6 +309,62 @@ val iAlternates: List<List<SymbolSet>> = listOf(
     )
 )
 
+val lAlternatesPL: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(character = 'ł'),
+            secondary = Symbol(character = 'Ł')
+        ),
+        SymbolSet(
+            primary = Symbol(character = 'ĺ'),
+            secondary = Symbol(character = 'Ĺ')
+        )
+    ),
+    listOf(
+        SymbolSet(
+            primary = Symbol(character = 'ľ'),
+            secondary = Symbol(character = 'Ľ')
+        )
+    )
+)
+
+val nAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ñ',
+                description = R.string.char_n_tilde
+            ),
+            secondary = Symbol(
+                character = 'Ñ',
+                description = R.string.char_n_tilde_cap
+            )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ń',
+                description = R.string.char_n_acute
+            ),
+            secondary = Symbol(
+                character = 'Ń',
+                description = R.string.char_n_acute_cap
+            )
+        ),
+    ),
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ň',
+                description = R.string.char_n_caron
+            ),
+            secondary = Symbol(
+                character = 'Ň',
+                description = R.string.char_n_caron_cap
+            )
+        )
+    )
+)
+
 val oAlternates: List<List<SymbolSet>> = listOf(
     listOf(
         SymbolSet(
@@ -406,31 +462,6 @@ val oAlternates: List<List<SymbolSet>> = listOf(
     )
 )
 
-val nAlternates: List<List<SymbolSet>> = listOf(
-    listOf(
-        SymbolSet(
-            primary = Symbol(
-                character = 'ñ',
-                description = R.string.char_n_tilde
-            ),
-            secondary = Symbol(
-                character = 'Ñ',
-                description = R.string.char_n_tilde_cap
-            )
-        ),
-        SymbolSet(
-            primary = Symbol(
-                character = 'ń',
-                description = R.string.char_n_acute
-            ),
-            secondary = Symbol(
-                character = 'Ń',
-                description = R.string.char_n_acute_cap
-            )
-        ),
-    )
-)
-
 val sAlternates: List<List<SymbolSet>> = listOf(
     listOf(
         SymbolSet(
@@ -463,6 +494,16 @@ val sAlternates: List<List<SymbolSet>> = listOf(
             secondary = Symbol(
                 character = 'ẞ',
                 description = R.string.char_s_sharp
+            )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ş',
+                description = R.string.char_s_cedilla
+            ),
+            secondary = Symbol(
+                character = 'Ş',
+                description = R.string.char_s_cedilla
             )
         )
     )
@@ -521,6 +562,25 @@ val uAlternates: List<List<SymbolSet>> = listOf(
                 character = 'Ū',
                 description = R.string.char_u_macron_cap
             )
+        )
+    )
+)
+
+val zAlternatesPL: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(character = 'ż'),
+            secondary = Symbol(character = 'Ż')
+        ),
+        SymbolSet(
+            primary = Symbol(character = 'ź'),
+            secondary = Symbol(character = 'Ź')
+        )
+    ),
+    listOf(
+        SymbolSet(
+            primary = Symbol(character = 'ž'),
+            secondary = Symbol(character = 'Ž')
         )
     )
 )

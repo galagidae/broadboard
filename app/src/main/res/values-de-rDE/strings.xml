@@ -177,6 +177,8 @@
     <string name="char_n_acute_cap">Großes N mit Akut</string>
     <string name="char_n_tilde">N mit Tilde</string>
     <string name="char_n_tilde_cap">Großes N mit Tilde</string>
+    <string name="char_n_caron">N mit Hatschek</string>
+    <string name="char_n_caron_cap">Großes N mit Hatschek</string>
 
     <!-- s -->
     <string name="char_s_acute">S mit Akut</string>
@@ -185,6 +187,8 @@
     <string name="char_s_caron_cap">Großes S mit Hatschek</string>
     <string name="char_s_sharp">Scharfes S</string>
     <string name="char_s_sharp_cap">Großes scharfes S</string>
+    <string name="char_s_cedilla">S mit Cedille</string>
+    <string name="char_s_cedilla_cap">Großes S mit Cedille</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Alpha mit Tonos</string>

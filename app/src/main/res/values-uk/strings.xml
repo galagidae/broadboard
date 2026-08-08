@@ -178,6 +178,8 @@
     <string name="char_n_acute_cap">Велика N, з акутом</string>
     <string name="char_n_tilde">N, з тильдою</string>
     <string name="char_n_tilde_cap">Велика N, з тильдою</string>
+    <string name="char_n_caron">N, з гачеком</string>
+    <string name="char_n_caron_cap">Велика N, з гачеком</string>
 
     <!-- s -->
     <string name="char_s_acute">S, з акутом</string>
@@ -186,6 +188,8 @@
     <string name="char_s_caron_cap">Велика S, з гачеком</string>
     <string name="char_s_sharp">Есцет</string>
     <string name="char_s_sharp_cap">Велика есцет</string>
+    <string name="char_s_cedilla">S, з седилем</string>
+    <string name="char_s_cedilla_cap">Велика S, з седилем</string>
 
     <!-- Greek -->
     <string name="char_alpha_tonos">Альфа, з тоносом</string>

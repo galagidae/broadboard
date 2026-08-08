@@ -100,6 +100,7 @@ fun StandardBoard(
                 "id" -> enUS
                 "it" -> itIT
                 "ms" -> enUS
+                "pl" -> plPL
                 "pt-BR" -> ptBR
                 "pt-PT" -> ptPT
                 "ru" -> ruRU
