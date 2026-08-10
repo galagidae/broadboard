@@ -211,4 +211,11 @@
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="true" />
 
+    <!-- Polish -->
+    <subtype
+        android:imeSubtypeLocale="tr"
+        android:languageTag="tr"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
 </input-method>

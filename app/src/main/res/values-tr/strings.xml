@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Harf klavyesi</string>
+    <string name="key_alternate">Alternatif karakterleri girin</string>
+    <string name="key_back">Geri gidin</string>
+    <string name="key_delete">Sil</string>
+    <string name="key_emojis_happy">Mutlu emojiler</string>
+    <string name="key_emojis_sad">Üzgün emojiler</string>
+    <string name="key_emojis">Emoji klavyesi</string>
+    <string name="key_menu">Menü</string>
+    <string name="key_numeric">Sayı klavyesi</string>
+    <string name="key_picker">Klavyeyi değiştirin</string>
+    <string name="key_preferences">Tercihler</string>
+    <string name="key_shift">Üst karakter</string>
+    <string name="key_shift_enable">Büyük harf kilidini açın</string>
+    <string name="key_shift_disable">Büyük harf kilidini kapatın</string>
+    <string name="key_space">Boşluk</string>
+    <string name="key_space_long">Menüyü açın</string>
+    <string name="key_symbols">Sembol klavyesi</string>
+    <string name="key_symbols_shift">Semboller</string>
+    <string name="key_symbols_more">Diğer semboller</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Ve işareti</string>
+    <string name="sym_asterisk">Yıldız işareti</string>
+    <string name="sym_atsign">At işareti</string>
+    <string name="sym_backslash">Ters eğik çizgi</string>
+    <string name="sym_braceleft">Açık süslü parantez</string>
+    <string name="sym_braceright">Kapalı süslü parantez</string>
+    <string name="sym_bracketleft">Açık köşeli parantez</string>
+    <string name="sym_bracketright">Kapalı köşeli parantez</string>
+    <string name="sym_bullet">Madde işareti</string>
+    <string name="sym_caret">Şapka işareti</string>
+    <string name="sym_cent">Sent işareti</string>
+    <string name="sym_checkmark">Onay işareti</string>
+    <string name="sym_colon">İki nokta</string>
+    <string name="sym_copyright">Telif hakkı simgesi</string>
+    <string name="sym_dash">Kısa çizgi</string>
+    <string name="sym_degree">Derece işareti</string>
+    <string name="sym_diaeresis">Çift nokta işareti</string>
+    <string name="sym_division">Bölme işareti</string>
+    <string name="sym_dollarsign">Dolar</string>
+    <string name="sym_ellipsis">Üç nokta</string>
+    <string name="sym_emdash">Uzun çizgi</string>
+    <string name="sym_endash">Orta çizgi</string>
+    <string name="sym_equals">Eşittir</string>
+    <string name="sym_euro">Avro</string>
+    <string name="sym_exclamation">Ünlem işareti</string>
+    <string name="sym_exclamationinverted">Ters ünlem işareti</string>
+    <string name="sym_graveaccent">Ters vurgu işareti</string>
+    <string name="sym_greaterthan">Büyüktür işareti</string>
+    <string name="sym_hashtag">Kare işareti</string>
+    <string name="sym_infinity">Sonsuzluk işareti</string>
+    <string name="sym_lessthan">Küçüktür işareti</string>
+    <string name="sym_middledot">Orta nokta</string>
+    <string name="sym_multiplication">Çarpma işareti</string>
+    <string name="sym_numero">Numara işareti</string>
+    <string name="sym_paragraph">Paragraf işareti</string>
+    <string name="sym_parenleft">Açık parantez</string>
+    <string name="sym_parenright">Kapalı parantez</string>
+    <string name="sym_percent">Yüzde</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Dikey çizgi</string>
+    <string name="sym_plus">Artı</string>
+    <string name="sym_poundsign">Sterlin işareti</string>
+    <string name="sym_question">Soru işareti</string>
+    <string name="sym_questioninverted">Ters soru işareti</string>
+    <string name="sym_quotedouble">Tırnak işareti</string>
+    <string name="sym_quotesingle">Kesme işareti</string>
+    <string name="sym_registered">Tescilli marka simgesi</string>
+    <string name="sym_section">Bölüm işareti</string>
+    <string name="sym_semicolon">Noktalı virgül</string>
+    <string name="sym_slash">Eğik çizgi</string>
+    <string name="sym_squareroot">Karekök</string>
+    <string name="sym_tilde">Tilde</string>
+    <string name="sym_trademark">Ticari marka simgesi</string>
+    <string name="sym_underscore">Alt çizgi</string>
+    <string name="sym_yen">Yen işareti</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">Keskin aksanlı A</string>
+    <string name="char_a_acute_cap">Keskin aksanlı büyük A</string>
+    <string name="char_a_ash">A, E bitişik harfi</string>
+    <string name="char_a_ash_cap">Büyük A, E bitişik harfi</string>
+    <string name="char_a_circumflex">Şapkalı A</string>
+    <string name="char_a_circumflex_cap">Şapkalı büyük A</string>
+    <string name="char_a_diaeresis">İki noktalı A</string>
+    <string name="char_a_diaeresis_cap">İki noktalı büyük A</string>
+    <string name="char_a_grave">Ters aksanlı A</string>
+    <string name="char_a_grave_cap">Ters aksanlı büyük A</string>
+    <string name="char_a_macron">Makronlu A</string>
+    <string name="char_a_macron_cap">Makronlu büyük A</string>
+    <string name="char_a_ogonek">Ogonekli A</string>
+    <string name="char_a_ogonek_cap">Ogonekli büyük A</string>
+    <string name="char_a_ordinal">Yükseltilmiş A</string>
+    <string name="char_a_overring">Üstte halkalı A</string>
+    <string name="char_a_overring_cap">Üstte halkalı büyük A</string>
+    <string name="char_a_tilde">Tildeli A</string>
+    <string name="char_a_tilde_cap">Tildeli büyük A</string>
+
+    <!-- E -->
+    <string name="char_e_acute">Keskin aksanlı E</string>
+    <string name="char_e_acute_cap">Keskin aksanlı büyük E</string>
+    <string name="char_e_circumflex">Şapkalı E</string>
+    <string name="char_e_circumflex_cap">Şapkalı büyük E</string>
+    <string name="char_e_diaeresis">İki noktalı E</string>
+    <string name="char_e_diaeresis_cap">İki noktalı büyük E</string>
+    <string name="char_e_grave">Ters aksanlı E</string>
+    <string name="char_e_grave_cap">Ters aksanlı büyük E</string>
+    <string name="char_e_macron">Makronlu E</string>
+    <string name="char_e_macron_cap">Makronlu büyük E</string>
+    <string name="char_e_ogonek">Ogonekli E</string>
+    <string name="char_e_ogonek_cap">Ogonekli büyük E</string>
+    <string name="char_e_overdot">Üstte noktalı E</string>
+    <string name="char_e_overdot_cap">Üstte noktalı büyük E</string>
+
+    <!-- i -->
+    <string name="char_i_acute">Keskin aksanlı i</string>
+    <string name="char_i_acute_cap">Keskin aksanlı büyük I</string>
+    <string name="char_i_circumflex">Şapkalı i</string>
+    <string name="char_i_circumflex_cap">Şapkalı büyük I</string>
+    <string name="char_i_diaeresis">İki noktalı i</string>
+    <string name="char_i_diaeresis_cap">İki noktalı büyük I</string>
+    <string name="char_i_grave">Ters aksanlı i</string>
+    <string name="char_i_grave_cap">Ters aksanlı büyük I</string>
+    <string name="char_i_macron">Makronlu i</string>
+    <string name="char_i_macron_cap">Makronlu büyük I</string>
+    <string name="char_i_ogonek">Ogonekli i</string>
+    <string name="char_i_ogonek_cap">Ogonekli büyük I</string>
+
+    <!-- o -->
+    <string name="char_o_acute">Keskin aksanlı O</string>
+    <string name="char_o_acute_cap">Keskin aksanlı büyük O</string>
+    <string name="char_o_circumflex">Şapkalı O</string>
+    <string name="char_o_circumflex_cap">Şapkalı büyük O</string>
+    <string name="char_o_diaeresis">İki noktalı O</string>
+    <string name="char_o_diaeresis_cap">İki noktalı büyük O</string>
+    <string name="char_o_grave">Ters aksanlı O</string>
+    <string name="char_o_grave_cap">Ters aksanlı büyük O</string>
+    <string name="char_o_macron">Makronlu O</string>
+    <string name="char_o_macron_cap">Makronlu büyük O</string>
+    <string name="char_o_oe">O, E bitişik harfi</string>
+    <string name="char_o_oe_cap">Büyük O, E bitişik harfi</string>
+    <string name="char_o_ordinal">Yükseltilmiş O</string>
+    <string name="char_o_stroke">Çizgili O</string>
+    <string name="char_o_stroke_cap">Çizgili büyük O</string>
+    <string name="char_o_tilde">Tildeli O</string>
+    <string name="char_o_tilde_cap">Tildeli büyük O</string>
+
+    <!-- u -->
+    <string name="char_u_acute">Keskin aksanlı U</string>
+    <string name="char_u_acute_cap">Keskin aksanlı büyük U</string>
+    <string name="char_u_circumflex">Şapkalı U</string>
+    <string name="char_u_circumflex_cap">Şapkalı büyük U</string>
+    <string name="char_u_diaeresis">İki noktalı U</string>
+    <string name="char_u_diaeresis_cap">İki noktalı büyük U</string>
+    <string name="char_u_grave">Ters aksanlı U</string>
+    <string name="char_u_grave_cap">Ters aksanlı büyük U</string>
+    <string name="char_u_macron">Makronlu U</string>
+    <string name="char_u_macron_cap">Makronlu büyük U</string>
+
+    <!-- c -->
+    <string name="char_c_acute">Keskin aksanlı C</string>
+    <string name="char_c_acute_cap">Keskin aksanlı büyük C</string>
+    <string name="char_c_caron">Ters şapkalı C</string>
+    <string name="char_c_caron_cap">Ters şapkalı büyük C</string>
+    <string name="char_c_cedilla">Sedilli C</string>
+    <string name="char_c_cedilla_cap">Sedilli büyük C</string>
+
+    <!-- n -->
+    <string name="char_n_acute">Keskin aksanlı N</string>
+    <string name="char_n_acute_cap">Keskin aksanlı büyük N</string>
+    <string name="char_n_tilde">Tildeli N</string>
+    <string name="char_n_tilde_cap">Tildeli büyük N</string>
+    <string name="char_n_caron">Ters şapkalı N</string>
+    <string name="char_n_caron_cap">Ters şapkalı büyük N</string>
+
+    <!-- s -->
+    <string name="char_s_acute">Keskin aksanlı S</string>
+    <string name="char_s_acute_cap">Keskin aksanlı büyük S</string>
+    <string name="char_s_caron">Ters şapkalı S</string>
+    <string name="char_s_caron_cap">Ters şapkalı büyük S</string>
+    <string name="char_s_sharp">Keskin S</string>
+    <string name="char_s_sharp_cap">Büyük keskin S</string>
+    <string name="char_s_cedilla">Sedilli S</string>
+    <string name="char_s_cedilla_cap">Sedilli büyük S</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Tonoslu Alfa</string>
+    <string name="char_alpha_tonos_cap">Tonoslu büyük Alfa</string>
+    <string name="char_epsilon_tonos">Tonoslu Epsilon</string>
+    <string name="char_epsilon_tonos_cap">Tonoslu büyük Epsilon</string>
+    <string name="char_eta_tonos">Tonoslu Eta</string>
+    <string name="char_eta_tonos_cap">Tonoslu büyük Eta</string>
+    <string name="char_iota_tonos">Tonoslu İota</string>
+    <string name="char_iota_tonos_cap">Tonoslu büyük İota</string>
+    <string name="char_iota_dialytika">İki noktalı İota</string>
+    <string name="char_iota_dialytika_cap">İki noktalı büyük İota</string>
+    <string name="char_iota_dialytika_tonos">İki nokta ve tonoslu İota</string>
+    <string name="char_omega_tonos">Tonoslu Omega</string>
+    <string name="char_omega_tonos_cap">Tonoslu büyük Omega</string>
+    <string name="char_omicron_tonos">Tonoslu Omikron</string>
+    <string name="char_omicron_tonos_cap">Tonoslu büyük Omikron</string>
+    <string name="char_upsilon_tonos">Tonoslu Üpsilon</string>
+    <string name="char_upsilon_tonos_cap">Tonoslu büyük Üpsilon</string>
+    <string name="char_upsilon_dialytika">İki noktalı Üpsilon</string>
+    <string name="char_upsilon_dialytika_cap">İki noktalı büyük Üpsilon</string>
+    <string name="char_upsilon_dialytika_tonos">İki nokta ve tonoslu Üpsilon</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Bitti</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Git</string>
+    <string name="action_next">Sonraki</string>
+    <string name="action_previous">Önceki</string>
+    <string name="action_search">Ara</string>
+    <string name="action_send">Gönder</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Tercihler</string>
+    <string name="pref_back">Geri</string>
+    <string name="pref_size">Boyut</string>
+    <string name="pref_size_small">Küçük</string>
+    <string name="pref_size_medium">Orta</string>
+    <string name="pref_size_large">Büyük</string>
+    <string name="pref_size_extra_large">Çok Büyük</string>
+    <string name="pref_color">Renk</string>
+    <string name="pref_color_light">Açık</string>
+    <string name="pref_color_dark">Koyu</string>
+    <string name="pref_color_extradark">Çok Koyu</string>
+    <string name="pref_color_yellowblack">Siyah Üzerine Sarı</string>
+    <string name="pref_color_blackyellow">Sarı Üzerine Siyah</string>
+    <string name="pref_color_yellowblue">Mavi Üzerine Sarı</string>
+    <string name="pref_color_blueyellow">Sarı Üzerine Mavi</string>
+    <string name="pref_menu_option">Mod Seçimi</string>
+    <string name="pref_menu_bar">Menü Çubuğu</string>
+    <string name="pref_menu_space">Boşluk çubuğuna uzun basın</string>
+    <string name="pref_menu_both">Her ikisi</string>
+    <string name="pref_natural_layout">Doğal Düzen</string>
+    <string name="pref_natural_layout_sub">Doğal klavye düzeni aralıklarını kullanın</string>
+    <string name="pref_highlights">Renkli Vurgular</string>
+    <string name="pref_highlights_sub">Özel tuşlara renkli vurgu ekleyin</string>
+    <string name="pref_banner_enable_1">Etkinleştirmek için dokunun</string>
+    <string name="pref_banner_enable_2">BroadBoard\'un Ayarlar\'da etkinleştirilmesi gerekiyor</string>
+    <string name="pref_banner_use_1">Kullanmak için dokunun</string>
+    <string name="pref_banner_use_2">BroadBoard hazır — varsayılan klavyeniz yapın</string>
+    <string name="pref_vibrate">Titreşim</string>
+    <string name="pref_vibrate_sub">Tuşa basıldığında titreşim</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Harf klavyesi gösteriliyor</string>
+    <string name="mode_change_emojis">Emoji klavyesi gösteriliyor</string>
+    <string name="mode_change_menu">Menü gösteriliyor</string>
+    <string name="mode_change_numeric">Sayı klavyesi gösteriliyor</string>
+    <string name="mode_change_symbols">Sembol klavyesi gösteriliyor</string>
+    <string name="shift_change_off">Üst karakter kapalı</string>
+    <string name="shift_change_on">Üst karakter açık</string>
+    <string name="shift_change_caps">Büyük harf kilidi açık</string>
+
+</resources>
