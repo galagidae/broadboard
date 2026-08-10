@@ -132,6 +132,8 @@
     <string name="char_i_macron_cap">I maiúsculo, com mácron</string>
     <string name="char_i_ogonek">I, com ogonek</string>
     <string name="char_i_ogonek_cap">I maiúsculo, com ogonek</string>
+    <string name="char_ij_ligature">Ligadura I, J</string>
+    <string name="char_ij_ligature_cap">Ligadura I, J maiúscula</string>
 
     <!-- o -->
     <string name="char_o_acute">O, com acento agudo</string>

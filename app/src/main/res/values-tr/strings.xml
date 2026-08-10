@@ -132,6 +132,8 @@
     <string name="char_i_macron_cap">Makronlu büyük I</string>
     <string name="char_i_ogonek">Ogonekli i</string>
     <string name="char_i_ogonek_cap">Ogonekli büyük I</string>
+    <string name="char_ij_ash">I, J bitişik harfi</string>
+    <string name="char_ij_ash_cap">Büyük I, J bitişik harfi</string>
 
     <!-- o -->
     <string name="char_o_acute">Keskin aksanlı O</string>

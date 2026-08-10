@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Lettertoetsenbord</string>
+    <string name="key_alternate">Alternatieve tekens invoeren</string>
+    <string name="key_back">Terug</string>
+    <string name="key_delete">Verwijderen</string>
+    <string name="key_emojis_happy">Blije emoji\'s</string>
+    <string name="key_emojis_sad">Verdrietige emoji\'s</string>
+    <string name="key_emojis">Emoji-toetsenbord</string>
+    <string name="key_menu">Menu</string>
+    <string name="key_numeric">Cijfertoetsenbord</string>
+    <string name="key_picker">Toetsenbord wijzigen</string>
+    <string name="key_preferences">Voorkeuren</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Caps Lock inschakelen</string>
+    <string name="key_shift_disable">Caps Lock uitschakelen</string>
+    <string name="key_space">Spatie</string>
+    <string name="key_space_long">Menu openen</string>
+    <string name="key_symbols">Symbooltoetsenbord</string>
+    <string name="key_symbols_shift">Symbolen</string>
+    <string name="key_symbols_more">Meer symbolen</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">En-teken</string>
+    <string name="sym_asterisk">Sterretje</string>
+    <string name="sym_atsign">Apenstaartje</string>
+    <string name="sym_backslash">Backslash</string>
+    <string name="sym_braceleft">Accolade openen</string>
+    <string name="sym_braceright">Accolade sluiten</string>
+    <string name="sym_bracketleft">Blokhaakje openen</string>
+    <string name="sym_bracketright">Blokhaakje sluiten</string>
+    <string name="sym_bullet">Opsommingsteken</string>
+    <string name="sym_caret">Dakje</string>
+    <string name="sym_cent">Centteken</string>
+    <string name="sym_checkmark">Vinkje</string>
+    <string name="sym_colon">Dubbele punt</string>
+    <string name="sym_copyright">Copyrightteken</string>
+    <string name="sym_dash">Koppelteken</string>
+    <string name="sym_degree">Gradenteken</string>
+    <string name="sym_diaeresis">Trema</string>
+    <string name="sym_division">Deelteken</string>
+    <string name="sym_dollarsign">Dollar</string>
+    <string name="sym_ellipsis">Beletselteken</string>
+    <string name="sym_emdash">Lang streepje</string>
+    <string name="sym_endash">Kort streepje</string>
+    <string name="sym_equals">Isgelijkteken</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Uitroepteken</string>
+    <string name="sym_exclamationinverted">Omgekeerd uitroepteken</string>
+    <string name="sym_graveaccent">Accent grave</string>
+    <string name="sym_greaterthan">Groter dan-teken</string>
+    <string name="sym_hashtag">Hekje</string>
+    <string name="sym_infinity">Oneindigheidsteken</string>
+    <string name="sym_lessthan">Kleiner dan-teken</string>
+    <string name="sym_middledot">Middelpunt</string>
+    <string name="sym_multiplication">Maalteken</string>
+    <string name="sym_numero">Nummerteken</string>
+    <string name="sym_paragraph">Alineateken</string>
+    <string name="sym_parenleft">Haakje openen</string>
+    <string name="sym_parenright">Haakje sluiten</string>
+    <string name="sym_percent">Procent</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Verticale streep</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Pondteken</string>
+    <string name="sym_question">Vraagteken</string>
+    <string name="sym_questioninverted">Omgekeerd vraagteken</string>
+    <string name="sym_quotedouble">Aanhalingsteken</string>
+    <string name="sym_quotesingle">Apostrof</string>
+    <string name="sym_registered">Registered-teken</string>
+    <string name="sym_section">Paragraafteken</string>
+    <string name="sym_semicolon">Puntkomma</string>
+    <string name="sym_slash">Schuine streep</string>
+    <string name="sym_squareroot">Wortelteken</string>
+    <string name="sym_tilde">Tilde</string>
+    <string name="sym_trademark">Handelsmerkteken</string>
+    <string name="sym_underscore">Onderstrepingsteken</string>
+    <string name="sym_yen">Yen</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A, met accent aigu</string>
+    <string name="char_a_acute_cap">Hoofdletter A, met accent aigu</string>
+    <string name="char_a_ash">A, E, ligatuur</string>
+    <string name="char_a_ash_cap">Hoofdletter A, E, ligatuur</string>
+    <string name="char_a_circumflex">A, met accent circonflexe</string>
+    <string name="char_a_circumflex_cap">Hoofdletter A, met accent circonflexe</string>
+    <string name="char_a_diaeresis">A, met trema</string>
+    <string name="char_a_diaeresis_cap">Hoofdletter A, met trema</string>
+    <string name="char_a_grave">A, met accent grave</string>
+    <string name="char_a_grave_cap">Hoofdletter A, met accent grave</string>
+    <string name="char_a_macron">A, met macron</string>
+    <string name="char_a_macron_cap">Hoofdletter A, met macron</string>
+    <string name="char_a_ogonek">A, met ogonek</string>
+    <string name="char_a_ogonek_cap">Hoofdletter A, met ogonek</string>
+    <string name="char_a_ordinal">Verhoogde a</string>
+    <string name="char_a_overring">A, met ring erboven</string>
+    <string name="char_a_overring_cap">Hoofdletter A, met ring erboven</string>
+    <string name="char_a_tilde">A, met tilde</string>
+    <string name="char_a_tilde_cap">Hoofdletter A, met tilde</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E, met accent aigu</string>
+    <string name="char_e_acute_cap">Hoofdletter E, met accent aigu</string>
+    <string name="char_e_circumflex">E, met accent circonflexe</string>
+    <string name="char_e_circumflex_cap">Hoofdletter E, met accent circonflexe</string>
+    <string name="char_e_diaeresis">E, met trema</string>
+    <string name="char_e_diaeresis_cap">Hoofdletter E, met trema</string>
+    <string name="char_e_grave">E, met accent grave</string>
+    <string name="char_e_grave_cap">Hoofdletter E, met accent grave</string>
+    <string name="char_e_macron">E, met macron</string>
+    <string name="char_e_macron_cap">Hoofdletter E, met macron</string>
+    <string name="char_e_ogonek">E, met ogonek</string>
+    <string name="char_e_ogonek_cap">Hoofdletter E, met ogonek</string>
+    <string name="char_e_overdot">E, met punt erboven</string>
+    <string name="char_e_overdot_cap">Hoofdletter E, met punt erboven</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I, met accent aigu</string>
+    <string name="char_i_acute_cap">Hoofdletter I, met accent aigu</string>
+    <string name="char_i_circumflex">I, met accent circonflexe</string>
+    <string name="char_i_circumflex_cap">Hoofdletter I, met accent circonflexe</string>
+    <string name="char_i_diaeresis">I, met trema</string>
+    <string name="char_i_diaeresis_cap">Hoofdletter I, met trema</string>
+    <string name="char_i_grave">I, met accent grave</string>
+    <string name="char_i_grave_cap">Hoofdletter I, met accent grave</string>
+    <string name="char_i_macron">I, met macron</string>
+    <string name="char_i_macron_cap">Hoofdletter I, met macron</string>
+    <string name="char_i_ogonek">I, met ogonek</string>
+    <string name="char_i_ogonek_cap">Hoofdletter I, met ogonek</string>
+    <string name="char_ij_ligature">Lange IJ</string>
+    <string name="char_ij_ligature_cap">Hoofdletter lange IJ</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O, met accent aigu</string>
+    <string name="char_o_acute_cap">Hoofdletter O, met accent aigu</string>
+    <string name="char_o_circumflex">O, met accent circonflexe</string>
+    <string name="char_o_circumflex_cap">Hoofdletter O, met accent circonflexe</string>
+    <string name="char_o_diaeresis">O, met trema</string>
+    <string name="char_o_diaeresis_cap">Hoofdletter O, met trema</string>
+    <string name="char_o_grave">O, met accent grave</string>
+    <string name="char_o_grave_cap">Hoofdletter O, met accent grave</string>
+    <string name="char_o_macron">O, met macron</string>
+    <string name="char_o_macron_cap">Hoofdletter O, met macron</string>
+    <string name="char_o_oe">O, E, ligatuur</string>
+    <string name="char_o_oe_cap">Hoofdletter O, E, ligatuur</string>
+    <string name="char_o_ordinal">Verhoogde o</string>
+    <string name="char_o_stroke">O, met streep</string>
+    <string name="char_o_stroke_cap">Hoofdletter O, met streep</string>
+    <string name="char_o_tilde">O, met tilde</string>
+    <string name="char_o_tilde_cap">Hoofdletter O, met tilde</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U, met accent aigu</string>
+    <string name="char_u_acute_cap">Hoofdletter U, met accent aigu</string>
+    <string name="char_u_circumflex">U, met accent circonflexe</string>
+    <string name="char_u_circumflex_cap">Hoofdletter U, met accent circonflexe</string>
+    <string name="char_u_diaeresis">U, met trema</string>
+    <string name="char_u_diaeresis_cap">Hoofdletter U, met trema</string>
+    <string name="char_u_grave">U, met accent grave</string>
+    <string name="char_u_grave_cap">Hoofdletter U, met accent grave</string>
+    <string name="char_u_macron">U, met macron</string>
+    <string name="char_u_macron_cap">Hoofdletter U, met macron</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C, met accent aigu</string>
+    <string name="char_c_acute_cap">Hoofdletter C, met accent aigu</string>
+    <string name="char_c_caron">C, met caron</string>
+    <string name="char_c_caron_cap">Hoofdletter C, met caron</string>
+    <string name="char_c_cedilla">C, met cedille</string>
+    <string name="char_c_cedilla_cap">Hoofdletter C, met cedille</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N, met accent aigu</string>
+    <string name="char_n_acute_cap">Hoofdletter N, met accent aigu</string>
+    <string name="char_n_tilde">N, met tilde</string>
+    <string name="char_n_tilde_cap">Hoofdletter N, met tilde</string>
+    <string name="char_n_caron">N, met caron</string>
+    <string name="char_n_caron_cap">Hoofdletter N, met caron</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S, met accent aigu</string>
+    <string name="char_s_acute_cap">Hoofdletter S, met accent aigu</string>
+    <string name="char_s_caron">S, met caron</string>
+    <string name="char_s_caron_cap">Hoofdletter S, met caron</string>
+    <string name="char_s_sharp">Scherpe s</string>
+    <string name="char_s_sharp_cap">Hoofdletter scherpe s</string>
+    <string name="char_s_cedilla">S, met cedille</string>
+    <string name="char_s_cedilla_cap">Hoofdletter S, met cedille</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alfa, met tonos</string>
+    <string name="char_alpha_tonos_cap">Hoofdletter alfa, met tonos</string>
+    <string name="char_epsilon_tonos">Epsilon, met tonos</string>
+    <string name="char_epsilon_tonos_cap">Hoofdletter epsilon, met tonos</string>
+    <string name="char_eta_tonos">Eta, met tonos</string>
+    <string name="char_eta_tonos_cap">Hoofdletter eta, met tonos</string>
+    <string name="char_iota_tonos">Iota, met tonos</string>
+    <string name="char_iota_tonos_cap">Hoofdletter iota, met tonos</string>
+    <string name="char_iota_dialytika">Iota, met dialytika</string>
+    <string name="char_iota_dialytika_cap">Hoofdletter iota, met dialytika</string>
+    <string name="char_iota_dialytika_tonos">Iota, met dialytika en tonos</string>
+    <string name="char_omega_tonos">Omega, met tonos</string>
+    <string name="char_omega_tonos_cap">Hoofdletter omega, met tonos</string>
+    <string name="char_omicron_tonos">Omikron, met tonos</string>
+    <string name="char_omicron_tonos_cap">Hoofdletter omikron, met tonos</string>
+    <string name="char_upsilon_tonos">Upsilon, met tonos</string>
+    <string name="char_upsilon_tonos_cap">Hoofdletter upsilon, met tonos</string>
+    <string name="char_upsilon_dialytika">Upsilon, met dialytika</string>
+    <string name="char_upsilon_dialytika_cap">Hoofdletter upsilon, met dialytika</string>
+    <string name="char_upsilon_dialytika_tonos">Upsilon, met dialytika en tonos</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Gereed</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Ga</string>
+    <string name="action_next">Volgende</string>
+    <string name="action_previous">Vorige</string>
+    <string name="action_search">Zoeken</string>
+    <string name="action_send">Verzenden</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Voorkeuren</string>
+    <string name="pref_back">Terug</string>
+    <string name="pref_size">Grootte</string>
+    <string name="pref_size_small">Klein</string>
+    <string name="pref_size_medium">Gemiddeld</string>
+    <string name="pref_size_large">Groot</string>
+    <string name="pref_size_extra_large">Extra groot</string>
+    <string name="pref_color">Kleur</string>
+    <string name="pref_color_light">Licht</string>
+    <string name="pref_color_dark">Donker</string>
+    <string name="pref_color_extradark">Extra donker</string>
+    <string name="pref_color_yellowblack">Geel op zwart</string>
+    <string name="pref_color_blackyellow">Zwart op geel</string>
+    <string name="pref_color_yellowblue">Geel op blauw</string>
+    <string name="pref_color_blueyellow">Blauw op geel</string>
+    <string name="pref_menu_option">Modusselectie</string>
+    <string name="pref_menu_bar">Menubalk</string>
+    <string name="pref_menu_space">Lang op de spatiebalk drukken</string>
+    <string name="pref_menu_both">Beide</string>
+    <string name="pref_natural_layout">Natuurlijke indeling</string>
+    <string name="pref_natural_layout_sub">Natuurlijke toetsenbordafstanden gebruiken</string>
+    <string name="pref_highlights">Kleuraccenten</string>
+    <string name="pref_highlights_sub">Speciale toetsen voorzien van kleuraccenten</string>
+    <string name="pref_banner_enable_1">Tik om in te schakelen</string>
+    <string name="pref_banner_enable_2">BroadBoard moet worden ingeschakeld in Instellingen</string>
+    <string name="pref_banner_use_1">Tik om te gebruiken</string>
+    <string name="pref_banner_use_2">BroadBoard staat klaar — stel het in als standaardtoetsenbord</string>
+    <string name="pref_vibrate">Trillen</string>
+    <string name="pref_vibrate_sub">Trillen bij toetsaanslag</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Lettertoetsenbord wordt weergegeven</string>
+    <string name="mode_change_emojis">Emoji-toetsenbord wordt weergegeven</string>
+    <string name="mode_change_menu">Menu wordt weergegeven</string>
+    <string name="mode_change_numeric">Cijfertoetsenbord wordt weergegeven</string>
+    <string name="mode_change_symbols">Symbooltoetsenbord wordt weergegeven</string>
+    <string name="shift_change_off">Shift uit</string>
+    <string name="shift_change_on">Shift aan</string>
+    <string name="shift_change_caps">Caps Lock aan</string>
+
+</resources>

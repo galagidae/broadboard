@@ -273,6 +273,16 @@ val iAlternates: List<List<SymbolSet>> = listOf(
                 character = 'Í',
                 description = R.string.char_i_acute_cap
             )
+        ),
+        SymbolSet(
+            primary = Symbol(
+                character = 'ĳ',
+                description = R.string.char_ij_ligature
+            ),
+            secondary = Symbol(
+                character = 'Ĳ',
+                description = R.string.char_ij_ligature_cap
+            )
         )
     ),
     listOf(

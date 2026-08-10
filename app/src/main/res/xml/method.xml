@@ -218,4 +218,11 @@
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="true" />
 
+    <!-- Dutch -->
+    <subtype
+        android:imeSubtypeLocale="nl"
+        android:languageTag="nl"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
 </input-method>

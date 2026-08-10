@@ -132,6 +132,8 @@
     <string name="char_i_macron_cap">Wielkie I z makronem</string>
     <string name="char_i_ogonek">I z ogonkiem</string>
     <string name="char_i_ogonek_cap">Wielkie I z ogonkiem</string>
+    <string name="char_ij_ligature">Ligatura I, J</string>
+    <string name="char_ij_ligature_cap">Wielka ligatura I, J</string>
 
     <!-- o -->
     <string name="char_o_acute">O z akcentem ostrym</string>
