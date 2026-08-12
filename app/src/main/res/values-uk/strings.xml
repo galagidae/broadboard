@@ -133,8 +133,8 @@
     <string name="char_i_macron_cap">Велика I, з макроном</string>
     <string name="char_i_ogonek">I, з огонеком</string>
     <string name="char_i_ogonek_cap">Велика I, з огонеком</string>
-    <string name="char_ij_ash">I, J, лігатура</string>
-    <string name="char_ij_ash_cap">Велика I, J, лігатура</string>
+    <string name="char_ij_ligature">I, J, лігатура</string>
+    <string name="char_ij_ligature_cap">Велика I, J, лігатура</string>
 
     <!-- o -->
     <string name="char_o_acute">O, з акутом</string>
