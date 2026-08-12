@@ -19,10 +19,9 @@
 package com.galagidae.broadboard
 
 import android.content.Intent
+import android.content.res.Resources
 import android.database.ContentObserver
-import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.os.*
 import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -48,9 +47,19 @@ class PreferencesActivity : ComponentActivity() {
 
         setContent {
             val darkTheme = isSystemInDarkTheme()
-            val colorScheme = if (darkTheme) dynamicDarkColorScheme(this) else dynamicLightColorScheme(this)
             val preferencesViewModel: PreferencesViewModel = viewModel(factory = factory)
             val context = LocalContext.current
+            val colorScheme = when {
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+                    try {
+                        if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+                    } catch (e: Resources.NotFoundException) {
+                        if (darkTheme) DarkColorScheme else LightColorScheme
+                    }
+                }
+                darkTheme -> DarkColorScheme
+                else -> LightColorScheme
+            }
 
             var imeStatus by remember { mutableStateOf(checkImeStatus(context)) }
 
