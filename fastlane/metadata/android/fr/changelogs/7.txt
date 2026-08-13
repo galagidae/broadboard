@@ -1,0 +1,2 @@
+* Ajout de nouvelles langues
+* Correction de divers bugs

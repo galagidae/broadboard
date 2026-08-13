@@ -1,0 +1,22 @@
+BroadBoard, az gören kişiler için tasarlanmış bir ekran klavyesidir (IME). Her şeyin ekrana aynı anda sığması için tuşları küçültmek yerine BroadBoard her tuşu büyük ve okunaklı tutar — ihtiyacınız olan tuşlara ulaşmak için klavyeyi kaydırmanız yeterlidir, böylece hiçbir tuşun küçük olması gerekmez.
+
+Özellikler:
+
+* Çok büyük, yüksek kontrastlı tuşlara sahip geniş ve kaydırılabilir klavye
+* Ekstra koyu ve yüksek görünürlüklü seçenekler dahil olmak üzere birden fazla renk teması
+* Çok büyüğe kadar ayarlanabilir klavye boyutları
+* İsteğe bağlı dokunsal geri bildirim
+* Ekran okuyucularla uyumlu
+* Birden fazla dil ve düzen desteği
+
+Gizlilik:
+
+BroadBoard hiçbir veri toplamaz. İnternet izni, analiz, reklam ve üçüncü taraf bileşen içermez. Yazdıklarınız cihazınızdan asla çıkmaz.
+
+Kurulumdan sonra BroadBoard'un etkinleştirilmesi ve giriş yönteminiz olarak seçilmesi gerekir:
+
+1. **Ayarlar → Sistem → Diller ve giriş → Ekran klavyesi → Klavyeleri yönet** bölümüne gidin
+2. **BroadBoard**'u etkinleştirin
+3. Klavye seçiciyi kullanarak ona geçin (gezinme çubuğundaki klavye simgesine dokunun veya çoğu uygulamada boşluk tuşuna uzun basın).
+
+Alternatif olarak, BroadBoard'u uygulama çekmecesinden başlattığınızda doğru ayarlar ekranına ve klavye seçiciye giden yönlendirmeli bağlantılar sunulur.

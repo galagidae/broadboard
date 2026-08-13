@@ -7,7 +7,7 @@ Vários temas de cores, incluindo opções extra escuras e de alta visibilidade
 Tamanhos de teclado ajustáveis, até extra grande
 Feedback háptico opcional
 Compatível com leitores de ecrã
-Esquemas de teclado para inglês (Reino Unido e EUA), francês, alemão, grego, italiano, português (Brasil e Portugal), russo e espanhol (América Latina e Espanha) — mais a caminho
+Compatível com vários idiomas e esquemas de teclado
 
 Privacidade:
 

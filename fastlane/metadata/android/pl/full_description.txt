@@ -1,0 +1,22 @@
+BroadBoard to klawiatura ekranowa (IME) zaprojektowana dla osób słabowidzących. Zamiast zmniejszać klawisze, aby wszystko zmieściło się naraz na ekranie, BroadBoard zachowuje każdy klawisz duży i czytelny — wystarczy przesuwać klawiaturę, aby dotrzeć do potrzebnych klawiszy, dzięki czemu żaden klawisz nie musi być mały.
+
+Funkcje:
+
+* Duża, przewijana klawiatura z powiększonymi klawiszami o wysokim kontraście
+* Wiele motywów kolorystycznych, w tym opcje wyjątkowo ciemne i o wysokiej widoczności
+* Regulowane rozmiary klawiatury, aż do bardzo dużego
+* Opcjonalne wibracje dotykowe
+* Zgodność z czytnikami ekranu
+* Obsługa wielu języków i układów
+
+Prywatność:
+
+BroadBoard nie zbiera żadnych danych. Nie ma uprawnienia do internetu, analityki, reklam ani komponentów innych firm. Nic, co wpiszesz, nigdy nie opuszcza Twojego urządzenia.
+
+Po zainstalowaniu BroadBoard trzeba włączyć i wybrać jako metodę wprowadzania tekstu:
+
+1. Przejdź do **Ustawienia → System → Języki i metody wprowadzania → Klawiatura ekranowa → Zarządzaj klawiaturami**
+2. Włącz **BroadBoard**
+3. Przełącz się na nią za pomocą selektora klawiatury (dotknij ikony klawiatury na pasku nawigacji lub przytrzymaj spację w większości aplikacji).
+
+Możesz też uruchomić BroadBoard z listy aplikacji — znajdziesz tam prowadzące linki do właściwego ekranu ustawień i do selektora klawiatury.

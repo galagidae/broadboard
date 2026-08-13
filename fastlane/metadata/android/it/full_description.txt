@@ -7,7 +7,7 @@ Funzionalità:
 * Dimensioni della tastiera regolabili, fino a extra large
 * Feedback aptico opzionale
 * Compatibile con gli screen reader
-* Layout per inglese (Regno Unito e Stati Uniti), francese, tedesco, greco, italiano, portoghese (Brasile e Portogallo), russo e spagnolo (America Latina e Spagna) — altri in arrivo
+* Supporto per più lingue e layout
 
 Privacy:
 

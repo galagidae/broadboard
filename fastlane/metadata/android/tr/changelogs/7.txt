@@ -1,0 +1,2 @@
+* Yeni diller eklendi
+* Çeşitli hatalar giderildi

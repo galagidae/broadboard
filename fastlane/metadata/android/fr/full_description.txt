@@ -7,7 +7,7 @@ Fonctionnalités :
 * Tailles de clavier ajustables, jusqu'à très grand
 * Retour haptique optionnel
 * Compatible avec les lecteurs d'écran
-* Dispositions pour l'anglais (Royaume-Uni et États-Unis), le français, l'allemand, le grec, l'italien, le portugais (Brésil et Portugal), le russe et l'espagnol (Amérique latine et Espagne) — d'autres à venir
+* Prise en charge de plusieurs langues et dispositions
 
 Confidentialité :
 

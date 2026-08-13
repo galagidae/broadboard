@@ -7,7 +7,7 @@ Funciones:
 * Tamaños de teclado ajustables, hasta extra grande
 * Retroalimentación háptica opcional
 * Compatible con lectores de pantalla
-* Diseños para inglés (Reino Unido y EE. UU.), francés, alemán, griego, italiano, portugués (Brasil y Portugal), ruso y español (Latinoamérica y España); próximamente más idiomas
+* Compatible con varios idiomas y diseños
 
 Privacidad:
 

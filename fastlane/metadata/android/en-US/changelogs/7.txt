@@ -1,0 +1,2 @@
+* Add new locales
+* Fix various bugs

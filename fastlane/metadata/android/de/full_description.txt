@@ -7,7 +7,7 @@ Funktionen:
 * Anpassbare Tastaturgrößen, bis hin zu extra groß
 * Optionales haptisches Feedback
 * Screenreader-freundlich
-* Layouts für Englisch (UK und USA), Französisch, Deutsch, Griechisch, Italienisch, Portugiesisch (Brasilien und Portugal), Russisch und Spanisch (Lateinamerika und Spanien) – weitere folgen
+* Mehrere Sprachen und Layouts werden unterstützt
 
 Datenschutz:
 

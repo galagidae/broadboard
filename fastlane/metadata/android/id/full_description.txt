@@ -1,0 +1,22 @@
+BroadBoard adalah keyboard layar (IME) yang dirancang untuk penyandang gangguan penglihatan. Alih-alih mengecilkan tombol agar semuanya muat di layar sekaligus, BroadBoard menjaga setiap tombol tetap besar dan mudah dibaca — Anda cukup menggeser keyboard untuk menjangkau tombol yang dibutuhkan, sehingga tidak ada tombol yang harus berukuran kecil.
+
+Fitur:
+
+* Keyboard besar yang dapat digeser, dengan tombol berukuran ekstra dan berkontras tinggi
+* Beberapa tema warna, termasuk pilihan ekstra gelap dan visibilitas tinggi
+* Ukuran keyboard yang dapat disesuaikan, hingga ekstra besar
+* Umpan balik getaran opsional
+* Ramah pembaca layar
+* Mendukung berbagai bahasa dan tata letak
+
+Privasi:
+
+BroadBoard tidak mengumpulkan data apa pun. Aplikasi ini tidak memiliki izin internet, tidak ada analitik, tidak ada iklan, dan tidak ada komponen pihak ketiga. Apa pun yang Anda ketik tidak pernah meninggalkan perangkat Anda.
+
+Setelah dipasang, BroadBoard harus diaktifkan dan dipilih sebagai metode masukan Anda:
+
+1. Buka **Setelan → Sistem → Bahasa & masukan → Keyboard di layar → Kelola keyboard**
+2. Aktifkan **BroadBoard**
+3. Beralihlah ke sana melalui pemilih keyboard (ketuk ikon keyboard di bilah navigasi, atau tekan lama tombol spasi di sebagian besar aplikasi).
+
+Sebagai alternatif, membuka BroadBoard dari laci aplikasi akan menyediakan tautan terpandu ke layar setelan yang tepat dan ke pemilih keyboard.

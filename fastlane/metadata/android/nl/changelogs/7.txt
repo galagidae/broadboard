@@ -1,0 +1,2 @@
+* Nieuwe talen toegevoegd
+* Diverse bugs opgelost

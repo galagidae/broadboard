@@ -7,7 +7,7 @@ Recursos:
 * Tamanhos de teclado ajustáveis, até extra grande
 * Feedback tátil opcional
 * Compatível com leitores de tela
-* Layouts para inglês (Reino Unido e EUA), francês, alemão, grego, italiano, português (Brasil e Portugal), russo e espanhol (América Latina e Espanha) — mais idiomas em breve
+* Compatível com vários idiomas e layouts
 
 Privacidade:
 

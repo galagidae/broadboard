@@ -1,0 +1,22 @@
+BroadBoard ialah papan kekunci pada skrin (IME) yang direka untuk orang yang berpenglihatan rendah. Daripada mengecilkan kekunci supaya semuanya muat pada skrin serentak, BroadBoard mengekalkan setiap kekunci besar dan mudah dibaca — anda hanya perlu menggeser papan kekunci untuk mencapai kekunci yang diperlukan, jadi tiada kekunci yang perlu menjadi kecil.
+
+Ciri-ciri:
+
+* Papan kekunci besar yang boleh digeser, dengan kekunci bersaiz ekstra dan berkontras tinggi
+* Berbilang tema warna, termasuk pilihan ekstra gelap dan kebolehlihatan tinggi
+* Saiz papan kekunci boleh laras, sehingga ekstra besar
+* Maklum balas getaran pilihan
+* Mesra pembaca skrin
+* Menyokong pelbagai bahasa dan susun atur
+
+Privasi:
+
+BroadBoard tidak mengumpul sebarang data. Ia tiada kebenaran internet, tiada analitik, tiada iklan dan tiada komponen pihak ketiga. Apa sahaja yang anda taip tidak sekali-kali meninggalkan peranti anda.
+
+Selepas dipasang, BroadBoard perlu didayakan dan dipilih sebagai kaedah input anda:
+
+1. Pergi ke **Tetapan → Sistem → Bahasa & input → Papan kekunci pada skrin → Urus papan kekunci**
+2. Dayakan **BroadBoard**
+3. Tukar kepadanya melalui pemilih papan kekunci (ketik ikon papan kekunci pada bar navigasi, atau tekan lama bar ruang dalam kebanyakan aplikasi).
+
+Sebagai alternatif, melancarkan BroadBoard daripada laci aplikasi menyediakan pautan berpandu ke skrin tetapan yang betul dan ke pemilih papan kekunci.

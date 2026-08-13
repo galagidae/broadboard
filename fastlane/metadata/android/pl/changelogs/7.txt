@@ -1,0 +1,2 @@
+* Dodano nowe języki
+* Poprawiono różne błędy

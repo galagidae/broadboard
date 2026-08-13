@@ -1,0 +1,22 @@
+BroadBoard is een schermtoetsenbord (IME) dat is ontworpen voor mensen met een visuele beperking. In plaats van de toetsen te verkleinen zodat alles tegelijk op het scherm past, houdt BroadBoard elke toets groot en goed leesbaar — je verschuift het toetsenbord gewoon om bij de toetsen te komen die je nodig hebt, zodat geen enkele toets ooit klein hoeft te zijn.
+
+Functies:
+
+* Groot, scrollbaar toetsenbord met extra grote toetsen met hoog contrast
+* Meerdere kleurthema's, waaronder extra donkere en extra goed zichtbare opties
+* Instelbare toetsenbordformaten, tot extra groot
+* Optionele haptische feedback
+* Geschikt voor schermlezers
+* Ondersteuning voor meerdere talen en indelingen
+
+Privacy:
+
+BroadBoard verzamelt geen gegevens. De app heeft geen internettoestemming, geen analyses, geen advertenties en geen componenten van derden. Niets van wat je typt verlaat ooit je apparaat.
+
+Na de installatie moet BroadBoard worden ingeschakeld en als invoermethode worden geselecteerd:
+
+1. Ga naar **Instellingen → Systeem → Talen en invoer → Schermtoetsenbord → Toetsenborden beheren**
+2. Schakel **BroadBoard** in
+3. Schakel over via de toetsenbordkiezer (tik op het toetsenbordpictogram in de navigatiebalk of houd in de meeste apps de spatiebalk ingedrukt).
+
+Je kunt BroadBoard ook vanuit het app-overzicht starten; daar vind je begeleide links naar het juiste instellingenscherm en naar de toetsenbordkiezer.

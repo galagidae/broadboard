@@ -1,0 +1,2 @@
+* Menambahkan bahasa baru
+* Memperbaiki berbagai bug
