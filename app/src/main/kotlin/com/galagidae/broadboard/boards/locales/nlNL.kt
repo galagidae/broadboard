@@ -18,6 +18,7 @@
 package com.galagidae.broadboard.boards.locales
 import androidx.compose.runtime.*
 import com.galagidae.broadboard.*
+import com.galagidae.broadboard.boards.characters.*
 
 val nlNL: List<List<Key>> = listOf(
     listOf(

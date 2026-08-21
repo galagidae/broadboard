@@ -16,8 +16,9 @@
 *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-package com.galagidae.broadboard.boards.locales
+package com.galagidae.broadboard.boards.characters
 
+import com.galagidae.broadboard.*
 import com.galagidae.broadboard.Character
 
 val cyrAKey = Character(          // а
@@ -198,4 +199,30 @@ val cyrYuKey = Character(         // ю
 val cyrYaKey = Character(         // я
     primary = 'я',
     secondary = 'Я',
+)
+
+val yoAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ё',
+            ),
+            secondary = Symbol(
+                character = 'Ё',
+            )
+        )
+    )
+)
+
+val softSignAlternates: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(
+                character = 'ъ',
+            ),
+            secondary = Symbol(
+                character = 'Ъ',
+            )
+        )
+    )
 )

@@ -16,7 +16,7 @@
 *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-package com.galagidae.broadboard.boards.locales
+package com.galagidae.broadboard.boards.characters
 
 import com.galagidae.broadboard.*
 

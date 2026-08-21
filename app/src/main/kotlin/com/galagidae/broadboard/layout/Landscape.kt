@@ -139,6 +139,7 @@ fun LandscapeLayout(
                                 BoardMode.SYMBOLS -> SymbolsBoard(
                                     onKey = { c -> onInput?.invoke(c.toString()) },
                                     shiftMode = shiftMode,
+                                    currentLocale = currentLocale,
                                     onChangeMode = onChangeMode
                                 )
                                 BoardMode.EMOJIS -> EmojisBoard(

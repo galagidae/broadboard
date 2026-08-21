@@ -26,6 +26,7 @@ import androidx.compose.ui.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.icons.*
+import com.galagidae.broadboard.boards.characters.*
 import com.galagidae.broadboard.boards.keys.*
 import com.galagidae.broadboard.utils.*
 

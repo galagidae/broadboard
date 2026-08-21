@@ -21,6 +21,7 @@ package com.galagidae.broadboard.boards.locales
 import androidx.compose.runtime.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
+import com.galagidae.broadboard.boards.characters.*
 
 val es419: List<List<Key>> = listOf(
     listOf(

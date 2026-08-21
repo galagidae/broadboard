@@ -20,13 +20,7 @@ package com.galagidae.broadboard.boards.locales
 
 import androidx.compose.runtime.*
 import com.galagidae.broadboard.*
-
-// Standard ЙЦУКЕН layout, all 33 letters.
-//
-// ё lives on the backtick key on a physical keyboard, so it's placed
-// at the far left of the top row here. ъ sits after х at the end of
-// row 1, as on a physical keyboard. Both are usually dropped (or
-// long-press alternates) on mobile ЙЦУКЕН layouts.
+import com.galagidae.broadboard.boards.characters.*
 
 val ruRU: List<List<Key>> = listOf(
     listOf(
