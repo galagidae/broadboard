@@ -253,6 +253,7 @@ class BroadBoardService : InputMethodService(),
                 "pt-PT" -> "pt-PT"
                 else -> "pt-BR"
             }
+            "ro" -> "ro"
             "ru" -> "ru"
             "tr" -> "tr"
             "uk" -> "uk"

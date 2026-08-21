@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Tastatură cu litere</string>
+    <string name="key_alternate">Introducere caractere alternative</string>
+    <string name="key_back">Înapoi</string>
+    <string name="key_delete">Ștergere</string>
+    <string name="key_emojis_happy">Emoji veseli</string>
+    <string name="key_emojis_sad">Emoji triști</string>
+    <string name="key_emojis">Tastatură cu emoji</string>
+    <string name="key_menu">Meniu</string>
+    <string name="key_numeric">Tastatură numerică</string>
+    <string name="key_picker">Schimbare tastatură</string>
+    <string name="key_preferences">Preferințe</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Activare Caps Lock</string>
+    <string name="key_shift_disable">Dezactivare Caps Lock</string>
+    <string name="key_space">Spațiu</string>
+    <string name="key_space_long">Deschidere meniu</string>
+    <string name="key_symbols">Tastatură cu simboluri</string>
+    <string name="key_symbols_shift">Simboluri</string>
+    <string name="key_symbols_more">Mai multe simboluri</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Și comercial</string>
+    <string name="sym_asterisk">Asterisc</string>
+    <string name="sym_atsign">Arond</string>
+    <string name="sym_backslash">Bară oblică inversă</string>
+    <string name="sym_braceleft">Acoladă deschisă</string>
+    <string name="sym_braceright">Acoladă închisă</string>
+    <string name="sym_bracketleft">Paranteză dreaptă deschisă</string>
+    <string name="sym_bracketright">Paranteză dreaptă închisă</string>
+    <string name="sym_bullet">Bulină</string>
+    <string name="sym_caret">Circumflex</string>
+    <string name="sym_cent">Simbol cent</string>
+    <string name="sym_checkmark">Bifă</string>
+    <string name="sym_colon">Două puncte</string>
+    <string name="sym_copyright">Simbol copyright</string>
+    <string name="sym_dash">Cratimă</string>
+    <string name="sym_degree">Simbol grad</string>
+    <string name="sym_diaeresis">Tremă</string>
+    <string name="sym_division">Simbol împărțire</string>
+    <string name="sym_dollarsign">Dolar</string>
+    <string name="sym_ellipsis">Puncte de suspensie</string>
+    <string name="sym_emdash">Linie de pauză lungă</string>
+    <string name="sym_endash">Linie de pauză</string>
+    <string name="sym_equals">Egal</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Semnul exclamării</string>
+    <string name="sym_exclamationinverted">Semnul exclamării inversat</string>
+    <string name="sym_graveaccent">Accent grav</string>
+    <string name="sym_greaterthan">Semnul mai mare</string>
+    <string name="sym_hashtag">Diez</string>
+    <string name="sym_hryvnia">Grivnă</string>
+    <string name="sym_infinity">Infinit</string>
+    <string name="sym_lessthan">Semnul mai mic</string>
+    <string name="sym_lira">Liră turcească</string>
+    <string name="sym_middledot">Punct median</string>
+    <string name="sym_multiplication">Simbol înmulțire</string>
+    <string name="sym_numero">Simbol număr</string>
+    <string name="sym_paragraph">Semn de paragraf</string>
+    <string name="sym_parenleft">Paranteză rotundă deschisă</string>
+    <string name="sym_parenright">Paranteză rotundă închisă</string>
+    <string name="sym_percent">Procent</string>
+    <string name="sym_pi">Pi</string>
+    <string name="sym_pipe">Bară verticală</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Liră sterlină</string>
+    <string name="sym_question">Semnul întrebării</string>
+    <string name="sym_questioninverted">Semnul întrebării inversat</string>
+    <string name="sym_quotedouble">Ghilimele</string>
+    <string name="sym_quotesingle">Apostrof</string>
+    <string name="sym_registered">Simbol marcă înregistrată</string>
+    <string name="sym_ruble">Rublă</string>
+    <string name="sym_section">Semn de secțiune</string>
+    <string name="sym_semicolon">Punct și virgulă</string>
+    <string name="sym_slash">Bară oblică</string>
+    <string name="sym_squareroot">Radical</string>
+    <string name="sym_tilde">Tildă</string>
+    <string name="sym_trademark">Simbol marcă comercială</string>
+    <string name="sym_underscore">Liniuță de subliniere</string>
+    <string name="sym_yen">Yen</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A, cu accent ascuțit</string>
+    <string name="char_a_acute_cap">Majuscula A, cu accent ascuțit</string>
+    <string name="char_a_ash">Ligatura A, E</string>
+    <string name="char_a_ash_cap">Ligatura majusculă A, E</string>
+    <string name="char_a_circumflex">A, cu accent circumflex</string>
+    <string name="char_a_circumflex_cap">Majuscula A, cu accent circumflex</string>
+    <string name="char_a_diaeresis">A, cu două puncte</string>
+    <string name="char_a_diaeresis_cap">Majuscula A, cu două puncte</string>
+    <string name="char_a_grave">A, cu accent grav</string>
+    <string name="char_a_grave_cap">Majuscula A, cu accent grav</string>
+    <string name="char_a_macron">A, cu macron</string>
+    <string name="char_a_macron_cap">Majuscula A, cu macron</string>
+    <string name="char_a_ogonek">A, cu ogonek</string>
+    <string name="char_a_ogonek_cap">Majuscula A, cu ogonek</string>
+    <string name="char_a_ordinal">A ridicat</string>
+    <string name="char_a_overring">A, cu cerc deasupra</string>
+    <string name="char_a_overring_cap">Majuscula A, cu cerc deasupra</string>
+    <string name="char_a_tilde">A, cu tildă</string>
+    <string name="char_a_tilde_cap">Majuscula A, cu tildă</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E, cu accent ascuțit</string>
+    <string name="char_e_acute_cap">Majuscula E, cu accent ascuțit</string>
+    <string name="char_e_circumflex">E, cu accent circumflex</string>
+    <string name="char_e_circumflex_cap">Majuscula E, cu accent circumflex</string>
+    <string name="char_e_diaeresis">E, cu două puncte</string>
+    <string name="char_e_diaeresis_cap">Majuscula E, cu două puncte</string>
+    <string name="char_e_grave">E, cu accent grav</string>
+    <string name="char_e_grave_cap">Majuscula E, cu accent grav</string>
+    <string name="char_e_macron">E, cu macron</string>
+    <string name="char_e_macron_cap">Majuscula E, cu macron</string>
+    <string name="char_e_ogonek">E, cu ogonek</string>
+    <string name="char_e_ogonek_cap">Majuscula E, cu ogonek</string>
+    <string name="char_e_overdot">E, cu punct deasupra</string>
+    <string name="char_e_overdot_cap">Majuscula E, cu punct deasupra</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I, cu accent ascuțit</string>
+    <string name="char_i_acute_cap">Majuscula I, cu accent ascuțit</string>
+    <string name="char_i_circumflex">I, cu accent circumflex</string>
+    <string name="char_i_circumflex_cap">Majuscula I, cu accent circumflex</string>
+    <string name="char_i_diaeresis">I, cu două puncte</string>
+    <string name="char_i_diaeresis_cap">Majuscula I, cu două puncte</string>
+    <string name="char_i_grave">I, cu accent grav</string>
+    <string name="char_i_grave_cap">Majuscula I, cu accent grav</string>
+    <string name="char_i_macron">I, cu macron</string>
+    <string name="char_i_macron_cap">Majuscula I, cu macron</string>
+    <string name="char_i_ogonek">I, cu ogonek</string>
+    <string name="char_i_ogonek_cap">Majuscula I, cu ogonek</string>
+    <string name="char_ij_ligature">Ligatura I, J</string>
+    <string name="char_ij_ligature_cap">Ligatura majusculă I, J</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O, cu accent ascuțit</string>
+    <string name="char_o_acute_cap">Majuscula O, cu accent ascuțit</string>
+    <string name="char_o_circumflex">O, cu accent circumflex</string>
+    <string name="char_o_circumflex_cap">Majuscula O, cu accent circumflex</string>
+    <string name="char_o_diaeresis">O, cu două puncte</string>
+    <string name="char_o_diaeresis_cap">Majuscula O, cu două puncte</string>
+    <string name="char_o_grave">O, cu accent grav</string>
+    <string name="char_o_grave_cap">Majuscula O, cu accent grav</string>
+    <string name="char_o_macron">O, cu macron</string>
+    <string name="char_o_macron_cap">Majuscula O, cu macron</string>
+    <string name="char_o_oe">Ligatura O, E</string>
+    <string name="char_o_oe_cap">Ligatura majusculă O, E</string>
+    <string name="char_o_ordinal">O ridicat</string>
+    <string name="char_o_stroke">O, cu bară</string>
+    <string name="char_o_stroke_cap">Majuscula O, cu bară</string>
+    <string name="char_o_tilde">O, cu tildă</string>
+    <string name="char_o_tilde_cap">Majuscula O, cu tildă</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U, cu accent ascuțit</string>
+    <string name="char_u_acute_cap">Majuscula U, cu accent ascuțit</string>
+    <string name="char_u_circumflex">U, cu accent circumflex</string>
+    <string name="char_u_circumflex_cap">Majuscula U, cu accent circumflex</string>
+    <string name="char_u_diaeresis">U, cu două puncte</string>
+    <string name="char_u_diaeresis_cap">Majuscula U, cu două puncte</string>
+    <string name="char_u_grave">U, cu accent grav</string>
+    <string name="char_u_grave_cap">Majuscula U, cu accent grav</string>
+    <string name="char_u_macron">U, cu macron</string>
+    <string name="char_u_macron_cap">Majuscula U, cu macron</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C, cu accent ascuțit</string>
+    <string name="char_c_acute_cap">Majuscula C, cu accent ascuțit</string>
+    <string name="char_c_caron">C, cu caron</string>
+    <string name="char_c_caron_cap">Majuscula C, cu caron</string>
+    <string name="char_c_cedilla">C, cu sedilă</string>
+    <string name="char_c_cedilla_cap">Majuscula C, cu sedilă</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N, cu accent ascuțit</string>
+    <string name="char_n_acute_cap">Majuscula N, cu accent ascuțit</string>
+    <string name="char_n_tilde">N, cu tildă</string>
+    <string name="char_n_tilde_cap">Majuscula N, cu tildă</string>
+    <string name="char_n_caron">N, cu caron</string>
+    <string name="char_n_caron_cap">Majuscula N, cu caron</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S, cu accent ascuțit</string>
+    <string name="char_s_acute_cap">Majuscula S, cu accent ascuțit</string>
+    <string name="char_s_caron">S, cu caron</string>
+    <string name="char_s_caron_cap">Majuscula S, cu caron</string>
+    <string name="char_s_sharp">S ascuțit</string>
+    <string name="char_s_sharp_cap">Majuscula S ascuțit</string>
+    <string name="char_s_cedilla">S, cu sedilă</string>
+    <string name="char_s_cedilla_cap">Majuscula S, cu sedilă</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alfa, cu tonos</string>
+    <string name="char_alpha_tonos_cap">Majuscula alfa, cu tonos</string>
+    <string name="char_epsilon_tonos">Epsilon, cu tonos</string>
+    <string name="char_epsilon_tonos_cap">Majuscula epsilon, cu tonos</string>
+    <string name="char_eta_tonos">Eta, cu tonos</string>
+    <string name="char_eta_tonos_cap">Majuscula eta, cu tonos</string>
+    <string name="char_iota_tonos">Iota, cu tonos</string>
+    <string name="char_iota_tonos_cap">Majuscula iota, cu tonos</string>
+    <string name="char_iota_dialytika">Iota, cu dialitika</string>
+    <string name="char_iota_dialytika_cap">Majuscula iota, cu dialitika</string>
+    <string name="char_iota_dialytika_tonos">Iota, cu dialitika și tonos</string>
+    <string name="char_omega_tonos">Omega, cu tonos</string>
+    <string name="char_omega_tonos_cap">Majuscula omega, cu tonos</string>
+    <string name="char_omicron_tonos">Omicron, cu tonos</string>
+    <string name="char_omicron_tonos_cap">Majuscula omicron, cu tonos</string>
+    <string name="char_upsilon_tonos">Ipsilon, cu tonos</string>
+    <string name="char_upsilon_tonos_cap">Majuscula ipsilon, cu tonos</string>
+    <string name="char_upsilon_dialytika">Ipsilon, cu dialitika</string>
+    <string name="char_upsilon_dialytika_cap">Majuscula ipsilon, cu dialitika</string>
+    <string name="char_upsilon_dialytika_tonos">Ipsilon, cu dialitika și tonos</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Gata</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Accesare</string>
+    <string name="action_next">Următorul</string>
+    <string name="action_previous">Anteriorul</string>
+    <string name="action_search">Căutare</string>
+    <string name="action_send">Trimitere</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Preferințe</string>
+    <string name="pref_back">Înapoi</string>
+    <string name="pref_size">Dimensiune</string>
+    <string name="pref_size_small">Mică</string>
+    <string name="pref_size_medium">Medie</string>
+    <string name="pref_size_large">Mare</string>
+    <string name="pref_size_extra_large">Foarte mare</string>
+    <string name="pref_color">Culoare</string>
+    <string name="pref_color_light">Luminoasă</string>
+    <string name="pref_color_dark">Închisă</string>
+    <string name="pref_color_extradark">Foarte închisă</string>
+    <string name="pref_color_yellowblack">Galben pe negru</string>
+    <string name="pref_color_blackyellow">Negru pe galben</string>
+    <string name="pref_color_yellowblue">Galben pe albastru</string>
+    <string name="pref_color_blueyellow">Albastru pe galben</string>
+    <string name="pref_menu_option">Selectarea modului</string>
+    <string name="pref_menu_bar">Bară de meniu</string>
+    <string name="pref_menu_space">Apăsare lungă pe bara de spațiu</string>
+    <string name="pref_menu_both">Ambele</string>
+    <string name="pref_natural_layout">Aranjament natural</string>
+    <string name="pref_natural_layout_sub">Folosiți spațierea naturală a tastaturii</string>
+    <string name="pref_highlights">Evidențieri colorate</string>
+    <string name="pref_highlights_sub">Adaugă evidențieri colorate tastelor speciale</string>
+    <string name="pref_banner_enable_1">Atingeți pentru activare</string>
+    <string name="pref_banner_enable_2">BroadBoard trebuie activat din Setări</string>
+    <string name="pref_banner_use_1">Atingeți pentru utilizare</string>
+    <string name="pref_banner_use_2">BroadBoard este gata — setați-l ca tastatură implicită</string>
+    <string name="pref_vibrate">Vibrare</string>
+    <string name="pref_vibrate_sub">Vibrare la apăsarea tastelor</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Se afișează tastatura cu litere</string>
+    <string name="mode_change_emojis">Se afișează tastatura cu emoji</string>
+    <string name="mode_change_menu">Se afișează meniul</string>
+    <string name="mode_change_numeric">Se afișează tastatura numerică</string>
+    <string name="mode_change_symbols">Se afișează tastatura cu simboluri</string>
+    <string name="shift_change_off">Shift dezactivat</string>
+    <string name="shift_change_on">Shift activat</string>
+    <string name="shift_change_caps">Caps Lock activat</string>
+
+</resources>

@@ -225,4 +225,11 @@
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="true" />
 
+    <!-- Romanian -->
+    <subtype
+        android:imeSubtypeLocale="ro"
+        android:languageTag="ro"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
 </input-method>
