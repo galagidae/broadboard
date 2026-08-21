@@ -20,6 +20,25 @@ package com.galagidae.broadboard.boards.characters
 
 import com.galagidae.broadboard.*
 
+val lAlternatesPL: List<List<SymbolSet>> = listOf(
+    listOf(
+        SymbolSet(
+            primary = Symbol(character = 'ł'),
+            secondary = Symbol(character = 'Ł')
+        ),
+        SymbolSet(
+            primary = Symbol(character = 'ĺ'),
+            secondary = Symbol(character = 'Ĺ')
+        )
+    ),
+    listOf(
+        SymbolSet(
+            primary = Symbol(character = 'ľ'),
+            secondary = Symbol(character = 'Ľ')
+        )
+    )
+)
+
 val zAlternatesPL: List<List<SymbolSet>> = listOf(
     listOf(
         SymbolSet(
