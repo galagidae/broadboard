@@ -165,6 +165,11 @@ val hashtag = Symbol(
     description = R.string.sym_hashtag
 )
 
+val hryvnia = Symbol(
+    character = '₴',
+    description = R.string.sym_hryvnia
+)
+
 val infinity = Symbol(
     character = '∞',
     description = R.string.sym_infinity
