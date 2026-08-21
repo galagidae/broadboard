@@ -46,6 +46,7 @@ fun SymbolsBoard(
         verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
     ) {
         val r =  when(currentLocale.value) {
+            "ru" -> ruSymbolsTwoRow to ruSymbolsThreeRow
             else -> defaultSymbolsTwoRow to defaultSymbolsThreeRow
         }
         val rows = if (sizes.rowCount > 2) r.second else r.first

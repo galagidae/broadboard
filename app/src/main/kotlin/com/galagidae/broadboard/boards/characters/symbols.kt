@@ -255,6 +255,11 @@ val registered = Symbol(
     description = R.string.sym_registered
 )
 
+val ruble = Symbol(
+    character = '₽',
+    description = R.string.sym_ruble
+)
+
 val section = Symbol(
     character = '§',
     description = R.string.sym_section
