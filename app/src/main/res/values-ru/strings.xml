@@ -56,6 +56,7 @@
     <string name="sym_hryvnia">Гривна</string>
     <string name="sym_infinity">Бесконечность</string>
     <string name="sym_lessthan">Знак меньше</string>
+    <string name="sym_lira">Турецкая лира</string>
     <string name="sym_middledot">Средняя точка</string>
     <string name="sym_multiplication">Знак умножения</string>
     <string name="sym_numero">Знак номера</string>

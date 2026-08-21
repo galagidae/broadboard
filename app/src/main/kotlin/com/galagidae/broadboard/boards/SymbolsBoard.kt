@@ -47,6 +47,7 @@ fun SymbolsBoard(
     ) {
         val r =  when(currentLocale.value) {
             "ru" -> ruSymbolsTwoRow to ruSymbolsThreeRow
+            "tr" -> trSymbolsTwoRow to trSymbolsThreeRow
             "uk" -> ukSymbolsTwoRow to ukSymbolsThreeRow
             else -> defaultSymbolsTwoRow to defaultSymbolsThreeRow
         }

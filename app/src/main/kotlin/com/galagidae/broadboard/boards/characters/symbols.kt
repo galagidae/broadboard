@@ -180,6 +180,11 @@ val lessThan = Symbol(
     description = R.string.sym_lessthan
 )
 
+val lira = Symbol(
+    character = '₺',
+    description = R.string.sym_lira
+)
+
 val middleDot = Symbol(
     character = '·',
     description = R.string.sym_middledot
