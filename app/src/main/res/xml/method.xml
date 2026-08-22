@@ -232,4 +232,11 @@
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="true" />
 
+    <!-- Czech -->
+    <subtype
+        android:imeSubtypeLocale="cs"
+        android:languageTag="cs"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
 </input-method>
