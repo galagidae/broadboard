@@ -256,6 +256,7 @@ class BroadBoardService : InputMethodService(),
             }
             "ro" -> "ro"
             "ru" -> "ru"
+            "sk" -> "sk"
             "tr" -> "tr"
             "uk" -> "uk"
             else -> languageTag

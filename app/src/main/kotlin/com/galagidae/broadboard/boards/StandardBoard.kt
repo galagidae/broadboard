@@ -107,6 +107,7 @@ fun StandardBoard(
                 "pt-PT" -> ptPT
                 "ro" -> roRO
                 "ru" -> ruRU
+                "sk" -> skSK
                 "tr" -> trTR
                 "uk" -> ukUA
                 else -> enUS

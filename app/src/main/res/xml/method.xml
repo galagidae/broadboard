@@ -239,4 +239,11 @@
         android:imeSubtypeMode="keyboard"
         android:isAsciiCapable="true" />
 
+    <!-- Slovak -->
+    <subtype
+        android:imeSubtypeLocale="sk"
+        android:languageTag="sk"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true" />
+
 </input-method>

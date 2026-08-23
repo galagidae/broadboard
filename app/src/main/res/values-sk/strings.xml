@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">BroadBoard</string>
+    <string name="ime_name">BroadBoard</string>
+
+    <!-- Keys -->
+    <string name="key_alpha">Písmenová klávesnica</string>
+    <string name="key_alternate">Zadať alternatívne znaky</string>
+    <string name="key_back">Prejsť späť</string>
+    <string name="key_delete">Vymazať</string>
+    <string name="key_emojis_happy">Veselé emodži</string>
+    <string name="key_emojis_sad">Smutné emodži</string>
+    <string name="key_emojis">Klávesnica s emodži</string>
+    <string name="key_menu">Ponuka</string>
+    <string name="key_numeric">Číselná klávesnica</string>
+    <string name="key_picker">Zmeniť klávesnicu</string>
+    <string name="key_preferences">Nastavenia</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_shift_enable">Zapnúť Caps Lock</string>
+    <string name="key_shift_disable">Vypnúť Caps Lock</string>
+    <string name="key_space">Medzerník</string>
+    <string name="key_space_long">Otvoriť ponuku</string>
+    <string name="key_symbols">Klávesnica so symbolmi</string>
+    <string name="key_symbols_shift">Symboly</string>
+    <string name="key_symbols_more">Ďalšie symboly</string>
+
+    <!-- Symbols -->
+    <string name="sym_ampersand">Ampersand</string>
+    <string name="sym_asterisk">Hviezdička</string>
+    <string name="sym_atsign">Zavináč</string>
+    <string name="sym_backslash">Spätná lomka</string>
+    <string name="sym_braceleft">Otvorená zložená zátvorka</string>
+    <string name="sym_braceright">Zatvorená zložená zátvorka</string>
+    <string name="sym_bracketleft">Otvorená hranatá zátvorka</string>
+    <string name="sym_bracketright">Zatvorená hranatá zátvorka</string>
+    <string name="sym_bullet">Odrážka</string>
+    <string name="sym_caret">Strieška</string>
+    <string name="sym_cent">Cent</string>
+    <string name="sym_checkmark">Začiarknutie</string>
+    <string name="sym_colon">Dvojbodka</string>
+    <string name="sym_copyright">Symbol autorských práv</string>
+    <string name="sym_dash">Spojovník</string>
+    <string name="sym_degree">Stupeň</string>
+    <string name="sym_diaeresis">Dve bodky</string>
+    <string name="sym_division">Znak delenia</string>
+    <string name="sym_dollarsign">Dolár</string>
+    <string name="sym_ellipsis">Tri bodky</string>
+    <string name="sym_emdash">Dlhá pomlčka</string>
+    <string name="sym_endash">Pomlčka</string>
+    <string name="sym_equals">Rovná sa</string>
+    <string name="sym_euro">Euro</string>
+    <string name="sym_exclamation">Výkričník</string>
+    <string name="sym_exclamationinverted">Obrátený výkričník</string>
+    <string name="sym_graveaccent">Tupý prízvuk</string>
+    <string name="sym_greaterthan">Znak väčšie ako</string>
+    <string name="sym_hashtag">Mriežka</string>
+    <string name="sym_hryvnia">Hrivna</string>
+    <string name="sym_infinity">Nekonečno</string>
+    <string name="sym_lessthan">Znak menšie ako</string>
+    <string name="sym_lira">Turecká líra</string>
+    <string name="sym_middledot">Stredová bodka</string>
+    <string name="sym_multiplication">Znak násobenia</string>
+    <string name="sym_numero">Znak čísla</string>
+    <string name="sym_paragraph">Znak odseku</string>
+    <string name="sym_parenleft">Otvorená okrúhla zátvorka</string>
+    <string name="sym_parenright">Zatvorená okrúhla zátvorka</string>
+    <string name="sym_percent">Percento</string>
+    <string name="sym_pi">Pí</string>
+    <string name="sym_pipe">Zvislá čiara</string>
+    <string name="sym_plus">Plus</string>
+    <string name="sym_poundsign">Libra</string>
+    <string name="sym_question">Otáznik</string>
+    <string name="sym_questioninverted">Obrátený otáznik</string>
+    <string name="sym_quotedouble">Úvodzovky</string>
+    <string name="sym_quotesingle">Apostrof</string>
+    <string name="sym_registered">Registrovaná ochranná známka</string>
+    <string name="sym_ruble">Rubeľ</string>
+    <string name="sym_section">Paragraf</string>
+    <string name="sym_semicolon">Bodkočiarka</string>
+    <string name="sym_slash">Lomka</string>
+    <string name="sym_squareroot">Odmocnina</string>
+    <string name="sym_tilde">Vlnovka</string>
+    <string name="sym_trademark">Znak ochrannej známky</string>
+    <string name="sym_underscore">Podčiarkovník</string>
+    <string name="sym_yen">Jen</string>
+
+
+    <!-- Diacritics & ligatures -->
+    <!-- A -->
+    <string name="char_a_acute">A, s dĺžňom</string>
+    <string name="char_a_acute_cap">Veľké A, s dĺžňom</string>
+    <string name="char_a_ash">Ligatúra A, E</string>
+    <string name="char_a_ash_cap">Veľká ligatúra A, E</string>
+    <string name="char_a_circumflex">A, s vokáňom</string>
+    <string name="char_a_circumflex_cap">Veľké A, s vokáňom</string>
+    <string name="char_a_diaeresis">A, s dvoma bodkami</string>
+    <string name="char_a_diaeresis_cap">Veľké A, s dvoma bodkami</string>
+    <string name="char_a_grave">A, s tupým prízvukom</string>
+    <string name="char_a_grave_cap">Veľké A, s tupým prízvukom</string>
+    <string name="char_a_macron">A, s makrónom</string>
+    <string name="char_a_macron_cap">Veľké A, s makrónom</string>
+    <string name="char_a_ogonek">A, s ogonkom</string>
+    <string name="char_a_ogonek_cap">Veľké A, s ogonkom</string>
+    <string name="char_a_ordinal">Zvýšené A</string>
+    <string name="char_a_overring">A, s krúžkom</string>
+    <string name="char_a_overring_cap">Veľké A, s krúžkom</string>
+    <string name="char_a_tilde">A, s vlnovkou</string>
+    <string name="char_a_tilde_cap">Veľké A, s vlnovkou</string>
+
+    <!-- E -->
+    <string name="char_e_acute">E, s dĺžňom</string>
+    <string name="char_e_acute_cap">Veľké E, s dĺžňom</string>
+    <string name="char_e_circumflex">E, s vokáňom</string>
+    <string name="char_e_circumflex_cap">Veľké E, s vokáňom</string>
+    <string name="char_e_diaeresis">E, s dvoma bodkami</string>
+    <string name="char_e_diaeresis_cap">Veľké E, s dvoma bodkami</string>
+    <string name="char_e_grave">E, s tupým prízvukom</string>
+    <string name="char_e_grave_cap">Veľké E, s tupým prízvukom</string>
+    <string name="char_e_macron">E, s makrónom</string>
+    <string name="char_e_macron_cap">Veľké E, s makrónom</string>
+    <string name="char_e_ogonek">E, s ogonkom</string>
+    <string name="char_e_ogonek_cap">Veľké E, s ogonkom</string>
+    <string name="char_e_overdot">E, s bodkou navrchu</string>
+    <string name="char_e_overdot_cap">Veľké E, s bodkou navrchu</string>
+
+    <!-- i -->
+    <string name="char_i_acute">I, s dĺžňom</string>
+    <string name="char_i_acute_cap">Veľké I, s dĺžňom</string>
+    <string name="char_i_circumflex">I, s vokáňom</string>
+    <string name="char_i_circumflex_cap">Veľké I, s vokáňom</string>
+    <string name="char_i_diaeresis">I, s dvoma bodkami</string>
+    <string name="char_i_diaeresis_cap">Veľké I, s dvoma bodkami</string>
+    <string name="char_i_grave">I, s tupým prízvukom</string>
+    <string name="char_i_grave_cap">Veľké I, s tupým prízvukom</string>
+    <string name="char_i_macron">I, s makrónom</string>
+    <string name="char_i_macron_cap">Veľké I, s makrónom</string>
+    <string name="char_i_ogonek">I, s ogonkom</string>
+    <string name="char_i_ogonek_cap">Veľké I, s ogonkom</string>
+    <string name="char_ij_ligature">Ligatúra I, J</string>
+    <string name="char_ij_ligature_cap">Veľká ligatúra I, J</string>
+
+    <!-- o -->
+    <string name="char_o_acute">O, s dĺžňom</string>
+    <string name="char_o_acute_cap">Veľké O, s dĺžňom</string>
+    <string name="char_o_circumflex">O, s vokáňom</string>
+    <string name="char_o_circumflex_cap">Veľké O, s vokáňom</string>
+    <string name="char_o_diaeresis">O, s dvoma bodkami</string>
+    <string name="char_o_diaeresis_cap">Veľké O, s dvoma bodkami</string>
+    <string name="char_o_grave">O, s tupým prízvukom</string>
+    <string name="char_o_grave_cap">Veľké O, s tupým prízvukom</string>
+    <string name="char_o_macron">O, s makrónom</string>
+    <string name="char_o_macron_cap">Veľké O, s makrónom</string>
+    <string name="char_o_oe">Ligatúra O, E</string>
+    <string name="char_o_oe_cap">Veľká ligatúra O, E</string>
+    <string name="char_o_ordinal">Zvýšené O</string>
+    <string name="char_o_stroke">O, s prečiarknutím</string>
+    <string name="char_o_stroke_cap">Veľké O, s prečiarknutím</string>
+    <string name="char_o_tilde">O, s vlnovkou</string>
+    <string name="char_o_tilde_cap">Veľké O, s vlnovkou</string>
+
+    <!-- u -->
+    <string name="char_u_acute">U, s dĺžňom</string>
+    <string name="char_u_acute_cap">Veľké U, s dĺžňom</string>
+    <string name="char_u_circumflex">U, s vokáňom</string>
+    <string name="char_u_circumflex_cap">Veľké U, s vokáňom</string>
+    <string name="char_u_diaeresis">U, s dvoma bodkami</string>
+    <string name="char_u_diaeresis_cap">Veľké U, s dvoma bodkami</string>
+    <string name="char_u_grave">U, s tupým prízvukom</string>
+    <string name="char_u_grave_cap">Veľké U, s tupým prízvukom</string>
+    <string name="char_u_macron">U, s makrónom</string>
+    <string name="char_u_macron_cap">Veľké U, s makrónom</string>
+
+    <!-- c -->
+    <string name="char_c_acute">C, s dĺžňom</string>
+    <string name="char_c_acute_cap">Veľké C, s dĺžňom</string>
+    <string name="char_c_caron">C, s mäkčeňom</string>
+    <string name="char_c_caron_cap">Veľké C, s mäkčeňom</string>
+    <string name="char_c_cedilla">C, s cedillou</string>
+    <string name="char_c_cedilla_cap">Veľké C, s cedillou</string>
+
+    <!-- n -->
+    <string name="char_n_acute">N, s dĺžňom</string>
+    <string name="char_n_acute_cap">Veľké N, s dĺžňom</string>
+    <string name="char_n_tilde">N, s vlnovkou</string>
+    <string name="char_n_tilde_cap">Veľké N, s vlnovkou</string>
+    <string name="char_n_caron">N, s mäkčeňom</string>
+    <string name="char_n_caron_cap">Veľké N, s mäkčeňom</string>
+
+    <!-- s -->
+    <string name="char_s_acute">S, s dĺžňom</string>
+    <string name="char_s_acute_cap">Veľké S, s dĺžňom</string>
+    <string name="char_s_caron">S, s mäkčeňom</string>
+    <string name="char_s_caron_cap">Veľké S, s mäkčeňom</string>
+    <string name="char_s_sharp">Ostré S</string>
+    <string name="char_s_sharp_cap">Veľké ostré S</string>
+    <string name="char_s_cedilla">S, s cedillou</string>
+    <string name="char_s_cedilla_cap">Veľké S, s cedillou</string>
+
+    <!-- Greek -->
+    <string name="char_alpha_tonos">Alfa, s tonosom</string>
+    <string name="char_alpha_tonos_cap">Veľká alfa, s tonosom</string>
+    <string name="char_epsilon_tonos">Epsilon, s tonosom</string>
+    <string name="char_epsilon_tonos_cap">Veľký epsilon, s tonosom</string>
+    <string name="char_eta_tonos">Éta, s tonosom</string>
+    <string name="char_eta_tonos_cap">Veľká éta, s tonosom</string>
+    <string name="char_iota_tonos">Jóta, s tonosom</string>
+    <string name="char_iota_tonos_cap">Veľká jóta, s tonosom</string>
+    <string name="char_iota_dialytika">Jóta, s dvoma bodkami</string>
+    <string name="char_iota_dialytika_cap">Veľká jóta, s dvoma bodkami</string>
+    <string name="char_iota_dialytika_tonos">Jóta, s dvoma bodkami a tonosom</string>
+    <string name="char_omega_tonos">Omega, s tonosom</string>
+    <string name="char_omega_tonos_cap">Veľká omega, s tonosom</string>
+    <string name="char_omicron_tonos">Omikrón, s tonosom</string>
+    <string name="char_omicron_tonos_cap">Veľký omikrón, s tonosom</string>
+    <string name="char_upsilon_tonos">Ypsilon, s tonosom</string>
+    <string name="char_upsilon_tonos_cap">Veľký ypsilon, s tonosom</string>
+    <string name="char_upsilon_dialytika">Ypsilon, s dvoma bodkami</string>
+    <string name="char_upsilon_dialytika_cap">Veľký ypsilon, s dvoma bodkami</string>
+    <string name="char_upsilon_dialytika_tonos">Ypsilon, s dvoma bodkami a tonosom</string>
+
+
+    <!-- Action keys -->
+    <string name="action_done">Hotovo</string>
+    <string name="action_enter">Enter</string>
+    <string name="action_go">Prejsť</string>
+    <string name="action_next">Ďalej</string>
+    <string name="action_previous">Predchádzajúce</string>
+    <string name="action_search">Hľadať</string>
+    <string name="action_send">Odoslať</string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Nastavenia</string>
+    <string name="pref_back">Späť</string>
+    <string name="pref_size">Veľkosť</string>
+    <string name="pref_size_small">Malá</string>
+    <string name="pref_size_medium">Stredná</string>
+    <string name="pref_size_large">Veľká</string>
+    <string name="pref_size_extra_large">Veľmi veľká</string>
+    <string name="pref_color">Farba</string>
+    <string name="pref_color_light">Svetlá</string>
+    <string name="pref_color_dark">Tmavá</string>
+    <string name="pref_color_extradark">Veľmi tmavá</string>
+    <string name="pref_color_yellowblack">Žltá na čiernej</string>
+    <string name="pref_color_blackyellow">Čierna na žltej</string>
+    <string name="pref_color_yellowblue">Žltá na modrej</string>
+    <string name="pref_color_blueyellow">Modrá na žltej</string>
+    <string name="pref_menu_option">Výber režimu</string>
+    <string name="pref_menu_bar">Panel ponuky</string>
+    <string name="pref_menu_space">Dlhé stlačenie medzerníka</string>
+    <string name="pref_menu_both">Oboje</string>
+    <string name="pref_natural_layout">Prirodzené rozloženie</string>
+    <string name="pref_natural_layout_sub">Použiť prirodzené rozostupy klávesov</string>
+    <string name="pref_highlights">Farebné zvýraznenie</string>
+    <string name="pref_highlights_sub">Farebne zvýrazniť špeciálne klávesy</string>
+    <string name="pref_banner_enable_1">Klepnutím zapnete</string>
+    <string name="pref_banner_enable_2">BroadBoard treba zapnúť v Nastaveniach</string>
+    <string name="pref_banner_use_1">Klepnutím použijete</string>
+    <string name="pref_banner_use_2">BroadBoard je pripravený — nastavte ho ako predvolenú klávesnicu</string>
+    <string name="pref_vibrate">Vibrovanie</string>
+    <string name="pref_vibrate_sub">Vibrovať pri stlačení klávesu</string>
+
+    <!-- Announcements -->
+    <string name="mode_change_alphanumeric">Zobrazuje sa písmenová klávesnica</string>
+    <string name="mode_change_emojis">Zobrazuje sa klávesnica s emodži</string>
+    <string name="mode_change_menu">Zobrazuje sa ponuka</string>
+    <string name="mode_change_numeric">Zobrazuje sa číselná klávesnica</string>
+    <string name="mode_change_symbols">Zobrazuje sa klávesnica so symbolmi</string>
+    <string name="shift_change_off">Shift vypnutý</string>
+    <string name="shift_change_on">Shift zapnutý</string>
+    <string name="shift_change_caps">Caps Lock zapnutý</string>
+
+</resources>
