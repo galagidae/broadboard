@@ -245,6 +245,7 @@ class BroadBoardService : InputMethodService(),
                 else -> "es-419"
             }
             "fr" -> "fr"
+            "hu" -> "hu"
             "id" -> "id"
             "it" -> "it"
             "ms" -> "ms"
