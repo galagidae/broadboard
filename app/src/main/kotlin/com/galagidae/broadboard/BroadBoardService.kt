@@ -20,8 +20,10 @@ package com.galagidae.broadboard
 
 import android.content.Context
 import android.inputmethodservice.InputMethodService
+import android.os.SystemClock
 import android.text.InputType
 import android.view.inputmethod.*
+import android.view.KeyEvent
 import android.view.View
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
@@ -100,6 +102,7 @@ class BroadBoardService : InputMethodService(),
                             inputContext = inputContext,
                             currentLocale = currentLocale,
                             onClickKeyboardPicker = ::showKeyboardPicker,
+                            onNavigate = ::navigate,
                             actionKey = actionKey
                         )
                     }
@@ -146,6 +149,40 @@ class BroadBoardService : InputMethodService(),
         val ic = getCurrentInputConnection() ?: return
         
         ic.commitText(text, 1)
+    }
+
+    fun isAtStart(ic: InputConnection): Boolean {
+        val before = ic.getTextBeforeCursor(1, 0)
+        return before.isNullOrEmpty()
+    }
+
+    fun isAtEnd(ic: InputConnection): Boolean {
+        val after = ic.getTextAfterCursor(1, 0)
+        return after.isNullOrEmpty()
+    }
+
+    private fun navigate(direction: NavigationDirection) {
+        val ic = getCurrentInputConnection() ?: return
+        
+        // If we're already at the beginning/end of a line, left/right can be interpreted as
+        // navigating to the previous/next screen element, so the IME will be dismissed
+        if (
+            (direction == NavigationDirection.LEFT && isAtStart(ic)) ||
+            (direction == NavigationDirection.RIGHT && isAtEnd(ic))
+        ) {
+            return
+        }
+
+        val key = when(direction) {
+            NavigationDirection.UP -> KeyEvent.KEYCODE_MOVE_HOME
+            NavigationDirection.DOWN -> KeyEvent.KEYCODE_MOVE_END
+            NavigationDirection.LEFT -> KeyEvent.KEYCODE_DPAD_LEFT
+            NavigationDirection.RIGHT -> KeyEvent.KEYCODE_DPAD_RIGHT
+        }
+
+        val downTime = SystemClock.uptimeMillis()
+        ic.sendKeyEvent(KeyEvent(downTime, downTime, KeyEvent.ACTION_DOWN, key, 0))
+        ic.sendKeyEvent(KeyEvent(downTime, SystemClock.uptimeMillis(), KeyEvent.ACTION_UP, key, 0))
     }
 
     private fun onBackspace() {

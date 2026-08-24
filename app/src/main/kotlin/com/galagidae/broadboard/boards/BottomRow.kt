@@ -56,15 +56,21 @@ fun BottomRow(
             .padding(horizontal = sizes.keySpacing, vertical = sizes.keySpacing),
         horizontalArrangement = Arrangement.spacedBy(sizes.keySpacing)
     ) {
-        ShiftKey(
-            modifier = Modifier
-                .weight(1f)
-                .fillMaxHeight(),
-            boardMode = boardMode,
-            shiftMode = shiftMode,
-            onClick = {onShift?.invoke(false)},
-            onLongClick = {onShift?.invoke(true)},            
-        )
+        when(boardMode) {
+            BoardMode.NAVIGATION -> MenuKey(
+                onClick = { onLongClickSpace?.invoke() },
+                modifier = Modifier.weight(1f)
+            )
+            else -> ShiftKey(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxHeight(),
+                boardMode = boardMode,
+                shiftMode = shiftMode,
+                onClick = {onShift?.invoke(false)},
+                onLongClick = {onShift?.invoke(true)},            
+            )
+        }
         if (!isAlternate) {
             IconKey(
                 modifier = Modifier

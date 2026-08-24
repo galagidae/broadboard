@@ -68,7 +68,7 @@ enum class InputContext {
 }
 
 enum class BoardMode {
-    ALPHANUMERIC, SYMBOLS, EMOJIS, NUMERIC, MENU
+    ALPHANUMERIC, SYMBOLS, EMOJIS, NUMERIC, MENU, NAVIGATION
 }
 
 enum class StandardActionType {
@@ -83,4 +83,8 @@ sealed interface ActionKey {
 
 enum class Orientation {
     LANDSCAPE, PORTRAIT
+}
+
+enum class NavigationDirection {
+    UP, DOWN, LEFT, RIGHT
 }

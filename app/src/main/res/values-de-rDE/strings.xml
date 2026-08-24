@@ -6,11 +6,16 @@
     <string name="key_alpha">Buchstabentastatur</string>
     <string name="key_alternate">Alternative Zeichen eingeben</string>
     <string name="key_back">Zurück</string>
+    <string name="key_cursor_end">Cursor an das Ende des Textes bewegen</string>
+    <string name="key_cursor_home">Cursor an den Anfang des Textes bewegen</string>
+    <string name="key_cursor_left">Cursor nach links bewegen</string>
+    <string name="key_cursor_right">Cursor nach rechts bewegen</string>
     <string name="key_delete">Löschen</string>
     <string name="key_emojis_happy">Fröhliche Emojis</string>
     <string name="key_emojis_sad">Traurige Emojis</string>
     <string name="key_emojis">Emoji-Tastatur</string>
     <string name="key_menu">Menü</string>
+    <string name="key_navigation">Cursor-Navigation</string>
     <string name="key_numeric">Zahlentastatur</string>
     <string name="key_picker">Tastatur wechseln</string>
     <string name="key_preferences">Einstellungen</string>

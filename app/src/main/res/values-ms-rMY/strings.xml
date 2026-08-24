@@ -7,11 +7,16 @@
     <string name="key_alpha">Papan kekunci huruf</string>
     <string name="key_alternate">Masukkan aksara alternatif</string>
     <string name="key_back">Kembali</string>
+    <string name="key_cursor_end">Alihkan kursor ke hujung teks</string>
+    <string name="key_cursor_home">Alihkan kursor ke awal teks</string>
+    <string name="key_cursor_left">Alihkan kursor ke kiri</string>
+    <string name="key_cursor_right">Alihkan kursor ke kanan</string>
     <string name="key_delete">Padam</string>
     <string name="key_emojis_happy">Emoji gembira</string>
     <string name="key_emojis_sad">Emoji sedih</string>
     <string name="key_emojis">Papan kekunci emoji</string>
     <string name="key_menu">Menu</string>
+    <string name="key_navigation">Navigasi kursor</string>
     <string name="key_numeric">Papan kekunci nombor</string>
     <string name="key_picker">Tukar papan kekunci</string>
     <string name="key_preferences">Keutamaan</string>

@@ -6,11 +6,16 @@
     <string name="key_alpha">Harf klavyesi</string>
     <string name="key_alternate">Alternatif karakterleri girin</string>
     <string name="key_back">Geri gidin</string>
+    <string name="key_cursor_end">İmleci metnin sonuna taşı</string>
+    <string name="key_cursor_home">İmleci metnin başına taşı</string>
+    <string name="key_cursor_left">İmleci sola taşı</string>
+    <string name="key_cursor_right">İmleci sağa taşı</string>
     <string name="key_delete">Sil</string>
     <string name="key_emojis_happy">Mutlu emojiler</string>
     <string name="key_emojis_sad">Üzgün emojiler</string>
     <string name="key_emojis">Emoji klavyesi</string>
     <string name="key_menu">Menü</string>
+    <string name="key_navigation">İmleç gezinmesi</string>
     <string name="key_numeric">Sayı klavyesi</string>
     <string name="key_picker">Klavyeyi değiştirin</string>
     <string name="key_preferences">Tercihler</string>

@@ -7,11 +7,16 @@
     <string name="key_alpha">Πληκτρολόγιο γραμμάτων</string>
     <string name="key_alternate">Εισαγωγή εναλλακτικών χαρακτήρων</string>
     <string name="key_back">Επιστροφή</string>
+    <string name="key_cursor_end">Μετακίνηση δρομέα στο τέλος του κειμένου</string>
+    <string name="key_cursor_home">Μετακίνηση δρομέα στην αρχή του κειμένου</string>
+    <string name="key_cursor_left">Μετακίνηση δρομέα προς τα αριστερά</string>
+    <string name="key_cursor_right">Μετακίνηση δρομέα προς τα δεξιά</string>
     <string name="key_delete">Διαγραφή</string>
     <string name="key_emojis_happy">Χαρούμενα emoji</string>
     <string name="key_emojis_sad">Λυπημένα emoji</string>
     <string name="key_emojis">Πληκτρολόγιο emoji</string>
     <string name="key_menu">Μενού</string>
+    <string name="key_navigation">Πλοήγηση με δρομέα</string>
     <string name="key_numeric">Πληκτρολόγιο αριθμών</string>
     <string name="key_picker">Αλλαγή πληκτρολογίου</string>
     <string name="key_preferences">Προτιμήσεις</string>

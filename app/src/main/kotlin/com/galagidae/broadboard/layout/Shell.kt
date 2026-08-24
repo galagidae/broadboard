@@ -38,6 +38,7 @@ fun Shell(
     autoShift: State<Boolean>,
     inputContext: State<InputContext>,
     onClickKeyboardPicker: (() -> Unit)? = null,
+    onNavigate: ((direction: NavigationDirection) -> Unit)? = null,
     actionKey: State<ActionKey>,
     modifier: Modifier = Modifier,
     currentLocale: State<String>
@@ -103,6 +104,7 @@ fun Shell(
             BoardMode.EMOJIS -> R.string.mode_change_emojis
             BoardMode.NUMERIC -> R.string.mode_change_numeric
             BoardMode.MENU -> R.string.mode_change_menu
+            BoardMode.NAVIGATION -> R.string.mode_change_navigation
             else -> R.string.mode_change_alphanumeric
         },
         key = boardMode
@@ -138,6 +140,7 @@ fun Shell(
                 onClickKeyboardPicker = onClickKeyboardPicker,
                 onEnter = onEnter,
                 onInput = ::onInputInner,
+                onNavigate = onNavigate,
                 onShift = ::onShift,
             )
             else -> PortraitLayout(
@@ -157,6 +160,7 @@ fun Shell(
                 onClickKeyboardPicker = onClickKeyboardPicker,
                 onEnter = onEnter,
                 onInput = ::onInputInner,
+                onNavigate = onNavigate,
                 onShift = ::onShift,
             )
         }

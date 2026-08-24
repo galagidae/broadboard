@@ -6,11 +6,16 @@
     <string name="key_alpha">Betűbillentyűzet</string>
     <string name="key_alternate">Alternatív karakterek beírása</string>
     <string name="key_back">Vissza</string>
+    <string name="key_cursor_end">Kurzor mozgatása a szöveg végére</string>
+    <string name="key_cursor_home">Kurzor mozgatása a szöveg elejére</string>
+    <string name="key_cursor_left">Kurzor mozgatása balra</string>
+    <string name="key_cursor_right">Kurzor mozgatása jobbra</string>
     <string name="key_delete">Törlés</string>
     <string name="key_emojis_happy">Vidám emodzsik</string>
     <string name="key_emojis_sad">Szomorú emodzsik</string>
     <string name="key_emojis">Emodzsi billentyűzet</string>
     <string name="key_menu">Menü</string>
+    <string name="key_navigation">Kurzornavigáció</string>
     <string name="key_numeric">Számbillentyűzet</string>
     <string name="key_picker">Billentyűzet váltása</string>
     <string name="key_preferences">Beállítások</string>

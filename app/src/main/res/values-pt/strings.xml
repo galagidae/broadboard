@@ -6,11 +6,16 @@
     <string name="key_alpha">Teclado de letras</string>
     <string name="key_alternate">Inserir caracteres alternativos</string>
     <string name="key_back">Voltar</string>
+    <string name="key_cursor_end">Mover o cursor para o fimal do texto</string>
+    <string name="key_cursor_home">Mover o cursor para o início do texto</string>
+    <string name="key_cursor_left">Mover o cursor para a esquerda</string>
+    <string name="key_cursor_right">Mover o cursor para a direita</string>
     <string name="key_delete">Apagar</string>
     <string name="key_emojis_happy">Emojis felizes</string>
     <string name="key_emojis_sad">Emojis tristes</string>
     <string name="key_emojis">Teclado de emojis</string>
     <string name="key_menu">Menu</string>
+    <string name="key_navigation">Navegação com cursor</string>
     <string name="key_numeric">Teclado numérico</string>
     <string name="key_picker">Alterar teclado</string>
     <string name="key_preferences">Preferências</string>

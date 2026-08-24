@@ -6,11 +6,16 @@
     <string name="key_alpha">Tastatură cu litere</string>
     <string name="key_alternate">Introducere caractere alternative</string>
     <string name="key_back">Înapoi</string>
+    <string name="key_cursor_end">Mutare cursor la sfârșitul textului</string>
+    <string name="key_cursor_home">Mutare cursor la începutul textului</string>
+    <string name="key_cursor_left">Mută cursorul la stânga</string>
+    <string name="key_cursor_right">Mută cursorul la dreapta</string>
     <string name="key_delete">Ștergere</string>
     <string name="key_emojis_happy">Emoji veseli</string>
     <string name="key_emojis_sad">Emoji triști</string>
     <string name="key_emojis">Tastatură cu emoji</string>
     <string name="key_menu">Meniu</string>
+    <string name="key_navigation">Navigare cu cursorul</string>
     <string name="key_numeric">Tastatură numerică</string>
     <string name="key_picker">Schimbare tastatură</string>
     <string name="key_preferences">Preferințe</string>

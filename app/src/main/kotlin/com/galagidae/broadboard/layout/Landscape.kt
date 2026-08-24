@@ -46,6 +46,7 @@ fun LandscapeLayout(
     onClickAlternate: ((Alternate) -> Unit)? = null,
     onClickClose: (() -> Unit)? = null,
     onClickKeyboardPicker: (() -> Unit)? = null,
+    onNavigate: ((direction: NavigationDirection) -> Unit)? = null,
     onInput: ((input: String) -> Unit)? = null,
     onEnter: (() -> Unit)? = null,
     onShift: ((longClick: Boolean) -> Unit)? = null,
@@ -147,40 +148,51 @@ fun LandscapeLayout(
                                     shiftMode = shiftMode,
                                     onChangeMode = onChangeMode
                                 )
+                                BoardMode.NAVIGATION -> NavigationBoard(
+                                    visibleWidth = visibleWidth,
+                                    onChangeMode = onChangeMode,
+                                    onClickKeyboardPicker = onClickKeyboardPicker,
+                                    onBackspace = onBackspace,
+                                    onNavigate = onNavigate
+                                )
                             }
                         }
                     }
             }
         }
-        Column(
-            modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.spacedBy(sizes.keySpacing)
-        ) {
-            when(boardMode) {
-                BoardMode.MENU -> null
-                else -> {
-                    IconKey(
-                        onClick = onBackspace,
-                        icon = backspace,
-                        description = R.string.key_delete,
-                        repeating = true,
-                        backgroundOverride = if (highlights) colors.backspaceBackground else null,
+        if (boardMode != BoardMode.MENU ) {
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(sizes.keySpacing)
+            ) {
+                IconKey(
+                    onClick = onBackspace,
+                    icon = backspace,
+                    description = R.string.key_delete,
+                    repeating = true,
+                    backgroundOverride = if (highlights) colors.backspaceBackground else null,
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxWidth()
+                        .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners)
+                )
+                when(boardMode) {
+                    BoardMode.NUMERIC -> null
+                    BoardMode.NAVIGATION -> MenuKey(
+                        onClick = { onChangeMode?.invoke(BoardMode.MENU) },
                         modifier = Modifier
                             .weight(1f)
-                            .fillMaxWidth()
-                            .highlightBorder(highlights, colors.backspaceBorder, sizes.keyCorners)
+                            .fillMaxHeight()
                     )
-                    if (boardMode != BoardMode.NUMERIC) {
-                        ShiftKey(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .weight(1f),
-                            boardMode = boardMode,
-                            shiftMode = shiftMode,
-                            onClick = {onShift?.invoke(false)},
-                            onLongClick = {onShift?.invoke(true)},            
-                        )
-                    }
+                    else -> ShiftKey(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .weight(1f),
+                        boardMode = boardMode,
+                        shiftMode = shiftMode,
+                        onClick = {onShift?.invoke(false)},
+                        onLongClick = {onShift?.invoke(true)},            
+                    )
                 }
             }
         }

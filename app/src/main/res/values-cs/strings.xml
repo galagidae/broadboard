@@ -6,11 +6,16 @@
     <string name="key_alpha">Písmenná klávesnice</string>
     <string name="key_alternate">Zadat alternativní znaky</string>
     <string name="key_back">Přejít zpět</string>
+    <string name="key_cursor_end">Přesunout kurzor na konec textu</string>
+    <string name="key_cursor_home">Přesunout kurzor na začátek textu</string>
+    <string name="key_cursor_left">Posunout kurzor doleva</string>
+    <string name="key_cursor_right">Posunout kurzor doprava</string>
     <string name="key_delete">Smazat</string>
     <string name="key_emojis_happy">Veselá emoji</string>
     <string name="key_emojis_sad">Smutná emoji</string>
     <string name="key_emojis">Klávesnice emoji</string>
     <string name="key_menu">Nabídka</string>
+    <string name="key_navigation">Navigace kurzorem</string>
     <string name="key_numeric">Číselná klávesnice</string>
     <string name="key_picker">Změnit klávesnici</string>
     <string name="key_preferences">Předvolby</string>

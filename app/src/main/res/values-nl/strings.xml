@@ -7,11 +7,16 @@
     <string name="key_alpha">Lettertoetsenbord</string>
     <string name="key_alternate">Alternatieve tekens invoeren</string>
     <string name="key_back">Terug</string>
+    <string name="key_cursor_end">Cursor naar het einde van de tekst verplaatsen</string>
+    <string name="key_cursor_home">Cursor naar het begin van de tekst verplaatsen</string>
+    <string name="key_cursor_left">Cursor naar links verplaatsen</string>
+    <string name="key_cursor_right">Cursor naar rechts verplaatsen</string>
     <string name="key_delete">Verwijderen</string>
     <string name="key_emojis_happy">Blije emoji\'s</string>
     <string name="key_emojis_sad">Verdrietige emoji\'s</string>
     <string name="key_emojis">Emoji-toetsenbord</string>
     <string name="key_menu">Menu</string>
+    <string name="key_navigation">Cursornavigatie</string>
     <string name="key_numeric">Cijfertoetsenbord</string>
     <string name="key_picker">Toetsenbord wijzigen</string>
     <string name="key_preferences">Voorkeuren</string>

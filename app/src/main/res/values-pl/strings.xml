@@ -6,11 +6,16 @@
     <string name="key_alpha">Klawiatura literowa</string>
     <string name="key_alternate">Wprowadź znaki alternatywne</string>
     <string name="key_back">Wróć</string>
+    <string name="key_cursor_end">Przenieś kursor na koniec tekstu</string>
+    <string name="key_cursor_home">Przenieś kursor na początek tekstu</string>
+    <string name="key_cursor_left">Przesuń kursor w lewo</string>
+    <string name="key_cursor_right">Przesuń kursor w prawo</string>
     <string name="key_delete">Usuń</string>
     <string name="key_emojis_happy">Wesołe emoji</string>
     <string name="key_emojis_sad">Smutne emoji</string>
     <string name="key_emojis">Klawiatura emoji</string>
     <string name="key_menu">Menu</string>
+    <string name="key_navigation">Nawigacja kursorem</string>
     <string name="key_numeric">Klawiatura numeryczna</string>
     <string name="key_picker">Zmień klawiaturę</string>
     <string name="key_preferences">Ustawienia</string>

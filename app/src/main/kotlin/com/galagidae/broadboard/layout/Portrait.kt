@@ -45,6 +45,7 @@ fun PortraitLayout(
     onInput: ((input: String) -> Unit)? = null,
     onEnter: (() -> Unit)? = null,
     onShift: ((longClick: Boolean) -> Unit)? = null,
+    onNavigate: ((direction: NavigationDirection) -> Unit)? = null
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
@@ -99,6 +100,13 @@ fun PortraitLayout(
                             onKey = onInput,
                             shiftMode = shiftMode,
                             onChangeMode = onChangeMode
+                        )
+                        BoardMode.NAVIGATION -> NavigationBoard(
+                            visibleWidth = visibleWidth,
+                            onChangeMode = onChangeMode,
+                            onClickKeyboardPicker = onClickKeyboardPicker,
+                            onBackspace = onBackspace,
+                            onNavigate = onNavigate
                         )
                     }
                 }

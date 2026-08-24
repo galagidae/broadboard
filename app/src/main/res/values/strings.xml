@@ -6,11 +6,16 @@
     <string name="key_alpha">Letter Keyboard</string>
     <string name="key_alternate">Enter alternate characters</string>
     <string name="key_back">Go back</string>
+    <string name="key_cursor_end">Move cursor to end of text</string>
+    <string name="key_cursor_home">Move cursor to beginning of text</string>
+    <string name="key_cursor_left">Move cursor left</string>
+    <string name="key_cursor_right">Move cursor right</string>
     <string name="key_delete">Delete</string>
     <string name="key_emojis_happy">Happy Emojis</string>
     <string name="key_emojis_sad">Sad Emojis</string>
     <string name="key_emojis">Emoji Keyboard</string>
     <string name="key_menu">Menu</string>
+    <string name="key_navigation">Cursor Navigation</string>
     <string name="key_numeric">Number Keyboard</string>
     <string name="key_picker">Change Keyboard</string>
     <string name="key_preferences">Preferences</string>
@@ -263,6 +268,7 @@
     <string name="mode_change_alphanumeric">Showing letter keyboard</string>
     <string name="mode_change_emojis">Showing emoji keyboard</string>
     <string name="mode_change_menu">Showing menu</string>
+    <string name="mode_change_navigation">Showing cursor navigation</string>
     <string name="mode_change_numeric">Showing number keyboard</string>
     <string name="mode_change_symbols">Showing symbol keyboard</string>
     <string name="shift_change_off">Shift off</string>

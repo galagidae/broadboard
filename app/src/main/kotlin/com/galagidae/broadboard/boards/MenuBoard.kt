@@ -1,30 +1,14 @@
-/*
-* BroadBoard – A keyboard for users with low vision
-* Copyright (C) 2026  Anthony Benbrook
-*   
-*   This program is free software: you can redistribute it and/or modify
-*   it under the terms of the GNU General Public License as published by
-*   the Free Software Foundation, either version 3 of the License, or
-*   (at your option) any later version.
-*   
-*   This program is distributed in the hope that it will be useful,
-*   but WITHOUT ANY WARRANTY; without even the implied warranty of
-*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*   GNU General Public License for more details.
-*   
-*   You should have received a copy of the GNU General Public License
-*   along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
-
 package com.galagidae.broadboard.boards
 
 import android.content.Intent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.runtime.*
 import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.*
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
+import android.content.res.Configuration
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.boards.keys.*
@@ -39,42 +23,52 @@ fun MenuBoard(
 ) {
     val colors = LocalColorTheme.current
     val sizes = LocalSizeTheme.current
-    val context = LocalContext.current    
+    val context = LocalContext.current
+    val isPortrait = LocalConfiguration.current.orientation == Configuration.ORIENTATION_PORTRAIT
 
-    Column(
-        modifier = modifier
-            .background(colors.mainBackground)
-            .fillMaxWidth()
-            .height(sizes.appHeight),
-        verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
-    ) {
-        MenuRow() {
+    val menuKeys: List<@Composable RowScope.() -> Unit> = listOf(
+        {
             ModeKey(
                 modifier = menuKey,
                 label = "abc",
                 description = R.string.key_alpha,
                 onClick = { onChangeMode?.invoke(BoardMode.ALPHANUMERIC) }
             )
+        },
+        {
             ModeKey(
                 modifier = menuKey,
                 label = "?!;()",
                 description = R.string.key_symbols,
                 onClick = { onChangeMode?.invoke(BoardMode.SYMBOLS) }
             )
+        },
+        {
             ModeKey(
                 modifier = menuKey,
                 label = "123",
                 description = R.string.key_numeric,
                 onClick = { onChangeMode?.invoke(BoardMode.NUMERIC) }
             )
-        }
-        MenuRow() {
+        },
+        {
             ModeKey(
                 modifier = menuKey,
                 label = "🙂",
                 description = R.string.key_emojis,
                 onClick = { onChangeMode?.invoke(BoardMode.EMOJIS) },
             )
+        },
+        {
+            IconKey(
+                modifier = menuKey,
+                onClick = { onChangeMode?.invoke(BoardMode.NAVIGATION) },
+                icon = arrows_outward,
+                description = R.string.key_navigation,
+                backgroundOverride = colors.modeKeyBackground
+            )
+        },
+        {
             IconKey(
                 modifier = menuKey,
                 onClick = onClickKeyboardPicker,
@@ -82,6 +76,8 @@ fun MenuBoard(
                 description = R.string.key_picker,
                 backgroundOverride = colors.modeKeyBackground
             )
+        },
+        {
             IconKey(
                 modifier = menuKey,
                 onClick = {
@@ -93,9 +89,32 @@ fun MenuBoard(
                 icon = preferences,
                 description = R.string.key_preferences,
                 backgroundOverride = colors.modeKeyBackground
-            )            
+            )
+        }
+    )
+
+    val rowSizes = if (isPortrait) listOf(3, 3, 1) else listOf(4, 3)
+    val rows = menuKeys.chunkedBySizes(rowSizes)
+
+    Column(
+        modifier = modifier
+            .background(colors.mainBackground)
+            .fillMaxWidth()
+            .height(sizes.appHeight),
+        verticalArrangement = Arrangement.spacedBy(sizes.keySpacing),
+    ) {
+        rows.forEach { rowKeys ->
+            MenuRow {
+                rowKeys.forEach { it() }
+            }
         }
     }
+}
+
+private fun <T> List<T>.chunkedBySizes(sizes: List<Int>): List<List<T>> {
+    require(sizes.sum() == size) { "sizes (${sizes.sum()}) must sum to list size ($size)" }
+    var i = 0
+    return sizes.map { n -> subList(i, i + n).also { i += n } }
 }
 
 private val RowScope.menuKey: Modifier
@@ -108,7 +127,6 @@ private fun ColumnScope.MenuRow(
     content: @Composable RowScope.() -> Unit
 ) {
     val sizes = LocalSizeTheme.current
-
     Row(
         modifier = Modifier
             .weight(1f),

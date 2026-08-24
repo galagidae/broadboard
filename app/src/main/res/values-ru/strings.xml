@@ -6,11 +6,16 @@
     <string name="key_alpha">Буквенная клавиатура</string>
     <string name="key_alternate">Ввод дополнительных символов</string>
     <string name="key_back">Назад</string>
+    <string name="key_cursor_end">Переместить курсор в конец текста</string>
+    <string name="key_cursor_home">Переместить курсор в начало текста</string>
+    <string name="key_cursor_left">Переместить курсор влево</string>
+    <string name="key_cursor_right">Переместить курсор вправо</string>
     <string name="key_delete">Удалить</string>
     <string name="key_emojis_happy">Радостные эмодзи</string>
     <string name="key_emojis_sad">Грустные эмодзи</string>
     <string name="key_emojis">Клавиатура эмодзи</string>
     <string name="key_menu">Меню</string>
+    <string name="key_navigation">Навигация курсором</string>
     <string name="key_numeric">Цифровая клавиатура</string>
     <string name="key_picker">Сменить клавиатуру</string>
     <string name="key_preferences">Настройки</string>

@@ -7,11 +7,16 @@
     <string name="key_alpha">Keyboard huruf</string>
     <string name="key_alternate">Masukkan karakter alternatif</string>
     <string name="key_back">Kembali</string>
+    <string name="key_cursor_end">Pindahkan kursor ke akhir teks</string>
+    <string name="key_cursor_home">Pindahkan kursor ke awal teks</string>
+    <string name="key_cursor_left">Pindahkan kursor ke kiri</string>
+    <string name="key_cursor_right">Pindahkan kursor ke kanan</string>
     <string name="key_delete">Hapus</string>
     <string name="key_emojis_happy">Emoji senang</string>
     <string name="key_emojis_sad">Emoji sedih</string>
     <string name="key_emojis">Keyboard emoji</string>
     <string name="key_menu">Menu</string>
+    <string name="key_navigation">Navigasi kursor</string>
     <string name="key_numeric">Keyboard angka</string>
     <string name="key_picker">Ganti keyboard</string>
     <string name="key_preferences">Preferensi</string>

@@ -7,11 +7,16 @@
     <string name="key_alpha">Літерна клавіатура</string>
     <string name="key_alternate">Ввести альтернативні символи</string>
     <string name="key_back">Повернутися назад</string>
+    <string name="key_cursor_end">Перемістити курсор у кінець тексту</string>
+    <string name="key_cursor_home">Перемістити курсор на початок тексту</string>
+    <string name="key_cursor_left">Перемістити курсор ліворуч</string>
+    <string name="key_cursor_right">Перемістити курсор праворуч</string>
     <string name="key_delete">Видалити</string>
     <string name="key_emojis_happy">Веселі емодзі</string>
     <string name="key_emojis_sad">Сумні емодзі</string>
     <string name="key_emojis">Клавіатура емодзі</string>
     <string name="key_menu">Меню</string>
+    <string name="key_navigation">Навігація курсором</string>
     <string name="key_numeric">Цифрова клавіатура</string>
     <string name="key_picker">Змінити клавіатуру</string>
     <string name="key_preferences">Налаштування</string>
