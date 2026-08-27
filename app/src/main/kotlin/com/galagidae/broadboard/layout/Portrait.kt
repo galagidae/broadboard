@@ -1,28 +1,7 @@
-/*
-* BroadBoard – A keyboard for users with low vision
-* Copyright (C) 2026  Anthony Benbrook
-*   
-*   This program is free software: you can redistribute it and/or modify
-*   it under the terms of the GNU General Public License as published by
-*   the Free Software Foundation, either version 3 of the License, or
-*   (at your option) any later version.
-*   
-*   This program is distributed in the hope that it will be useful,
-*   but WITHOUT ANY WARRANTY; without even the implied warranty of
-*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*   GNU General Public License for more details.
-*   
-*   You should have received a copy of the GNU General Public License
-*   along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
-
 package com.galagidae.broadboard.layout
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.*
-import androidx.compose.ui.unit.*
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.boards.*
 
@@ -47,9 +26,6 @@ fun PortraitLayout(
     onShift: ((longClick: Boolean) -> Unit)? = null,
     onNavigate: ((direction: NavigationDirection) -> Unit)? = null
 ) {
-    val colors = LocalColorTheme.current
-    val sizes = LocalSizeTheme.current
-
     when(boardMode) {
         BoardMode.NUMERIC -> NumericBoard(
             onKey = { c -> onInput?.invoke(c.toString()) },
@@ -61,56 +37,24 @@ fun PortraitLayout(
             onChangeMode = onChangeMode,
             onClickKeyboardPicker = onClickKeyboardPicker
         )
-        else -> Column() {
-            key(boardMode, alternate) {
-                PanBox(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .background(colors.mainBackground)
-                        .height(sizes.panBoxHeight)
-                ) {
-                    when (boardMode) {
-                        BoardMode.ALPHANUMERIC -> {
-                            if (alternate != null)
-                                AlternateBoard(
-                                    onKey = onAlternateKey,
-                                    shiftMode = if (autoShift) ShiftMode.LOCK else shiftMode,
-                                    alternate = alternate,
-                                    visibleWidth = visibleWidth,
-                                    visibleHeight = visibleHeight
-                                )
-                            else StandardBoard(
-                                onKey = { c -> onInput?.invoke(c.toString()) },
-                                onEnter = onEnter,
-                                shiftMode = if (autoShift) ShiftMode.LOCK else shiftMode,
-                                inputContext = inputContext,
-                                currentLocale = currentLocale,
-                                onChangeMode = onChangeMode,
-                                onClickAlternate = onClickAlternate,
-                                actionKey = actionKey
-                            )
-                        }
-                        BoardMode.SYMBOLS -> SymbolsBoard(
-                            onKey = { c -> onInput?.invoke(c.toString()) },
-                            shiftMode = shiftMode,
-                            currentLocale = currentLocale,
-                            onChangeMode = onChangeMode
-                        )
-                        BoardMode.EMOJIS -> EmojisBoard(
-                            onKey = onInput,
-                            shiftMode = shiftMode,
-                            onChangeMode = onChangeMode
-                        )
-                        BoardMode.NAVIGATION -> NavigationBoard(
-                            visibleWidth = visibleWidth,
-                            onChangeMode = onChangeMode,
-                            onClickKeyboardPicker = onClickKeyboardPicker,
-                            onBackspace = onBackspace,
-                            onNavigate = onNavigate
-                        )
-                    }
-                }
-            }
+        else -> Column {
+            PanBoard(
+                actionKey = actionKey,
+                alternate = alternate,
+                autoShift = autoShift,
+                boardMode = boardMode,
+                inputContext = inputContext,
+                currentLocale = currentLocale,
+                shiftMode = shiftMode,
+                onAlternateKey = onAlternateKey,
+                onBackspace = onBackspace,
+                onChangeMode = onChangeMode,
+                onClickAlternate = onClickAlternate,
+                onClickKeyboardPicker = onClickKeyboardPicker,
+                onNavigate = onNavigate,
+                onInput = onInput,
+                onEnter = onEnter
+            )
             BottomRow(
                 onSpace = { onInput?.invoke(" ") },
                 onBackspace = onBackspace,
