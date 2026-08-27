@@ -237,6 +237,7 @@
     <string name="pref_title">Προτιμήσεις</string>
     <string name="pref_back">Πίσω</string>
     <string name="pref_size">Μέγεθος</string>
+    <string name="pref_size_extra_small">Extra Small</string>
     <string name="pref_size_small">Μικρό</string>
     <string name="pref_size_medium">Μεσαίο</string>
     <string name="pref_size_large">Μεγάλο</string>

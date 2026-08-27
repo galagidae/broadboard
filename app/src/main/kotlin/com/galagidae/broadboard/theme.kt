@@ -163,6 +163,21 @@ data class SizeTheme(
     val appHeightLand: Dp = panBoxHeight
 }
 
+val extraSmallSize = SizeTheme(
+    keySize = 54.dp,
+    rowCount = 3,
+    keyCorners = 2.dp,
+    bottomRowHeight = 54.dp,
+    keySpacing = 1.dp,
+    keyFontSize = 45.sp,
+    keyEmojiFontSize = 37.sp,
+    keyModeFontSize = 28.sp,
+    keyNumericFontSize = 32.sp,
+    keyIconSize = 72.dp,
+    enterKeyWidth = 84.dp,
+    modeBarGap = 2.dp
+)
+
 val smallSize = SizeTheme(
     keySize = 72.dp,
     rowCount = 3,

@@ -236,6 +236,7 @@
     <string name="pref_title">Tercihler</string>
     <string name="pref_back">Geri</string>
     <string name="pref_size">Boyut</string>
+    <string name="pref_size_extra_small">Çok Küçük</string>
     <string name="pref_size_small">Küçük</string>
     <string name="pref_size_medium">Orta</string>
     <string name="pref_size_large">Büyük</string>

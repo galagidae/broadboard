@@ -236,6 +236,7 @@
     <string name="pref_title">Ustawienia</string>
     <string name="pref_back">Wróć</string>
     <string name="pref_size">Rozmiar</string>
+    <string name="pref_size_extra_small">Bardzo mały</string>
     <string name="pref_size_small">Mały</string>
     <string name="pref_size_medium">Średni</string>
     <string name="pref_size_large">Duży</string>

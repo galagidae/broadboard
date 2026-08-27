@@ -236,6 +236,7 @@
     <string name="pref_title">Předvolby</string>
     <string name="pref_back">Zpět</string>
     <string name="pref_size">Velikost</string>
+    <string name="pref_size_extra_small">Extra malá</string>
     <string name="pref_size_small">Malá</string>
     <string name="pref_size_medium">Střední</string>
     <string name="pref_size_large">Velká</string>

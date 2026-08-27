@@ -236,6 +236,7 @@
     <string name="pref_title">Préférences</string>
     <string name="pref_back">Retour</string>
     <string name="pref_size">Taille</string>
+    <string name="pref_size_extra_small">Très petite</string>
     <string name="pref_size_small">Petite</string>
     <string name="pref_size_medium">Moyenne</string>
     <string name="pref_size_large">Grande</string>

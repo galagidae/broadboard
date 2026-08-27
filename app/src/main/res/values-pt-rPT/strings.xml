@@ -236,6 +236,7 @@
     <string name="pref_title">Preferências</string>
     <string name="pref_back">Voltar</string>
     <string name="pref_size">Tamanho</string>
+    <string name="pref_size_extra_small">Extrapequeno</string>
     <string name="pref_size_small">Pequeno</string>
     <string name="pref_size_medium">Médio</string>
     <string name="pref_size_large">Grande</string>

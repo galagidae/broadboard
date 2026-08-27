@@ -236,6 +236,7 @@
     <string name="pref_title">Настройки</string>
     <string name="pref_back">Назад</string>
     <string name="pref_size">Размер</string>
+    <string name="pref_size_extra_small">Очень маленький</string>
     <string name="pref_size_small">Маленький</string>
     <string name="pref_size_medium">Средний</string>
     <string name="pref_size_large">Большой</string>

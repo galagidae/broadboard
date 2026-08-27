@@ -237,6 +237,7 @@
     <string name="pref_title">Voorkeuren</string>
     <string name="pref_back">Terug</string>
     <string name="pref_size">Grootte</string>
+    <string name="pref_size_extra_small">Extra klein</string>
     <string name="pref_size_small">Klein</string>
     <string name="pref_size_medium">Gemiddeld</string>
     <string name="pref_size_large">Groot</string>

@@ -236,6 +236,7 @@
     <string name="pref_title">Nastavenia</string>
     <string name="pref_back">Späť</string>
     <string name="pref_size">Veľkosť</string>
+    <string name="pref_size_extra_small">Veľmi malá</string>
     <string name="pref_size_small">Malá</string>
     <string name="pref_size_medium">Stredná</string>
     <string name="pref_size_large">Veľká</string>

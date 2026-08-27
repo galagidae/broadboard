@@ -33,12 +33,14 @@ typealias LabelMap = Map<String, Int>
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "user_prefs")
 val sizeOptions = listOf(
+    "extrasmall",
     "small",
     "medium",
     "large",
     "extralarge"
 )
 val sizeLabels: LabelMap = mapOf(
+    "extrasmall" to R.string.pref_size_extra_small,
     "small" to R.string.pref_size_small,
     "medium" to R.string.pref_size_medium,
     "large" to R.string.pref_size_large,
@@ -222,6 +224,7 @@ fun AppPreferences(
 ) {
     val sizeName by viewModel.sizeTheme.collectAsStateWithLifecycle()
     val sizeTheme = when (sizeName) {
+        "extrasmall" -> extraSmallSize
         "small" -> smallSize
         "large" -> largeSize
         "extralarge" -> extraLargeSize

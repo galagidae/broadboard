@@ -222,6 +222,7 @@
     <string name="pref_title">Beállítások</string>
     <string name="pref_back">Vissza</string>
     <string name="pref_size">Méret</string>
+    <string name="pref_size_extra_small">Extra kicsi</string>
     <string name="pref_size_small">Kicsi</string>
     <string name="pref_size_medium">Közepes</string>
     <string name="pref_size_large">Nagy</string>

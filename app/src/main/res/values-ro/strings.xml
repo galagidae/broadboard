@@ -236,6 +236,7 @@
     <string name="pref_title">Preferințe</string>
     <string name="pref_back">Înapoi</string>
     <string name="pref_size">Dimensiune</string>
+    <string name="pref_size_extra_small">Foarte mică</string>
     <string name="pref_size_small">Mică</string>
     <string name="pref_size_medium">Medie</string>
     <string name="pref_size_large">Mare</string>
