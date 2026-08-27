@@ -4,6 +4,7 @@ BroadBoard is an on-screen keyboard (IME) designed for people with low vision. I
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Get it on Google Play](https://img.shields.io/badge/Google%20Play-available-brightgreen)](https://play.google.com/store/apps/details?id=com.galagidae.broadboard)
+[![F-Droid](https://img.shields.io/f-droid/v/com.galagidae.broadboard.svg)](https://f-droid.org/packages/com.galagidae.broadboard/)
 
 ![BroadBoard Demo](screenshots/demo.gif)
 
@@ -15,18 +16,6 @@ BroadBoard is an on-screen keyboard (IME) designed for people with low vision. I
 - Optional haptic feedback
 - Screen reader friendly
 - Locale support
-  - English (United Kingdom)
-  - English (United States)
-  - French (France)
-  - German (Germany)
-  - Greek
-  - Italian
-  - Portuguese (Brazil)
-  - Portuguese (Portugal)
-  - Russian
-  - Spanish (Latin American)
-  - Spanish (Spain)
-  - More to come
 
 ## Installation
 
