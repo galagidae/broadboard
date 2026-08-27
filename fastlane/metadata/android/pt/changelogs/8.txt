@@ -1,0 +1,3 @@
+* Novo modo de navegação do cursor
+* Novo tamanho extra pequeno
+* Suporte para tcheco, húngaro, romeno e eslovaco

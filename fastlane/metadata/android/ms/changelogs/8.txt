@@ -1,0 +1,3 @@
+* Mod navigasi kursor baharu
+* Saiz ekstra kecil baharu
+* Sokongan untuk bahasa Czech, Hungary, Romania dan Slovak

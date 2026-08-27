@@ -1,0 +1,3 @@
+* Yeni imleç gezinme modu
+* Yeni ekstra küçük boyut
+* Çekçe, Macarca, Rumence ve Slovakça desteği

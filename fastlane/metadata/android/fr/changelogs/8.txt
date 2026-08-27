@@ -1,0 +1,3 @@
+* Nouveau mode de navigation du curseur
+* Nouvelle taille très petite
+* Prise en charge du tchèque, du hongrois, du roumain et du slovaque

@@ -1,0 +1,3 @@
+* Mode navigasi kursor baru
+* Ukuran ekstra kecil baru
+* Dukungan untuk bahasa Ceko, Hungaria, Rumania, dan Slowakia

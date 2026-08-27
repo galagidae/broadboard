@@ -1,0 +1,3 @@
+* A fost adăugat un nou mod de navigare cu cursorul
+* A fost adăugată o nouă dimensiune extra mică
+* Suport pentru limbile cehă, maghiară, română și slovacă

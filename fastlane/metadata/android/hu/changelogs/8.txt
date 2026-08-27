@@ -1,0 +1,3 @@
+* Új kurzornavigációs mód
+* Új extra kicsi méret
+* Cseh, magyar, román és szlovák nyelv támogatása

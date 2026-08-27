@@ -1,0 +1,22 @@
+A BroadBoard egy képernyő-billentyűzet (IME), amelyet gyengénlátók számára terveztek. Ahelyett, hogy a billentyűket lekicsinyítené, hogy minden egyszerre elférjen a képernyőn, a BroadBoard minden billentyűt nagynak és jól olvashatónak tart — egyszerűen görgetve mozoghatsz a billentyűzeten, hogy elérd a szükséges billentyűket, így egyetlen billentyűnek sem kell kicsinek lennie.
+
+Funkciók:
+
+* Nagy, görgethető billentyűzet extra méretű, kontrasztos billentyűkkel
+* Több színtéma, köztük extra sötét és jól látható változatok
+* Állítható billentyűzetméretek, egészen az extra nagyig
+* Opcionális haptikus visszajelzés
+* Képernyőolvasó-barát
+* Több nyelv és kiosztás támogatása
+
+Adatvédelem:
+
+A BroadBoard semmilyen adatot nem gyűjt. Nincs internet-engedélye, nincs benne analitika, nincsenek hirdetések és nincsenek harmadik féltől származó összetevők. Semmi, amit begépelsz, nem hagyja el az eszközödet.
+
+Telepítés után a BroadBoardot engedélyezni kell, és ki kell választani beviteli módként:
+
+1. Nyisd meg a **Beállítások → Rendszer → Nyelvek és bevitel → Képernyő-billentyűzet → Billentyűzetek kezelése** menüpontot
+2. Engedélyezd a **BroadBoard**-ot
+3. Válts rá a billentyűzetválasztóval (koppints a billentyűzet ikonra a navigációs sávon, vagy a legtöbb alkalmazásban tartsd hosszan lenyomva a szóközt).
+
+Alternatívaként a BroadBoard elindítása az alkalmazáslistából közvetlen hivatkozásokat kínál a megfelelő beállítási képernyőhöz és a billentyűzetválasztóhoz.

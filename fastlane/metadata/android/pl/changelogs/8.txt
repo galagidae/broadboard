@@ -1,0 +1,3 @@
+* Nowy tryb nawigacji kursorem
+* Nowy bardzo mały rozmiar
+* Obsługa języka czeskiego, węgierskiego, rumuńskiego i słowackiego

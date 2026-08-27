@@ -1,0 +1,22 @@
+BroadBoard este o tastatură pe ecran (IME) concepută pentru persoanele cu vedere slabă. În loc să micșoreze tastele pentru a încăpea totul pe ecran deodată, BroadBoard păstrează fiecare tastă mare și lizibilă — pur și simplu derulezi tastatura pentru a ajunge la tastele de care ai nevoie, astfel încât nicio tastă nu trebuie să fie mică.
+
+Funcții:
+
+* Tastatură mare, derulabilă, cu taste supradimensionate și contrast ridicat
+* Mai multe teme de culori, inclusiv variante extra întunecate și de înaltă vizibilitate
+* Dimensiuni ajustabile ale tastaturii, până la extra mare
+* Feedback haptic opțional
+* Compatibilă cu cititoarele de ecran
+* Suport pentru mai multe limbi și aranjamente de tastatură
+
+Confidențialitate:
+
+BroadBoard nu colectează niciun fel de date. Nu are permisiune de internet, nu conține analize, reclame sau componente terțe. Nimic din ce tastezi nu părăsește vreodată dispozitivul tău.
+
+După instalare, BroadBoard trebuie activată și selectată ca metodă de introducere a textului:
+
+1. Mergi la **Setări → Sistem → Limbi și introducere text → Tastatură pe ecran → Gestionează tastaturile**
+2. Activează **BroadBoard**
+3. Comută la ea din selectorul de tastaturi (atinge pictograma tastaturii din bara de navigare sau ține apăsată tasta spațiu în majoritatea aplicațiilor).
+
+Alternativ, pornirea aplicației BroadBoard din lista de aplicații oferă linkuri ghidate către ecranul de setări potrivit și către selectorul de tastaturi.

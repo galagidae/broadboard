@@ -1,0 +1,3 @@
+* Nieuwe cursornavigatiemodus
+* Nieuw extra klein formaat
+* Ondersteuning voor Tsjechisch, Hongaars, Roemeens en Slowaaks

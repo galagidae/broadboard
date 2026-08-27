@@ -1,0 +1,22 @@
+BroadBoard je klávesnica na obrazovke (IME) navrhnutá pre slabozrakých. Namiesto zmenšovania kláves, aby sa všetko zmestilo na obrazovku naraz, ponecháva BroadBoard každý kláves veľký a čitateľný — po klávesnici sa jednoducho posúvate, aby ste sa dostali k potrebným klávesom, takže žiadny kláves nemusí byť malý.
+
+Funkcie:
+
+* Veľká posuvná klávesnica s nadrozmernými klávesmi s vysokým kontrastom
+* Viacero farebných motívov vrátane extra tmavých a vysoko viditeľných variantov
+* Nastaviteľné veľkosti klávesnice, až po extra veľkú
+* Voliteľná haptická odozva
+* Priateľská k čítačkám obrazovky
+* Podpora viacerých jazykov a rozložení
+
+Súkromie:
+
+BroadBoard nezhromažďuje žiadne údaje. Nemá povolenie na internet, žiadnu analytiku, žiadne reklamy a žiadne komponenty tretích strán. Nič, čo napíšete, nikdy neopustí vaše zariadenie.
+
+Po inštalácii je potrebné BroadBoard povoliť a vybrať ako metódu zadávania:
+
+1. Prejdite do **Nastavenia → Systém → Jazyky a vstup → Klávesnica na obrazovke → Spravovať klávesnice**
+2. Povoľte **BroadBoard**
+3. Prepnite na ňu pomocou výberu klávesnice (ťuknite na ikonu klávesnice na navigačnom paneli alebo vo väčšine aplikácií dlho podržte medzerník).
+
+Prípadne spustenie aplikácie BroadBoard zo zoznamu aplikácií ponúkne odkazy na správnu obrazovku nastavení a na výber klávesnice.

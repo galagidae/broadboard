@@ -1,0 +1,2 @@
+* Új nyelvek hozzáadva
+* Különféle hibák javítva
