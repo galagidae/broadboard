@@ -272,6 +272,7 @@ class BroadBoardService : InputMethodService(),
             "cs" -> "cs"
             "de" -> "de"
             "el" -> "el"
+		    "fa" -> "fa"
             "en" -> when(languageTag) {
                 "en-GB" -> "en-GB"
                 else -> "en-US"
