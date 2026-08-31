@@ -145,7 +145,8 @@ fun BaseKey (
                 if (isPressed) 
                     colors.keyBackgroundPressed 
                 else 
-                    backgroundOverride ?: colors.keyBackground)
+                    backgroundOverride ?: colors.keyBackground
+            )
             .then(clickable),
         contentAlignment = Alignment.Center,
     ) {

@@ -27,6 +27,10 @@ import androidx.compose.ui.*
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.*
+import android.content.Intent
+import android.provider.Settings
+import android.view.inputmethod.InputMethodManager
+import androidx.compose.ui.platform.LocalContext
 import com.galagidae.broadboard.*
 import com.galagidae.broadboard.R
 import com.galagidae.broadboard.icons.arrow_back
@@ -44,6 +48,7 @@ fun PreferencesScreen(
     val highlights by viewModel.highlights.collectAsStateWithLifecycle()
     val dispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
     val vibrate = LocalVibrate.current
+	val context = LocalContext.current
     
     Column(
         modifier = Modifier
@@ -74,6 +79,55 @@ fun PreferencesScreen(
         ImeBanner(status = imeStatus)
 
         Spacer(Modifier.height(24.dp))
+
+		Row(
+			modifier = Modifier
+				.fillMaxWidth()
+				.clickable {
+					val imm =
+						context.getSystemService(InputMethodManager::class.java)
+
+					val inputMethodId = imm.inputMethodList
+						.firstOrNull {
+							it.packageName == context.packageName
+						}
+						?.id
+
+					val intent =
+						Intent(Settings.ACTION_INPUT_METHOD_SUBTYPE_SETTINGS)
+
+					if (inputMethodId != null) {
+						intent.putExtra(
+							Settings.EXTRA_INPUT_METHOD_ID,
+							inputMethodId
+						)
+					}
+
+					context.startActivity(intent)
+				}
+				.padding(vertical = 16.dp),
+			verticalAlignment = Alignment.CenterVertically
+		) {
+			Column(
+				modifier = Modifier.weight(1f)
+			) {
+				Text(
+					text = stringResource(R.string.pref_languages),
+					style = MaterialTheme.typography.titleMedium
+				)
+
+				Text(
+					text = stringResource(R.string.pref_languages_sub),
+					style = MaterialTheme.typography.bodyMedium,
+					color = MaterialTheme.colorScheme.onSurfaceVariant
+				)
+			}
+
+			Text(
+				text = ">",
+				style = MaterialTheme.typography.titleLarge
+			)
+		}
 
         Pickable(
             label = stringResource(R.string.pref_color),

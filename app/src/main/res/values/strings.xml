@@ -236,6 +236,8 @@
     <!-- Preferences -->
     <string name="pref_title">Preferences</string>
     <string name="pref_back">Back</string>
+	<string name="pref_languages">Languages</string>
+	<string name="pref_languages_sub">Choose keyboard languages</string>
     <string name="pref_size">Size</string>
     <string name="pref_size_extra_small">Extra Small</string>
     <string name="pref_size_small">Small</string>
